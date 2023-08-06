@@ -279,3 +279,19 @@ NCF can be extended and modified with different network architectures, loss func
 ---
 # Important note
 NCF is a general term that encompasses various neural network-based collaborative filtering models, including MLP (Multi-Layer Perceptron) and GMF (Generalized Matrix Factorization). NeuMF is a specific variant of NCF that combines GMF and MLP components to improve the modeling of user-item interactions.
+
+---
+# Various Implementations of Collaborative Filtering
+## 1. Memory based approach:
+
+Memory-Based Collaborative Filtering approaches can be divided into two main sections: **user-item** filtering and **item-item** filtering. A user-item filtering takes a particular user, find users that are similar to that user based on similarity of ratings, and recommend items that those similar users liked. In contrast, item-item filtering will take an item, find users who liked that item, and find other items that those users or similar users also liked. It takes items and outputs other items as recommendations.
+
+**Item-Item Collaborative Filtering: “Users who liked this item also liked …”**
+**User-Item Collaborative Filtering: “Users who are similar to you also liked …”**
+
+The key difference of memory-based approach from the model-based techniques  is that we are **not learning any parameter** using gradient descent (or any other optimization algorithm). The closest user or items are **calculated only by using Cosine similarity or Pearson correlation coefficients**, which are only based on arithmetic operations.
+Edit: As stated in above paragraph, the techniques **where we don’t use parametric machine learning approach are classified as Memory based techniques**. Therefore, **non parametric ML approaches** like **KNN** should also come under Memory based approach. 
+
+!!!note **Final words on Memory-based approach** 
+    As no training or optimization is involved, it is an easy to use approach. But its   when we have **sparse** data which hinders scalability of this approach for most of the real-world problems.
+---
