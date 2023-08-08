@@ -59,7 +59,7 @@ Remember that collaborative filtering relies on historical user interactions, so
 
 ---
 
-># Reason for choosing ALS over other algorithms:
+># Reasons to choose ALS over other algorithms:
 > ALS is preferred due to its effectiveness with **implicit feedback**, **scalability**, and **handling data sparsity** compared to **SGD**, **PMF**, **FM**, **NCF**, and **SVD**.
 >- ##  ALS Benefits:
 >   1. Effective with implicit feedback: ALS incorporates implicit feedback by treating unobserved interactions as negative signals through regularization. By penalizing unobserved interactions, ALS captures the influence of missing data and better represents user preferences.
