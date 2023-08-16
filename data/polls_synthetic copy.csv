@@ -1,160 +1,160 @@
-poll_ID,author_ID,title,ption,opic
-0,1,Which programming language is your favorite?,Python|Java|JavaScript|C++|Ruby,Tech, JavaScript, C++, Ruby],[Tech]
-1,1,What's your preferred smartphone brand?,Apple|Samsung|Google|OnePlus|Xiaomi,Tech, Google, OnePlus, Xiaomi],[Tech]
-2,4,How often do you upgrade your computer?,Every year|Every 2 years|Every 3 years|Rarely,Tech, Every 3 years, Rarely],[Tech]
-3,10,Which tech gadget can't you live without?,Smartphone|Laptop|Smartwatch|Tablet,Tech, Smartwatch, Tablet],[Tech]
-4,8,Are you excited about the upcoming VR technologies?,Yes|No|Maybe,Tech, Maybe],[Tech]
-5,4,Do you use a password manager for online security?,Yes|No|Sometimes,Tech, Sometimes],[Tech]
-6,1,What's your opinion on AI replacing human jobs?,Positive|Negative|Neutral,Tech, Neutral],[Tech]
-7,4,How many hours a day do you spend on the internet?,Less than 2 hours|2-4 hours|4-6 hours|More than 6 hours,Tech, 4-6 hours, More than 6 hours],[Tech]
-8,3,Which operating system do you use the most?,Windows|macOS|Linux|Other,Tech, Linux, Other],[Tech]
-9,1,Do you think cryptocurrency is the future of finance?,Yes|No|It's complicated,Tech, It's complicated],[Tech]
-10,10,Which sport do you enjoy the most?,Soccer|Basketball|Tennis|Cricket|Baseball,Sport, Tennis, Cricket, Baseball],[Sport]
-11,5,What's your favorite Olympic event?,Swimming|Gymnastics|Track and Field|Diving|Cycling,Sport, Track and Field, Diving, Cycling],[Sport]
-12,10,Do you prefer team sports or individual sports?,Team sports|Individual sports,Sport,[Sport]
-13,5,Who is your all-time favorite athlete?,Michael Jordan|Serena Williams|Usain Bolt|Cristiano Ronaldo|Simone Biles,Sport, Usain Bolt, Cristiano Ronaldo, Simone Biles],[Sport]
-14,2,Which sports league do you follow the closest?,NFL|NBA|Premier League|MLB|La Liga,Sport, Premier League, MLB, La Liga],[Sport]
-15,5,Have you ever participated in a marathon?,Yes|No,Sport,[Sport]
-16,4,What's your opinion on esports?,Love it|Don't understand it|Indifferent]|[Spor,Tech, Indifferent],[Sport, Tech]
-17,1,Should sports be compulsory in schools?,Yes|No]|[Spor,Education,[Sport, Education]
-18,1,Do you enjoy watching the Olympics?,Yes|No|Depends on the events,Sport, Depends on the events],[Sport]
-19,8,What's the most exciting sports moment you've witnessed?,Last-minute goal|Buzzer-beater shot|World record broken,Sport, World record broken],[Sport]
-20,8,Should taxes be increased for the wealthy?,Yes|No,Politics,[Politics]
-21,6,What is your opinion on healthcare reform?,Support|Oppose|Neutral,Politics, Neutral],[Politics]
-22,10,Is climate change a top priority for the government?,Yes|No,Politics,[Politics]
-23,10,Should there be stricter regulations on social media?,Agree|Disagree|Undecided,Politics, Undecided],[Politics]
-24,1,Do you believe in term limits for politicians?,Yes|No,Politics,[Politics]
-25,10,Is foreign aid beneficial for diplomatic relations?,Beneficial|Not beneficial|Depends,Politics, Depends],[Politics]
-26,3,Should the voting age be lowered to 16?,Yes|No,Politics,[Politics]
-27,4,Do you think campaign finance laws need reform?,Strongly agree|Somewhat agree|Neutral|Somewhat disagree|Strongly disagree,Politics, Neutral, Somewhat disagree, Strongly disagree],[Politics]
-28,0,Is the current immigration system effective?,Effective|Ineffective|Needs improvement,Politics, Needs improvement],[Politics]
-29,7,Should the government invest more in renewable energy?,Yes|No,Politics,[Politics]
-30,4,Which branch of science interests you the most?,Physics|Biology|Chemistry|Astronomy|Earth Science|Psychology|Computer Science|Mathematics,Science, Chemistry, Astronomy, Earth Science, Psychology, Computer Science, Mathematics],[Science]
-31,5,Do you believe in the multiverse theory?,Yes|No,Science,[Science]
-32,10,What is the most fascinating scientific discovery of the last decade?,CRISPR-Cas9 gene editing|Gravitational waves|Exoplanets|Higgs boson|Dark matter|Quantum supremacy|Human genome mapping|Artificial intelligence advancements,Science, Exoplanets, Higgs boson, Dark matter, Quantum supremacy, Human genome mapping, Artificial intelligence advancements],[Science]
-33,3,How do you feel about the recent advancements in AI and machine learning?,Excited|Concerned|Indifferent]|[Scienc,Technology, Indifferent],[Science, Technology]
-34,4,Which area of climate science should receive more attention?,Climate modeling|Renewable energy|Ocean acidification|Deforestation|Polar ice melting|Extreme weather patterns]|[Scienc,Environment, Ocean acidification, Deforestation, Polar ice melting, Extreme weather patterns],[Science, Environment]
-35,7,Do you think string theory will eventually unify all forces in physics?,Yes|No|Unsure]|[Scienc,Physics, Unsure],[Science, Physics]
-36,7,What's your opinion on the use of genetically modified organisms (GMOs) in agriculture?,Supportive|Skeptical|Against]|[Scienc,Agriculture, Against],[Science, Agriculture]
-37,7,Should space exploration be a top priority for humanity's future?,Absolutely|It's important but not top priority|No|Not sure]|[Scienc,Space, No, Not sure],[Science, Space]
-38,4,Which scientific concept do you find the hardest to wrap your head around?,Quantum entanglement|Theory of relativity|Black holes|Parallel universes|Wave-particle duality,Science, Black holes, Parallel universes, Wave-particle duality],[Science]
-39,1,What's your stance on the ethical implications of human cloning?,Supportive for medical purposes|Against under any circumstances|Open to certain applications]|[Scienc,Ethics, Open to certain applications],[Science, Ethics]
-40,10,What's your favorite outdoor activity?,Hiking|Biking|Running|Swimming,Activity, Running, Swimming],[Activity]
-41,2,How often do you exercise?,Every day|Few times a week|Once a week|Rarely,Activity, Once a week, Rarely],[Activity]
-42,6,Preferred indoor activity during winter?,Reading|Watching movies|Cooking|Playing board games,Activity, Cooking, Playing board games],[Activity]
-43,6,Which team sport do you enjoy the most?,Soccer|Basketball|Volleyball|Hockey,Activity, Volleyball, Hockey],[Activity]
-44,4,Do you prefer solo workouts or group classes?,Solo workouts|Group classes|Both|Neither,Activity, Both, Neither],[Activity]
-45,3,What's your go-to weekend activity?,Shopping|Picnicking|Painting|Attending events,Activity, Painting, Attending events],[Activity]
-46,0,Have you tried any extreme sports?,Skydiving|Bungee jumping|Rock climbing|Whitewater rafting,Activity, Rock climbing, Whitewater rafting],[Activity]
-47,8,Indoor vs. outdoor yoga: Your preference?,Indoor yoga|Outdoor yoga|Depends on weather|I don't do yoga,Activity, Depends on weather, I don't do yoga],[Activity]
-48,1,How do you stay active during work hours?,Stretching exercises|Standing desk|Short walks|None,Activity, Short walks, None],[Activity]
-49,3,Do you enjoy dancing for fitness?,Love it|It's okay|Not my thing|Never tried,Activity, Not my thing, Never tried],[Activity]
-50,2,Which art style do you prefer?,Realism|Abstract|Impressionism|Cubism,Art, Impressionism, Cubism],[Art]
-51,4,What's your favorite color palette for artworks?,Vibrant|Monochromatic|Pastel|Earthy tones,Art, Pastel, Earthy tones],[Art]
-52,1,Who is your favorite classical artist?,Leonardo da Vinci|Michelangelo|Vincent van Gogh|Pablo Picasso,Art, Vincent van Gogh, Pablo Picasso],[Art]
-53,4,Do you enjoy modern digital art?,Yes|No|Sometimes,Art, Sometimes],[Art]
-54,0,What type of art inspires you the most?,Landscape|Portraiture|Still life|Surrealism,Art, Still life, Surrealism],[Art]
-55,7,How often do you visit art galleries?,Frequently|Occasionally|Rarely|Never,Art, Rarely, Never],[Art]
-56,5,What's your opinion on performance art?,Intriguing|Confusing|Fascinating|Not my thing,Art, Fascinating, Not my thing],[Art]
-57,6,Do you think graffiti is a valid form of artistic expression?,Yes|No|Depends on the context,Art, Depends on the context],[Art]
-58,5,Which art-related skill would you like to learn?,Drawing|Painting|Sculpting|Digital art,Art, Sculpting, Digital art],[Art]
-59,9,Is art an essential part of your life?,Absolutely|Somewhat|Not really|Not at all,Art, Not really, Not at all],[Art]
-60,9,What's your go-to skincare routine?,Cleansing|Toning|Moisturizing|Masking,Beauty, Moisturizing, Masking],[Beauty]
-61,1,Preferred lipstick shade for special occasions?,Red|Nude|Pink|Berry,Beauty, Pink, Berry],[Beauty]
-62,6,How often do you change your hairstyle?,Every few months|Once a year|Rarely|Never,Beauty, Rarely, Never],[Beauty]
-63,0,Top skincare ingredient: Hyaluronic Acid or Vitamin C?,Hyaluronic Acid|Vitamin C|Both|None,Beauty, Both, None],[Beauty]
-64,5,Your must-have makeup product?,Mascara|Lipstick|Foundation|Eyeliner,Beauty, Foundation, Eyeliner],[Beauty]
-65,5,DIY face mask ingredients: Honey or Clay?,Honey|Clay|Both|None,Beauty, Both, None],[Beauty]
-66,2,Opinion on cosmetic surgeries for enhancing beauty?,For it|Against it|Neutral|Depends,Beauty, Neutral, Depends],[Beauty]
-67,7,Preferred eyebrow shape: Arched or Straight?,Arched|Straight|Depends|Natural,Beauty, Depends, Natural],[Beauty]
-68,10,Favorite nail art style?,French tips|Geometric patterns|Floral designs|Minimalist,Beauty, Floral designs, Minimalist],[Beauty]
-69,9,How often do you cleanse your makeup brushes?,After every use|Weekly|Monthly|Rarely,Beauty, Monthly, Rarely],[Beauty]
-70,10,How do you manage your personal finances?,Budgeting|Investing|Saving|Paying off debt,Economy, Saving, Paying off debt],[Economy]
-71,2,Preferred payment method for online shopping?,Credit card|PayPal|Debit card|Cryptocurrency,Economy, Debit card, Cryptocurrency],[Economy]
-72,4,Opinions on universal basic income?,Supportive|Opposed|Unsure,Economy, Unsure],[Economy]
-73,3,Impact of automation on job market?,Positive|Negative|Neutral,Economy, Neutral],[Economy]
-74,7,Favorite money-saving tips?,Cooking at home|Using public transport|Buying second-hand items|Canceling subscriptions,Economy, Buying second-hand items, Canceling subscriptions],[Economy]
-75,3,Views on the gig economy?,Beneficial|Exploitative|Mixed feelings,Economy, Mixed feelings],[Economy]
-76,9,Investment preferences: Stocks vs. Real Estate?,Stocks|Real Estate|Depends on market conditions,Economy, Depends on market conditions],[Economy]
-77,2,Are you in favor of increasing minimum wage?,Yes|No|Undecided,Economy, Undecided],[Economy]
-78,5,Consumer behavior post-pandemic?,More online shopping|Supporting local businesses|Being frugal,Economy, Being frugal],[Economy]
-79,2,Effect of inflation on your financial decisions?,Adjusting budget|Seeking higher-yield investments|Delaying major purchases,Economy, Delaying major purchases],[Economy]
-80,7,What's your favorite fashion trend?,Floral prints|Athleisure|Vintage|Streetwear|Bohemian|Minimalist|Casual chic|Formalwear|Classic|Edgy,Fashion, Vintage, Streetwear, Bohemian, Minimalist, Casual chic, Formalwear, Classic, Edgy],[Fashion]
-81,9,Which color dominates your wardrobe?,Black|Blue|White|Gray|Red|Green|Brown|Purple|Yellow|Pink,Fashion, White, Gray, Red, Green, Brown, Purple, Yellow, Pink],[Fashion]
-82,9,How often do you shop for new clothes?,Once a month|Every season change|Only during sales|Rarely|When I need something specific|I'm always shopping!,Fashion, Only during sales, Rarely, When I need something specific, I'm always shopping!],[Fashion]
-83,4,What's your go-to footwear style?,Sneakers|High heels|Sandals|Boots|Flats|Loafers|Espadrilles|Slippers|Flip-flops|Wedges,Fashion, Sandals, Boots, Flats, Loafers, Espadrilles, Slippers, Flip-flops, Wedges],[Fashion]
-84,3,Are you a fan of designer brands?,Yes|I love designer brands!|No|I prefer affordable options,Fashion, No, I prefer affordable options],[Fashion]
-85,2,How do you accessorize your outfits?,Statement jewelry|Scarves and hats|Watches|Belts|Sunglasses|Handbags|No accessories|Other,Fashion, Watches, Belts, Sunglasses, Handbags, No accessories, Other],[Fashion]
-86,1,What's your opinion on fast fashion?,I love it for trendy pieces|I avoid it for ethical reasons|It's convenient and affordable|I don't have a strong opinion,Fashion, It's convenient and affordable, I don't have a strong opinion],[Fashion]
-87,3,Do you follow fashion influencers on social media?,Yes|they inspire my style|No|I prefer my own style|I'm not into social media,Fashion, No, I prefer my own style, I'm not into social media],[Fashion]
-88,3,Which decade has the best fashion?,1960s|1970s|1980s|1990s|2000s|2010s|I like a mix of styles,Fashion, 1980s, 1990s, 2000s, 2010s, I like a mix of styles],[Fashion]
-89,0,What's your favorite board game?,Monopoly|Scrabble|Catan|Uno|Chess,Fun, Catan, Uno, Chess],[Fun]
-90,5,Which movie genre do you enjoy the most?,Comedy|Action|Drama|Sci-Fi|Horror,Fun, Drama, Sci-Fi, Horror],[Fun]
-91,9,What's your go-to karaoke song?,Bohemian Rhapsody|Sweet Caroline|Don't Stop Believin'|Happy|Billie Jean,Fun, Don't Stop Believin', Happy, Billie Jean],[Fun]
-92,6,If you could time travel,here would you go?|[Past|Future|Ancient Civilization|Dinosaurs,Fun, Future, Ancient Civilization, Dinosaurs],[Fun]
-93,6,What's your preferred way to spend a lazy Sunday?,Reading|Watching TV|Taking a nap|Going for a walk,Fun, Taking a nap, Going for a walk],[Fun]
-94,5,Do you believe in extraterrestrial life?,Yes|No|Not sure,Fun, Not sure],[Fun]
-95,2,What's the best prank you've pulled off?,Fake spider|Whoopie cushion|Fake phone call|Prank call,Fun, Fake phone call, Prank call],[Fun]
-96,7,If you had a superpower,hat would it be?|[Flight|Invisibility|Telepathy|Super strength,Fun, Invisibility, Telepathy, Super strength],[Fun]
-97,5,What's your favorite theme park ride?,Roller coaster|Ferris wheel|Haunted house|Water slide,Fun, Haunted house, Water slide],[Fun]
-98,8,Which fictional world would you like to visit?,Hogwarts (Harry Potter)|Middle-earth (Lord of the Rings)|Narnia (The Chronicles of Narnia)|Wonderland (Alice in Wonderland),Fun, Narnia (The Chronicles of Narnia), Wonderland (Alice in Wonderland)],[Fun]
-99,7,How often do you exercise per week?,Every day|3-4 times|1-2 times|Rarely|Never,Health, 1-2 times, Rarely, Never],[Health]
-100,3,What's your favorite form of physical activity?,Running|Yoga|Swimming|Cycling|Dancing,Health, Swimming, Cycling, Dancing],[Health]
-101,6,How many hours of sleep do you get on average?,Less than 6 hours|6-7 hours|7-8 hours|More than 8 hours,Health, 7-8 hours, More than 8 hours],[Health]
-102,5,Do you prefer home-cooked meals or takeout?,Home-cooked meals|Takeout|Both equally,Health, Both equally],[Health]
-103,1,How do you manage stress?,Meditation|Exercise|Reading|Spending time with loved ones|Watching movies,Health, Reading, Spending time with loved ones, Watching movies],[Health]
-104,9,Do you prioritize mental health in your daily routine?,Yes|No|Sometimes,Health, Sometimes],[Health]
-105,10,What's your favorite healthy snack?,Fruits|Nuts|Greek yogurt|Veggie sticks with hummus|Rice cakes,Health, Greek yogurt, Veggie sticks with hummus, Rice cakes],[Health]
-106,4,How often do you drink water throughout the day?,Frequently|Regularly|Not often,Health, Not often],[Health]
-107,6,Do you track your steps or physical activity?,Yes|No|Occasionally,Health, Occasionally],[Health]
-108,5,What's your go-to remedy for a common cold?,Hot tea with honey|Chicken soup|Rest and sleep|Over-the-counter medicine,Health, Rest and sleep, Over-the-counter medicine],[Health]
-109,9,What's your favorite music genre?,Pop|Rock|Hip-hop|Classical|Jazz,Music, Hip-hop, Classical, Jazz],[Music]
-110,7,Which instrument would you like to learn to play?,Guitar|Piano|Violin|Drums|Saxophone,Music, Violin, Drums, Saxophone],[Music]
-111,2,Do you prefer live concerts or recorded music?,Live concerts|Recorded music|Both equally,Music, Both equally],[Music]
-112,6,Who's your favorite music artist or band?,Beyoncé|The Beatles|Taylor Swift|Kendrick Lamar|Ed Sheeran,Music, Taylor Swift, Kendrick Lamar, Ed Sheeran],[Music]
-113,3,What's your go-to song for a good mood?,Happy|Uptown Funk|Don't Stop Believin'|Happy|Can't Stop the Feeling!,Music, Don't Stop Believin', Happy, Can't Stop the Feeling!],[Music]
-114,1,How do you listen to music most often?,Streaming platforms|Radio|Physical CDs|Vinyl records,Music, Physical CDs, Vinyl records],[Music]
-115,6,Which era of music do you enjoy the most?,60s-70s|80s|90s|2000s|Modern,Music, 90s, 2000s, Modern],[Music]
-116,1,What's your favorite music-related memory?,First concert|Road trip playlist|Singing in the shower|Dance party with friends,Music, Singing in the shower, Dance party with friends],[Music]
-117,10,Do you like to dance to music?,Yes|No|Only in private,Music, Only in private],[Music]
-118,8,What's the last song you listened to?,Song title,Music
-119,1,What's your favorite type of pet?,Dog|Cat|Bird|Fish|Hamster,Pets, Bird, Fish, Hamster],[Pets]
-120,1,Do you have any allergies to pets?,Yes|No,Pets,[Pets]
-121,7,What's the best name for a pet dog?,Buddy|Max|Bella|Daisy|Charlie,Pets, Bella, Daisy, Charlie],[Pets]
-122,1,Which type of cat do you prefer?,Siamese|Persian|Maine Coon|Ragdoll|Bengal,Pets, Maine Coon, Ragdoll, Bengal],[Pets]
-123,7,How do you feel about exotic pets?,Love them|Not a fan|It depends,Pets, It depends],[Pets]
-124,7,What's the most important factor in choosing a pet?,Compatibility|Size|Fur type|Activity level,Pets, Fur type, Activity level],[Pets]
-125,3,Do you believe in pet therapy for mental health?,Yes|No|Not sure,Pets, Not sure],[Pets]
-126,5,What's your preferred way to play with pets?,Fetching|Chase|Tug-of-war|Hide-and-seek|Laser pointer,Pets, Tug-of-war, Hide-and-seek, Laser pointer],[Pets]
-127,1,Do you dress up your pets in costumes?,Yes|No|Occasionally,Pets, Occasionally],[Pets]
-128,8,What's your favorite memory with a pet?,Story,Pets
-129,1,What's your dream travel destination?,Italy|Japan|Australia|Maldives|New Zealand,Travel, Australia, Maldives, New Zealand],[Travel]
-130,6,How often do you travel for leisure?,Multiple times a year|Once a year|Every few years|Rarely,Travel, Every few years, Rarely],[Travel]
-131,6,What's your preferred mode of transportation when traveling?,Airplane|Car|Train|Cruise ship|Bicycle,Travel, Train, Cruise ship, Bicycle],[Travel]
-132,0,Do you prefer solo travel or traveling with companions?,Solo travel|With family|With friends|Depends on the destination,Travel, With friends, Depends on the destination],[Travel]
-133,3,Which type of accommodation do you prefer?,Hotel|Airbnb|Hostel|Resort|Camping,Travel, Hostel, Resort, Camping],[Travel]
-134,3,What's your favorite travel activity?,Exploring local cuisine|Sightseeing|Relaxing on the beach|Adventure sports|Shopping,Travel, Relaxing on the beach, Adventure sports, Shopping],[Travel]
-135,4,What's the most important factor when choosing a travel destination?,Culture|Natural beauty|Activities|Cost|Safety,Travel, Activities, Cost, Safety],[Travel]
-136,0,Do you keep a travel journal or blog?,Yes|No|Sometimes,Travel, Sometimes],[Travel]
-137,9,How do you plan your travel itineraries?,Detailed planning|Flexible schedule|Guided tours|Spontaneous decisions,Travel, Guided tours, Spontaneous decisions],[Travel]
-138,1,What's your go-to travel souvenir to bring back home?,Local food or drink|Souvenirs|Photos|Artwork|Clothing,Travel, Photos, Artwork, Clothing],[Travel]
-139,7,What's your all-time favorite movie?,The Shawshank Redemption|The Godfather|The Dark Knight|Pulp Fiction|Forrest Gump,Movies & TV shows, The Dark Knight, Pulp Fiction, Forrest Gump],[Movies & TV shows]
-140,0,Do you prefer binge-watching TV shows or watching movies?,Binge-watching TV shows|Watching movies|Both equally,Movies & TV shows, Both equally],[Movies & TV shows]
-141,6,Which movie genre do you enjoy the most?,Action|Comedy|Drama|Sci-Fi|Fantasy,Movies & TV shows, Drama, Sci-Fi, Fantasy],[Movies & TV shows]
-142,8,What's the last movie or TV show you watched?,Title,Movies & TV shows
-143,9,Do you like to watch documentaries?,Yes|No|Sometimes,Movies & TV shows, Sometimes],[Movies & TV shows]
-144,8,What's your preferred movie-watching location?,Movie theater|Home theater|Couch at home|Outdoor screening,Movies & TV shows, Couch at home, Outdoor screening],[Movies & TV shows]
-145,7,Which actor or actress do you admire the most?,Meryl Streep|Leonardo DiCaprio|Scarlett Johansson|Tom Hanks|Jennifer Lawrence,Movies & TV shows, Scarlett Johansson, Tom Hanks, Jennifer Lawrence],[Movies & TV shows]
-146,8,Do you usually read reviews before watching a movie or TV show?,Yes|No|Occasionally,Movies & TV shows, Occasionally],[Movies & TV shows]
-147,0,What's your favorite movie quote?,Quote,Movies & TV shows
-148,9,Do you enjoy discussing plot twists and theories after watching a movie or TV show?,Yes|No|Depends on the content,Movies & TV shows, Depends on the content],[Movies & TV shows]
-149,3,What's your favorite color scheme for home decor?,Neutral tones|Bright and colorful|Earthy and natural|Monochrome,Home Décor, Earthy and natural, Monochrome],[Home Décor]
-150,0,Do you enjoy DIY home decor projects?,Yes|No|Sometimes,Home Décor, Sometimes],[Home Décor]
-151,7,What's your preferred style for furniture?,Modern|Rustic|Minimalist|Vintage|Bohemian,Home Décor, Minimalist, Vintage, Bohemian],[Home Décor]
-152,5,Which room in your home do you prioritize decorating the most?,Living room|Bedroom|Kitchen|Bathroom|Home office,Home Décor, Kitchen, Bathroom, Home office],[Home Décor]
-153,1,Do you prefer open shelving or closed cabinets for storage?,Open shelving|Closed cabinets|Depends on the room,Home Décor, Depends on the room],[Home Décor]
-154,2,How do you like to add greenery to your home?,Indoor plants|Succulents|Flowers|Artificial plants,Home Décor, Flowers, Artificial plants],[Home Décor]
-155,9,What's your go-to home fragrance?,Candles|Diffusers|Incense|Potpourri|Essential oils,Home Décor, Incense, Potpourri, Essential oils],[Home Décor]
-156,10,What's your favorite type of wall decor?,Paintings|Photographs|Mirrors|Wall decals|Tapestry,Home Décor, Mirrors, Wall decals, Tapestry],[Home Décor]
-157,7,How often do you change the decor in your home?,Seasonally|Yearly|Rarely|Never,Home Décor, Rarely, Never],[Home Décor]
-158,3,What's your favorite way to personalize your living space?,Personal photos|Custom artwork|DIY crafts|Souvenirs from travels,Home Décor, DIY crafts, Souvenirs from travels],[Home Décor]
+poll_ID,author_ID,title,ptio,opi
+0,1,Which programming language is your favorite?,ython|Java|JavaScript|C++|Rub,ec
+1,1,What's your preferred smartphone brand?,pple|Samsung|Google|OnePlus|Xiaom,ec
+2,4,How often do you upgrade your computer?,very year|Every 2 years|Every 3 years|Rarel,ec
+3,10,Which tech gadget can't you live without?,martphone|Laptop|Smartwatch|Table,ec
+4,8,Are you excited about the upcoming VR technologies?,es|No|Mayb,ec
+5,4,Do you use a password manager for online security?,es|No|Sometime,ec
+6,1,What's your opinion on AI replacing human jobs?,ositive|Negative|Neutra,ec
+7,4,How many hours a day do you spend on the internet?,ess than 2 hours|2-4 hours|4-6 hours|More than 6 hour,ec
+8,3,Which operating system do you use the most?,indows|macOS|Linux|Othe,ec
+9,1,Do you think cryptocurrency is the future of finance?,es|No|It's complicate,ec
+10,10,Which sport do you enjoy the most?,occer|Basketball|Tennis|Cricket|Basebal,por
+11,5,What's your favorite Olympic event?,wimming|Gymnastics|Track and Field|Diving|Cyclin,por
+12,10,Do you prefer team sports or individual sports?,eam sports|Individual sport,por
+13,5,Who is your all-time favorite athlete?,ichael Jordan|Serena Williams|Usain Bolt|Cristiano Ronaldo|Simone Bile,por
+14,2,Which sports league do you follow the closest?,FL|NBA|Premier League|MLB|La Lig,por
+15,5,Have you ever participated in a marathon?,es|N,por
+16,4,What's your opinion on esports?,ove it|Don't understand it|Indifferent]|[Spo,ec
+17,1,Should sports be compulsory in schools?,es|No]|[Spo,ducatio
+18,1,Do you enjoy watching the Olympics?,es|No|Depends on the event,por
+19,8,What's the most exciting sports moment you've witnessed?,ast-minute goal|Buzzer-beater shot|World record broke,por
+20,8,Should taxes be increased for the wealthy?,es|N,olitic
+21,6,What is your opinion on healthcare reform?,upport|Oppose|Neutra,olitic
+22,10,Is climate change a top priority for the government?,es|N,olitic
+23,10,Should there be stricter regulations on social media?,gree|Disagree|Undecide,olitic
+24,1,Do you believe in term limits for politicians?,es|N,olitic
+25,10,Is foreign aid beneficial for diplomatic relations?,eneficial|Not beneficial|Depend,olitic
+26,3,Should the voting age be lowered to 16?,es|N,olitic
+27,4,Do you think campaign finance laws need reform?,trongly agree|Somewhat agree|Neutral|Somewhat disagree|Strongly disagre,olitic
+28,0,Is the current immigration system effective?,ffective|Ineffective|Needs improvemen,olitic
+29,7,Should the government invest more in renewable energy?,es|N,olitic
+30,4,Which branch of science interests you the most?,hysics|Biology|Chemistry|Astronomy|Earth Science|Psychology|Computer Science|Mathematic,cienc
+31,5,Do you believe in the multiverse theory?,es|N,cienc
+32,10,What is the most fascinating scientific discovery of the last decade?,RISPR-Cas9 gene editing|Gravitational waves|Exoplanets|Higgs boson|Dark matter|Quantum supremacy|Human genome mapping|Artificial intelligence advancement,cienc
+33,3,How do you feel about the recent advancements in AI and machine learning?,xcited|Concerned|Indifferent]|[Scien,echnolog
+34,4,Which area of climate science should receive more attention?,limate modeling|Renewable energy|Ocean acidification|Deforestation|Polar ice melting|Extreme weather patterns]|[Scien,nvironmen
+35,7,Do you think string theory will eventually unify all forces in physics?,es|No|Unsure]|[Scien,hysic
+36,7,What's your opinion on the use of genetically modified organisms (GMOs) in agriculture?,upportive|Skeptical|Against]|[Scien,gricultur
+37,7,Should space exploration be a top priority for humanity's future?,bsolutely|It's important but not top priority|No|Not sure]|[Scien,pac
+38,4,Which scientific concept do you find the hardest to wrap your head around?,uantum entanglement|Theory of relativity|Black holes|Parallel universes|Wave-particle dualit,cienc
+39,1,What's your stance on the ethical implications of human cloning?,upportive for medical purposes|Against under any circumstances|Open to certain applications]|[Scien,thic
+40,10,What's your favorite outdoor activity?,iking|Biking|Running|Swimmin,ctivit
+41,2,How often do you exercise?,very day|Few times a week|Once a week|Rarel,ctivit
+42,6,Preferred indoor activity during winter?,eading|Watching movies|Cooking|Playing board game,ctivit
+43,6,Which team sport do you enjoy the most?,occer|Basketball|Volleyball|Hocke,ctivit
+44,4,Do you prefer solo workouts or group classes?,olo workouts|Group classes|Both|Neithe,ctivit
+45,3,What's your go-to weekend activity?,hopping|Picnicking|Painting|Attending event,ctivit
+46,0,Have you tried any extreme sports?,kydiving|Bungee jumping|Rock climbing|Whitewater raftin,ctivit
+47,8,Indoor vs. outdoor yoga: Your preference?,ndoor yoga|Outdoor yoga|Depends on weather|I don't do yog,ctivit
+48,1,How do you stay active during work hours?,tretching exercises|Standing desk|Short walks|Non,ctivit
+49,3,Do you enjoy dancing for fitness?,ove it|It's okay|Not my thing|Never trie,ctivit
+50,2,Which art style do you prefer?,ealism|Abstract|Impressionism|Cubis,r
+51,4,What's your favorite color palette for artworks?,ibrant|Monochromatic|Pastel|Earthy tone,r
+52,1,Who is your favorite classical artist?,eonardo da Vinci|Michelangelo|Vincent van Gogh|Pablo Picass,r
+53,4,Do you enjoy modern digital art?,es|No|Sometime,r
+54,0,What type of art inspires you the most?,andscape|Portraiture|Still life|Surrealis,r
+55,7,How often do you visit art galleries?,requently|Occasionally|Rarely|Neve,r
+56,5,What's your opinion on performance art?,ntriguing|Confusing|Fascinating|Not my thin,r
+57,6,Do you think graffiti is a valid form of artistic expression?,es|No|Depends on the contex,r
+58,5,Which art-related skill would you like to learn?,rawing|Painting|Sculpting|Digital ar,r
+59,9,Is art an essential part of your life?,bsolutely|Somewhat|Not really|Not at al,r
+60,9,What's your go-to skincare routine?,leansing|Toning|Moisturizing|Maskin,eaut
+61,1,Preferred lipstick shade for special occasions?,ed|Nude|Pink|Berr,eaut
+62,6,How often do you change your hairstyle?,very few months|Once a year|Rarely|Neve,eaut
+63,0,Top skincare ingredient: Hyaluronic Acid or Vitamin C?,yaluronic Acid|Vitamin C|Both|Non,eaut
+64,5,Your must-have makeup product?,ascara|Lipstick|Foundation|Eyeline,eaut
+65,5,DIY face mask ingredients: Honey or Clay?,oney|Clay|Both|Non,eaut
+66,2,Opinion on cosmetic surgeries for enhancing beauty?,or it|Against it|Neutral|Depend,eaut
+67,7,Preferred eyebrow shape: Arched or Straight?,rched|Straight|Depends|Natura,eaut
+68,10,Favorite nail art style?,rench tips|Geometric patterns|Floral designs|Minimalis,eaut
+69,9,How often do you cleanse your makeup brushes?,fter every use|Weekly|Monthly|Rarel,eaut
+70,10,How do you manage your personal finances?,udgeting|Investing|Saving|Paying off deb,conom
+71,2,Preferred payment method for online shopping?,redit card|PayPal|Debit card|Cryptocurrenc,conom
+72,4,Opinions on universal basic income?,upportive|Opposed|Unsur,conom
+73,3,Impact of automation on job market?,ositive|Negative|Neutra,conom
+74,7,Favorite money-saving tips?,ooking at home|Using public transport|Buying second-hand items|Canceling subscription,conom
+75,3,Views on the gig economy?,eneficial|Exploitative|Mixed feeling,conom
+76,9,Investment preferences: Stocks vs. Real Estate?,tocks|Real Estate|Depends on market condition,conom
+77,2,Are you in favor of increasing minimum wage?,es|No|Undecide,conom
+78,5,Consumer behavior post-pandemic?,ore online shopping|Supporting local businesses|Being fruga,conom
+79,2,Effect of inflation on your financial decisions?,djusting budget|Seeking higher-yield investments|Delaying major purchase,conom
+80,7,What's your favorite fashion trend?,loral prints|Athleisure|Vintage|Streetwear|Bohemian|Minimalist|Casual chic|Formalwear|Classic|Edg,ashio
+81,9,Which color dominates your wardrobe?,lack|Blue|White|Gray|Red|Green|Brown|Purple|Yellow|Pin,ashio
+82,9,How often do you shop for new clothes?,nce a month|Every season change|Only during sales|Rarely|When I need something specific|I'm always shopping,ashio
+83,4,What's your go-to footwear style?,neakers|High heels|Sandals|Boots|Flats|Loafers|Espadrilles|Slippers|Flip-flops|Wedge,ashio
+84,3,Are you a fan of designer brands?,es|I love designer brands!|No|I prefer affordable option,ashio
+85,2,How do you accessorize your outfits?,tatement jewelry|Scarves and hats|Watches|Belts|Sunglasses|Handbags|No accessories|Othe,ashio
+86,1,What's your opinion on fast fashion?, love it for trendy pieces|I avoid it for ethical reasons|It's convenient and affordable|I don't have a strong opinio,ashio
+87,3,Do you follow fashion influencers on social media?,es|they inspire my style|No|I prefer my own style|I'm not into social medi,ashio
+88,3,Which decade has the best fashion?,960s|1970s|1980s|1990s|2000s|2010s|I like a mix of style,ashio
+89,0,What's your favorite board game?,onopoly|Scrabble|Catan|Uno|Ches,u
+90,5,Which movie genre do you enjoy the most?,omedy|Action|Drama|Sci-Fi|Horro,u
+91,9,What's your go-to karaoke song?,ohemian Rhapsody|Sweet Caroline|Don't Stop Believin'|Happy|Billie Jea,u
+92,6,If you could time travel,ere would you go?|[Past|Future|Ancient Civilization|Dinosaur,u
+93,6,What's your preferred way to spend a lazy Sunday?,eading|Watching TV|Taking a nap|Going for a wal,u
+94,5,Do you believe in extraterrestrial life?,es|No|Not sur,u
+95,2,What's the best prank you've pulled off?,ake spider|Whoopie cushion|Fake phone call|Prank cal,u
+96,7,If you had a superpower,at would it be?|[Flight|Invisibility|Telepathy|Super strengt,u
+97,5,What's your favorite theme park ride?,oller coaster|Ferris wheel|Haunted house|Water slid,u
+98,8,Which fictional world would you like to visit?,ogwarts (Harry Potter)|Middle-earth (Lord of the Rings)|Narnia (The Chronicles of Narnia)|Wonderland (Alice in Wonderland,u
+99,7,How often do you exercise per week?,very day|3-4 times|1-2 times|Rarely|Neve,ealt
+100,3,What's your favorite form of physical activity?,unning|Yoga|Swimming|Cycling|Dancin,ealt
+101,6,How many hours of sleep do you get on average?,ess than 6 hours|6-7 hours|7-8 hours|More than 8 hour,ealt
+102,5,Do you prefer home-cooked meals or takeout?,ome-cooked meals|Takeout|Both equall,ealt
+103,1,How do you manage stress?,editation|Exercise|Reading|Spending time with loved ones|Watching movie,ealt
+104,9,Do you prioritize mental health in your daily routine?,es|No|Sometime,ealt
+105,10,What's your favorite healthy snack?,ruits|Nuts|Greek yogurt|Veggie sticks with hummus|Rice cake,ealt
+106,4,How often do you drink water throughout the day?,requently|Regularly|Not ofte,ealt
+107,6,Do you track your steps or physical activity?,es|No|Occasionall,ealt
+108,5,What's your go-to remedy for a common cold?,ot tea with honey|Chicken soup|Rest and sleep|Over-the-counter medicin,ealt
+109,9,What's your favorite music genre?,op|Rock|Hip-hop|Classical|Jaz,usi
+110,7,Which instrument would you like to learn to play?,uitar|Piano|Violin|Drums|Saxophon,usi
+111,2,Do you prefer live concerts or recorded music?,ive concerts|Recorded music|Both equall,usi
+112,6,Who's your favorite music artist or band?,eyoncé|The Beatles|Taylor Swift|Kendrick Lamar|Ed Sheera,usi
+113,3,What's your go-to song for a good mood?,appy|Uptown Funk|Don't Stop Believin'|Happy|Can't Stop the Feeling,usi
+114,1,How do you listen to music most often?,treaming platforms|Radio|Physical CDs|Vinyl record,usi
+115,6,Which era of music do you enjoy the most?,0s-70s|80s|90s|2000s|Moder,usi
+116,1,What's your favorite music-related memory?,irst concert|Road trip playlist|Singing in the shower|Dance party with friend,usi
+117,10,Do you like to dance to music?,es|No|Only in privat,usi
+118,8,What's the last song you listened to?,ong titl,usi
+119,1,What's your favorite type of pet?,og|Cat|Bird|Fish|Hamste,et
+120,1,Do you have any allergies to pets?,es|N,et
+121,7,What's the best name for a pet dog?,uddy|Max|Bella|Daisy|Charli,et
+122,1,Which type of cat do you prefer?,iamese|Persian|Maine Coon|Ragdoll|Benga,et
+123,7,How do you feel about exotic pets?,ove them|Not a fan|It depend,et
+124,7,What's the most important factor in choosing a pet?,ompatibility|Size|Fur type|Activity leve,et
+125,3,Do you believe in pet therapy for mental health?,es|No|Not sur,et
+126,5,What's your preferred way to play with pets?,etching|Chase|Tug-of-war|Hide-and-seek|Laser pointe,et
+127,1,Do you dress up your pets in costumes?,es|No|Occasionall,et
+128,8,What's your favorite memory with a pet?,tor,et
+129,1,What's your dream travel destination?,taly|Japan|Australia|Maldives|New Zealan,rave
+130,6,How often do you travel for leisure?,ultiple times a year|Once a year|Every few years|Rarel,rave
+131,6,What's your preferred mode of transportation when traveling?,irplane|Car|Train|Cruise ship|Bicycl,rave
+132,0,Do you prefer solo travel or traveling with companions?,olo travel|With family|With friends|Depends on the destinatio,rave
+133,3,Which type of accommodation do you prefer?,otel|Airbnb|Hostel|Resort|Campin,rave
+134,3,What's your favorite travel activity?,xploring local cuisine|Sightseeing|Relaxing on the beach|Adventure sports|Shoppin,rave
+135,4,What's the most important factor when choosing a travel destination?,ulture|Natural beauty|Activities|Cost|Safet,rave
+136,0,Do you keep a travel journal or blog?,es|No|Sometime,rave
+137,9,How do you plan your travel itineraries?,etailed planning|Flexible schedule|Guided tours|Spontaneous decision,rave
+138,1,What's your go-to travel souvenir to bring back home?,ocal food or drink|Souvenirs|Photos|Artwork|Clothin,rave
+139,7,What's your all-time favorite movie?,he Shawshank Redemption|The Godfather|The Dark Knight|Pulp Fiction|Forrest Gum,ovies & TV show
+140,0,Do you prefer binge-watching TV shows or watching movies?,inge-watching TV shows|Watching movies|Both equall,ovies & TV show
+141,6,Which movie genre do you enjoy the most?,ction|Comedy|Drama|Sci-Fi|Fantas,ovies & TV show
+142,8,What's the last movie or TV show you watched?,itl,ovies & TV show
+143,9,Do you like to watch documentaries?,es|No|Sometime,ovies & TV show
+144,8,What's your preferred movie-watching location?,ovie theater|Home theater|Couch at home|Outdoor screenin,ovies & TV show
+145,7,Which actor or actress do you admire the most?,eryl Streep|Leonardo DiCaprio|Scarlett Johansson|Tom Hanks|Jennifer Lawrenc,ovies & TV show
+146,8,Do you usually read reviews before watching a movie or TV show?,es|No|Occasionall,ovies & TV show
+147,0,What's your favorite movie quote?,uot,ovies & TV show
+148,9,Do you enjoy discussing plot twists and theories after watching a movie or TV show?,es|No|Depends on the conten,ovies & TV show
+149,3,What's your favorite color scheme for home decor?,eutral tones|Bright and colorful|Earthy and natural|Monochrom,ome Déco
+150,0,Do you enjoy DIY home decor projects?,es|No|Sometime,ome Déco
+151,7,What's your preferred style for furniture?,odern|Rustic|Minimalist|Vintage|Bohemia,ome Déco
+152,5,Which room in your home do you prioritize decorating the most?,iving room|Bedroom|Kitchen|Bathroom|Home offic,ome Déco
+153,1,Do you prefer open shelving or closed cabinets for storage?,pen shelving|Closed cabinets|Depends on the roo,ome Déco
+154,2,How do you like to add greenery to your home?,ndoor plants|Succulents|Flowers|Artificial plant,ome Déco
+155,9,What's your go-to home fragrance?,andles|Diffusers|Incense|Potpourri|Essential oil,ome Déco
+156,10,What's your favorite type of wall decor?,aintings|Photographs|Mirrors|Wall decals|Tapestr,ome Déco
+157,7,How often do you change the decor in your home?,easonally|Yearly|Rarely|Neve,ome Déco
+158,3,What's your favorite way to personalize your living space?,ersonal photos|Custom artwork|DIY crafts|Souvenirs from travel,ome Déc
