@@ -91,11 +91,11 @@ poll_ID,author_ID,title,option,topic
 89,3,What's your favorite board game?,Monopoly|Scrabble|Catan|Uno|Chess,Fun
 90,3,Which movie genre do you enjoy the most?,Comedy|Action|Drama|Sci-Fi|Horror,Fun
 91,0,What's your go-to karaoke song?,Bohemian Rhapsody|Sweet Caroline|Don't Stop Believin'|Happy|Billie Jean,Fun
-92,6,If you could time travel where would you go?,Past|Future|Ancient Civilization|Dinosaurs|Fun
+92,6,If you could time travel where would you go?,Past|Future|Ancient Civilization|Dinosaurs,Fun
 93,5,What's your preferred way to spend a lazy Sunday?,Reading|Watching TV|Taking a nap|Going for a walk,Fun
 94,6,Do you believe in extraterrestrial life?,Yes|No|Not sure,Fun
 95,9,What's the best prank you've pulled off?,Fake spider|Whoopie cushion|Fake phone call|Prank call,Fun
-96,9,If you had a superpower what would it be?,Flight|Invisibility|Telepathy|Super strength|Fun
+96,9,If you had a superpower what would it be?,Flight|Invisibility|Telepathy|Super strength,Fun
 97,5,What's your favorite theme park ride?,Roller coaster|Ferris wheel|Haunted house|Water slide,Fun
 98,2,Which fictional world would you like to visit?,Hogwarts (Harry Potter)|Middle-earth (Lord of the Rings)|Narnia (The Chronicles of Narnia)|Wonderland (Alice in Wonderland),Fun
 99,2,How often do you exercise per week?,Every day|3-4 times|1-2 times|Rarely|Never,Health
