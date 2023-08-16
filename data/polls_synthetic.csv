@@ -15,8 +15,8 @@ poll_ID,author_ID,title,option,topic
 13,5,Who is your all-time favorite athlete?,Michael Jordan|Serena Williams|Usain Bolt|Cristiano Ronaldo|Simone Biles,Sport
 14,2,Which sports league do you follow the closest?,NFL|NBA|Premier League|MLB|La Liga,Sport
 15,5,Have you ever participated in a marathon?,Yes|No,Sport
-16,4,What's your opinion on esports?,Love it|Don't understand it|Indifferent]|[Spor,Tech
-17,1,Should sports be compulsory in schools?,Yes|No]|[Spor,Education
+16,4,What's your opinion on esports?,Love it|Don't understand it|Indifferent,Sport|Tech
+17,1,Should sports be compulsory in schools?,Yes|No,Spor|Education
 18,1,Do you enjoy watching the Olympics?,Yes|No|Depends on the events,Sport
 19,8,What's the most exciting sports moment you've witnessed?,Last-minute goal|Buzzer-beater shot|World record broken,Sport
 20,8,Should taxes be increased for the wealthy?,Yes|No,Politics
@@ -32,13 +32,13 @@ poll_ID,author_ID,title,option,topic
 30,4,Which branch of science interests you the most?,Physics|Biology|Chemistry|Astronomy|Earth Science|Psychology|Computer Science|Mathematics,Science
 31,5,Do you believe in the multiverse theory?,Yes|No,Science
 32,10,What is the most fascinating scientific discovery of the last decade?,CRISPR-Cas9 gene editing|Gravitational waves|Exoplanets|Higgs boson|Dark matter|Quantum supremacy|Human genome mapping|Artificial intelligence advancements,Science
-33,3,How do you feel about the recent advancements in AI and machine learning?,Excited|Concerned|Indifferent]|[Scienc,Technology
-34,4,Which area of climate science should receive more attention?,Climate modeling|Renewable energy|Ocean acidification|Deforestation|Polar ice melting|Extreme weather patterns]|[Scienc,Environment
-35,7,Do you think string theory will eventually unify all forces in physics?,Yes|No|Unsure]|[Scienc,Physics
-36,7,What's your opinion on the use of genetically modified organisms (GMOs) in agriculture?,Supportive|Skeptical|Against]|[Scienc,Agriculture
-37,7,Should space exploration be a top priority for humanity's future?,Absolutely|It's important but not top priority|No|Not sure]|[Scienc,Space
+33,3,How do you feel about the recent advancements in AI and machine learning?,Excited|Concerned|Indifferent,Scienc|Technology
+34,4,Which area of climate science should receive more attention?,Climate modeling|Renewable energy|Ocean acidification|Deforestation|Polar ice melting|Extreme weather patterns,Scienc|Environment
+35,7,Do you think string theory will eventually unify all forces in physics?,Yes|No|Unsure,Scienc|Physics
+36,7,What's your opinion on the use of genetically modified organisms (GMOs) in agriculture?,Supportive|Skeptical|Against,Scienc|Agriculture
+37,7,Should space exploration be a top priority for humanity's future?,Absolutely|It's important but not top priority|No|Not sure,Scienc|Space
 38,4,Which scientific concept do you find the hardest to wrap your head around?,Quantum entanglement|Theory of relativity|Black holes|Parallel universes|Wave-particle duality,Science
-39,1,What's your stance on the ethical implications of human cloning?,Supportive for medical purposes|Against under any circumstances|Open to certain applications]|[Scienc,Ethics
+39,1,What's your stance on the ethical implications of human cloning?,Supportive for medical purposes|Against under any circumstances|Open to certain applications,Scienc|Ethics
 40,10,What's your favorite outdoor activity?,Hiking|Biking|Running|Swimming,Activity
 41,2,How often do you exercise?,Every day|Few times a week|Once a week|Rarely,Activity
 42,6,Preferred indoor activity during winter?,Reading|Watching movies|Cooking|Playing board games,Activity
@@ -91,11 +91,11 @@ poll_ID,author_ID,title,option,topic
 89,0,What's your favorite board game?,Monopoly|Scrabble|Catan|Uno|Chess,Fun
 90,5,Which movie genre do you enjoy the most?,Comedy|Action|Drama|Sci-Fi|Horror,Fun
 91,9,What's your go-to karaoke song?,Bohemian Rhapsody|Sweet Caroline|Don't Stop Believin'|Happy|Billie Jean,Fun
-92,6,If you could time travel,here would you go?|[Past|Future|Ancient Civilization|Dinosaurs,Fun
+92,6,If you could time travel where would you go?,Past|Future|Ancient Civilization|Dinosaurs|Fun
 93,6,What's your preferred way to spend a lazy Sunday?,Reading|Watching TV|Taking a nap|Going for a walk,Fun
 94,5,Do you believe in extraterrestrial life?,Yes|No|Not sure,Fun
 95,2,What's the best prank you've pulled off?,Fake spider|Whoopie cushion|Fake phone call|Prank call,Fun
-96,7,If you had a superpower,hat would it be?|[Flight|Invisibility|Telepathy|Super strength,Fun
+96,7,If you had a superpower what would it be?,Flight|Invisibility|Telepathy|Super strength|Fun
 97,5,What's your favorite theme park ride?,Roller coaster|Ferris wheel|Haunted house|Water slide,Fun
 98,8,Which fictional world would you like to visit?,Hogwarts (Harry Potter)|Middle-earth (Lord of the Rings)|Narnia (The Chronicles of Narnia)|Wonderland (Alice in Wonderland),Fun
 99,7,How often do you exercise per week?,Every day|3-4 times|1-2 times|Rarely|Never,Health
@@ -158,3 +158,53 @@ poll_ID,author_ID,title,option,topic
 156,10,What's your favorite type of wall decor?,Paintings|Photographs|Mirrors|Wall decals|Tapestry,Home Décor
 157,7,How often do you change the decor in your home?,Seasonally|Yearly|Rarely|Never,Home Décor
 158,3,What's your favorite way to personalize your living space?,Personal photos|Custom artwork|DIY crafts|Souvenirs from travels,Home Déco
+1,23,Favorite Mobile App for Fitness Tracking?,Strava|MyFitnessPal|Nike Training Club|Fitbit|Apple Health,Health|Tech
+2,15,Which Sport Provides the Best Full-Body Workout?,Swimming|Rowing|Cycling|Boxing|CrossFit,Sport|Health
+3,8,Opinion on Renewable Energy Investment?,Supportive|Neutral|Opposed,Environment|Economy
+4,12,Most Fascinating Scientific Concept?,Quantum Entanglement|String Theory|Black Holes|Dark Matter,Science|Tech
+5,17,Preferred Outdoor Activity for Fun?,Hiking|Biking|Picnicking|Running|Playing Frisbee,Fun|Activity
+6,21,Classic Music vs. Modern Music: Your Preference?,Classic|Modern|Both|Depends on Mood,Music|Fun
+7,6,Best Travel Destination for Adventure Lovers?,New Zealand|Costa Rica|Patagonia|Nepal,Travel|Fun
+8,9,The Impact of Social Media on Politics?,Significant|Moderate|Negligible,Politics|Tech
+9,28,Your Go-To Makeup Look for Special Occasions?,Dramatic Smokey Eye|Natural Glow|Bold Lips|Classic Cat Eye,Beauty|Fashion
+10,3,Which Cuisine Do You Enjoy Cooking the Most?,Italian|Mexican|Asian|Mediterranean,Food&Drinks|Activity
+11,5,Preferred Yoga Style for Relaxation?,Hatha|Restorative|Yin|Vinyasa,Yoga|Health
+12,18,The Role of Art in Social Change?,Influential|Expressive|Limited Impact,Art|Politics
+13,22,Impact of Fashion Industry on Environment?,Significant|Moderate|Negligible,Fashion|Environment
+14,14,Your Favorite Movie Soundtrack?,The Lion King|Guardians of the Galaxy|La La Land|Pulp Fiction,Music|Movies & TV shows
+15,10,Should Animal Testing for Cosmetics be Banned?,Yes|No|Depends on Regulations,Beauty|Ethics
+16,27,Your Ultimate Comfort Food?,Mac and Cheese|Pizza|Chocolate|Chicken Soup,Food&Drinks|Fun
+17,4,Which Pet Provides the Most Companionship?,Dog|Cat|Bird|Rabbit,Pets|Fun
+18,30,Opinions on Universal Basic Income?,Supportive|Neutral|Opposed,Economy|Politics
+19,19,Best Time of Year to Travel?,Summer|Winter|Spring|Fall,Travel|Fun
+20,11,Your Favorite Song to Boost Your Mood?,Happy|Don't Stop Believin'|Uptown Funk|Eye of the Tiger,Music|Fun
+21,25,Opinions on Social Media Detox?,Necessary|Occasional|Not Needed,Health|Tech
+22,13,Preferred Art Medium for Self-Expression?,Painting|Sculpting|Photography|Drawing|Digital Art,Art|Expression
+23,7,How Do You Stay Productive During Work?,Time Blocking|Pomodoro Technique|Task Lists|Regular Breaks,Activity|Tech
+24,20,Your Opinion on Fast Fashion?,Convenient and Affordable|Ethically Concerning|Occasional Use Only,Fashion|Ethics
+25,2,Your Favorite Healthy Beverage?,Green Smoothie|Herbal Tea|Fresh Juice|Coconut Water,Food&Drinks|Health
+26,16,Top Travel Tips for Staying Healthy?,Stay Hydrated|Healthy Snacks|Regular Movement|Sunscreen,Travel|Health
+27,26,Your Favorite TV Show for Relaxing?,Friends|The Great British Bake Off|Nature Documentaries|The Office,Movies & TV shows|Fun
+28,1,Do You Believe in Extraterrestrial Life?,Yes|No|Unsure,Science|Fun
+29,24,Your Preferred Form of Exercise?,Running|Yoga|Weightlifting|Cycling|Dancing,Health|Activity
+30,29,Should Governments Invest More in Space Exploration?,Yes|No|Depends on Budget Allocation,Space|Politics
+31,31,Your Go-To Weekend DIY Project?,Repainting Furniture|Creating Wall Art|Building Shelves|Planting a Garden,Home Décor|Activity
+32,32,Which Tech Gadget Can't You Live Without?,Smartphone|Laptop|Smartwatch|Tablet,Tech|Activity
+33,33,Should Schools Integrate More Outdoor Activities?,Yes|No|Balanced Approach,Education|Activity
+34,34,How Do You Manage Stress?,Meditation|Exercise|Reading|Spending Time with Loved Ones,Health|Activity
+35,35,Your Favorite Music Genre for Workout Sessions?,Pop|Rock|Electronic|Hip-hop|Motivational,Music|Activity
+36,36,Should There Be Stricter Regulations on Fast Food Advertising?,Yes|No|Depends on Approach,Health|Economy
+37,37,Your Preferred Style of Home Decor?,Modern|Rustic|Minimalist|Bohemian,Home Décor|Fashion
+38,38,How Often Do You Listen to Podcasts?,Daily|Weekly|Occasionally|Rarely,Media|Activity
+39,39,Which Political Issue Matters the Most to You?,Climate Change|Healthcare|Economic Inequality|Education,Politics|Health
+40,40,Your Go-To Fitness Motivation?,Setting Goals|Listening to Pump-Up Music|Working Out with Friends,Health|Activity
+41,41,Opinions on AI's Role in Art Creation?,Exciting Possibility|Threat to Authenticity|Neutral,Art|Tech
+42,42,Your Favorite Mindfulness Activity?,Meditation|Yoga|Nature Walks|Deep Breathing,Health|Activity
+43,43,Impact of Streaming Services on Traditional Cinema?,Significant|Moderate|Negligible,Movies & TV shows|Tech
+44,44,Preferred Mode of Transportation for Travel?,Airplane|Train|Car|Ride-Sharing|Cruise Ship,Travel|Environment
+45,45,Your Opinion on Genetically Modified Foods?,Supportive|Opposed|Depends on Regulation,Food&Drinks|Science
+46,46,Most Effective Form of Political Activism?,Voting|Protests|Community Engagement|Online Advocacy,Politics|Activity
+47,47,Your Favorite Art Movement in History?,Renaissance|Impressionism|Surrealism|Abstract Expressionism,Art|History
+48,48,Should Animal Tourism be Banned?,Yes|No|Depends on Animal Welfare Conditions,Travel|Ethics
+49,49,Your Go-To Healthy Snack?,Nuts|Fruits|Yogurt|Veggies with Hummus,Food&Drinks|Health
+50,50,How Do You Stay Informed About Current Events?,News Websites|Social Media|Podcasts|Newspapers,Media|Politics
