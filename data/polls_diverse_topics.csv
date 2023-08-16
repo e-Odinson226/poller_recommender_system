@@ -1,0 +1,41 @@
+poll_ID,author_ID,title,options,topics
+1,23,Favorite Smartphone Brand?,Apple|Samsung|Google|OnePlus|Xiaomi,Tech|Fun
+2,45,Your Preferred Exercise Routine?,Running|Yoga|Dancing|Cycling|Swimming,Health|Activity
+3,12,Future of Renewable Energy?,Support|Oppose|Undecided,Economy|Science
+4,9,Best Travel Destination for Adventure?,Mountains|Beaches|Jungle|Desert|Islands,Travel|Fun
+5,31,Opinion on Climate Change?,Urgent Issue|Natural Cycle|Not Sure,Science|Politics
+6,17,Preferred Art Style?,Realism|Abstract|Impressionism|Cubism|Surrealism,Art|Fashion
+7,56,Effect of Music on Mood?,Uplifting|Calming|Energizing|Reflective,Music|Health
+8,29,Favorite Comfort Food?,Pizza|Burgers|Mac and Cheese|Ice Cream|Chocolate,Food&Drinks|Fun
+9,8,Your Daily Skincare Routine?,Cleansing|Moisturizing|Sunscreen|Exfoliating|Masking,Beauty|Health
+10,40,Pros and Cons of Streaming Services?,Convenience|Variety|Quality|Subscription Costs|Data Usage,Tech|Entertainment
+11,18,Political Engagement Methods?,Voting|Rallies|Petitions|Social Media|Protests,Politics|Activity
+12,7,Best Workout Music?,Pop|Rock|EDM|Hip-hop|Classical,Music|Health
+13,5,Home DIY Project You'd Love to Try?,Furniture Building|Wall Painting|Decor Crafting|Gardening|Upcycling,Home Décor|Activity
+14,38,Your Go-To Fashion Trend?,Athleisure|Vintage|Bohemian|Minimalist|Streetwear,Fashion|Fun
+15,14,Opinion on Genetic Engineering?,Beneficial|Ethical Concerns|Unknown Consequences,Science|Ethics
+16,11,Preferred Cuisine for a Night Out?,Italian|Asian|Mexican|Mediterranean|American,Food&Drinks|Fun
+17,33,Impact of Social Media on Politics?,Positive|Negative|Both|Neutral,Politics|Tech
+18,51,Your Favorite Movie Genre?,Action|Comedy|Drama|Sci-Fi|Fantasy,Movies & TV shows|Fun
+19,22,Exercise vs Diet for Health?,Equal Importance|Exercise|Diet|Both,Health|Activity
+20,47,Effective Time Management Techniques?,Prioritization|Time Blocking|To-Do Lists|Pomodoro Technique|Delegation,Productivity|Activity
+21,25,Best Artistic Outlet for Stress?,Painting|Music|Writing|Crafting|Dancing,Art|Health
+22,3,Your Go-To Weekend Activity?,Outdoor Adventure|Indoor Relaxation|Socializing|Fitness|Exploring,Activity|Fun
+23,15,Opinions on Universal Basic Income?,Supportive|Opposed|Depends on Conditions|Unsure,Economy|Politics
+24,19,Impact of Music Education on Brain Development?,Positive|Limited Effects|No Significant Impact,Music|Education
+25,44,Preferred Method of Travel Photography?,Smartphone|Camera|Drone|Instant Camera|Film Camera,Travel|Art
+26,6,Personal Finance Priorities?,Saving|Investing|Paying off Debt|Budgeting|Emergency Fund,Economy|Finance
+27,2,Benefits of Mindfulness Meditation?,Stress Reduction|Improved Focus|Emotional Regulation|Better Sleep|Increased Awareness,Health|Mindfulness
+28,36,Views on Artificial Intelligence?,Exciting Progress|Concerns about Job Displacement|Balanced Perspective|No Opinion,Technology|Science
+29,16,Most Enjoyable Team Sport?,Soccer|Basketball|Volleyball|Hockey|Football,Sport|Fun
+30,26,Your Favorite Music Era?,60s-70s|80s|90s|2000s|Modern,Music|Fun
+31,1,Role of Fashion in Self-Expression?,Highly Influential|Somewhat Influential|Neutral|Not Influential,Fashion|Self-Expression
+32,39,Preferred Reading Format?,Physical Books|E-books|Audiobooks|Both Equally|Depends on Situation,Entertainment|Technology
+33,10,Views on Home Cooking vs Dining Out?,Love Cooking|Convenience of Dining Out|Both Equally|Depends on Occasion,Food&Drinks|Lifestyle
+34,21,Most Memorable Live Performance?,Concert|Theater Play|Dance Performance|Comedy Show|Circus Show,Entertainment|Music
+35,30,Your Fashion Statement Piece?,Bold Accessories|Stylish Footwear|Statement Jewelry|Designer Handbags|Unique Outerwear,Fashion|Accessories
+36,4,Exercise Routine Preferences?,Gym Workouts|Outdoor Activities|Yoga Classes|Home Workouts|Group Fitness Classes,Health|Activity
+37,28,Opinions on Online Privacy?,Major Concern|Mild Concern|Not a Concern|Depends on Situation,Tech|Privacy
+38,20,Your Dream Pet?,Dog|Cat|Exotic Bird|Hamster|Fish,Pets|Fun
+39,27,How Do You Stay Creative?,Artistic Expression|Exploring New Interests|Meditation|Inspiring Environments|Collaboration,Creativity|Lifestyle
+40,34,Importance of Nature Conservation?,Critical|Important
