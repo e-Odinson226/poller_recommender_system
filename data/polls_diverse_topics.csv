@@ -1,41 +1,51 @@
 poll_ID,author_ID,title,options,topics
-1,23,Favorite Smartphone Brand?,Apple|Samsung|Google|OnePlus|Xiaomi,Tech|Fun
-2,45,Your Preferred Exercise Routine?,Running|Yoga|Dancing|Cycling|Swimming,Health|Activity
-3,12,Future of Renewable Energy?,Support|Oppose|Undecided,Economy|Science
-4,9,Best Travel Destination for Adventure?,Mountains|Beaches|Jungle|Desert|Islands,Travel|Fun
-5,31,Opinion on Climate Change?,Urgent Issue|Natural Cycle|Not Sure,Science|Politics
-6,17,Preferred Art Style?,Realism|Abstract|Impressionism|Cubism|Surrealism,Art|Fashion
-7,56,Effect of Music on Mood?,Uplifting|Calming|Energizing|Reflective,Music|Health
-8,29,Favorite Comfort Food?,Pizza|Burgers|Mac and Cheese|Ice Cream|Chocolate,Food&Drinks|Fun
-9,8,Your Daily Skincare Routine?,Cleansing|Moisturizing|Sunscreen|Exfoliating|Masking,Beauty|Health
-10,40,Pros and Cons of Streaming Services?,Convenience|Variety|Quality|Subscription Costs|Data Usage,Tech|Entertainment
-11,18,Political Engagement Methods?,Voting|Rallies|Petitions|Social Media|Protests,Politics|Activity
-12,7,Best Workout Music?,Pop|Rock|EDM|Hip-hop|Classical,Music|Health
-13,5,Home DIY Project You'd Love to Try?,Furniture Building|Wall Painting|Decor Crafting|Gardening|Upcycling,Home Décor|Activity
-14,38,Your Go-To Fashion Trend?,Athleisure|Vintage|Bohemian|Minimalist|Streetwear,Fashion|Fun
-15,14,Opinion on Genetic Engineering?,Beneficial|Ethical Concerns|Unknown Consequences,Science|Ethics
-16,11,Preferred Cuisine for a Night Out?,Italian|Asian|Mexican|Mediterranean|American,Food&Drinks|Fun
-17,33,Impact of Social Media on Politics?,Positive|Negative|Both|Neutral,Politics|Tech
-18,51,Your Favorite Movie Genre?,Action|Comedy|Drama|Sci-Fi|Fantasy,Movies & TV shows|Fun
-19,22,Exercise vs Diet for Health?,Equal Importance|Exercise|Diet|Both,Health|Activity
-20,47,Effective Time Management Techniques?,Prioritization|Time Blocking|To-Do Lists|Pomodoro Technique|Delegation,Productivity|Activity
-21,25,Best Artistic Outlet for Stress?,Painting|Music|Writing|Crafting|Dancing,Art|Health
-22,3,Your Go-To Weekend Activity?,Outdoor Adventure|Indoor Relaxation|Socializing|Fitness|Exploring,Activity|Fun
-23,15,Opinions on Universal Basic Income?,Supportive|Opposed|Depends on Conditions|Unsure,Economy|Politics
-24,19,Impact of Music Education on Brain Development?,Positive|Limited Effects|No Significant Impact,Music|Education
-25,44,Preferred Method of Travel Photography?,Smartphone|Camera|Drone|Instant Camera|Film Camera,Travel|Art
-26,6,Personal Finance Priorities?,Saving|Investing|Paying off Debt|Budgeting|Emergency Fund,Economy|Finance
-27,2,Benefits of Mindfulness Meditation?,Stress Reduction|Improved Focus|Emotional Regulation|Better Sleep|Increased Awareness,Health|Mindfulness
-28,36,Views on Artificial Intelligence?,Exciting Progress|Concerns about Job Displacement|Balanced Perspective|No Opinion,Technology|Science
-29,16,Most Enjoyable Team Sport?,Soccer|Basketball|Volleyball|Hockey|Football,Sport|Fun
-30,26,Your Favorite Music Era?,60s-70s|80s|90s|2000s|Modern,Music|Fun
-31,1,Role of Fashion in Self-Expression?,Highly Influential|Somewhat Influential|Neutral|Not Influential,Fashion|Self-Expression
-32,39,Preferred Reading Format?,Physical Books|E-books|Audiobooks|Both Equally|Depends on Situation,Entertainment|Technology
-33,10,Views on Home Cooking vs Dining Out?,Love Cooking|Convenience of Dining Out|Both Equally|Depends on Occasion,Food&Drinks|Lifestyle
-34,21,Most Memorable Live Performance?,Concert|Theater Play|Dance Performance|Comedy Show|Circus Show,Entertainment|Music
-35,30,Your Fashion Statement Piece?,Bold Accessories|Stylish Footwear|Statement Jewelry|Designer Handbags|Unique Outerwear,Fashion|Accessories
-36,4,Exercise Routine Preferences?,Gym Workouts|Outdoor Activities|Yoga Classes|Home Workouts|Group Fitness Classes,Health|Activity
-37,28,Opinions on Online Privacy?,Major Concern|Mild Concern|Not a Concern|Depends on Situation,Tech|Privacy
-38,20,Your Dream Pet?,Dog|Cat|Exotic Bird|Hamster|Fish,Pets|Fun
-39,27,How Do You Stay Creative?,Artistic Expression|Exploring New Interests|Meditation|Inspiring Environments|Collaboration,Creativity|Lifestyle
-40,34,Importance of Nature Conservation?,Critical|Important
+1,23,Favorite Mobile App for Fitness Tracking?,Strava|MyFitnessPal|Nike Training Club|Fitbit|Apple Health,Health|Tech
+2,15,Which Sport Provides the Best Full-Body Workout?,Swimming|Rowing|Cycling|Boxing|CrossFit,Sport|Health
+3,8,Opinion on Renewable Energy Investment?,Supportive|Neutral|Opposed,Environment|Economy
+4,12,Most Fascinating Scientific Concept?,Quantum Entanglement|String Theory|Black Holes|Dark Matter,Science|Tech
+5,17,Preferred Outdoor Activity for Fun?,Hiking|Biking|Picnicking|Running|Playing Frisbee,Fun|Activity
+6,21,Classic Music vs. Modern Music: Your Preference?,Classic|Modern|Both|Depends on Mood,Music|Fun
+7,6,Best Travel Destination for Adventure Lovers?,New Zealand|Costa Rica|Patagonia|Nepal,Travel|Fun
+8,9,The Impact of Social Media on Politics?,Significant|Moderate|Negligible,Politics|Tech
+9,28,Your Go-To Makeup Look for Special Occasions?,Dramatic Smokey Eye|Natural Glow|Bold Lips|Classic Cat Eye,Beauty|Fashion
+10,3,Which Cuisine Do You Enjoy Cooking the Most?,Italian|Mexican|Asian|Mediterranean,Food&Drinks|Activity
+11,5,Preferred Yoga Style for Relaxation?,Hatha|Restorative|Yin|Vinyasa,Yoga|Health
+12,18,The Role of Art in Social Change?,Influential|Expressive|Limited Impact,Art|Politics
+13,22,Impact of Fashion Industry on Environment?,Significant|Moderate|Negligible,Fashion|Environment
+14,14,Your Favorite Movie Soundtrack?,The Lion King|Guardians of the Galaxy|La La Land|Pulp Fiction,Music|Movies & TV shows
+15,10,Should Animal Testing for Cosmetics be Banned?,Yes|No|Depends on Regulations,Beauty|Ethics
+16,27,Your Ultimate Comfort Food?,Mac and Cheese|Pizza|Chocolate|Chicken Soup,Food&Drinks|Fun
+17,4,Which Pet Provides the Most Companionship?,Dog|Cat|Bird|Rabbit,Pets|Fun
+18,30,Opinions on Universal Basic Income?,Supportive|Neutral|Opposed,Economy|Politics
+19,19,Best Time of Year to Travel?,Summer|Winter|Spring|Fall,Travel|Fun
+20,11,Your Favorite Song to Boost Your Mood?,Happy|Don't Stop Believin'|Uptown Funk|Eye of the Tiger,Music|Fun
+21,25,Opinions on Social Media Detox?,Necessary|Occasional|Not Needed,Health|Tech
+22,13,Preferred Art Medium for Self-Expression?,Painting|Sculpting|Photography|Drawing|Digital Art,Art|Expression
+23,7,How Do You Stay Productive During Work?,Time Blocking|Pomodoro Technique|Task Lists|Regular Breaks,Activity|Tech
+24,20,Your Opinion on Fast Fashion?,Convenient and Affordable|Ethically Concerning|Occasional Use Only,Fashion|Ethics
+25,2,Your Favorite Healthy Beverage?,Green Smoothie|Herbal Tea|Fresh Juice|Coconut Water,Food&Drinks|Health
+26,16,Top Travel Tips for Staying Healthy?,Stay Hydrated|Healthy Snacks|Regular Movement|Sunscreen,Travel|Health
+27,26,Your Favorite TV Show for Relaxing?,Friends|The Great British Bake Off|Nature Documentaries|The Office,Movies & TV shows|Fun
+28,1,Do You Believe in Extraterrestrial Life?,Yes|No|Unsure,Science|Fun
+29,24,Your Preferred Form of Exercise?,Running|Yoga|Weightlifting|Cycling|Dancing,Health|Activity
+30,29,Should Governments Invest More in Space Exploration?,Yes|No|Depends on Budget Allocation,Space|Politics
+31,31,Your Go-To Weekend DIY Project?,Repainting Furniture|Creating Wall Art|Building Shelves|Planting a Garden,Home Décor|Activity
+32,32,Which Tech Gadget Can't You Live Without?,Smartphone|Laptop|Smartwatch|Tablet,Tech|Activity
+33,33,Should Schools Integrate More Outdoor Activities?,Yes|No|Balanced Approach,Education|Activity
+34,34,How Do You Manage Stress?,Meditation|Exercise|Reading|Spending Time with Loved Ones,Health|Activity
+35,35,Your Favorite Music Genre for Workout Sessions?,Pop|Rock|Electronic|Hip-hop|Motivational,Music|Activity
+36,36,Should There Be Stricter Regulations on Fast Food Advertising?,Yes|No|Depends on Approach,Health|Economy
+37,37,Your Preferred Style of Home Decor?,Modern|Rustic|Minimalist|Bohemian,Home Décor|Fashion
+38,38,How Often Do You Listen to Podcasts?,Daily|Weekly|Occasionally|Rarely,Media|Activity
+39,39,Which Political Issue Matters the Most to You?,Climate Change|Healthcare|Economic Inequality|Education,Politics|Health
+40,40,Your Go-To Fitness Motivation?,Setting Goals|Listening to Pump-Up Music|Working Out with Friends,Health|Activity
+41,41,Opinions on AI's Role in Art Creation?,Exciting Possibility|Threat to Authenticity|Neutral,Art|Tech
+42,42,Your Favorite Mindfulness Activity?,Meditation|Yoga|Nature Walks|Deep Breathing,Health|Activity
+43,43,Impact of Streaming Services on Traditional Cinema?,Significant|Moderate|Negligible,Movies & TV shows|Tech
+44,44,Preferred Mode of Transportation for Travel?,Airplane|Train|Car|Ride-Sharing|Cruise Ship,Travel|Environment
+45,45,Your Opinion on Genetically Modified Foods?,Supportive|Opposed|Depends on Regulation,Food&Drinks|Science
+46,46,Most Effective Form of Political Activism?,Voting|Protests|Community Engagement|Online Advocacy,Politics|Activity
+47,47,Your Favorite Art Movement in History?,Renaissance|Impressionism|Surrealism|Abstract Expressionism,Art|History
+48,48,Should Animal Tourism be Banned?,Yes|No|Depends on Animal Welfare Conditions,Travel|Ethics
+49,49,Your Go-To Healthy Snack?,Nuts|Fruits|Yogurt|Veggies with Hummus,Food&Drinks|Health
+50,50,How Do You Stay Informed About Current Events?,News Websites|Social Media|Podcasts|Newspapers,Media|Politics
