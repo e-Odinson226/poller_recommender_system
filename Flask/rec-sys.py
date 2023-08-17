@@ -3,6 +3,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from pathlib import Path
 
+pd.set_option("max_colwidth", None)
+
 
 def retrieve_data(polls_csv_path="/data/polls_synthetic.csv"):
     path = Path(__file__).parent.parent.resolve()
@@ -62,7 +64,12 @@ def recommendations(index, df, cosine_similarity_matrix, number_of_recommendatio
     recommendations_indices = [
         t[0] for t in similarity_scores_sorted[1 : (number_of_recommendations + 1)]
     ]
-    return df["title"].iloc[recommendations_indices]
+    recommendations_scores = [
+        t[1] for t in similarity_scores_sorted[1 : (number_of_recommendations + 1)]
+    ]
+
+    # return similarity_scores_sorted
+    return (df["title"].iloc[recommendations_indices], recommendations_scores)
 
 
 if __name__ == "__main__":
@@ -79,4 +86,6 @@ if __name__ == "__main__":
     recommended_list = recommendations(
         liked_poll_index, polls, cosine_similarity_matrix, 10
     )
-    print(f"liked poll: [{liked_poll_title}] \nrecommended polls: \n{recommended_list}")
+    print(f"recommended_list: [{recommended_list}]")
+
+    # print(f"liked poll: [{liked_poll_title}] \nrecommended polls: \n{recommended_list}")
