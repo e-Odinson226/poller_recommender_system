@@ -28,7 +28,7 @@ def reset_index(df):
     return df
 
 
-def check_column_type(df, column_name, check_type=str):
+def check_column_type(df, column_name, check_type):
     column_index = df.columns.get_loc(column_name)
     for i in range(len(df)):
         if not isinstance(df.iloc[i, column_index], check_type):
@@ -43,8 +43,8 @@ def create_tf_idf_matrix(df, column):
     return tf_idf_matrix
 
 
-def calc_cosine_similarity_matrix(tf_idf_matrix):
-    cosine_similarity_matrix = cosine_similarity(tf_idf_matrix, tf_idf_matrix)
+def calc_cosine_similarity_matrix(tf_idf_matrix_1, tf_idf_matrix_2):
+    cosine_similarity_matrix = cosine_similarity(tf_idf_matrix_1, tf_idf_matrix_2)
     return cosine_similarity_matrix
 
 
