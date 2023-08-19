@@ -62,15 +62,22 @@ def gen_recommendations(index, df, cosine_similarity_matrix, number_of_recommend
     similarity_scores_sorted = sorted(
         similarity_scores, key=lambda x: x[1], reverse=True
     )
+
     recommendations_indices = [
         t[0] for t in similarity_scores_sorted[1 : (number_of_recommendations + 1)]
     ]
-    recommendations_scores = [
-        t[1] for t in similarity_scores_sorted[1 : (number_of_recommendations + 1)]
-    ]
+    recommendations = list(df["title"].iloc[recommendations_indices])
+    print(recommendations)
+    # print(similarity_scores_sorted, type(similarity_scores_sorted))
+    # recommendations_indices = [
+    #    t[0] for t in similarity_scores_sorted[1 : (number_of_recommendations + 1)]
+    # ]
+    # recommendations_scores = [
+    #    t[1] for t in similarity_scores_sorted[1 : (number_of_recommendations + 1)]
+    # ]
+    # return (df["title"].iloc[recommendations_indices], recommendations_scores)
 
-    # return similarity_scores_sorted
-    return (df["title"].iloc[recommendations_indices], recommendations_scores)
+    return recommendations
 
 
 if __name__ == "__main__":
@@ -78,7 +85,9 @@ if __name__ == "__main__":
     polls = encode_topics(polls)
     check_column_type(polls, 4, str)
     tf_idf_matrix = create_tf_idf_matrix(polls, "title")
-    cosine_similarity_matrix = calc_cosine_similarity_matrix(tf_idf_matrix)
+    cosine_similarity_matrix = calc_cosine_similarity_matrix(
+        tf_idf_matrix, tf_idf_matrix
+    )
 
     liked_poll_title = "Do you think cryptocurrency is the future of finance?"
     liked_poll_index = idx_from_title(polls, liked_poll_title)
