@@ -80,6 +80,27 @@ def gen_recommendations(index, df, cosine_similarity_matrix, number_of_recommend
     return recommendations
 
 
+def gen_rec_from_list_of_polls(
+    interacted_polls, polls, cosine_similarity_matrix, number_of_recommendations
+):
+    recommendations = []
+    for poll_id in interacted_polls:
+        # index = idx_from_title(df, original_title)
+        similarity_scores = list(enumerate(cosine_similarity_matrix[poll_id]))
+        similarity_scores_sorted = sorted(
+            similarity_scores, key=lambda x: x[1], reverse=True
+        )
+
+        recommendations_indices = [
+            t[0] for t in similarity_scores_sorted[1 : (number_of_recommendations + 1)]
+        ]
+        recs = list(polls["poll_ID"].iloc[recommendations_indices])
+        print(f"recommended polls for {poll_id} are:{recs}")
+        recommendations.append(recs)
+
+    return recommendations
+
+
 if __name__ == "__main__":
     polls = retrieve_data("/data/polls_synthetic.csv")
     polls = encode_topics(polls)
