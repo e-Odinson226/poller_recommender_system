@@ -16,17 +16,18 @@ def get_polls():
     )
 
 
-def get_user_interacted_polls():
-    es_query = {"query": {"match_all": {}}}
+def get_user_interacted_polls(user_id):
+    es_query = {"query": {"term": {"author_ID": user_id}}}
     es_url = "http://your-elasticsearch-host:port/polls/_search"  # Replace with your ElasticSearch URL
     response = requests.post(
         es_url, headers={"Content-Type": "application/json"}, data=json.dumps(es_query)
     )
+    return response
 
 
 # @app.route("/get_recom", methods=["POST"])
-@app.route("/get_recom")
-def recom():
+@app.route("/get_recom/<user_id>")
+def recom(user_id):
     # 1.Get list from the ElasticSearch query TODO. ---------------------------------------------
     polls = get_polls_list("/data/polls_synthetic.csv")
 
@@ -40,6 +41,9 @@ def recom():
 
     # 4. get the list of polls, which the user has interacted with. TODO ---------------------------------------------
     user_interacted_polls = get_polls_list("/data/user_interacted_polls.csv")
+
+    print(f"USER_ID: {user_id}")
+    # user_interacted_polls = get_user_interacted_polls(user_id)
 
     # 4.Calculate TF-IDF matrix based on "polls topics" for [Polls-to-Polls] or [Polls-to-UserProfile]
     polls_tf_idf_matrix = create_tf_idf_matrix(polls, "topic")
