@@ -18,11 +18,11 @@ def recom():
     # check_column_type(polls, "option", str)
     # check_column_type(polls, "author_ID", int)
 
-    # 4. get the list of polls, which the user has interacted with. ---------------------------------------------
+    # 4. get the list of polls, which the user has interacted with. TODO ---------------------------------------------
     user_interacted_polls = polls.sample(n=10)["poll_ID"]
 
-    # 4.Calculate TF-IDF matrix for [Polls-to-Polls] or [Polls-to-UserProfile]
-    polls_tf_idf_matrix = create_tf_idf_matrix(polls, "title")
+    # 4.Calculate TF-IDF matrix based on "polls topics" for [Polls-to-Polls] or [Polls-to-UserProfile]
+    polls_tf_idf_matrix = create_tf_idf_matrix(polls, "topic")
     cosine_similarity_matrix = calc_cosine_similarity_matrix(
         polls_tf_idf_matrix, polls_tf_idf_matrix
     )
