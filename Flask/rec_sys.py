@@ -2,6 +2,8 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from pathlib import Path
+from collections import Counter
+
 
 pd.set_option("max_colwidth", None)
 
@@ -98,7 +100,17 @@ def gen_rec_from_list_of_polls(
         print(f"recommended polls for {poll_id} are:{recs}")
         recommendations.append(recs)
 
-    return recommendations
+    flattened_recommendations = [
+        item for sublist in recommendations for item in sublist
+    ]
+    flattened_recommendations = Counter(flattened_recommendations)
+    n_most_recommended = flattened_recommendations.most_common(
+        number_of_recommendations
+    )
+    n_most_recommended = [t[0] for t in n_most_recommended]
+    print(n_most_recommended)
+
+    return n_most_recommended
 
 
 if __name__ == "__main__":
