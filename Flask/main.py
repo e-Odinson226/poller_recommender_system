@@ -19,7 +19,7 @@ def recom():
     # check_column_type(polls, "author_ID", int)
 
     # 4. get the list of polls, which the user has interacted with. TODO ---------------------------------------------
-    user_interacted_polls = polls.sample(n=10)["poll_ID"]
+    user_interacted_polls = get_polls_list("/data/user_interacted_polls.csv")
 
     # 4.Calculate TF-IDF matrix based on "polls topics" for [Polls-to-Polls] or [Polls-to-UserProfile]
     polls_tf_idf_matrix = create_tf_idf_matrix(polls, "topic")
@@ -32,7 +32,7 @@ def recom():
 
     liked_polls = []
     recommended_list = gen_rec_from_list_of_polls(
-        user_interacted_polls, polls, cosine_similarity_matrix, 10
+        user_interacted_polls["poll_ID"], polls, cosine_similarity_matrix, 10
     )
     # print(f"recommended_list: [{recommended_list}]")
 
