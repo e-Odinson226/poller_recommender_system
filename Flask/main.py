@@ -1,7 +1,27 @@
-from flask import Flask, redirect, url_for, jsonify, request
+from flask import Flask, redirect, url_for, jsonify
+
+import requests
+import json
+
 from rec_sys import *
 
 app = Flask(__name__)
+
+
+def get_polls():
+    es_query = {"query": {"match_all": {}}}
+    es_url = "http://your-elasticsearch-host:port/polls/_search"  # Replace with your ElasticSearch URL
+    response = requests.post(
+        es_url, headers={"Content-Type": "application/json"}, data=json.dumps(es_query)
+    )
+
+
+def get_user_interacted_polls():
+    es_query = {"query": {"match_all": {}}}
+    es_url = "http://your-elasticsearch-host:port/polls/_search"  # Replace with your ElasticSearch URL
+    response = requests.post(
+        es_url, headers={"Content-Type": "application/json"}, data=json.dumps(es_query)
+    )
 
 
 # @app.route("/get_recom", methods=["POST"])
