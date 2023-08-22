@@ -3,7 +3,7 @@ import json
 
 root = "http://172.19.0.1:8000/"
 payload = {
-    "user_ID": "1",
+    "user_ID": 1,
     "interactions": [
         {"poll_ID": 8, "aciton": "vote | comment"},
         {"poll_ID": 4, "aciton": "vote | comment"},
