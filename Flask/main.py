@@ -65,10 +65,11 @@ def recom(user_id):
 
     # ---------------------------------------
 
-    # return jsonify({"recommended_polls": recommended_list})
-
     # print(f"type(recommended_list): {type(list(recommended_list[0]))}")
-    return list(recommended_list)
+    # return jsonify({"recommended_polls": recommended_list})
+    response = {"user": user_id, "recommended_polls": recommended_list}
+    # return json.dumps(response)
+    return jsonify(response)
 
     # print(f"liked poll: [{liked_poll_title}] \nrecommended polls: \n{recommended_list}")
 

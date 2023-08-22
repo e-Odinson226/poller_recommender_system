@@ -35,7 +35,7 @@ def check_column_type(df, column_name, check_type):
     for i in range(len(df)):
         if not isinstance(df.iloc[i, column_index], check_type):
             print(
-                f"error: {df.iloc[i, 0], df.iloc[i, 1], df.iloc[i, 2], df.iloc[i, 3], df.iloc[i, 4]}"
+                f"error: {df.iloc[i, 0], df.iloc[i, 1],df.iloc[i, 2], df.iloc[i, 3], df.iloc[i, 4]}"
             )
 
 
@@ -69,7 +69,7 @@ def gen_recommendations(index, df, cosine_similarity_matrix, number_of_recommend
         t[0] for t in similarity_scores_sorted[1 : (number_of_recommendations + 1)]
     ]
     recommendations = list(df["title"].iloc[recommendations_indices])
-    print(recommendations)
+    # print(recommendations)
     # print(similarity_scores_sorted, type(similarity_scores_sorted))
     # recommendations_indices = [
     #    t[0] for t in similarity_scores_sorted[1 : (number_of_recommendations + 1)]
