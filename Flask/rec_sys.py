@@ -97,7 +97,7 @@ def gen_rec_from_list_of_polls(
             t[0] for t in similarity_scores_sorted[1 : (number_of_recommendations + 1)]
         ]
         recs = list(polls["poll_ID"].iloc[recommendations_indices])
-        print(f"recommended polls for {poll_id} are:{recs}")
+        # print(f"recommended polls for {poll_id} are:{recs}")
         recommendations.append(recs)
 
     flattened_recommendations = [

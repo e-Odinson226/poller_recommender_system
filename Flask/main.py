@@ -31,7 +31,24 @@ class Rec(Resource):
             10,
         )
 
-        result = {"user_id": user_id, "recommended polls": self.recommended_list}
+        recommended_polls = self.polls[
+            self.polls["poll_ID"].isin(self.recommended_list)
+        ]
+
+        recommended_polls = recommended_polls[
+            ["poll_ID", "author_ID", "title", "option", "topic"]
+        ].to_dict(orient="records")
+
+        # print(f"{recommended_polls['poll_ID', 'author_ID', 'title', 'topic']}")
+        # print(f"{recommended_polls.columns.to_list()}")
+        # print(
+        #    f"{recommended_polls['poll_ID', 'author_ID', 'title', 'option', 'topic']}"
+        # )
+
+        result = {
+            "user_ID": user_id,
+            "recommended_polls": recommended_polls,
+        }
         return result, 200
 
 
