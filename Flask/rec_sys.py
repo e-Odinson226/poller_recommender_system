@@ -3,6 +3,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from pathlib import Path
 from collections import Counter
+import json
+import csv
 
 
 pd.set_option("max_colwidth", None)
@@ -12,6 +14,13 @@ def get_polls_list(polls_csv_path="/data/polls_synthetic.csv"):
     path = Path(__file__).parent.parent.resolve()
     polls = pd.read_csv(str(path) + polls_csv_path)
     return polls
+
+
+# def get_polls_list(polls_json_path="/data/elas_polls.json"):
+#    path = Path(__file__).parent.parent.resolve()
+#    print(path)
+#    polls = pd.read_json(str(path) + polls_json_path)
+#    return polls
 
 
 def encode_topics(df):
@@ -114,21 +123,35 @@ def gen_rec_from_list_of_polls(
 
 
 if __name__ == "__main__":
-    polls = retrieve_data("/data/polls_synthetic.csv")
-    polls = encode_topics(polls)
-    check_column_type(polls, 4, str)
-    tf_idf_matrix = create_tf_idf_matrix(polls, "title")
-    cosine_similarity_matrix = calc_cosine_similarity_matrix(
-        tf_idf_matrix, tf_idf_matrix
-    )
+    pd.set_option("max_colwidth", None)
+    path = Path(__file__).parent.parent.resolve()
+    path = str(path) + "/data/elas_polls.json"
+    polls_list = []
+    # polls = pd.read_json(str(path) + "/data/elas_polls.json")
+    with open(path, "r") as infile:
+        polls = json.load(infile)
+        for poll in polls:
+            poll = poll["_source"]
+            print(f"poll:\n{poll}")
+            polls_list.append(poll)
 
-    liked_poll_title = "Do you think cryptocurrency is the future of finance?"
-    liked_poll_index = idx_from_title(polls, liked_poll_title)
+    pd = pd.DataFrame.from_records(polls_list)
+    print(pd)
+    exit()
+    # polls = encode_topics(polls)
+    # check_column_type(polls, 4, str)
+    # tf_idf_matrix = create_tf_idf_matrix(polls, "title")
+    # cosine_similarity_matrix = calc_cosine_similarity_matrix(
+    #    tf_idf_matrix, tf_idf_matrix
+    # )
+#
+# liked_poll_title = "Do you think cryptocurrency is the future of finance?"
+# liked_poll_index = idx_from_title(polls, liked_poll_title)
+#
+# liked_polls = []
+# recommended_list = recommendations(
+#    liked_poll_index, polls, cosine_similarity_matrix, 10
+# )
+# print(f"recommended_list: [{recommended_list}]")
 
-    liked_polls = []
-    recommended_list = recommendations(
-        liked_poll_index, polls, cosine_similarity_matrix, 10
-    )
-    print(f"recommended_list: [{recommended_list}]")
-
-    # print(f"liked poll: [{liked_poll_title}] \nrecommended polls: \n{recommended_list}")
+# print(f"liked poll: [{liked_poll_title}] \nrecommended polls: \n{recommended_list}")

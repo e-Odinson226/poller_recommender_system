@@ -45,9 +45,9 @@ while True:
     from_index += batch_size
 
 # Print or process all_instances as needed
-for instance in all_instances:
-    print(instance["_source"])
-print(all_instances)
+# for instance in all_instances:
+#    print(instance["_source"])
+
 
 with open("./data/elas_polls.json", "w") as output:
     for instance in all_instances:

@@ -16,6 +16,7 @@ client = Elasticsearch(
 resp = client.search(
     index="polls",
     query={"match_all": {}},
+    size=210,
 )
 
 # print(type(resp["hits"]))
