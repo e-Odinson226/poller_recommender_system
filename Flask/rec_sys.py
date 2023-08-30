@@ -10,9 +10,21 @@ import csv
 pd.set_option("max_colwidth", None)
 
 
-def get_polls_list(polls_csv_path="/data/polls_synthetic.csv"):
+def et_polls_list(polls_csv_path="/data/polls_synthetic.csv"):
     path = Path(__file__).parent.parent.resolve()
     polls = pd.read_csv(str(path) + polls_csv_path)
+    return polls
+
+
+def get_polls_list(polls_json_path="/data/elas_polls.json"):
+    path = Path(__file__).parent.parent.resolve()
+    with open(str(path) + polls_json_path, "r") as json_data:
+        polls = json.loads(json_data)
+
+        for poll in polls:
+            print(type(poll))
+        # polls = pd.read_csv()
+    pass
     return polls
 
 

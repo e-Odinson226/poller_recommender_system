@@ -1,61 +1,66 @@
 from elasticsearch import Elasticsearch
-import csv
 import json
 
-client = Elasticsearch(
-    "https://localhost:9200",
-    basic_auth=("zakaria", "ZaKaRiA1234"),
-    verify_certs=False
-    # api_key=(
-    #    "get_polls",
-    #    "U1NObEpvb0IxN2R6ZC1mekhyRno6VmEtc01RanZSXzJTVkdZLUFCSFBZQQ==",
-    # ),
-    # API key ID and secret
-)
-# resp = client.get(index="polls", id="eSNVJooB17dzd-fzTbAt", human=True)
+#   "ElasticSearch" : {
+#       "Url": "https://159.203.183.251:9200",
+#       "UserName": "pollett",
+#       "Password": "9r0&rJP@19GY",
+#       "FingerPrint": "CE:AA:F7:FF:04:C7:31:14:78:9C:62:D4:CE:98:F9:EF:56:DA:70:45:37:14:E3:F8:66:0A:25:ED:05:04:83:EC"
+#     }
 
 
-# Specify the name of the Elasticsearch index you want to retrieve data from
-index_name = "polls"
+class ElasticsearchDataExporter:
+    def __init__(self, elasticsearch_url, username, password, fingerprint):
+        self.elasticsearch_url = elasticsearch_url
+        self.username = username
+        self.password = password
+        self.fingerprint = fingerprint
+        self.client = Elasticsearch(
+            self.elasticsearch_url,
+            basic_auth=(self.username, self.password),
+            ssl_assert_fingerprint=self.fingerprint,
+        )
+        self.instances = []
 
-# Initialize variables
-batch_size = 100  # Adjust this based on your needs
-from_index = 0
-all_instances = []
+    def export_index(self, index_name, batch_size=100):
+        from_index = 0
+        all_instances = []
 
-# Use a while loop to paginate through the results
-while True:
-    # Define a match-all query and set the size and from parameters
-    query = {"query": {"match_all": {}}, "size": batch_size, "from": from_index}
+        while True:
+            query = {"query": {"match_all": {}}, "size": batch_size, "from": from_index}
+            results = self.client.search(index=index_name, body=query)
+            instances = results["hits"]["hits"]
 
-    # Use the search method to retrieve a batch of instances from the index
-    results = client.search(index=index_name, body=query)
+            if not instances:
+                break
 
-    # Extract the instances from the search results
-    instances = results["hits"]["hits"]
+            all_instances.extend(instances)
+            from_index += batch_size
+        # self.instances = all_instances
+        self.instances = [instance["_source"] for instance in all_instances]
+        # self.instances = json.dumps(self.instances)
+        return self.instances
 
-    # If there are no more instances, break the loop
-    if not instances:
-        break
-
-    # Append the batch of instances to the list of all instances
-    all_instances.extend(instances)
-
-    # Increment the from_index to retrieve the next batch
-    from_index += batch_size
-
-# Print or process all_instances as needed
-# for instance in all_instances:
-#    print(instance["_source"])
+    def export_index_to_file(self, file_path="./data/elas_polls.json"):
+        try:
+            with open(file_path, "w") as output:
+                # for instance in self.instances:
+                #        json.dump(instance["_source"], output, indent=4)
+                json.dump(self.instances, output, indent=4)
+        except Exception as exp:
+            print("Export Error", exp)
 
 
-with open("./data/elas_polls.json", "w") as output:
-    for instance in all_instances:
-        json.dump(instance["_source"], output, indent=4)
+if __name__ == "__main__":
+    elasticsearch_url = "https://159.203.183.251:9200"
+    username = "pollett"
+    password = "9r0&rJP@19GY"
+    fingerprint = "CE:AA:F7:FF:04:C7:31:14:78:9C:62:D4:CE:98:F9:EF:56:DA:70:45:37:14:E3:F8:66:0A:25:ED:05:04:83:EC"
 
-    # json.dump(resp["hits"]["hits"], output, indent=4)
-
-
-# print("Got %d Hits:" % resp["hits"]["total"]["value"])
-# for hit in resp["hits"]["hits"]:
-#    print(f"{hit['_source']}")
+    exporter = ElasticsearchDataExporter(
+        elasticsearch_url, username, password, fingerprint
+    )
+    # index_name = "userpollinteractions"
+    polls = exporter.export_index("polls")
+    exporter.export_index_to_file()
+    # print(polls)
