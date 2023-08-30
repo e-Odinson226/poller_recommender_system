@@ -62,5 +62,6 @@ if __name__ == "__main__":
     )
     # index_name = "userpollinteractions"
     polls = exporter.export_index("polls")
+
     exporter.export_index_to_file()
     # print(polls)
