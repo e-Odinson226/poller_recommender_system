@@ -21,8 +21,13 @@ class ElasticsearchHandel:
         all_instances = []
 
         while True:
-            query = {"query": {"match_all": {}}, "size": batch_size, "from": from_index}
-            results = self.client.search(index=index_name, body=query)
+            # query = {"query": {"match_all": {}}, "size": batch_size, "from": from_index}
+            results = self.client.search(
+                index=index_name,
+                query={"match_all": {}},
+                size=batch_size,
+                from_=from_index,
+            )
             instances = results["hits"]["hits"]
 
             if not instances:

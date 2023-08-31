@@ -4,7 +4,7 @@ import pandas as pd
 
 
 from RecommenderAlgorithm import rec_sys as rs
-from ElasticSearch import elastic_cursor as ec
+from ElasticSearch import elastic_handle as elastic_handle
 
 app = Flask(__name__)
 api = Api(app)
@@ -15,10 +15,10 @@ class Rec(Resource):
         elasticsearch_url = "https://159.203.183.251:9200"
         username = "pollett"
         password = "9r0&rJP@19GY"
-        fingerprint = "CE:AA:F7:FF:04:C7:31:14:78:9C:62:D4:CE:98:F9:EF:56:DA:70:45:37:14:E3:F8:66:0A:25:ED:05:04:83:EC"
+        fingerprint = "CE:AA:F7:FF:04:C7:31:14:78:9C:62:D4:CE:98:F9:EF:56:DA:70:45:37:14:E3:F8:66:0A:25:ED:05:04:83:ec"
 
         # self.polls = rs.get_polls_list("/data/polls_synthetic.csv")
-        self.ede = ec.ElasticsearchHandel(
+        self.ede = elastic_handle.ElasticsearchHandel(
             elasticsearch_url, username, password, fingerprint
         )
 

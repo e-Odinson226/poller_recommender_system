@@ -124,7 +124,7 @@ def gen_rec_from_list_of_polls(
         number_of_recommendations
     )
     n_most_recommended = [t[0] for t in n_most_recommended]
-    print(n_most_recommended)
+    # print(n_most_recommended)
 
     return n_most_recommended
 
