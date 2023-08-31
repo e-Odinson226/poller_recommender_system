@@ -4,7 +4,7 @@ import pandas as pd
 
 
 from RecommenderAlgorithm import rec_sys as rs
-from ElasticSearch import elastic_handle as elastic_handle
+from ElasticSearch.elastic_handle import *
 
 app = Flask(__name__)
 api = Api(app)
@@ -18,19 +18,24 @@ class Rec(Resource):
         fingerprint = "CE:AA:F7:FF:04:C7:31:14:78:9C:62:D4:CE:98:F9:EF:56:DA:70:45:37:14:E3:F8:66:0A:25:ED:05:04:83:ec"
 
         # self.polls = rs.get_polls_list("/data/polls_synthetic.csv")
-        self.ede = elastic_handle.ElasticsearchHandel(
+        self.e_handle = ElasticsearchHandel(
             elasticsearch_url, username, password, fingerprint
         )
 
-        self.polls = self.ede.get_index("polls")
+        self.polls = self.e_handle.get_index("polls")
         self.polls = pd.DataFrame.from_records(self.polls)
         self.liked_polls = []
+        self.interacted_polls = []
 
     def post(self):
         args = request.get_json(force=True)
-        user_id = args.get("user_ID")
-        interactions = args.get("interactions")
+        user_id = args.get("userId")
+        interactions = args.get("userPollActions")
 
+        for dic in interactions.values():
+            self.interacted_polls.extend(dic) if dic else None
+
+        """ 
         self.polls = rs.encode_topics(self.polls)
         polls_tf_idf_matrix = rs.create_tf_idf_matrix(self.polls, "question")
         cosine_similarity_matrix = rs.calc_cosine_similarity_matrix(
@@ -59,8 +64,8 @@ class Rec(Resource):
         result = {
             "user_ID": user_id,
             "recommended_polls": recommended_polls,
-        }
-        return result, 200
+        } """
+        return self.interacted_polls, 200
 
 
 api.add_resource(Rec, "/get_rec/")
