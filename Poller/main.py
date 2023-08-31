@@ -18,11 +18,11 @@ class Rec(Resource):
         fingerprint = "CE:AA:F7:FF:04:C7:31:14:78:9C:62:D4:CE:98:F9:EF:56:DA:70:45:37:14:E3:F8:66:0A:25:ED:05:04:83:EC"
 
         # self.polls = rs.get_polls_list("/data/polls_synthetic.csv")
-        self.ede = ec.ElasticsearchDataExporter(
+        self.ede = ec.ElasticsearchHandel(
             elasticsearch_url, username, password, fingerprint
         )
 
-        self.polls = self.ede.export_index("polls")
+        self.polls = self.ede.get_index("polls")
         self.polls = pd.DataFrame.from_records(self.polls)
         self.liked_polls = []
 
