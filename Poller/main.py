@@ -24,26 +24,30 @@ class Rec(Resource):
 
         self.polls = self.e_handle.get_index("polls")
         self.polls = pd.DataFrame.from_records(self.polls)
-        self.liked_polls = []
-        self.interacted_polls = []
+
+        # self.userPollActions = self.userInteractions["userPollActions"]
 
     def post(self):
         args = request.get_json(force=True)
         user_id = args.get("userId")
-        interactions = args.get("userPollActions")
 
-        for dic in interactions.values():
-            self.interacted_polls.extend(dic) if dic else None
+        # interactions = args.get("userPollActions")
+        # for dic in interactions.values():
+        #    self.interacted_polls.extend(dic) if dic else None
 
-        """ 
-        self.polls = rs.encode_topics(self.polls)
+        self.userInteractions = self.e_handle.get_interactions(
+            "userpollinteractions", user_id
+        )
+
+        """ self.polls = rs.encode_topics(self.polls)
         polls_tf_idf_matrix = rs.create_tf_idf_matrix(self.polls, "question")
         cosine_similarity_matrix = rs.calc_cosine_similarity_matrix(
             polls_tf_idf_matrix, polls_tf_idf_matrix
         )
 
+        # [dic["poll_ID"] for dic in interactions],
         self.recommended_list = rs.gen_rec_from_list_of_polls(
-            [dic["poll_ID"] for dic in interactions],
+            self.interacted_polls,
             self.polls,
             cosine_similarity_matrix,
             10,
@@ -65,7 +69,7 @@ class Rec(Resource):
             "user_ID": user_id,
             "recommended_polls": recommended_polls,
         } """
-        return self.interacted_polls, 200
+        return self.userInteractions, 200
 
 
 api.add_resource(Rec, "/get_rec/")
