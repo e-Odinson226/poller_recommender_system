@@ -14,7 +14,7 @@ def get_polls_list(polls_csv_path="/data/polls_synthetic.csv"):
 
 def get_polls_list_json(polls_json_path="/data/elas_polls.json"):
     path = Path(__file__).parent.parent.resolve()
-    polls = pd.read_csv(str(path) + polls_csv_path)
+    polls = pd.read_csv(str(path) + polls_json_path)
     return polls
 
 
@@ -66,8 +66,8 @@ def calc_cosine_similarity_matrix(tf_idf_matrix_1, tf_idf_matrix_2):
     return cosine_similarity_matrix
 
 
-def idx_from_title(df, title):
-    return df[df["title"] == title].index.values[0]
+def id_to_index(df, id):
+    return df[df["id"] == id].index.values[0]
 
 
 def title_from_idx(df, idx):
@@ -103,8 +103,8 @@ def gen_rec_from_list_of_polls(
 ):
     recommendations = []
     for poll_id in interacted_polls:
-        # index = idx_from_title(df, original_title)
-        similarity_scores = list(enumerate(cosine_similarity_matrix[poll_id]))
+        index = id_to_index(polls, poll_id)
+        similarity_scores = list(enumerate(cosine_similarity_matrix[index]))
         similarity_scores_sorted = sorted(
             similarity_scores, key=lambda x: x[1], reverse=True
         )

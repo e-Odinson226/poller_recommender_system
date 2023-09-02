@@ -18,11 +18,11 @@ class Rec(Resource):
         fingerprint = "CE:AA:F7:FF:04:C7:31:14:78:9C:62:D4:CE:98:F9:EF:56:DA:70:45:37:14:E3:F8:66:0A:25:ED:05:04:83:ec"
 
         # self.polls = rs.get_polls_list("/data/polls_synthetic.csv")
-        self.e_handle = ElasticsearchHandel(
+        self.elastic_handle = ElasticsearchHandel(
             elasticsearch_url, username, password, fingerprint
         )
 
-        self.polls = self.e_handle.get_index("polls")
+        self.polls = self.elastic_handle.get_index("polls")
         self.polls = pd.DataFrame.from_records(self.polls)
 
         # self.userPollActions = self.userInteractions["userPollActions"]
@@ -35,19 +35,21 @@ class Rec(Resource):
         # for dic in interactions.values():
         #    self.interacted_polls.extend(dic) if dic else None
 
-        self.userInteractions = self.e_handle.get_interactions(
+        self.userInteractions = self.elastic_handle.get_interactions(
             "userpollinteractions", user_id
         )
 
-        """ self.polls = rs.encode_topics(self.polls)
+        self.polls = rs.encode_topics(self.polls)
         polls_tf_idf_matrix = rs.create_tf_idf_matrix(self.polls, "question")
         cosine_similarity_matrix = rs.calc_cosine_similarity_matrix(
             polls_tf_idf_matrix, polls_tf_idf_matrix
         )
 
         # [dic["poll_ID"] for dic in interactions],
+        print(self.userInteractions[0]["userPollActions"]["likes"])
+
         self.recommended_list = rs.gen_rec_from_list_of_polls(
-            self.interacted_polls,
+            self.userInteractions[0]["userPollActions"]["likes"],
             self.polls,
             cosine_similarity_matrix,
             10,
@@ -68,8 +70,10 @@ class Rec(Resource):
         result = {
             "user_ID": user_id,
             "recommended_polls": recommended_polls,
-        } """
-        return self.userInteractions, 200
+        }
+
+        # return self.polls, 200
+        return result, 200
 
 
 api.add_resource(Rec, "/get_rec/")
