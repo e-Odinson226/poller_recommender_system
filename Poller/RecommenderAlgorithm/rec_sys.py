@@ -57,7 +57,14 @@ def check_column_type(df, column_name, check_type):
 
 def create_tf_idf_matrix(df, column):
     tf_idf = TfidfVectorizer(stop_words="english")
-    tf_idf_matrix = tf_idf.fit_transform(df[column])
+
+    # print()
+    # tf_idf_matrix = tf_idf.fit_transform(df[column])
+    tf_idf_matrix = tf_idf.fit_transform(
+        df[column].apply(
+            lambda x: " ".join(x),
+        ),
+    )
     return tf_idf_matrix
 
 
@@ -153,15 +160,3 @@ if __name__ == "__main__":
     cosine_similarity_matrix = calc_cosine_similarity_matrix(
         tf_idf_matrix, tf_idf_matrix
     )
-
-#
-# liked_poll_title = "Do you think cryptocurrency is the future of finance?"
-# liked_poll_index = idx_from_title(polls, liked_poll_title)
-#
-# liked_polls = []
-# recommended_list = recommendations(
-#    liked_poll_index, polls, cosine_similarity_matrix, 10
-# )
-# print(f"recommended_list: [{recommended_list}]")
-
-# print(f"liked poll: [{liked_poll_title}] \nrecommended polls: \n{recommended_list}")

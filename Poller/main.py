@@ -6,6 +6,7 @@ import pandas as pd
 from RecommenderAlgorithm import rec_sys as rs
 from ElasticSearch.elastic_handle import *
 
+
 app = Flask(__name__)
 api = Api(app)
 
@@ -28,6 +29,7 @@ class Rec(Resource):
         # self.userPollActions = self.userInteractions["userPollActions"]
 
     def post(self):
+        print("----------------------------------")
         args = request.get_json(force=True)
         user_id = args.get("userId")
 
@@ -38,18 +40,21 @@ class Rec(Resource):
         self.userInteractions = self.elastic_handle.get_interactions(
             "userpollinteractions", user_id
         )
-
         self.polls = rs.encode_topics(self.polls)
-        polls_tf_idf_matrix = rs.create_tf_idf_matrix(self.polls, "question")
+        polls_tf_idf_matrix = rs.create_tf_idf_matrix(self.polls, "topics")
         cosine_similarity_matrix = rs.calc_cosine_similarity_matrix(
             polls_tf_idf_matrix, polls_tf_idf_matrix
         )
 
         # [dic["poll_ID"] for dic in interactions],
-        print(self.userInteractions[0]["userPollActions"]["likes"])
+        self.userInteractions = [
+            interaction["pollId"]
+            for interaction in self.userInteractions["userPollActions"][:10]
+        ]
 
         self.recommended_list = rs.gen_rec_from_list_of_polls(
-            self.userInteractions[0]["userPollActions"]["likes"],
+            # self.userInteractions[0]["userPollActions"]["likes"],
+            self.userInteractions,
             self.polls,
             cosine_similarity_matrix,
             10,
@@ -72,7 +77,6 @@ class Rec(Resource):
             "recommended_polls": recommended_polls,
         }
 
-        # return self.polls, 200
         return result, 200
 
 

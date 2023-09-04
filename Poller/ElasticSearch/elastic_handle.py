@@ -49,22 +49,25 @@ class ElasticsearchHandel:
             "match": {"userId": user_id},
         }
 
-        while True:
-            results = self.client.search(
-                index=index_name,
-                query=query,
-                size=batch_size,
-                from_=from_index,
-            )
-            instances = results["hits"]["hits"]
+        results = self.client.search(
+            index=index_name,
+            query=query,
+            size=batch_size,
+            from_=from_index,
+        )
+        instances = results["hits"]["hits"][0]
+        return instances["_source"]
 
-            if instances:
-                all_instances.extend(instances)
-                from_index += batch_size
-            else:
-                break
-
-        return [instance["_source"] for instance in all_instances]
+        # while True:
+        #    --
+        #
+        #    --
+        #   if instances:
+        #       all_instances.extend(instances)
+        #       from_index += batch_size
+        #   else:
+        #       break
+        # return [instance["_source"] for instance in all_instances]
 
     def export_index_to_file(self, index, index_file_path):
         try:

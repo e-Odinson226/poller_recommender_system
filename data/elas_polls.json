@@ -204,26 +204,6 @@
         "numberOfComments": 0
     },
     {
-        "id": "1d949a69-1831-4787-8967-f6711a656404",
-        "question": "which pet do you like most ?",
-        "options": [
-            "",
-            "",
-            "",
-            ""
-        ],
-        "topics": [
-            "General"
-        ],
-        "pollType": "Public",
-        "ownerId": "61400ff7-531a-425e-a506-e2a900eec613",
-        "createdAt": "0001-01-01T00:00:00",
-        "numberOfLike": 0,
-        "numberOfViews": 1,
-        "numberOfVotes": 0,
-        "numberOfComments": 3
-    },
-    {
         "id": "1ec1f108-2c7b-45d5-819c-9db42ff7a9ab",
         "question": "Which one ?",
         "options": [
@@ -490,24 +470,6 @@
         "numberOfLike": 1,
         "numberOfViews": 3,
         "numberOfVotes": 3,
-        "numberOfComments": 0
-    },
-    {
-        "id": "42a1154e-f4bd-49f6-b2e5-202a2adb6a68",
-        "question": "which one ?",
-        "options": [
-            "",
-            ""
-        ],
-        "topics": [
-            "General"
-        ],
-        "pollType": "Public",
-        "ownerId": "61400ff7-531a-425e-a506-e2a900eec613",
-        "createdAt": "0001-01-01T00:00:00",
-        "numberOfLike": 0,
-        "numberOfViews": 3,
-        "numberOfVotes": 1,
         "numberOfComments": 0
     },
     {
@@ -1937,5 +1899,43 @@
         "numberOfViews": 5,
         "numberOfVotes": 1,
         "numberOfComments": 0
+    },
+    {
+        "id": "42a1154e-f4bd-49f6-b2e5-202a2adb6a68",
+        "question": "which one ?",
+        "options": [
+            "",
+            ""
+        ],
+        "topics": [
+            "General"
+        ],
+        "pollType": "Public",
+        "ownerId": "61400ff7-531a-425e-a506-e2a900eec613",
+        "createdAt": "0001-01-01T00:00:00",
+        "numberOfLike": 6,
+        "numberOfViews": 3,
+        "numberOfVotes": 1,
+        "numberOfComments": 0
+    },
+    {
+        "id": "1d949a69-1831-4787-8967-f6711a656404",
+        "question": "which pet do you like most ?",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "topics": [
+            "General"
+        ],
+        "pollType": "Public",
+        "ownerId": "61400ff7-531a-425e-a506-e2a900eec613",
+        "createdAt": "0001-01-01T00:00:00",
+        "numberOfLike": 0,
+        "numberOfViews": 1,
+        "numberOfVotes": 1,
+        "numberOfComments": 5
     }
 ]
