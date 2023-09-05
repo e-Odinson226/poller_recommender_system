@@ -1,6 +1,14 @@
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+
+import nltk
+
+nltk.download("punkt")
+nltk.download("stopwords")
+
+import string
+
 from pathlib import Path
 from collections import Counter
 import json
@@ -36,22 +44,31 @@ def check_column_type(df, column_name, check_type):
             )
 
 
+def preprocess_text(text):
+    tokens = nltk.tokenize.word_tokenize(text)
+    # tokens = [word.lower() for word in tokens if type(word) is str]
+    tokens = [word.lower() for word in tokens]
+    tokens = [word for word in tokens if word not in string.punctuation]
+    stop_words = set(nltk.corpus.stopwords.words("english"))
+    tokens = [word for word in tokens if word not in stop_words]
+    processed_text = " ".join(tokens)
+
+    return processed_text
+
+
 def create_tf_idf_matrix(df, column):
     tf_idf = TfidfVectorizer(stop_words="english")
 
-    # print()
-    # tf_idf_matrix = tf_idf.fit_transform(df[column])
-    tf_idf_matrix = tf_idf.fit_transform(
-        df[column].apply(
-            lambda x: " ".join(x),
-        ),
-    )
-    return tf_idf_matrix
+    # print(f"{df[column]} is {df[column].dtype} and {df[column].dtype is list} {list}: ")
+    df[column] = df[column].apply(lambda x: " ".join(x))
+    df[column] = df[column].apply(preprocess_text)
+
+    return tf_idf.fit_transform(df[column])
+    # return tf_idf.fit_transform(df[column])
 
 
 def calc_cosine_similarity_matrix(tf_idf_matrix_1, tf_idf_matrix_2):
-    cosine_similarity_matrix = cosine_similarity(tf_idf_matrix_1, tf_idf_matrix_2)
-    return cosine_similarity_matrix
+    return cosine_similarity(tf_idf_matrix_1, tf_idf_matrix_2)
 
 
 def id_to_index(df, id):
@@ -62,7 +79,12 @@ def title_from_idx(df, idx):
     return df[df.index == idx]
 
 
-def gen_recommendations(index, df, cosine_similarity_matrix, number_of_recommendations):
+def gen_recommendations(
+    index,
+    df,
+    cosine_similarity_matrix,
+    number_of_recommendations,
+):
     # index = idx_from_title(df, original_title)
     similarity_scores = list(enumerate(cosine_similarity_matrix[index]))
     similarity_scores_sorted = sorted(

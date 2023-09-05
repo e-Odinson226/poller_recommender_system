@@ -46,7 +46,7 @@ class ElasticsearchHandel:
         all_instances = []
 
         query = {
-            "match": {"userId": user_id},
+            "match_phrase": {"userId": user_id},
         }
 
         results = self.client.search(

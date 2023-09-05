@@ -36,6 +36,7 @@ class Rec(Resource):
         )
 
     def post(self):
+        # print("----------------------------------")
         args = request.get_json(force=True)
         user_id = args.get("userId")
 
@@ -43,10 +44,12 @@ class Rec(Resource):
             "userpollinteractions", user_id
         )
 
+        # [dic["poll_ID"] for dic in interactions],
         self.userInteractions = [
             interaction["pollId"]
-            for interaction in self.userInteractions["userPollActions"][:20]
+            for interaction in self.userInteractions["userPollActions"][:10]
         ]
+
         self.recommended_list = gen_rec_from_list_of_polls(
             self.userInteractions,
             self.polls,
@@ -71,8 +74,8 @@ class Rec(Resource):
             "recommended_polls": recommended_polls,
         }
 
-        return result, 200
         return self.userInteractions, 200
+        # return result, 200
 
 
 api.add_resource(Rec, "/get_rec/")
