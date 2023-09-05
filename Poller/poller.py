@@ -3,8 +3,8 @@ from flask_restful import Api, Resource
 import pandas as pd
 
 
-from .RecommenderAlgorithm import rec_sys as rs
-from .ElasticSearch.elastic_handle import *
+from .recommender_system import *
+from .elasticsearch_handle import ElasticsearchHandel
 
 
 app = Flask(__name__)
@@ -18,13 +18,18 @@ class Rec(Resource):
         password = "9r0&rJP@19GY"
         fingerprint = "CE:AA:F7:FF:04:C7:31:14:78:9C:62:D4:CE:98:F9:EF:56:DA:70:45:37:14:E3:F8:66:0A:25:ED:05:04:83:ec"
 
-        # self.polls = rs.get_polls_list("/data/polls_synthetic.csv")
+        # self.polls = get_polls_list("/data/polls_synthetic.csv")
         self.elastic_handle = ElasticsearchHandel(
             elasticsearch_url, username, password, fingerprint
         )
 
         self.polls = self.elastic_handle.get_index("polls")
         self.polls = pd.DataFrame.from_records(self.polls)
+        print(self.polls)
+        self.polls = encode_topics(self.polls)
+        print(self.polls)
+
+        self.polls_tf_idf_matrix = create_tf_idf_matrix(self.polls, "topics")
 
         # self.userPollActions = self.userInteractions["userPollActions"]
 
@@ -33,17 +38,14 @@ class Rec(Resource):
         args = request.get_json(force=True)
         user_id = args.get("userId")
 
-        # interactions = args.get("userPollActions")
-        # for dic in interactions.values():
-        #    self.interacted_polls.extend(dic) if dic else None
-
         self.userInteractions = self.elastic_handle.get_interactions(
             "userpollinteractions", user_id
         )
-        self.polls = rs.encode_topics(self.polls)
-        polls_tf_idf_matrix = rs.create_tf_idf_matrix(self.polls, "topics")
-        cosine_similarity_matrix = rs.calc_cosine_similarity_matrix(
-            polls_tf_idf_matrix, polls_tf_idf_matrix
+
+        polls_tf_idf_matrix = create_tf_idf_matrix(polls, "topics")
+
+        cosine_similarity_matrix = calc_cosine_similarity_matrix(
+            self.polls_tf_idf_matrix, polls_tf_idf_matrix
         )
 
         # [dic["poll_ID"] for dic in interactions],
@@ -52,7 +54,7 @@ class Rec(Resource):
             for interaction in self.userInteractions["userPollActions"][:10]
         ]
 
-        self.recommended_list = rs.gen_rec_from_list_of_polls(
+        self.recommended_list = gen_rec_from_list_of_polls(
             # self.userInteractions[0]["userPollActions"]["likes"],
             self.userInteractions,
             self.polls,

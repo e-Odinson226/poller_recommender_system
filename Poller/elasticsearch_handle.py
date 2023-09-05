@@ -79,7 +79,7 @@ class ElasticsearchHandel:
             print("Export Error", exp)
 
 
-if __name__ == "__main__":
+""" if __name__ == "__main__":
     elasticsearch_url = "https://159.203.183.251:9200"
     username = "pollett"
     password = "9r0&rJP@19GY"
@@ -94,4 +94,4 @@ if __name__ == "__main__":
 
     interactions = elastic_handle.get_index("userpollinteractions")
     elastic_handle.export_index_to_file(interactions, "./data/elas_interactions.json")
-    # print(polls)
+    # print(polls) """

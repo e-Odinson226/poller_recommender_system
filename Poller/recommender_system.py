@@ -6,25 +6,6 @@ from collections import Counter
 import json
 
 
-def get_polls_list(polls_csv_path="/data/polls_synthetic.csv"):
-    path = Path(__file__).parent.parent.resolve()
-    polls = pd.read_csv(str(path) + polls_csv_path)
-    return polls
-
-
-def get_polls_list_json(polls_json_path="/data/elas_polls.json"):
-    path = Path(__file__).parent.parent.resolve()
-    polls = pd.read_csv(str(path) + polls_json_path)
-    return polls
-
-
-# def get_polls_list(polls_json_path="/data/elas_polls.json"):
-#    path = Path(__file__).parent.parent.resolve()
-#    print(path)
-#    polls = pd.read_json(str(path) + polls_json_path)
-#    return polls
-
-
 def encode_topics(df):
     # topics = df["topics"].str.get_dummies(sep=",")
     # topics = df["topics"].apply( topicfor topic in topics  )
