@@ -3,8 +3,8 @@ from flask_restful import Api, Resource
 import pandas as pd
 
 
-from .recommender_system import *
-from .elasticsearch_handle import ElasticsearchHandel
+from .RecommenderSystem.recommender_system import *
+from .ElasticSeachHandle.elasticsearch_handle import ElasticsearchHandel
 
 
 app = Flask(__name__)

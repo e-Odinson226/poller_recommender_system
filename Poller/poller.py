@@ -3,8 +3,8 @@ from flask_restful import Api, Resource
 import pandas as pd
 
 
-from .recommender_system import *
-from .elasticsearch_handle import ElasticsearchHandel
+from .RecommenderSystem.recommender_system import *
+from .ElasticSeachHandle.elasticsearch_handle import ElasticsearchHandel
 
 
 app = Flask(__name__)
@@ -12,7 +12,7 @@ api = Api(app)
 
 
 class Rec(Resource):
-    def __init__(self) -> None:
+    def __init__(self):
         pd.set_option("display.max_columns", None)
 
         elasticsearch_url = "https://159.203.183.251:9200"
@@ -25,6 +25,10 @@ class Rec(Resource):
             elasticsearch_url, username, password, fingerprint
         )
 
+    def post(self):
+        args = request.get_json(force=True)
+        user_id = args.get("userId")
+
         self.polls = self.elastic_handle.get_index("polls")
         self.polls = pd.DataFrame.from_records(self.polls)
         # self.polls = encode_topics(self.polls)
@@ -34,10 +38,6 @@ class Rec(Resource):
         self.cosine_similarity_matrix = calc_cosine_similarity_matrix(
             self.polls_tf_idf_matrix, self.polls_tf_idf_matrix
         )
-
-    def post(self):
-        args = request.get_json(force=True)
-        user_id = args.get("userId")
 
         self.userInteractions = self.elastic_handle.get_interactions(
             "userpollinteractions", user_id

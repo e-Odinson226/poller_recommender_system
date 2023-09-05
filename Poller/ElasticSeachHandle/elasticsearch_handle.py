@@ -30,11 +30,10 @@ class ElasticsearchHandel:
             )
             instances = results["hits"]["hits"]
 
-            if not instances:
-                break
-
             all_instances.extend(instances)
             from_index += batch_size
+            if len(instances) < 100:
+                break
 
         setattr(self, index_name, [instance["_source"] for instance in all_instances])
         return getattr(self, index_name)

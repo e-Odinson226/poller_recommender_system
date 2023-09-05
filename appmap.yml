@@ -1,5 +1,5 @@
 appmap_dir: tmp/appmap
 language: python
-name: Poller
+name: recom_system
 packages:
-- path: Poller
+- path: recom_system
