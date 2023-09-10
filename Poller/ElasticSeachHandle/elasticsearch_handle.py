@@ -77,7 +77,8 @@ class ElasticsearchHandel:
                 # -x["numberOfPollUp"],
             ),
         )
-        print("\n", trend_polls, "\n")
+
+        # print("\n", filtered_trend_polls, "\n")
         setattr(self, "trend_polls", trend_polls)
 
     def export_index_to_file(self, index, index_file_path):
