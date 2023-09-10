@@ -7,10 +7,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from .RecommenderSystem.recommender_system import *
-from .ElasticSeachHandle.elasticsearch_handle import ElasticsearchHandel
+from .ElasticSeachHandle.elasticsearch_handle import *
 
 
 app = Flask(__name__)
+print(app)
 api = Api(app)
 
 
@@ -34,53 +35,68 @@ class Rec(Resource):
         )
 
     def post(self):
-        args = request.get_json(force=True)
-        user_id = args.get("userId")
+        try:
+            args = request.get_json(force=True)
+            user_id = args.get("userId")
 
-        self.polls = self.elastic_handle.get_index("polls")
-        self.polls = pd.DataFrame.from_records(self.polls)
-        # self.polls = encode_topics(self.polls)
+            self.polls = self.elastic_handle.get_index("polls")
+            self.polls = pd.DataFrame.from_records(self.polls)
+            # self.polls = encode_topics(self.polls)
 
-        self.polls_tf_idf_matrix = create_tf_idf_matrix(self.polls, "topics")
+            self.polls_tf_idf_matrix = create_tf_idf_matrix(self.polls, "topics")
 
-        self.cosine_similarity_matrix = calc_cosine_similarity_matrix(
-            self.polls_tf_idf_matrix, self.polls_tf_idf_matrix
-        )
+            self.cosine_similarity_matrix = calc_cosine_similarity_matrix(
+                self.polls_tf_idf_matrix, self.polls_tf_idf_matrix
+            )
 
-        self.userInteractions = self.elastic_handle.get_interactions(
-            "userpollinteractions", user_id
-        )
+            self.userInteractions = self.elastic_handle.get_interactions(
+                "userpollinteractions", user_id
+            )
 
-        self.userInteractions = [
-            interaction["pollId"]
-            for interaction in self.userInteractions["userPollActions"][:20]
-        ]
-        self.recommended_list = gen_rec_from_list_of_polls(
-            self.userInteractions,
-            self.polls,
-            self.cosine_similarity_matrix,
-            10,
-        )
+            self.userInteractions = [
+                interaction["pollId"]
+                for interaction in self.userInteractions["userPollActions"][:20]
+            ]
+            self.recommended_list = gen_rec_from_list_of_polls(
+                self.userInteractions,
+                self.polls,
+                self.cosine_similarity_matrix,
+                10,
+            )
 
-        recommended_polls = self.polls[self.polls["id"].isin(self.recommended_list)]
+            recommended_polls = self.polls[self.polls["id"].isin(self.recommended_list)]
 
-        recommended_polls = recommended_polls[
-            ["id", "ownerId", "question", "options", "topics"]
-        ].to_dict(orient="records")
+            recommended_polls = recommended_polls[
+                ["id", "ownerId", "question", "options", "topics"]
+            ].to_dict(orient="records")
 
-        # print(f"{recommended_polls['poll_ID', 'author_ID', 'title', 'topic']}")
-        # print(f"{recommended_polls.columns.to_list()}")
-        # print(
-        #    f"{recommended_polls['poll_ID', 'author_ID', 'title', 'option', 'topic']}"
-        # )
+            # print(f"{recommended_polls['poll_ID', 'author_ID', 'title', 'topic']}")
+            # print(f"{recommended_polls.columns.to_list()}")
+            # print(
+            #    f"{recommended_polls['poll_ID', 'author_ID', 'title', 'option', 'topic']}"
+            # )
 
-        result = {
-            "user_ID": user_id,
-            "recommended_polls": recommended_polls,
-        }
+            result = {
+                "user_ID": user_id,
+                "recommended_polls": recommended_polls,
+            }
 
-        return result, 200
-        return self.userInteractions, 200
+            return result, 200
+            return self.userInteractions, 200
+        except InteractionNotFound as e:
+            exception = {
+                "Message": e.args[0],
+                "Error": "Value Error",
+                "Code": e.args[1],
+            }
+            return jsonify(exception)
+        except TlsError as e:
+            exception = {
+                "Message": e.args,
+                "Error": "TLS Error",
+                "Code": 120,
+            }
+            return jsonify(exception)
 
 
 api.add_resource(Rec, "/get_rec/")

@@ -1,6 +1,8 @@
 from elasticsearch import Elasticsearch
 import json
 
+from .elastic_exceptions import *
+
 
 class ElasticsearchHandel:
     def __init__(self, elasticsearch_url, username, password, fingerprint):
@@ -9,7 +11,7 @@ class ElasticsearchHandel:
         self.password = password
         self.fingerprint = fingerprint
         self.client = Elasticsearch(
-            self.elasticsearch_url,
+            hosts=self.elasticsearch_url,
             basic_auth=(self.username, self.password),
             ssl_assert_fingerprint=self.fingerprint,
         )
@@ -53,9 +55,16 @@ class ElasticsearchHandel:
             query=query,
             size=batch_size,
             from_=from_index,
+            timeout="1s",
         )
-        instances = results["hits"]["hits"][0]
-        return instances["_source"]
+        # instances = results["hits"]["hits"][0]
+        hits = results["hits"].get("hits")
+
+        if not hits:
+            # raise ValueError("User doesn't have any interactions.")
+            raise InteractionNotFound()
+
+        return hits[0].get("_source")
 
         # while True:
         #    --
