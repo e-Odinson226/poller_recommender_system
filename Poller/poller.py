@@ -33,17 +33,18 @@ class Rec(Resource):
         self.elastic_handle = ElasticsearchHandel(
             elasticsearch_url, username, password, fingerprint
         )
+        self.polls = self.elastic_handle.get_index("polls")
+        self.elastic_handle.get_trend_polls()
 
     def post(self):
         try:
             args = request.get_json(force=True)
             user_id = args.get("userId")
 
-            self.polls = self.elastic_handle.get_index("polls")
-            self.polls = pd.DataFrame.from_records(self.polls)
-            # self.polls = encode_topics(self.polls)
+            self.polls_df = pd.DataFrame.from_records(self.polls)
+            # self.polls = encode_topics(self.polls_df)
 
-            self.polls_tf_idf_matrix = create_tf_idf_matrix(self.polls, "topics")
+            self.polls_tf_idf_matrix = create_tf_idf_matrix(self.polls_df, "topics")
 
             self.cosine_similarity_matrix = calc_cosine_similarity_matrix(
                 self.polls_tf_idf_matrix, self.polls_tf_idf_matrix
@@ -59,12 +60,14 @@ class Rec(Resource):
             ]
             self.recommended_list = gen_rec_from_list_of_polls(
                 self.userInteractions,
-                self.polls,
+                self.polls_df,
                 self.cosine_similarity_matrix,
                 10,
             )
 
-            recommended_polls = self.polls[self.polls["id"].isin(self.recommended_list)]
+            recommended_polls = self.polls_df[
+                self.polls_df["id"].isin(self.recommended_list)
+            ]
 
             recommended_polls = recommended_polls[
                 ["id", "ownerId", "question", "options", "topics"]
@@ -82,14 +85,13 @@ class Rec(Resource):
             }
 
             return result, 200
-            return self.userInteractions, 200
+
         except InteractionNotFound as e:
-            exception = {
-                "Message": e.args[0],
-                "Error": "Value Error",
-                "Code": e.args[1],
+            result = {
+                "trend_polls": self.elastic_handle.trend_polls,
             }
-            return jsonify(exception)
+            return jsonify(result)
+
         except TlsError as e:
             exception = {
                 "Message": e.args,

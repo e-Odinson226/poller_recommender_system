@@ -66,16 +66,14 @@ class ElasticsearchHandel:
 
         return hits[0].get("_source")
 
-        # while True:
-        #    --
-        #
-        #    --
-        #   if instances:
-        #       all_instances.extend(instances)
-        #       from_index += batch_size
-        #   else:
-        #       break
-        # return [instance["_source"] for instance in all_instances]
+    def get_trend_polls(self):
+        polls = getattr(self, "polls")
+        # trend_polls = sorted(polls, key=lambda x: (-x["numberOfPollups"], -x["numberOfVotes"], -x["numberOfLike"]))
+        trend_polls = sorted(
+            polls, key=lambda x: (-x["numberOfVotes"], -x["numberOfLike"])
+        )
+        print("\n", trend_polls, "\n")
+        setattr(self, "trend_polls", trend_polls)
 
     def export_index_to_file(self, index, index_file_path):
         try:
