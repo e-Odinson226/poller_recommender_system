@@ -123,8 +123,11 @@ def gen_rec_from_list_of_polls(
             t[0] for t in similarity_scores_sorted[1 : (number_of_recommendations + 1)]
         ]
         recs = list(polls["id"].iloc[recommendations_indices])
-        # print(f"recommended polls for {poll_id} are:{recs}")
-        recommendations.append(recs)
+
+        # Filter out polls that have already been interacted with
+        filtered_recs = [poll for poll in recs if poll not in interacted_polls]
+
+        recommendations.append(filtered_recs)
 
     flattened_recommendations = [
         item for sublist in recommendations for item in sublist

@@ -73,12 +73,6 @@ class Rec(Resource):
                 ["id", "ownerId", "question", "options", "topics"]
             ].to_dict(orient="records")
 
-            # print(f"{recommended_polls['poll_ID', 'author_ID', 'title', 'topic']}")
-            # print(f"{recommended_polls.columns.to_list()}")
-            # print(
-            #    f"{recommended_polls['poll_ID', 'author_ID', 'title', 'option', 'topic']}"
-            # )
-
             result = {
                 "user_ID": user_id,
                 "recommended_polls": recommended_polls,
@@ -88,7 +82,7 @@ class Rec(Resource):
 
         except InteractionNotFound as e:
             result = {
-                "trend_polls": self.elastic_handle.trend_polls,
+                "recommended_polls": self.elastic_handle.trend_polls,
             }
             return jsonify(result)
 

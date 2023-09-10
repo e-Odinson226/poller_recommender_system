@@ -70,7 +70,12 @@ class ElasticsearchHandel:
         polls = getattr(self, "polls")
         # trend_polls = sorted(polls, key=lambda x: (-x["numberOfPollups"], -x["numberOfVotes"], -x["numberOfLike"]))
         trend_polls = sorted(
-            polls, key=lambda x: (-x["numberOfVotes"], -x["numberOfLike"])
+            polls,
+            key=lambda x: (
+                -x["numberOfVotes"],
+                -x["numberOfLike"],
+                # -x["numberOfPollUp"],
+            ),
         )
         print("\n", trend_polls, "\n")
         setattr(self, "trend_polls", trend_polls)
