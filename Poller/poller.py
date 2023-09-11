@@ -2,9 +2,6 @@ from flask import Flask, redirect, url_for, jsonify, request
 from flask_restful import Api, Resource
 import pandas as pd
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 from .RecommenderSystem.recommender_system import *
 from .ElasticSeachHandle.elasticsearch_handle import *
@@ -15,19 +12,21 @@ print(app)
 api = Api(app)
 
 
+elasticsearch_url = os.environ.get("POLLER_ELASTICSEARCH_URL")
+username = os.environ.get("POLLER_USERNAME")
+password = os.environ.get("POLLER_PASSWORD")
+fingerprint = os.environ.get("POLLER_FINGERPRINT")
+print(elasticsearch_url, username, password, fingerprint)
+
+
 class Rec(Resource):
     def __init__(self):
         pd.set_option("display.max_columns", None)
 
-        elasticsearch_url = os.environ.get("POLLER_ELASTICSEARCH_URL")
-        username = os.environ.get("POLLER_USERNAME")
-        password = os.environ.get("POLLER_PASSWORD")
-        fingerprint = os.environ.get("POLLER_FINGERPRINT")
-
-        # elasticsearch_url = "https://159.203.183.251:9200"
-        # username = "pollett"
-        # password = "9r0&rJP@19GY"
-        # fingerprint = "CE:AA:F7:FF:04:C7:31:14:78:9C:62:D4:CE:98:F9:EF:56:DA:70:45:37:14:E3:F8:66:0A:25:ED:05:04:83:ec"
+        # elasticsearch_url = os.getenv("POLLER_ELASTICSEARCH_URL")
+        # username = os.getenv("POLLER_USERNAME")
+        # password = os.getenv("POLLER_PASSWORD")
+        # fingerprint = os.getenv("POLLER_FINGERPRINT")
 
         # self.polls = get_polls_list("/data/polls_synthetic.csv")
         self.elastic_handle = ElasticsearchHandel(
