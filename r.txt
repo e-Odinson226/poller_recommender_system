@@ -1,0 +1,10 @@
+flask_restful
+os
+flask
+json
+elasticsearch
+elastic_transport
+collections
+sklearn
+nltk
+string
