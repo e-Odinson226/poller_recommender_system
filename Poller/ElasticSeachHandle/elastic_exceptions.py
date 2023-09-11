@@ -1,4 +1,4 @@
-from elastic_transport import TlsError
+from elastic_transport import TlsError, ConnectionTimeout, ConnectionError
 
 
 class InteractionNotFound(Exception):

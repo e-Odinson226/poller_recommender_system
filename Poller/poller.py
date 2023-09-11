@@ -92,6 +92,13 @@ class Rec(Resource):
                 "Code": 120,
             }
             return jsonify(exception)
+        except ConnectionTimeout as e:
+            exception = {
+                "Message": e.args,
+                "Error": "Elastic connection timed out",
+                "Code": 130,
+            }
+            return jsonify(exception)
 
 
 api.add_resource(Rec, "/get_rec/")
