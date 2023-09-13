@@ -57,6 +57,7 @@ class Rec(Resource):
 
             # Get the page number from the query parameters, default to page 1 if not provided
             page = int(request.args.get("page", 1))
+            all = int(request.args.get("all", 0))
 
             # Calculate the starting and ending indices for the current page
             start_idx = (page - 1) * items_per_page
@@ -94,7 +95,13 @@ class Rec(Resource):
             #    ["id", "ownerId", "question", "options", "topics"]
             # ].to_dict(orient="records")
             recommended_polls = recommended_polls["id"].tolist()
-            print(recommended_polls)
+            if all == 1:
+                response = {
+                    "user_ID": user_id,
+                    "recommended_polls": recommended_polls,
+                }
+
+                return response, 200
 
             # Slice the data to get the items for the current page
             paginated_data = recommended_polls[start_idx:end_idx]
