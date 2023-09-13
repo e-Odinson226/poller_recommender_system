@@ -78,8 +78,11 @@ class ElasticsearchHandel:
             ),
         )
 
+        # recs = trend_polls["id"]
+
         # print("\n", filtered_trend_polls, "\n")
-        setattr(self, "trend_polls", trend_polls)
+        # setattr(self, "trend_polls", trend_polls)
+        return trend_polls
 
     def export_index_to_file(self, index, index_file_path):
         try:

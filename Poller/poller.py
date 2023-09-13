@@ -49,7 +49,7 @@ class Rec(Resource):
     def __init__(self):
         pd.set_option("display.max_columns", None)
         self.polls = elastic_handle.get_index("polls")
-        elastic_handle.get_trend_polls()
+        self.trend_polls = elastic_handle.get_trend_polls()
 
     def get(self):
         try:
@@ -130,12 +130,14 @@ class Rec(Resource):
             # Calculate the starting and ending indices for the current page
             start_idx = (page - 1) * items_per_page
             end_idx = start_idx + items_per_page
+
             # Slice the data to get the items for the current page
-            paginated_data = elastic_handle.trend_polls[start_idx:end_idx]
+            trend_polls = [poll["id"] for poll in self.trend_polls]
+            paginated_data = trend_polls[start_idx:end_idx]
 
             # Calculate the total number of pages
-            total_pages = len(elastic_handle.trend_polls) // items_per_page + (
-                len(elastic_handle.trend_polls) % items_per_page > 0
+            total_pages = len(trend_polls) // items_per_page + (
+                len(trend_polls) % items_per_page > 0
             )
 
             # Create a response dictionary with the paginated data and pagination information
