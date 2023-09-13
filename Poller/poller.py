@@ -104,7 +104,7 @@ class Rec(Resource):
                     "recommended_polls": recommended_polls,
                 }
 
-                return jsonify(response), 200
+                return jsonify(response)
 
             # Slice the data to get the items for the current page
             paginated_data = recommended_polls[start_idx:end_idx]
