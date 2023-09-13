@@ -64,7 +64,30 @@ def create_tf_idf_matrix(df, column):
     df[column] = df[column].apply(preprocess_text)
 
     return tf_idf.fit_transform(df[column])
-    # return tf_idf.fit_transform(df[column])
+
+
+def create_souped_tf_idf_matrix(df):
+    features = ["topics", "options"]
+
+    for feature in features:
+        df[feature] = df[feature].apply(lambda x: " ".join(x))
+        df[feature] = df[feature].apply(preprocess_text)
+        print(f"df[{feature}]:\n{df[feature]}\n\n")
+
+    print("----------------------------------------------")
+    df["question"] = df["question"].apply(preprocess_text)
+    print(f"df[question]:\n{df['question']}\n\n")
+
+    tf_idf = TfidfVectorizer(stop_words="english")
+
+    # Create a new soup feature
+    df["soup"] = df.apply(create_soup, axis=1)
+
+    return tf_idf.fit_transform(df["soup"])
+
+
+def create_soup(df):
+    return df["question"] + " " + " ".join(df["options"]) + " " + " ".join(df["topics"])
 
 
 def calc_cosine_similarity_matrix(tf_idf_matrix_1, tf_idf_matrix_2):
