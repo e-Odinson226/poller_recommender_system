@@ -6,34 +6,49 @@ import os
 from .RecommenderSystem.recommender_system import *
 from .ElasticSeachHandle.elasticsearch_handle import *
 
-
 app = Flask(__name__)
-print(app)
+print(f"1. [{app}] Started\n--------------------")
 api = Api(app)
 
 
-elasticsearch_url = os.environ.get("POLLER_ELASTICSEARCH_URL")
-username = os.environ.get("POLLER_USERNAME")
-password = os.environ.get("POLLER_PASSWORD")
-fingerprint = os.environ.get("POLLER_FINGERPRINT")
-print(elasticsearch_url, username, password, fingerprint)
+try:
+    elasticsearch_url = os.environ.get("POLLER_ELASTICSEARCH_URL")
+    username = os.environ.get("POLLER_USERNAME")
+    password = os.environ.get("POLLER_PASSWORD")
+    fingerprint = os.environ.get("POLLER_FINGERPRINT")
+    elastic_handle = ElasticsearchHandel(
+        elasticsearch_url, username, password, fingerprint
+    )
+    if elasticsearch_url and username and password and fingerprint:
+        print("--------------------\n2. Environment variables were read correctly.")
+
+except ValueError as e:
+    from dotenv import load_dotenv
+
+    load_dotenv()
+    elasticsearch_url = os.getenv("POLLER_ELASTICSEARCH_URL")
+    username = os.getenv("POLLER_USERNAME")
+    password = os.getenv("POLLER_PASSWORD")
+    fingerprint = os.getenv("POLLER_FINGERPRINT")
+    try:
+        elastic_handle = ElasticsearchHandel(
+            elasticsearch_url, username, password, fingerprint
+        )
+        if elasticsearch_url and username and password and fingerprint:
+            print(
+                f"--------------------\n2. Elastic variables were read from [.env] file."
+            )
+    except TypeError:
+        print("--------------------\n2. Failed to read environment variables.")
+        print(e)
+        exit()
 
 
 class Rec(Resource):
     def __init__(self):
         pd.set_option("display.max_columns", None)
-
-        # elasticsearch_url = os.getenv("POLLER_ELASTICSEARCH_URL")
-        # username = os.getenv("POLLER_USERNAME")
-        # password = os.getenv("POLLER_PASSWORD")
-        # fingerprint = os.getenv("POLLER_FINGERPRINT")
-
-        # self.polls = get_polls_list("/data/polls_synthetic.csv")
-        self.elastic_handle = ElasticsearchHandel(
-            elasticsearch_url, username, password, fingerprint
-        )
-        self.polls = self.elastic_handle.get_index("polls")
-        self.elastic_handle.get_trend_polls()
+        self.polls = elastic_handle.get_index("polls")
+        elastic_handle.get_trend_polls()
 
     def post(self):
         try:
@@ -49,7 +64,7 @@ class Rec(Resource):
                 self.polls_tf_idf_matrix, self.polls_tf_idf_matrix
             )
 
-            self.userInteractions = self.elastic_handle.get_interactions(
+            self.userInteractions = elastic_handle.get_interactions(
                 "userpollinteractions", user_id
             )
 
@@ -81,7 +96,7 @@ class Rec(Resource):
 
         except InteractionNotFound as e:
             result = {
-                "recommended_polls": self.elastic_handle.trend_polls,
+                "recommended_polls": elastic_handle.trend_polls,
             }
             return jsonify(result)
 
