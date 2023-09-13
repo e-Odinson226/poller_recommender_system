@@ -83,7 +83,7 @@ class Rec(Resource):
                 self.userInteractions,
                 self.polls_df,
                 self.cosine_similarity_matrix,
-                10,
+                100,
             )
 
             recommended_polls = self.polls_df[
