@@ -90,9 +90,11 @@ class Rec(Resource):
                 self.polls_df["id"].isin(self.recommended_list)
             ]
 
-            recommended_polls = recommended_polls[
-                ["id", "ownerId", "question", "options", "topics"]
-            ].to_dict(orient="records")
+            # recommended_polls = recommended_polls[
+            #    ["id", "ownerId", "question", "options", "topics"]
+            # ].to_dict(orient="records")
+            recommended_polls = recommended_polls["id"].tolist()
+            print(recommended_polls)
 
             # Slice the data to get the items for the current page
             paginated_data = recommended_polls[start_idx:end_idx]
