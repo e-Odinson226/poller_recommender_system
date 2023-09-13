@@ -7,8 +7,9 @@ from .RecommenderSystem.recommender_system import *
 from .ElasticSeachHandle.elasticsearch_handle import *
 
 app = Flask(__name__)
-print(f"--------------------\n1. [{app}] Started")
 api = Api(app)
+print(f"--------------------\n1. [{app}] Started")
+items_per_page = 10
 
 
 try:
@@ -54,6 +55,13 @@ class Rec(Resource):
         try:
             user_id = request.args.get("userId")
 
+            # Get the page number from the query parameters, default to page 1 if not provided
+            page = int(request.args.get("page", 1))
+
+            # Calculate the starting and ending indices for the current page
+            start_idx = (page - 1) * items_per_page
+            end_idx = start_idx + items_per_page
+
             self.polls_df = pd.DataFrame.from_records(self.polls)
             # self.polls = encode_topics(self.polls_df)
 
@@ -86,18 +94,50 @@ class Rec(Resource):
                 ["id", "ownerId", "question", "options", "topics"]
             ].to_dict(orient="records")
 
-            result = {
+            # Slice the data to get the items for the current page
+            paginated_data = recommended_polls[start_idx:end_idx]
+
+            # Calculate the total number of pages
+            total_pages = len(recommended_polls) // items_per_page + (
+                len(recommended_polls) % items_per_page > 0
+            )
+
+            # Create a response dictionary with the paginated data and pagination information
+            response = {
                 "user_ID": user_id,
-                "recommended_polls": recommended_polls,
+                "page": page,
+                "total_pages": total_pages,
+                "recommended_polls": paginated_data,
             }
 
-            return result, 200
+            return response, 200
 
         except InteractionNotFound as e:
-            result = {
-                "recommended_polls": elastic_handle.trend_polls,
+            user_id = request.args.get("userId")
+
+            # Get the page number from the query parameters, default to page 1 if not provided
+            page = int(request.args.get("page", 1))
+
+            # Calculate the starting and ending indices for the current page
+            start_idx = (page - 1) * items_per_page
+            end_idx = start_idx + items_per_page
+            # Slice the data to get the items for the current page
+            paginated_data = elastic_handle.trend_polls[start_idx:end_idx]
+
+            # Calculate the total number of pages
+            total_pages = len(elastic_handle.trend_polls) // items_per_page + (
+                len(elastic_handle.trend_polls) % items_per_page > 0
+            )
+
+            # Create a response dictionary with the paginated data and pagination information
+            response = {
+                "user_ID": user_id,
+                "page": page,
+                "total_pages": total_pages,
+                "recommended_polls": paginated_data,
             }
-            return jsonify(result)
+
+            return jsonify(response)
 
         except TlsError as e:
             exception = {
