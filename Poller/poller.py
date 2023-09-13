@@ -9,7 +9,6 @@ from .ElasticSeachHandle.elasticsearch_handle import *
 app = Flask(__name__)
 api = Api(app)
 print(f"--------------------\n1. [{app}] Started")
-items_per_page = 10
 
 
 try:
@@ -58,6 +57,7 @@ class Rec(Resource):
             # Get the page number from the query parameters, default to page 1 if not provided
             page = int(request.args.get("page", 1))
             all = int(request.args.get("all", 0))
+            items_per_page = int(request.args.get("page_size", 10))
 
             # Calculate the starting and ending indices for the current page
             start_idx = (page - 1) * items_per_page
@@ -95,13 +95,16 @@ class Rec(Resource):
             #    ["id", "ownerId", "question", "options", "topics"]
             # ].to_dict(orient="records")
             recommended_polls = recommended_polls["id"].tolist()
+            total_recommended_polls_count = len(recommended_polls)
             if all == 1:
                 response = {
+                    "list": "all",
                     "user_ID": user_id,
+                    "total_count": total_recommended_polls_count,
                     "recommended_polls": recommended_polls,
                 }
 
-                return response, 200
+                return jsonify(response), 200
 
             # Slice the data to get the items for the current page
             paginated_data = recommended_polls[start_idx:end_idx]
@@ -113,19 +116,22 @@ class Rec(Resource):
 
             # Create a response dictionary with the paginated data and pagination information
             response = {
+                "list": "recom",
                 "user_ID": user_id,
                 "page": page,
-                "total_pages": total_pages,
+                "total_count": total_recommended_polls_count,
                 "recommended_polls": paginated_data,
             }
 
-            return response, 200
+            return jsonify(response)
 
         except InteractionNotFound as e:
             user_id = request.args.get("userId")
 
             # Get the page number from the query parameters, default to page 1 if not provided
             page = int(request.args.get("page", 1))
+
+            items_per_page = int(request.args.get("page_size", 10))
 
             # Calculate the starting and ending indices for the current page
             start_idx = (page - 1) * items_per_page
@@ -142,9 +148,10 @@ class Rec(Resource):
 
             # Create a response dictionary with the paginated data and pagination information
             response = {
+                "list": "trend",
                 "user_ID": user_id,
                 "page": page,
-                "total_pages": total_pages,
+                "total_count": len(trend_polls),
                 "recommended_polls": paginated_data,
             }
 
