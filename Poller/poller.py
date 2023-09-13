@@ -7,7 +7,7 @@ from .RecommenderSystem.recommender_system import *
 from .ElasticSeachHandle.elasticsearch_handle import *
 
 app = Flask(__name__)
-print(f"1. [{app}] Started\n--------------------")
+print(f"--------------------\n1. [{app}] Started")
 api = Api(app)
 
 
@@ -50,10 +50,9 @@ class Rec(Resource):
         self.polls = elastic_handle.get_index("polls")
         elastic_handle.get_trend_polls()
 
-    def post(self):
+    def get(self):
         try:
-            args = request.get_json(force=True)
-            user_id = args.get("userId")
+            user_id = request.args.get("userId")
 
             self.polls_df = pd.DataFrame.from_records(self.polls)
             # self.polls = encode_topics(self.polls_df)
@@ -117,6 +116,7 @@ class Rec(Resource):
 
 
 api.add_resource(Rec, "/get_rec/")
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)
