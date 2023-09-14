@@ -64,9 +64,9 @@ class Rec(Resource):
             end_idx = start_idx + items_per_page
 
             self.polls_df = pd.DataFrame.from_records(self.polls)
-            # self.polls = encode_topics(self.polls_df)
 
-            self.polls_tf_idf_matrix = create_tf_idf_matrix(self.polls_df, "topics")
+            # self.polls_tf_idf_matrix = create_tf_idf_matrix(self.polls_df, "topics")
+            self.polls_tf_idf_matrix = create_souped_tf_idf_matrix(self.polls_df)
 
             self.cosine_similarity_matrix = calc_cosine_similarity_matrix(
                 self.polls_tf_idf_matrix, self.polls_tf_idf_matrix
