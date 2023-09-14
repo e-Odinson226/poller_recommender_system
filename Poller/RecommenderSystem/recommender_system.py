@@ -1,17 +1,16 @@
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-
+import string
+from pathlib import Path
+from collections import Counter
+import json
 import nltk
 
 nltk.download("punkt")
 nltk.download("stopwords")
 
-import string
-
-from pathlib import Path
-from collections import Counter
-import json
+tf_idf = TfidfVectorizer(stop_words="english")
 
 
 def encode_topics(df):
@@ -56,9 +55,22 @@ def preprocess_text(text):
     return processed_text
 
 
-def create_tf_idf_matrix(df, column):
-    tf_idf = TfidfVectorizer(stop_words="english")
+def preprocess_list(field_list):
+    ret_list = []
+    stop_words = set(nltk.corpus.stopwords.words("english"))
+    for item in field_list:
+        tokens = nltk.tokenize.word_tokenize(item)
+        # tokens = [word.lower() for word in tokens if type(word) is str]
+        tokens = [word.lower() for word in tokens]
+        tokens = [word for word in tokens if word not in string.punctuation]
+        tokens = [word for word in tokens if word not in stop_words]
+        processed_text = " ".join(tokens)
+        ret_list.append(processed_text)
 
+    return ret_list
+
+
+def create_tf_idf_matrix(df, column):
     # print(f"{df[column]} is {df[column].dtype} and {df[column].dtype is list} {list}: ")
     df[column] = df[column].apply(lambda x: " ".join(x))
     df[column] = df[column].apply(preprocess_text)
@@ -67,18 +79,8 @@ def create_tf_idf_matrix(df, column):
 
 
 def create_souped_tf_idf_matrix(df):
-    features = ["topics", "options"]
-
-    for feature in features:
-        df[feature] = df[feature].apply(lambda x: " ".join(x))
-        df[feature] = df[feature].apply(preprocess_text)
-        print(f"df[{feature}]:\n{df[feature]}\n\n")
-
-    print("----------------------------------------------")
+    df["topics"] = df["topics"].apply(preprocess_list)
     df["question"] = df["question"].apply(preprocess_text)
-    print(f"df[question]:\n{df['question']}\n\n")
-
-    tf_idf = TfidfVectorizer(stop_words="english")
 
     # Create a new soup feature
     df["soup"] = df.apply(create_soup, axis=1)
@@ -87,7 +89,15 @@ def create_souped_tf_idf_matrix(df):
 
 
 def create_soup(df):
-    return df["question"] + " " + " ".join(df["options"]) + " " + " ".join(df["topics"])
+    res = (
+        df["question"]
+        + " "
+        + " ".join(df["options"])
+        + " "
+        + (4 * (" " + " ".join(df["topics"])))
+    )
+    # print(f"-----------------------------------\n* Processing: [{ }]")
+    return res
 
 
 def calc_cosine_similarity_matrix(tf_idf_matrix_1, tf_idf_matrix_2):
