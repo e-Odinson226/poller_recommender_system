@@ -1,6 +1,6 @@
 from elasticsearch import Elasticsearch
 import json
-
+import elastic_transport
 from .elastic_exceptions import *
 
 

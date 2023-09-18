@@ -20,7 +20,8 @@ try:
         elasticsearch_url, username, password, fingerprint
     )
     if elasticsearch_url and username and password and fingerprint:
-        print("--------------------\n2. Environment variables were read correctly.")
+        print(f"--------------------\n2. Environment variables were read correctly.")
+        print(f"\tELASTIC_USERNAME: {username} ")
 
 except ValueError as e:
     from dotenv import load_dotenv
@@ -44,13 +45,24 @@ except ValueError as e:
         exit()
 
 
-class Rec(Resource):
-    def __init__(self):
-        pd.set_option("display.max_columns", None)
-        self.polls = elastic_handle.get_index("polls")
-        self.trend_polls = elastic_handle.get_trend_polls()
+pd.set_option("display.max_columns", None)
 
+
+class Rec(Resource):
     def get(self):
+        try:
+            print(f"FLAG ------------------------------ inside elas indexing try ")
+            self.polls = elastic_handle.get_index("polls")
+            print(f"FLAG ------------------------------ after index")
+
+            self.trend_polls = elastic_handle.get_trend_polls()
+        except ConnectionTimeout as e:
+            exception = {
+                "Message": e.args,
+                "Error": "Elastic connection timed out",
+                "Code": 130,
+            }
+            return jsonify(exception)
         try:
             user_id = request.args.get("userId")
 
@@ -97,14 +109,22 @@ class Rec(Resource):
             recommended_polls = recommended_polls["id"].tolist()
             total_recommended_polls_count = len(recommended_polls)
             if all == 1:
-                response = {
-                    "list": "all",
-                    "user_ID": user_id,
-                    "total_count": total_recommended_polls_count,
-                    "recommended_polls": recommended_polls,
-                }
+                try:
+                    response = {
+                        "list": "all",
+                        "user_ID": user_id,
+                        "total_count": total_recommended_polls_count,
+                        "recommended_polls": recommended_polls,
+                    }
 
-                return jsonify(response)
+                    return jsonify(response)
+                except elastic_transport.ConnectionTimeout as e:
+                    exception = {
+                        "Message": e.args,
+                        "Error": "Elastic connection timed out",
+                        "Code": 130,
+                    }
+                    return jsonify(exception)
 
             # Slice the data to get the items for the current page
             paginated_data = recommended_polls[start_idx:end_idx]
