@@ -66,8 +66,8 @@ class ElasticsearchHandel:
 
         return hits[0].get("_source")
 
-    def get_trend_polls(self):
-        polls = getattr(self, "polls")
+    def get_trend_polls(self, polls):
+        # polls = getattr(self, "polls")
         # trend_polls = sorted(polls, key=lambda x: (-x["numberOfPollups"], -x["numberOfVotes"], -x["numberOfLike"]))
         trend_polls = sorted(
             polls,

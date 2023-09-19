@@ -1,0 +1,333 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Pollett",
+    "dateExported": "2023-09-18T08:32:24.420Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0cf301d9-d33c-4189-b7ac-ab462bc77754",
+            "colId": "217d3aa7-2b74-428b-929e-01dfb4102bf8",
+            "containerId": "",
+            "name": "Poller",
+            "url": "http://127.0.0.1:5000/get_rec/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-09-18T06:19:44.773Z",
+            "modified": "2023-09-18T06:19:44.773Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                },
+                {
+                    "name": "",
+                    "value": ""
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"userId\": \"67eb27ca-ba0b-4d29-8627-9ec78327b512\"\n}   "
+            }
+        },
+        {
+            "_id": "8fe6591e-f2d8-43bf-9603-eb4d64efa662",
+            "colId": "217d3aa7-2b74-428b-929e-01dfb4102bf8",
+            "containerId": "",
+            "name": "Poller no interaction",
+            "url": "http://127.0.0.1:5000/get_rec/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-09-18T06:19:44.774Z",
+            "modified": "2023-09-18T06:19:44.774Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                },
+                {
+                    "name": "",
+                    "value": ""
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"userId\": \"67eb27ca-ba0b-4d29-8627-9ec78327b512\"\n}   "
+            }
+        },
+        {
+            "_id": "157053af-37c3-4161-831e-ad922bb673fc",
+            "colId": "217d3aa7-2b74-428b-929e-01dfb4102bf8",
+            "containerId": "",
+            "name": "Poller online",
+            "url": "http://159.89.53.43/get_rec/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-09-18T06:19:44.775Z",
+            "modified": "2023-09-18T06:19:44.775Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                },
+                {
+                    "name": "",
+                    "value": ""
+                }
+            ],
+            "params": [
+                {
+                    "name": "",
+                    "value": null,
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"userId\": \"67eb27ca-ba0b-4d29-8627-9ec78327b512\"\n}   "
+            }
+        },
+        {
+            "_id": "2df1f067-1ba3-4313-9295-22b7dede934e",
+            "colId": "217d3aa7-2b74-428b-929e-01dfb4102bf8",
+            "containerId": "",
+            "name": "Poller gunicorn",
+            "url": "http://0.0.0.0:8000/get_rec/",
+            "method": "POST",
+            "sortNum": 32500,
+            "created": "2023-09-18T06:19:44.776Z",
+            "modified": "2023-09-18T06:19:44.776Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                },
+                {
+                    "name": "",
+                    "value": ""
+                }
+            ],
+            "params": [
+                {
+                    "name": "",
+                    "value": null,
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"userId\": \"67eb27ca-ba0b-4d29-8627-9ec78327b512\"\n}   "
+            }
+        },
+        {
+            "_id": "9ad77f67-5a46-48e1-834f-72b33c2242e0",
+            "colId": "217d3aa7-2b74-428b-929e-01dfb4102bf8",
+            "containerId": "",
+            "name": "Poller online",
+            "url": "http://159.203.183.251:8000/get_rec/?userId=67eb27ca-ba0b-4d29-8627-9ec78327b512&page_size=12&page=2",
+            "method": "GET",
+            "sortNum": 35000,
+            "created": "2023-09-18T06:30:08.123Z",
+            "modified": "2023-09-18T06:35:52.430Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                }
+            ],
+            "params": [
+                {
+                    "name": "userId",
+                    "value": "67eb27ca-ba0b-4d29-8627-9ec78327b512",
+                    "isPath": false
+                },
+                {
+                    "name": "page_size",
+                    "value": "12",
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "2",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "b17749ae-3e34-45d4-b53a-987e630d9937",
+            "colId": "217d3aa7-2b74-428b-929e-01dfb4102bf8",
+            "containerId": "",
+            "name": "Poller local",
+            "url": "http://127.0.0.1:5000/get_rec/?userId=67eb27ca-ba0b-4d29-8627-9ec78327b512&page_size=12&page=2",
+            "method": "GET",
+            "sortNum": 35625,
+            "created": "2023-09-18T07:00:01.194Z",
+            "modified": "2023-09-18T07:00:18.509Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                }
+            ],
+            "params": [
+                {
+                    "name": "userId",
+                    "value": "67eb27ca-ba0b-4d29-8627-9ec78327b512",
+                    "isPath": false
+                },
+                {
+                    "name": "page_size",
+                    "value": "12",
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "2",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "e3b5c99b-b015-495a-a3ff-6998c1b0a817",
+            "colId": "217d3aa7-2b74-428b-929e-01dfb4102bf8",
+            "containerId": "",
+            "name": "Poller online trend",
+            "url": "http://159.203.183.251:8000/get_rec/?userId=67eb27ca-ba0b-4d29-8627-9ec78327b51&page_size=12&page=2",
+            "method": "GET",
+            "sortNum": 36250,
+            "created": "2023-09-18T06:36:09.987Z",
+            "modified": "2023-09-18T06:38:47.426Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                }
+            ],
+            "params": [
+                {
+                    "name": "userId",
+                    "value": "67eb27ca-ba0b-4d29-8627-9ec78327b51",
+                    "isPath": false
+                },
+                {
+                    "name": "page_size",
+                    "value": "12",
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "2",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "75c65d0f-dc57-4433-aa3c-8f4ac20492f3",
+            "colId": "217d3aa7-2b74-428b-929e-01dfb4102bf8",
+            "containerId": "",
+            "name": "Poller online all",
+            "url": "http://159.203.183.251:8000/get_rec/?userId=67eb27ca-ba0b-4d29-8627-9ec78327b512&page_size=12&page=2&all=1",
+            "method": "GET",
+            "sortNum": 46250,
+            "created": "2023-09-18T06:39:51.689Z",
+            "modified": "2023-09-18T06:40:31.555Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "userId",
+                    "value": "67eb27ca-ba0b-4d29-8627-9ec78327b512",
+                    "isPath": false
+                },
+                {
+                    "name": "page_size",
+                    "value": "12",
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "2",
+                    "isPath": false
+                },
+                {
+                    "name": "all",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "9550ad49-d608-47d8-b55c-4a1d7b9acb91",
+            "colId": "217d3aa7-2b74-428b-929e-01dfb4102bf8",
+            "containerId": "",
+            "name": "Poller local all",
+            "url": "http://127.0.0.1:5000/get_rec/?userId=67eb27ca-ba0b-4d29-8627-9ec78327b512&page_size=12&page=2&all=1",
+            "method": "GET",
+            "sortNum": 56250,
+            "created": "2023-09-18T06:44:34.726Z",
+            "modified": "2023-09-18T07:48:55.792Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "userId",
+                    "value": "67eb27ca-ba0b-4d29-8627-9ec78327b512",
+                    "isPath": false
+                },
+                {
+                    "name": "page_size",
+                    "value": "12",
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "2",
+                    "isPath": false
+                },
+                {
+                    "name": "all",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "312a41c6-6d90-43c7-b8fb-790934995f9b",
+            "colId": "217d3aa7-2b74-428b-929e-01dfb4102bf8",
+            "containerId": "",
+            "name": "Poller local all Copy",
+            "url": "http://127.0.0.1:5000/get_rec/?userId=67eb27ca-ba0b-4d29-8627-9ec78327b512&page_size=12&page=2&all=0",
+            "method": "GET",
+            "sortNum": 66250,
+            "created": "2023-09-18T06:52:29.521Z",
+            "modified": "2023-09-18T06:54:26.729Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "userId",
+                    "value": "67eb27ca-ba0b-4d29-8627-9ec78327b512",
+                    "isPath": false
+                },
+                {
+                    "name": "page_size",
+                    "value": "12",
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "2",
+                    "isPath": false
+                },
+                {
+                    "name": "all",
+                    "value": "0",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}

@@ -1,7 +1,10 @@
 from flask import Flask, redirect, url_for, jsonify, request
 from flask_restful import Api, Resource
 import pandas as pd
+from dotenv import load_dotenv
 import os
+import redis
+import pickle
 
 from .RecommenderSystem.recommender_system import *
 from .ElasticSeachHandle.elasticsearch_handle import *
@@ -24,8 +27,6 @@ try:
         print(f"\tELASTIC_USERNAME: {username} ")
 
 except ValueError as e:
-    from dotenv import load_dotenv
-
     load_dotenv()
     elasticsearch_url = os.getenv("POLLER_ELASTICSEARCH_URL")
     username = os.getenv("POLLER_USERNAME")
@@ -45,17 +46,24 @@ except ValueError as e:
         exit()
 
 
+try:
+    r = redis.Redis(host="localhost", port=6379, db=0)
+except Exception as e:
+    raise e
+
 pd.set_option("display.max_columns", None)
 
 
 class Rec(Resource):
     def get(self):
         try:
+            user_id = request.args.get("userId")
             print(f"FLAG ------------------------------ inside elas indexing try ")
-            self.polls = elastic_handle.get_index("polls")
+            retrieved_data = r.get(str(user_id))
+            if retrieved_data:
+                deserialized_dict = pickle.loads(retrieved_data)
+                print(deserialized_dict.get("user_matrix"))
             print(f"FLAG ------------------------------ after index")
-
-            self.trend_polls = elastic_handle.get_trend_polls()
         except ConnectionTimeout as e:
             exception = {
                 "Message": e.args,
@@ -64,24 +72,27 @@ class Rec(Resource):
             }
             return jsonify(exception)
         try:
-            user_id = request.args.get("userId")
-
             # Get the page number from the query parameters, default to page 1 if not provided
             page = int(request.args.get("page", 1))
             all = int(request.args.get("all", 0))
             items_per_page = int(request.args.get("page_size", 10))
 
+            # FIX THIS
+            polls = elastic_handle.get_index("polls")
+            polls_df = pd.DataFrame.from_records(polls)
+            # FIX THIS
+
             # Calculate the starting and ending indices for the current page
             start_idx = (page - 1) * items_per_page
             end_idx = start_idx + items_per_page
 
-            self.polls_df = pd.DataFrame.from_records(self.polls)
-
             # self.polls_tf_idf_matrix = create_tf_idf_matrix(self.polls_df, "topics")
-            self.polls_tf_idf_matrix = create_souped_tf_idf_matrix(self.polls_df)
+            # polls_tf_idf_matrix = create_souped_tf_idf_matrix(polls_df)
+            serialized_polls_tf_idf_matrix = deserialized_dict.get("user_matrix")
+            polls_tf_idf_matrix = pickle.loads(serialized_polls_tf_idf_matrix)
 
             self.cosine_similarity_matrix = calc_cosine_similarity_matrix(
-                self.polls_tf_idf_matrix, self.polls_tf_idf_matrix
+                polls_tf_idf_matrix, polls_tf_idf_matrix
             )
 
             self.userInteractions = elastic_handle.get_interactions(
@@ -94,14 +105,12 @@ class Rec(Resource):
             ]
             self.recommended_list = gen_rec_from_list_of_polls(
                 self.userInteractions,
-                self.polls_df,
+                polls_df,
                 self.cosine_similarity_matrix,
                 100,
             )
 
-            recommended_polls = self.polls_df[
-                self.polls_df["id"].isin(self.recommended_list)
-            ]
+            recommended_polls = polls_df[polls_df["id"].isin(self.recommended_list)]
 
             # recommended_polls = recommended_polls[
             #    ["id", "ownerId", "question", "options", "topics"]
@@ -176,7 +185,6 @@ class Rec(Resource):
             }
 
             return jsonify(response)
-
         except TlsError as e:
             exception = {
                 "Message": e.args,
@@ -194,6 +202,93 @@ class Rec(Resource):
 
 
 api.add_resource(Rec, "/get_rec/")
+
+
+class Gen(Resource):
+    def get(self):
+        try:
+            print(f"FLAG ------------------------------ Generating user's matrix ")
+            polls = elastic_handle.get_index("polls")
+            print(f"FLAG ------------------------------ suitable polls retrieved    ")
+
+            trend_polls = elastic_handle.get_trend_polls(polls)
+
+        except ConnectionTimeout as e:
+            exception = {
+                "Message": e.args,
+                "Error": "Elastic connection timed out",
+                "Code": 130,
+            }
+            return jsonify(exception)
+
+        try:
+            user_id = request.args.get("userId")
+            polls_df = pd.DataFrame.from_records(polls)
+            polls_tf_idf_matrix = create_souped_tf_idf_matrix(polls_df)
+            serialized_polls_tf_idf_matrix = pickle.dumps(polls_tf_idf_matrix)
+
+            user_matrix = {
+                "user_id": user_id,
+                "user_matrix": serialized_polls_tf_idf_matrix,
+            }
+            serialized_data = pickle.dumps(user_matrix)
+            r.set(user_id, serialized_data)
+
+            response = {
+                "message": "record submited",
+                "record id": user_id,
+            }
+
+            return jsonify(response)
+
+        except InteractionNotFound as e:
+            user_id = request.args.get("userId")
+
+            # Get the page number from the query parameters, default to page 1 if not provided
+            page = int(request.args.get("page", 1))
+
+            items_per_page = int(request.args.get("page_size", 10))
+
+            # Calculate the starting and ending indices for the current page
+            start_idx = (page - 1) * items_per_page
+            end_idx = start_idx + items_per_page
+
+            # Slice the data to get the items for the current page
+            trend_polls = [poll["id"] for poll in trend_polls]
+            paginated_data = trend_polls[start_idx:end_idx]
+
+            # Calculate the total number of pages
+            total_pages = len(trend_polls) // items_per_page + (
+                len(trend_polls) % items_per_page > 0
+            )
+
+            # Create a response dictionary with the paginated data and pagination information
+            response = {
+                "list": "trend",
+                "user_ID": user_id,
+                "page": page,
+                "total_count": len(trend_polls),
+                "recommended_polls": paginated_data,
+            }
+
+            return jsonify(response)
+        except TlsError as e:
+            exception = {
+                "Message": e.args,
+                "Error": "TLS Error",
+                "Code": 120,
+            }
+            return jsonify(exception)
+        except ConnectionTimeout as e:
+            exception = {
+                "Message": e.args,
+                "Error": "Elastic connection timed out",
+                "Code": 130,
+            }
+            return jsonify(exception)
+
+
+api.add_resource(Gen, "/gen_mat/")
 
 
 if __name__ == "__main__":
