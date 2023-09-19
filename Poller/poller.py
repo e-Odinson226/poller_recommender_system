@@ -14,48 +14,66 @@ api = Api(app)
 print(f"--------------------\n1. [{app}] Started")
 
 
-try:
-    elasticsearch_url = os.environ.get("POLLER_ELASTICSEARCH_URL")
-    username = os.environ.get("POLLER_USERNAME")
-    password = os.environ.get("POLLER_PASSWORD")
-    fingerprint = os.environ.get("POLLER_FINGERPRINT")
-    elastic_handle = ElasticsearchHandel(
-        elasticsearch_url, username, password, fingerprint
-    )
-    if elasticsearch_url and username and password and fingerprint:
-        print(f"--------------------\n2. Environment variables were read correctly.")
-        print(f"\tELASTIC_USERNAME: {username} ")
-
-except ValueError as e:
-    load_dotenv()
-    elasticsearch_url = os.getenv("POLLER_ELASTICSEARCH_URL")
-    username = os.getenv("POLLER_USERNAME")
-    password = os.getenv("POLLER_PASSWORD")
-    fingerprint = os.getenv("POLLER_FINGERPRINT")
-    try:
-        elastic_handle = ElasticsearchHandel(
-            elasticsearch_url, username, password, fingerprint
-        )
-        if elasticsearch_url and username and password and fingerprint:
-            print(
-                f"--------------------\n2. Elastic variables were read from [.env] file."
+def inject_dependencies(func):
+    def decorated_function(*args, **kwargs):
+        try:
+            # Create or obtain your dependencies here
+            elasticsearch_url = os.environ.get("POLLER_ELASTICSEARCH_URL")
+            username = os.environ.get("POLLER_USERNAME")
+            password = os.environ.get("POLLER_PASSWORD")
+            fingerprint = os.environ.get("POLLER_FINGERPRINT")
+            elastic_handle = ElasticsearchHandel(
+                elasticsearch_url, username, password, fingerprint
             )
-    except TypeError:
-        print("--------------------\n2. Failed to read environment variables.")
-        print(e)
-        exit()
+            if elasticsearch_url and username and password and fingerprint:
+                print(
+                    f"--------------------\n2. Environment variables were read correctly."
+                )
+                print(f"\tELASTIC_USERNAME: {username} ")
 
+            polls = elastic_handle.get_index("polls")
+            trend_polls = elastic_handle.get_trend_polls(polls)
 
-try:
-    r = redis.Redis(host="localhost", port=6379, db=0)
-except Exception as e:
-    raise e
+            polls_df = pd.DataFrame.from_records(polls)
 
-pd.set_option("display.max_columns", None)
+            r = redis.Redis(host="localhost", port=6379, db=0)
+
+            pd.set_option("display.max_columns", None)
+
+            # Pass the dependencies to the view function
+            kwargs["elastic_handle"] = elastic_handle
+            kwargs["r"] = r
+            kwargs["polls"] = polls
+            kwargs["trend_polls"] = trend_polls
+            kwargs["polls_df"] = polls_df
+
+            return func(*args, **kwargs)
+
+        except Exception as e:
+            load_dotenv()
+            elasticsearch_url = os.getenv("POLLER_ELASTICSEARCH_URL")
+            username = os.getenv("POLLER_USERNAME")
+            password = os.getenv("POLLER_PASSWORD")
+            fingerprint = os.getenv("POLLER_FINGERPRINT")
+            try:
+                elastic_handle = ElasticsearchHandel(
+                    elasticsearch_url, username, password, fingerprint
+                )
+                if elasticsearch_url and username and password and fingerprint:
+                    print(
+                        f"--------------------\n2. Elastic variables were read from [.env] file."
+                    )
+            except TypeError:
+                print("--------------------\n2. Failed to read environment variables.")
+                print(e)
+                exit()
+
+    return decorated_function
 
 
 class Rec(Resource):
-    def get(self):
+    @inject_dependencies
+    def get(self, elastic_handle, r, polls, trend_polls, polls_df):
         try:
             user_id = request.args.get("userId")
             print(f"FLAG ------------------------------ inside elas indexing try ")
@@ -76,11 +94,6 @@ class Rec(Resource):
             page = int(request.args.get("page", 1))
             all = int(request.args.get("all", 0))
             items_per_page = int(request.args.get("page_size", 10))
-
-            # FIX THIS
-            polls = elastic_handle.get_index("polls")
-            polls_df = pd.DataFrame.from_records(polls)
-            # FIX THIS
 
             # Calculate the starting and ending indices for the current page
             start_idx = (page - 1) * items_per_page
@@ -205,13 +218,11 @@ api.add_resource(Rec, "/get_rec/")
 
 
 class Gen(Resource):
-    def get(self):
+    @inject_dependencies
+    def get(self, elastic_handle, r, polls, trend_polls, polls_df):
         try:
             print(f"FLAG ------------------------------ Generating user's matrix ")
-            polls = elastic_handle.get_index("polls")
             print(f"FLAG ------------------------------ suitable polls retrieved    ")
-
-            trend_polls = elastic_handle.get_trend_polls(polls)
 
         except ConnectionTimeout as e:
             exception = {
@@ -223,7 +234,7 @@ class Gen(Resource):
 
         try:
             user_id = request.args.get("userId")
-            polls_df = pd.DataFrame.from_records(polls)
+
             polls_tf_idf_matrix = create_souped_tf_idf_matrix(polls_df)
             serialized_polls_tf_idf_matrix = pickle.dumps(polls_tf_idf_matrix)
 
