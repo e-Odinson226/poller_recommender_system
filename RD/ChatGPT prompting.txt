@@ -33,3 +33,46 @@ create it in the following format:
 13,23,[string of a polls title],[option1,option2noption3,...],[topic1,topic2,...]
 an example:
 13,23,is there democracy in Iran?,[yes, no, to some level],[politics, government]create it in the following format:
+
+
+
+
+
+
+
+
+
+
+read the following list
+topic_list = ["Tech",
+          "Sport",
+          "Politics",
+          "Science",
+          "Activity",
+          "Art",
+          "Beauty",
+          "Economy",
+          "Fashion",
+          "Food&Drinks",
+          "Fun",
+          "Health",
+          "Music",
+          "Pets",
+          "Travel",
+          "Movies & TV shows",
+          "Home Décor"]
+this is the list of topics,
+I want you to act as an assistant and generate polls inside a csv with column[question, options, topics ], with the following criteria: 
+1- the polls questions should categorise by only topics that are given to you in the topic_list and no extra topics,
+2- make sure  80 percent of the polls you generate are multi_topics(related to more than one topic from the topic_list),
+3- at least 20 percent of them should have only one topic, 
+4- "options" and "topics" columns are lists, but represent the as strings with their items separated with "|",
+
+
+for example 'Fun' and 'Activity' are both suitable for this poll: 'Which Artistic Activity Do You Enjoy the Most?'.
+csv instance for this example would be:
+Which Artistic Activity Do You Enjoy the Most?, Poetry|Architecture|Theater|Digital art|Music|Painting,Fun|Art
+it's question is: "Which Artistic Activity Do You Enjoy the Most?"
+it's options are: "Poetry", "Architecture", "Theater" "Digital art", "Music", "Painting"
+it's topics are: "Fun" and "Art"
+important: make sure that csv contains at least 150 items.
