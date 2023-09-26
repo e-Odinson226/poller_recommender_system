@@ -1,0 +1,941 @@
+{
+    "Activity_Art": [
+        {
+            "question": "What is your favorite type of dance?",
+            "options": [
+                "Ballet",
+                "Hip hop",
+                "Salsa",
+                "Contemporary",
+                "Tap"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which is your preferred form of exercise?",
+            "options": [
+                "Running",
+                "Yoga",
+                "Weightlifting",
+                "Cycling",
+                "Swimming"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your favorite painting style?",
+            "options": [
+                "Impressionism",
+                "Abstract",
+                "Realism",
+                "Surrealism",
+                "Pop Art"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which musical instrument do you enjoy playing the most?",
+            "options": [
+                "Piano",
+                "Guitar",
+                "Violin",
+                "Drums",
+                "Flute"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your favorite type of photography?",
+            "options": [
+                "Landscape",
+                "Portraits",
+                "Street",
+                "Macro",
+                "Black and White"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "What is your preferred form of artistic expression?",
+            "options": [
+                "Painting",
+                "Sculpture",
+                "Photography",
+                "Music",
+                "Dance"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Do you prefer digital or traditional art?",
+            "options": [
+                "Digital",
+                "Traditional",
+                "Both",
+                "Neither"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "What is your favorite type of theater performance?",
+            "options": [
+                "Drama",
+                "Comedy",
+                "Musical",
+                "Opera",
+                "Experimental"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which art movement do you find most intriguing?",
+            "options": [
+                "Cubism",
+                "Surrealism",
+                "Minimalism",
+                "Pop Art",
+                "Romanticism"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which form of physical activity helps you express your creativity the most?",
+            "options": [
+                "Dancing",
+                "Yoga",
+                "Pilates",
+                "Martial arts",
+                "Tai Chi"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your preferred medium for creating art?",
+            "options": [
+                "Oil paint",
+                "Watercolor",
+                "Charcoal",
+                "Collage",
+                "Digital"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which form of artistic expression do you find most therapeutic?",
+            "options": [
+                "Writing",
+                "Painting",
+                "Playing an instrument",
+                "Dancing",
+                "Sculpting"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "What type of art exhibition do you enjoy attending the most?",
+            "options": [
+                "Paintings",
+                "Sculptures",
+                "Photography",
+                "Mixed media",
+                "Installation art"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which type of physical activity do you find most inspiring?",
+            "options": [
+                "Hiking",
+                "Running",
+                "Cycling",
+                "Surfing",
+                "Rock climbing"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your favorite form of artistic collaboration?",
+            "options": [
+                "Music bands",
+                "Theater ensembles",
+                "Dance companies",
+                "Art collectives",
+                "Film crews"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "What is your favorite type of art museum?",
+            "options": [
+                "Modern art",
+                "Classical art",
+                "Contemporary art",
+                "Natural history",
+                "Science"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which form of physical activity do you find most mentally stimulating?",
+            "options": [
+                "Yoga",
+                "Martial arts",
+                "Pilates",
+                "Aerial arts",
+                "Dance"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "Which art movement or artist has had the biggest impact on your life?",
+            "options": [
+                "Renaissance",
+                "Expressionism",
+                "Andy Warhol",
+                "Frida Kahlo",
+                "Bauhaus"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "What type of art class would you like to take?",
+            "options": [
+                "Life drawing",
+                "Ceramics",
+                "Printmaking",
+                "Mixed media",
+                "Sculpture"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which physical activity do you find most meditative?",
+            "options": [
+                "Yoga",
+                "Tai Chi",
+                "Meditation",
+                "Walking",
+                "Swimming"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your preferred form of artistic expression for personal growth?",
+            "options": [
+                "Journaling",
+                "Self-portrait photography",
+                "Poetry",
+                "Music composition",
+                "Dance improvisation"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which type of physical activity do you find most aesthetically pleasing?",
+            "options": [
+                "Figure skating",
+                "Gymnastics",
+                "Diving",
+                "Ballet",
+                "Synchronized swimming"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your favorite art gallery theme or focus?",
+            "options": [
+                "Feminist art",
+                "Street art",
+                "Nature-inspired art",
+                "Political art",
+                "Socially engaged art"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which form of physical activity allows you to express your emotions the best?",
+            "options": [
+                "Kickboxing",
+                "Dance therapy",
+                "Boxing",
+                "Running",
+                "Cycling"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your preferred way of integrating creativity into your physical activity?",
+            "options": [
+                "Creating playlists for workouts",
+                "Designing workout clothes",
+                "Developing choreography for exercise routines",
+                "Drawing or painting during breaks",
+                "Writing poetry while running"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which art style or movement do you feel embodies a sense of motion?",
+            "options": [
+                "Futurism",
+                "Kinetic art",
+                "Op art",
+                "Cubism",
+                "Surrealism"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "What form of physical activity do you find most inspiring for your creative projects?",
+            "options": [
+                "Going for long walks",
+                "Doing yoga or meditation",
+                "Listening to music while exercising",
+                "Taking dance or movement classes",
+                "Practicing a martial art"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your favorite type of art installation?",
+            "options": [
+                "Light installations",
+                "Interactive installations",
+                "Sound installations",
+                "Outdoor installations",
+                "Digital installations"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which type of physical activity best complements your artistic practice?",
+            "options": [
+                "Yoga or Pilates",
+                "Dancing or Zumba",
+                "Mindful movement or Tai Chi",
+                "Hiking or nature walks",
+                "Strength training or CrossFit"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your preferred type of art performance?",
+            "options": [
+                "Performance art",
+                "Live painting",
+                "Theater performances",
+                "Music concerts",
+                "Dance shows"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which physical activity allows you to experience a sense of flow or being in the zone?",
+            "options": [
+                "Running",
+                "Rock climbing",
+                "Yoga",
+                "Playing a musical instrument",
+                "Surfing"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your favorite form of artistic self-expression in social settings?",
+            "options": [
+                "Improvisational theater",
+                "Live painting at events",
+                "DJing or music production",
+                "Group dance performances",
+                "Public art installations"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which art movement or style resonates with your personal philosophy?",
+            "options": [
+                "Pop art",
+                "Minimalism",
+                "Surrealism",
+                "Social realism",
+                "Postmodernism"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "What is your preferred type of physical artistic challenge?",
+            "options": [
+                "Acrobatics or aerial arts",
+                "Dance competitions",
+                "Extreme sports",
+                "Artistic gymnastics",
+                "Martial arts tournaments"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "Which artistic discipline has the most positive impact on your mental health?",
+            "options": [
+                "Painting or drawing",
+                "Playing an instrument",
+                "Writing or journaling",
+                "Dancing or movement therapy",
+                "Photography or visual storytelling"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "What type of physical activity enhances your creativity the most?",
+            "options": [
+                "Running outdoors",
+                "Hiking in nature",
+                "Yoga or meditation",
+                "Dancing to music",
+                "Jumping on a trampoline"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "Which art style or movement best captures the essence of a specific physical activity?",
+            "options": [
+                "Abstract expressionism and salsa dancing",
+                "Futurism and cycling",
+                "Impressionism and swimming",
+                "Cubism and martial arts",
+                "Surrealism and parkour"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "What is your favorite way of incorporating art into your daily physical activity routine?",
+            "options": [
+                "Creating a visual art journal",
+                "Listening to music or podcasts while exercising",
+                "Taking photos of interesting sights during workouts",
+                "Doing mindfulness exercises before or after activity",
+                "Designing workout spaces with artistic elements"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which physical activity generates the most artistic inspiration for you?",
+            "options": [
+                "Nature walks or hikes",
+                "Long-distance running",
+                "Exploring urban environments",
+                "Dancing or moving to music",
+                "Practicing martial arts"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your preferred type of art therapy?",
+            "options": [
+                "Painting or drawing",
+                "Collage or mixed media",
+                "Sculpting or pottery",
+                "Music therapy",
+                "Dance movement therapy"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which form of physical activity ignites your imagination the most?",
+            "options": [
+                "Parkour or free running",
+                "Yoga or acroyoga",
+                "Capoeira or martial arts",
+                "Figure skating or ice dancing",
+                "Playing sports"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your favorite type of art event?",
+            "options": [
+                "Art fairs",
+                "Gallery openings",
+                "Street art festivals",
+                "Art workshops",
+                "Community art projects"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which type of exercise enhances your artistic creativity the most?",
+            "options": [
+                "Dancing or choreographing routines",
+                "Pilates or mindful movement",
+                "Yoga or meditation",
+                "Running or jogging",
+                "Swimming or aquatic exercises"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your preferred form of artistic expression for self-reflection?",
+            "options": [
+                "Writing or journaling",
+                "Painting or drawing",
+                "Playing an instrument",
+                "Dancing or moving to music",
+                "Sculpting or pottery"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which physical activity allows you to experience a sense of freedom and liberation?",
+            "options": [
+                "Dancing",
+                "Rock climbing",
+                "Surfing",
+                "Skydiving",
+                "Horseback riding"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What art medium do you find most aligned with the concept of movement?",
+            "options": [
+                "Video art",
+                "Performance art",
+                "Kinetic sculptures",
+                "Installation art",
+                "Digital art"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "What is your preferred type of artistic collaboration in a group setting?",
+            "options": [
+                "Improvisational theater",
+                "Music ensembles",
+                "Choreographed dance performances",
+                "Collective mural painting",
+                "Collaborative storytelling"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which physical activity allows you to express your individuality the most?",
+            "options": [
+                "Skateboarding",
+                "Street dance",
+                "Extreme sports",
+                "Trail running",
+                "Freeform workouts"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your favorite type of public art installation?",
+            "options": [
+                "Large sculptures",
+                "Interactive light displays",
+                "Street murals or graffiti",
+                "Land art",
+                "Outdoor sound installations"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which form of physical activity do you find most creatively challenging?",
+            "options": [
+                "Dance improvisation",
+                "Obstacle course racing",
+                "Circus arts",
+                "Extreme hiking or mountaineering",
+                "Street workout or calisthenics"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your preferred type of art education or workshop?",
+            "options": [
+                "Life drawing classes",
+                "Creativity and mindfulness workshops",
+                "Music theory and composition classes",
+                "Dance technique and improvisation classes",
+                "Sculpture or ceramics workshops"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which physical activity allows you to push your physical and mental boundaries, similar to the concept of art?",
+            "options": [
+                "Mixed martial arts",
+                "Circus arts",
+                "Endurance racing",
+                "Mountaineering or rock climbing",
+                "Extreme skateboarding or BMX"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your preferred method of incorporating art into your fitness routine?",
+            "options": [
+                "Creating workout playlists with inspiring artwork as cover art",
+                "Designing or repurposing workout equipment with artistic elements",
+                "Wearing artistically designed activewear",
+                "Practicing yoga or dance in visually appealing surroundings",
+                "Documenting workout progress throughartistic photography or videos"
+            ],
+            ,
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which art style or movement best represents the concept of mindfulness in physical activity?",
+            "options": [
+                "Zen art",
+                "Minimalism",
+                "Abstract expressionism",
+                "Land art",
+                "Op art"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "What is your favorite way of combining art and physical activity in everyday life?",
+            "options": [
+                "Creating art while listening to music",
+                "Practicing yoga or meditation outside with nature inspiration",
+                "Drawing or painting during breaks in workouts",
+                "Using artistic visualization techniques while training",
+                "Attending art exhibitions or performances after physical activities"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "What is your preferred form of artistic collaboration in a digital realm?",
+            "options": [
+                "Virtual reality art experiences",
+                "Online music collaborations",
+                "Digital dance performances",
+                "Artistic video game design",
+                "Online art showcases or galleries"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which physical activity do you find most visually captivating?",
+            "options": [
+                "Gymnastics",
+                "Figure skating",
+                "Cheerleading",
+                "Martial arts",
+                "Aerial silks"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your favorite type of art exhibition space?",
+            "options": [
+                "White cube galleries",
+                "Outdoor sculpture parks",
+                "Converted industrial spaces",
+                "Architecturally unique museums",
+                "Art installations in public spaces"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which physical activity promotes the most profound emotional connection, similar to experiencing art?",
+            "options": [
+                "Partner dancing",
+                "Hiking in nature",
+                "Yoga or meditation",
+                "Practicing a team sport",
+                "Participating in a martial art"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your preferred form of artistic expression for promoting social change?",
+            "options": [
+                "Street art",
+                "Community murals",
+                "Theater activism",
+                "Music for social awareness",
+                "Participatory art projects"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which physical activity allows you to explore your personal identity and express yourself authentically?",
+            "options": [
+                "Yoga or meditation",
+                "Dance workshops",
+                "Singing or songwriting",
+                "Outdoor adventure sports",
+                "Art therapy"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your favorite type of art museum exhibition layout or design?",
+            "options": [
+                "Thematic exhibitions",
+                "Cross-cultural exhibitions",
+                "Multimedia exhibitions",
+                "Interactive exhibitions",
+                "Immersive art experiences"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which physical activity do you find most spiritually uplifting, similar to experiencing art?",
+            "options": [
+                "Yoga or Qigong",
+                "Nature walks or hiking",
+                "Dancing or ecstatic movement",
+                "Attending religious or cultural ceremonies",
+                "Meditative swimming or kayaking"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your preferred type of art community or collective?",
+            "options": [
+                "Art co-working spaces",
+                "Street artist collectives",
+                "Artists-in-residence programs",
+                "Online artist communities",
+                "Public art organizations"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which physical activity allows you to tap into your intuition and connect with your inner self?",
+            "options": [
+                "Dance improvisation",
+                "Running in nature",
+                "Yoga or mindfulness practice",
+                "Playing an instrument intuitively",
+                "Outdoor solo adventures"
+            ],
+            "topics": [
+                "Activity",
+                "Art"
+            ],
+        },
+        {
+            "question": "What is your preferred form of artistic expression for exploring the concept of time?",
+            "options": [
+                "Time-based media art",
+                "Slow-motion photography",
+                "Art installations with temporal elements",
+                "Music compositions with changing tempo",
+                "Dance performances with intricate timing"
+            ],
+            "topics": [
+                "Art",
+                "Activity"
+            ],
+        },
+        {
+            "question": "Which physical activity do you find most transformative and able to create a sense of awe, similar to experiencing art?",
+            "options": [
+                "Rock climbing",
+                "Surfing or paddleboarding",
+                "Diving or snorkeling",
+                "Skydiving or bungee jumping",
+                "Extreme wilderness expeditions"
+            ],
+            "topics": [
+                "Activity"
+            ]
+        }
+    ]
+}

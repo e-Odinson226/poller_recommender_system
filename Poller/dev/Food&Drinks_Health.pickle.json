@@ -1,0 +1,1000 @@
+{
+    "Food&Drinks_Health": [
+        {
+            "question": "Which type of cooking oil do you prefer?",
+            "options": [
+                "Olive oil",
+                "Coconut oil",
+                "Avocado oil"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume sugary beverages?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred source of protein?",
+            "options": [
+                "Meat (e.g., beef, chicken)",
+                "Plant-based (e.g., tofu, beans)",
+                "Dairy (e.g., milk, cheese)"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of bread do you usually consume?",
+            "options": [
+                "Whole wheat",
+                "White",
+                "Gluten-free"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you eat fast food?",
+            "options": [
+                "Multiple times a week",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred sweetener?",
+            "options": [
+                "Sugar",
+                "Honey",
+                "Stevia"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume processed foods?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of milk do you usually consume?",
+            "options": [
+                "Cow's milk",
+                "Almond milk",
+                "Soy milk"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you drink alcohol?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred source of carbohydrates?",
+            "options": [
+                "Whole grains (e.g., brown rice, quinoa)",
+                "Refined grains (e.g., white rice, pasta)",
+                "No preference"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred cooking method?",
+            "options": [
+                "Grilling",
+                "Baking",
+                "Stir-frying"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume caffeine?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer organic or conventional produce?",
+            "options": [
+                "Organic",
+                "Conventional",
+                "No preference"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume fermented foods?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer herbal teas or traditional caffeinated teas?",
+            "options": [
+                "Herbal teas",
+                "Caffeinated teas",
+                "No preference"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume dairy products?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred type of sweetener for coffee/tea?",
+            "options": [
+                "Sugar",
+                "Artificial sweetener",
+                "No sweetener"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you eat leafy green vegetables?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer cooking at home or eating out?",
+            "options": [
+                "Cooking at home",
+                "Eating out",
+                "Both"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you eat snacks between meals?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred type of cooking utensils?",
+            "options": [
+                "Non-stick",
+                "Stainless steel",
+                "Cast iron"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume fruits?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer homemade or store-bought sauces and dressings?",
+            "options": [
+                "Homemade",
+                "Store-bought",
+                "Depends on the dish"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume red meat?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred source of hydration?",
+            "options": [
+                "Water",
+                "Juices, sodas, or other flavored drinks",
+                "Both"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume processed meats (e.g., bacon, sausages)?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer eating a big breakfast or spreading your calories throughout the day?",
+            "options": [
+                "Big breakfast",
+                "Spread throughout the day",
+                "No preference"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume artificial food additives (e.g., preservatives, flavor enhancers)?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred source of omega-3 fatty acids?",
+            "options": [
+                "Fish (e.g., salmon, mackerel)",
+                "Flaxseeds or chia seeds",
+                "Supplements"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume sugary desserts?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer eating fresh fruits or drinking fruit juices?",
+            "options": [
+                "Fresh fruits",
+                "Fruit juices",
+                "Both"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume fried foods?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred source of probiotics?",
+            "options": [
+                "Yogurt",
+                "Kombucha",
+                "Supplements"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you eat vegetables cooked vs. raw?",
+            "options": [
+                "Mostly cooked",
+                "Mostly raw",
+                "Equal amounts"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer cooking with butter or oil?",
+            "options": [
+                "Butter",
+                "Oil",
+                "Depends on the dish"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume energy drinks?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred source of vitamin C?",
+            "options": [
+                "Citrus fruits (e.g., oranges, lemons)",
+                "Supplements",
+                "Other fruits/vegetables"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you eat fermented dairy products (e.g., yogurt, kefir)?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer black or green tea?",
+            "options": [
+                "Black tea",
+                "Green tea",
+                "No preference"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume processed snacks?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred source of vitamin D?",
+            "options": [
+                "Sun exposure",
+                "Fatty fish (e.g., salmon, tuna)",
+                "Supplements"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume high-sodium foods?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer whole milk or low-fat milk?",
+            "options": [
+                "Whole milk",
+                "Low-fat milk",
+                "No preference"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you eat processed breakfast cereals?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred source of antioxidants?",
+            "options": [
+                "Berries (e.g., blueberries, strawberries)",
+                "Dark chocolate",
+                "Other fruits/vegetables"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume high-sugar snacks?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer drinking tap water or bottled water?",
+            "options": [
+                "Tap water",
+                "Bottled water",
+                "No preference"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you eat fermented soy products (e.g., tempeh, miso)?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred source of vitamin E?",
+            "options": [
+                "Nuts and seeds",
+                "Vegetable oils",
+                "Supplements"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume high-cholesterol foods?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer drinking coffee or tea?",
+            "options": [
+                "Coffee",
+                "Tea",
+                "Both"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you eat cruciferous vegetables (e.g., broccoli, cauliflower)?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred source of fiber?",
+            "options": [
+                "Whole grains",
+                "Legumes (e.g., beans, lentils)",
+                "Vegetables"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume artificial food colorings?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer eating fresh seafood or frozen seafood?",
+            "options": [
+                "Fresh seafood",
+                "Frozen seafood",
+                "Both"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume high-fat dairy products?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred type of cooking spices?",
+            "options": [
+                "Herbs",
+                "Spices",
+                "Both"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume high-calorie desserts?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer drinking herbal teas or caffeinated teas?",
+            "options": [
+                "Herbal teas",
+                "Caffeinated teas",
+                "No preference"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you eat processed frozen meals?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred source of potassium?",
+            "options": [
+                "Bananas",
+                "Leafy greens",
+                "Other fruits/vegetables"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume high-caffeine beverages?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer cooking with fresh herbs or dried herbs?",
+            "options": [
+                "Fresh herbs",
+                "Dried herbs",
+                "Depends on the dish"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you drink sugary alcoholic beverages?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred source of vitamin A?",
+            "options": [
+                "Carrots",
+                "Sweet potatoes",
+                "Other fruits/vegetables"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume high-saturated fat foods?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer drinking water with or without added flavorings?",
+            "options": [
+                "Water with added flavorings",
+                "Plain water",
+                "Depends on the occasion"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you eat fermented pickled vegetables?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred source of magnesium?",
+            "options": [
+                "Leafy greens",
+                "Nuts and seeds",
+                "Supplements"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume high-sugar breakfast cereals?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer drinking hot or cold beverages?",
+            "options": [
+                "Hot beverages",
+                "Cold beverages",
+                "Depends on the drink"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume high-potassium foods?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred source of calcium?",
+            "options": [
+                "Dairy products",
+                "Leafy greens",
+                "Other foods fortified with calcium"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you eat highly processed frozen desserts?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer drinking smoothies or juice?",
+            "options": [
+                "Smoothies",
+                "Juice",
+                "Both"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume high-cholesterol eggs?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred type of cooking oil?",
+            "options": [
+                "Olive oil",
+                "Coconut oil",
+                "Vegetable oil"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume high-fructose corn syrup?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer drinking carbonated water or still water?",
+            "options": [
+                "Carbonated water",
+                "Still water",
+                "No preference"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you eat processed deli meats?",
+            "options": [
+                "Daily",
+                "Once a week",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred source of vitamin K?",
+            "options": [
+                "Leafy greens",
+                "Brussels sprouts",
+                "Supplements"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "How often do you consume high-mercury fish?",
+            "options": [
+                "Daily",
+                "Occasionally",
+                "Rarely/Never"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer drinking hot coffee or iced coffee?",
+            "options": [
+                "Hot coffee",
+                "Iced coffee",
+                "Both"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Health"
+            ]
+        }
+    ]
+}

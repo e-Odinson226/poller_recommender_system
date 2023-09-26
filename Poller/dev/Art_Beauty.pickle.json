@@ -1,0 +1,867 @@
+{
+    "Art_Beauty": [
+        {
+            "question": "Who is your favorite impressionist painter?",
+            "options": [
+                "Claude Monet",
+                "Edouard Manet",
+                "Pierre-Auguste Renoir",
+                "Berthe Morisot",
+                "Edgar Degas"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art movement do you find the most visually appealing?",
+            "options": [
+                "Cubism",
+                "Surrealism",
+                "Impressionism",
+                "Expressionism",
+                "Pop Art"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite color palette in artwork?",
+            "options": [
+                "Warm tones (reds, oranges, yellows)",
+                "Cool tones (blues, greens, purples)",
+                "Neutral tones (greys, browns, whites)"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which famous sculpture do you find most captivating?",
+            "options": [
+                "David by Michelangelo",
+                "The Thinker by Auguste Rodin",
+                "Venus de Milo",
+                "Winged Victory of Samothrace",
+                "Pieta by Michelangelo"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art medium do you prefer working with?",
+            "options": [
+                "Oil paints",
+                "Watercolors",
+                "Acrylic paints",
+                "Charcoal",
+                "Pencil"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What type of photography do you find most beautiful?",
+            "options": [
+                "Landscape photography",
+                "Portrait photography",
+                "Macro photography",
+                "Street photography",
+                "Black and white photography"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which famous art museum would you most like to visit?",
+            "options": [
+                "Louvre Museum in Paris",
+                "Guggenheim Museum in New York",
+                "Prado Museum in Madrid",
+                "Hermitage Museum in Saint Petersburg",
+                "TatModern in London"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art form do you find most inspiring?",
+            "options": [
+                "Painting",
+                "Sculpture",
+                "Photography",
+                "Drawing",
+                "Installation art"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art period do you find the most fascinating?",
+            "options": [
+                "Renaissance",
+                "Baroque",
+                "Romanticism",
+                "Realism",
+                "Abstract"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of abstract art?",
+            "options": [
+                "Geometric abstraction",
+                "Abstract expressionism",
+                "Cubist abstraction",
+                "Futurism",
+                "Surrealist abstraction"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which aspect of a painting do you find most beautiful?",
+            "options": [
+                "Color composition",
+                "Brushwork",
+                "Texture",
+                "Subject matter",
+                "Overall mood"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art display?",
+            "options": [
+                "Gallery exhibition",
+                "Outdoor installation",
+                "Art fair",
+                "Art auction",
+                "Art residency"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Who is your favorite female artist?",
+            "options": [
+                "Frida Kahlo",
+                "Georgia O'Keeffe",
+                "Yayoi Kusama",
+                "Cindy Sherman",
+                "Artemisia Gentileschi"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite form of body art?",
+            "options": [
+                "Tattoos",
+                "Body painting",
+                "Piercings",
+                "Scarification",
+                "Henna art"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art movement do you find the most thought-provoking?",
+            "options": [
+                "Dadaism",
+                "Conceptual art",
+                "Minimalism",
+                "Performance art",
+                "Land art"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art gallery?",
+            "options": [
+                "White cube gallery",
+                "Warehouse gallery",
+                "Artist-run gallery",
+                "Public gallery",
+                "Commercial gallery"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art-related book had the biggest impact on you?",
+            "options": [
+                "The Art Book by Phaidon Press",
+                "Ways of Seeing by John Berger",
+                "The Shock of the New by Robert Hughes",
+                "The Story of Art by E.HGombrich",
+                "Seven Days in the Art World by Sarah Thornton"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art movement manifesto?",
+            "options": [
+                "Futurist Manifesto by Filippo Tommaso Marinetti",
+                "Dada Manifesto by Tristan Tzara",
+                "Surrealist Manifesto by Andru00e9 Breton Stuckist Manifesto by Charles Thomson",
+                "Fluxus Manifesto by George Maciunas"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art-related documentary impacted you the most?",
+            "options": [
+                "Exit Through the Gift Shop",
+                "The Mona Lisa Curse",
+                "The Rape of Europa",
+                "My Kid Could Paint That",
+                "Cutie and the Boxer"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite art-themed TV series?",
+            "options": [
+                "Fake or Fortune?",
+                "Art21: Art in the Twenty-First Century",
+                "The Power of Art",
+                "Rivers with Griff Rhys Jones",
+                "Simon Schama'Power of Art"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art movement had the biggest influence on fashion?",
+            "options": [
+                "Art Nouveau",
+                "Cubism",
+                "Pop Art",
+                "Surrealism",
+                "Futurism"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite form of street art?",
+            "options": [
+                "Murals",
+                "Stencil graffiti",
+                "Wheatpasting",
+                "3D street art",
+                "Yarn bombing"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which famous artwork do you find the most enigmatic?",
+            "options": [
+                "The Persistence of Memory by Salvador Dalu00ed",
+                "Mona Lisa by Leonardo da Vinci",
+                "The Starry Night by Vincent van Gogh",
+                "ThScream by Edvard Munch",
+                "Guernica by Pablo Picasso"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art print?",
+            "options": [
+                "Lithograph",
+                "Etching",
+                "Woodcut",
+                "Screenprint",
+                "Giclu00e9e print"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art movement focused on depicting nature in an idealistic manner?",
+            "options": [
+                "Hudson River School",
+                "Pre-Raphaelite Brotherhood",
+                "American Impressionism",
+                "Romanticism",
+                "Symbolism"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite art-related social media platform?",
+            "options": [
+                "Instagram",
+                "Pinterest",
+                "Behance",
+                "DeviantArt",
+                "ArtStation"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art technique do you find the most skillful?",
+            "options": [
+                "Chiaroscuro",
+                "Sfumato",
+                "Trompe-l'u0153il",
+                "Impasto",
+                "Glazing"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art film?",
+            "options": [
+                "Loving Vincent",
+                "Pollock",
+                "Basquiat",
+                "Frida",
+                "Girl with a Pearl Earring"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art movement rejected traditional ideas of beauty?",
+            "options": [
+                "Dadaism",
+                "Futurism",
+                "Surrealism",
+                "Abstract Expressionism",
+                "Performance art"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art restoration and conservation?",
+            "options": [
+                "Cleaning and retouching",
+                "Structural stabilization",
+                "Backing removal",
+                "Varnishing",
+                "Surface cleaning"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which contemporary artist influences your perception of beauty the most?",
+            "options": [
+                "Yayoi Kusama",
+                "Banksy",
+                "Ai Weiwei",
+                "Jeff Koons",
+                "Damien Hirst"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art education program?",
+            "options": [
+                "Art workshops",
+                "Art camps",
+                "Art classes",
+                "Artist residency programs",
+                "Art mentorships"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art movement do you find the most disruptive?",
+            "options": [
+                "Dadaism",
+                "Surrealism",
+                "Abstract Expressionism",
+                "Land art",
+                "Conceptual art"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art analysis and critique?",
+            "options": [
+                "Formal analysis",
+                "Sociopolitical analysis",
+                "Feminist analysis",
+                "Psychoanalytical criticism",
+                "Postcolonial analysis"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art form do you find the most emotive?",
+            "options": [
+                "Painting",
+                "Sculpture",
+                "Photography",
+                "Performance art",
+                "Installation art"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art exhibition opening event?",
+            "options": [
+                "Vernissage",
+                "Opening reception",
+                "Artist talk",
+                "Curator-led tour",
+                "Art performance"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which famous art collector do you find most fascinating?",
+            "options": [
+                "Peggy Guggenheim",
+                "Francesco Alphonso Sforza",
+                "Isabella Stewart Gardner",
+                "Dominique de Menil",
+                "Charles Saatchi"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art criticism publication?",
+            "options": [
+                "Artforum",
+                "Art in America",
+                "Frieze",
+                "Hyperallergic",
+                "ArtReview"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art movement prioritized aesthetics above all else?",
+            "options": [
+                "Aestheticism",
+                "Decadent movement",
+                "Art Nouveau",
+                "Op art",
+                "Hyperrealism"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art-inspired fashion collaboration?",
+            "options": [
+                "Designer and artist collaboration",
+                "Art museum merchandise collaboration",
+                "Art and cosmetic brand collaboration",
+                "Art and luxurbrand collaboration",
+                "Streetwear and artist collaboration"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which artist's studio would you most like to visit?",
+            "options": [
+                "Andy Warhol's Factory",
+                "Jackson Pollock's barn studio",
+                "Pablo Picasso's La Californie studio",
+                "Frida Kahlo's Casa Azul studio Willem de Kooning's East Hampton studio"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art documentary photography?",
+            "options": [
+                "Documenting the lives of artists",
+                "Documenting art movements and exhibitions",
+                "Documenting art-making processes",
+                "Documenting arcollectors and their collections",
+                "Documenting the impact of art on society"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which famous work of public art do you find most captivating?",
+            "options": [
+                "Cloud Gate by Anish Kapoor",
+                "The Gates by Christo and Jeanne-Claude",
+                "Love by Robert Indiana",
+                "The Bean by Sir Eduardo Paolozzi The Hammering Man by Jonathan Borofsky"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art installation?",
+            "options": [
+                "Large-scale outdoor installations",
+                "Interactive installations",
+                "Site-specific installations",
+                "Light installations",
+                "Audiovisuainstallations"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which museum cafu00e9 or restaurant would you most like to dine at?",
+            "options": [
+                "The Modern at MoMA in New York",
+                "The Rooftop at SFMOMA in San Francisco",
+                "The National Cafu00e9 at the National Gallery iLondon",
+                "The Terrace Restaurant at Tate Modern in London",
+                "The Art Institute of Chicago's Garden Restaurant"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art-related podcast?",
+            "options": [
+                "Interviews with artists",
+                "Art historical discussions",
+                "Art market insights",
+                "Exhibition reviews",
+                "Curatorial insights"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art movement challenged traditional notions of beauty?",
+            "options": [
+                "Feminist art",
+                "Postmodern art",
+                "Land art",
+                "Installation art",
+                "Performance art"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art-themed documentary series?",
+            "options": [
+                "Art21",
+                "The Genius of Photography",
+                "American Masters",
+                "The Art of the Steal",
+                "Tales from the Art Crypt"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art movement explored the intersection of art and technology?",
+            "options": [
+                "Op art",
+                "Kinetic art",
+                "New Media art",
+                "Digital art",
+                "Cybernetic art"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art-related event?",
+            "options": [
+                "Art fairs",
+                "Biennials",
+                "Art auctions",
+                "Art symposiums",
+                "Art residencies"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which artist's self-portrait do you find most striking?",
+            "options": [
+                "Vincent van Gogh",
+                "Frida Kahlo",
+                "Rembrandt",
+                "Andy Warhol",
+                "Cindy Sherman"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art-themed reality TV show?",
+            "options": [
+                "Art Battle",
+                "Work of Art: The Next Great Artist",
+                "Fake or Fortune?",
+                "Art Detectives",
+                "Portrait Artist of the Year"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art movement aimed to blur the boundaries between art and life?",
+            "options": [
+                "Fluxus",
+                "Happenings",
+                "Neo-Dada",
+                "Situationist International",
+                "Relational aesthetics"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art-inspired merchandise?",
+            "options": [
+                "Art-themed clothing",
+                "Art-inspired accessories",
+                "Art prints and posters",
+                "Art-inspired home decor",
+                "Art-themed stationery"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art movement explored the use of chance and randomness?",
+            "options": [
+                "Dadaism",
+                "Surrealism",
+                "Abstract Expressionism",
+                "Fluxus",
+                "Neo-Dada"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art-related charity event?",
+            "options": [
+                "Art auctions for a cause",
+                "Art exhibitions for charity",
+                "Art workshops for underprivileged children",
+                "Artist collaborations witNGOs",
+                "Artwork donations to fundraisers"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which famous fashion designer do you find most influenced by art?",
+            "options": [
+                "Yves Saint Laurent",
+                "Alexander McQueen",
+                "Coco Chanel",
+                "Iris van Herpen",
+                "Marc Jacobs"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite form of art activism?",
+            "options": [
+                "Street art and graffiti activism",
+                "Art installations for social change",
+                "Artistic performances of protest",
+                "Artwork supportinmarginalized communities",
+                "Artworks focusing on environmental issues"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which female art collector had the biggest impact on art history?",
+            "options": [
+                "Peggy Guggenheim",
+                "Gertrude Stein",
+                "Isabella Stewart Gardner",
+                "Hattula Moholy-Nagy",
+                "Edith Halpert"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art education resource?",
+            "options": [
+                "Art history books",
+                "Online art courses",
+                "Art podcasts",
+                "Art documentaries",
+                "Art workshops"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which art movement aimed to challenge the dominance of the art market?",
+            "options": [
+                "Stuckism",
+                "Neo-conceptualism",
+                "Relational aesthetics",
+                "Neo-expressionism",
+                "Institutional critique"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "What is your favorite type of art-themed social event?",
+            "options": [
+                "Gallery openings",
+                "Art parties",
+                "Art performances",
+                "Art fairs",
+                "Artist meet-ups"
+            ],
+            "topics": [
+                "Art",
+                "Beauty"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,604 @@
+{
+    "Economy_Fashion": [
+        {
+            "question": "How does the current state of the economy influence your fashion choices?",
+            "options": [
+                "I prioritize affordable fashion",
+                "I invest in higher quality, lasng pieces",
+                "I stick to a specific budget for clothing"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Are you more inclined to purchase luxury fashion items during a booming economy?",
+            "options": [
+                "Yes, it is a status symbol",
+                "No, I prefer to save moneyegardless of the economy",
+                "It doesn't affect my purchasing decisions"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Does the fashion industry contribute positively or negatively to the economy?",
+            "options": [
+                "Positively, it creates jobs and stimulates economic growth",
+                "Negatively, it promotes overconsumption and waste",
+                "I'm not sure"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What impact does the fashion industry have on local economies?",
+            "options": [
+                "It boosts local businesses and tourism",
+                "It causes small local shops to struggl,",
+                "I don't think it has a significant impact"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How do you balance your desire for trendy fashion items with your budget constraints?",
+            "options": [
+                "I wait for sales and discounts",
+                "I invest in timeless, versatilpieces",
+                "I save up specifically for fashion splurges"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Do you believe fast fashion trends negatively impact the economy?",
+            "options": [
+                "Yes, it encourages disposable consumption",
+                "No, it provides, options for everyone",
+                "I'm not sure"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What role does fashion play in the growth of the gig economy?",
+            "options": [
+                "Fashion platforms provide opportunities for gig workers",
+                "Fashion gig economy has minimal impact",
+                "I'm not familiar with the gig economy"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How do changes in the economy affect your fashion shopping habits?",
+            "options": [
+                "I buy less due to financial uncertainty",
+                "I invest in timeless pieces that can beorn for years",
+                "It doesn't impact my shopping habits"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Do you believe fashion can be a form of economic empowerment?",
+            "options": [
+                "Yes, it can boost confidence and career opportunities",
+                "No, it is superficial and irrelevant",
+                "It depends on the individual's perspective"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How do you think the economy affects the demand for sustainable fashion?",
+            "options": [
+                "In a strong economy, sustainable fashion is more popular",
+                "In a weak economy, sustainable fashion is more valued",
+                "The economy doesn't impact the demand for sustainable fashion"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Do you think the fashion industry should prioritize ethical labor practices, regardless of economic impacts?",
+            "options": [
+                "Yes, ethics should never be compromised",
+                "No, economic viability comes first",
+                "I'm undecided"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How do you think the state of the economy impacts fashion trends?",
+            "options": [
+                "During economic downturns, trends become more minimalistic",
+                "During economic upswings, trends become more extravagant",
+                "I don't think the economy affects fashion trends"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How does the fashion industry contribute to the growth of the sharing economy?",
+            "options": [
+                "Fashion rental platforms enhance the sharing economy",
+                "The sharing economy has little impact on the fashionndustry",
+                "I'm not familiar with the sharing economy"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Does the fashion industry have a responsibility to address income inequality in society?",
+            "options": [
+                "Yes, it should promote inclusivity and affordability",
+                "No, it is not the responsibility of the fashion indury",
+                "I'm unsure"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How do you think the economy impacts the perception of luxury fashion brands?",
+            "options": [
+                "During economic downturns, luxury brands are seen as excessive",
+                "During economic upswings, luxury brands are socially desirable",
+                "The economy does not affect the perception of luxury fashion brands"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What impact does fashion tourism have on the local economy?",
+            "options": [
+                "It boosts local businesses and generates revenue",
+                "It causes overcrowding and strains resources",
+                "I'm not familiar with fashion tourism"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Should government policies promote sustainable fashion practices to stimulate the economy?",
+            "options": [
+                "Yes, it is essential for long-term economic and environmental stability",
+                "No, sustainability should be left to individual choices",
+                "I'm undecided"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Do you think the fashion industry will rebound quickly after an economic recession?",
+            "options": [
+                "Yes, fashion is resilient and adaptable",
+                "No, it will take time for consumer confence to return",
+                "I'm not sure"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How do you think economic inequality affects the fashion choices of individuals?",
+            "options": [
+                "It limits access to high-end fashion for certain groups",
+                "It promotes the desire for affordable and accessible faion",
+                "Economic inequality does not impact fashion choices"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What impact does the fashion industry have on global economies?",
+            "options": [
+                "It creates jobs and boosts export revenues",
+                "It fuels inequality and exploits developineconomies",
+                "I'm not sure"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Do you believe fashion has the power to influence economic trends?",
+            "options": [
+                "Yes, it shapes consumer spending and market demand",
+                "No, fashion is influenced by economic trends",
+                "It is a two-way relationship"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How does the economy impact the demand for sustainable and eco-friendly fashion?",
+            "options": [
+                "In challenging economic times, sustainable fashion is valued more",
+                "In prosperous economic times, eco-friendly fashion gains populari",
+                "The economy does not affect the demand for sustainable fashion"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Do you believe the fashion industry plays a role in economic cycles?",
+            "options": [
+                "Yes, it is influenced by and influences economic cycles",
+                "No, fashion is not tied to economic fluctuations",
+                "I'm undecided"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How do economic factors influence your decision to buy sustainably produced fashion?",
+            "options": [
+                "I am more willing to invest in sustainable fashion during economic stability",
+                "I prioritize sustainability regardless of economic factors",
+                "It doesn't impact my decision to buy sustainably produced fashion"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What impact does the fashion industry have on job creation within the economy?",
+            "options": [
+                "It generates employment opportunities in various sectors",
+                "It leads to job insecurity and exploitation",
+                "I'm not sure"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How does the economy affect your willingness to invest in designer fashion?",
+            "options": [
+                "During economic downturns, I am less likely to invest in designer fashion",
+                "During economic upswings, I am more inclined to invest in designer fashio,",
+                "The economy doesn't influence my willingness to invest in designer fashion"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Do you believe the fashion industry should prioritize local production to support the domestic economy?",
+            "options": [
+                "Yes, it strengthens the local economy and job market",
+                "No, it limits creativity and global collaboration",
+                "I'm undecided"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What impact does fashion advertising have on consumer spending and the economy?",
+            "options": [
+                "It influences consumer behavior and stimulates economic growth",
+                "It promotes unnecessary consumption and hampers the economy",
+                "I don't think it has a significant impact"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Do you think the fashion industry should prioritize sustainable practices even if it negatively impacts the economy?",
+            "options": [
+                "Yes, long-term sustainability is more important",
+                "No, economic prosperity should be prioritized",
+                "I'm not sure"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How do economic fluctuations impact the demand for luxury fashion items?",
+            "options": [
+                "During economic downturns, demand for luxury fashion decreases",
+                "During economic upswings, demand for luxury fashion increases",
+                "Economic fluctuations have no impact on the demand for luxury fashion"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What impact does the fashion industry have on local manufacturing and production?",
+            "options": [
+                "It stimulates local manufacturing and production",
+                "It leads to the decline of local manufacturing a production",
+                "I'm unsure"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How does the economy influence your view on fast fashion?",
+            "options": [
+                "During economic stability, I am more cautious of fast fashion",
+                "During economic uncertainty, fast fashion becomes more appealg",
+                "The economy does not impact my view on fast fashion"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Do you believe the fashion industry can drive economic growth in developing countries?",
+            "options": [
+                "Yes, it can provide employment and export opportunities",
+                "No, it often exploits cheap labor and resources",
+                "I'm undecided"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How does the state of the economy influence your decision to buy locally produced fashion?",
+            "options": [
+                "During economic struggles, I prioritize supporting local businesses",
+                "During economic prosperity, I explore global, options",
+                "The state of the economy does not influence my buying decisions"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What impact does fashion consumption have on the overall health of the economy?",
+            "options": [
+                "It contributes to economic growth and consumer spending",
+                "It leads to overconsumption and hampers economic stabily",
+                "I'm uncertain"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How do you think the economy affects fashion designers' creative choices?",
+            "options": [
+                "During economic uncertainty, designers play it safe with their creations",
+                "During economic prosperity, designers experiment with bolder designs",
+                "The economy does not impact fashion designers' creative choices"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Do you believe the fashion industry should invest more in sustainable and ethical practices to benefit the economy?",
+            "options": [
+                "Yes, it promotes long-term growth and stability",
+                "No, the financial burden outweighs the potentiabenefits",
+                "I'm not sure"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What role does the fashion industry play in the circular economy?",
+            "options": [
+                "It promotes recycling and reduces waste through sustainable practices",
+                "It has minimal involvement in the circular economy",
+                "I'm not familiar with the concept of the circular economy"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How does the economy influence your perception of fashion as an art form?",
+            "options": [
+                "During economic struggles, fashion is seen as a luxury and less appreciated as art",
+                "During economic prosperity, fashion is recognized as a valuable artistic expressio,",
+                "The economy does not affect my perception of fashion as an art form"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What impact does the fashion industry have on sustainable job creation in the economy?",
+            "options": [
+                "It contributes to the creation of sustainable jobs in various fields",
+                "It displaces labor and leads to job insecurity",
+                "I'm not sure"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Do you think the fashion industry should promote gender equality within the workplace to support the economy?",
+            "options": [
+                "Yes, inclusive workplaces foster economic growth and innovation",
+                "No, gender equality is not a significant factor in economic sucss",
+                "I'm undecided"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How does economic status influence your fashion choices?",
+            "options": [
+                "It determines the brands and quality of clothing I can afford",
+                "It has little to no impact on my fashion choices",
+                "I'm unsure"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What impact does the fashion industry have on consumer debt and the overall economy?",
+            "options": [
+                "It contributes to consumer debt and can strain the economy",
+                "It has minimal impact on consumer debt and the economy",
+                "I'm not sure"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Do you think the fashion industry should prioritize locally sourced materials to support the domestic economy?",
+            "options": [
+                "Yes, it promotes sustainability and reduces dependence on imports",
+                "No, it limits creativity and global trade opportunities",
+                "I'm undecided"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How does the economy impact your view on fashion as a form of self-expression?",
+            "options": [
+                "During economic instability, fashion becomes a less significant form of self-expression",
+                "During economic prosperity, fashion is embraced as a powerful form of self-expression",
+                "The economy does not influence my view on fashion as self-expression"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What impact does the fashion industry have on the global economy's carbon footprint?",
+            "options": [
+                "It significantly contributes to the carbon footprint through production and transportation",
+                "It has minimal impact on the global economy's carbon footprint",
+                "I'm not sure"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Do you believe the fashion industry should invest in eco-friendly innovations to benefit the economy?",
+            "options": [
+                "Yes, it promotes innovation and long-term economic growth",
+                "No, the costs outweigh the potential benefits",
+                "I'm undecided"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "How does the state of the economy influence your perception of fast fashion brands?",
+            "options": [
+                "During economic downturns, fast fashion is seen as an affordable option",
+                "During economic upswings, fast fashion is criticized for its negative iact",
+                "The state of the economy does not affect my perception of fast fashion brands"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What impact does the fashion industry have on the stability of the economy?",
+            "options": [
+                "It can contribute to economic instability due to its reliance on trends",
+                "It plays a crucial role in promoting economic stability and growth",
+                "I'm not sure"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Should the fashion industry support local artisans and traditional crafts to stimulate the economy?",
+            "options": [
+                "Yes, it promotes cultural heritage and sustainable economic practices",
+                "No, it hinders progress and modernization",
+                "I'm undecided"
+            ],
+            "topics": [
+                "Economy",
+                "Fashion"
+            ]
+        }
+    ]
+}

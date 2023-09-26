@@ -1,0 +1,984 @@
+{
+    "Beauty_Economy": [
+        {
+            "question": "What is more important to you: investing in stocks or investing in self-care products?",
+            "options": [
+                "Stocks",
+                "Self-care products"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which do you consider a better investment: a luxury handbag or a high-end watch?",
+            "options": [
+                "Luxury handbag",
+                "High-end watch"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you rather save money by doing your own makeup or invest in professional makeup services?",
+            "options": [
+                "Do my own makeup",
+                "Professional makeup services"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which is a more sustainable beauty choice: buying eco-friendly cosmetics or making your own beauty products at home?",
+            "options": [
+                "Eco-friendly cosmetics",
+                "Making own beauty products at home"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you believe spending money on beauty treatments like facials and massages is a worthwhile expense?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which is a more efficient use of your time and money: investing in workout equipment or paying for gym memberships?",
+            "options": [
+                "Investing in workout equipment",
+                "Paying for gym memberships"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much are you willing to spend on a single beauty product?",
+            "options": [
+                "Less than $10",
+                "$10 - $50",
+                "$50 - $100",
+                "More than $100"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which has a greater impact on the economy: the beauty industry or the fashion industry?",
+            "options": [
+                "Beauty industry",
+                "Fashion industry"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you be willing to pay extra for beauty products that are ethically sourced and cruelty-free?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Is it more important for a beauty brand to have celebrity endorsements or provide affordable prices?",
+            " options": [
+                "Celebrity endorsements",
+                "Affordable prices"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you pay a premium price for sustainable and eco-friendly packaging in beauty products?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which is a better indicator of economic growth: the beauty industry or the technology industry?",
+            " options": [
+                "Beauty industry",
+                "Technology industry"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much importance do you place on the economic impact of your beauty purchases?",
+            " options": [
+                "Very important",
+                "Somewhat important",
+                "Not important"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you rather spend money on a high-quality skincare routine or invest in stocks for long-term financial growth?",
+            " options": [
+                "Skincare routine",
+                "Stocks for long-term financial growth"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you believe investing in personal grooming and beauty products can enhance your career prospects?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which do you consider a more luxurious indulgence: a spa day or a luxury shopping spree?",
+            " options": [
+                "Spa day",
+                "Luxury shopping spree"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much do you typically spend on beauty and grooming products per month?",
+            " options": [
+                "Less than $50",
+                "$50 - $100",
+                "$100 - $200",
+                "More than $200"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which beauty industry segment do you believe contributes the most to the economy: skincare, makeup, or haircare?",
+            " options": [
+                "Skincare",
+                "Makeup",
+                "Haircare"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you pay a premium for a beauty product with sustainable and fair-trade ingredients?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which beauty brand do you believe has the best balance between quality and affordability?",
+            " options": [
+                "Brand A",
+                "Brand B",
+                "Brand C",
+                "Other"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much are you willing to invest in personal development and self-improvement?",
+            " options": [
+                "Less than $50",
+                "$50 - $200",
+                "$200 - $500",
+                "More than $500"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you prioritize spending money on beauty treatments or investing in skills training for career enhancement?",
+            " options": [
+                "Beauty treatments",
+                "Skills training for career enhancement"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which has a bigger influence on your purchasing decisions: the price of a beauty product or its effectiveness?",
+            " options": [
+                "Price of the product",
+                "Effectiveness of the product"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you pay extra for a beauty product made with sustainable packaging materials?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which do you believe has a greater economic impact: local beauty businesses or multinational beauty corporations?",
+            " options": [
+                "Local beauty businesses",
+                "Multinational beauty corporations"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much do you spend on beauty services (e.g., salon visits, spa treatments) per month?",
+            " options": [
+                "Less than $50",
+                "$50 - $100",
+                "$100 - $200",
+                "More than $200"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In the long run, do you believe spending on beauty products enhances your personal financial wellbeing or hampers it?",
+            " options": [
+                "Enhances personal financial wellbeing",
+                "Hampers personal financial wellbeing"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which is a better economic investment: owning a beauty salon or owning a fashion boutique?",
+            " options": [
+                "Owning a beauty salon",
+                "Owning a fashion boutique"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you rather spend money on beauty products or invest in personal financial education and wealth-building tools?",
+            " options": [
+                "Beauty products",
+                "Personal financial education and wealth-building tools"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much would you be willing to pay for a beauty product endorsed by a celebrity you admire?",
+            " options": [
+                "Less than $50",
+                "$50 - $100",
+                "$100 - $200",
+                "More than $200"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which do you believe contributes more to the economy: spending on luxury beauty brands or supporting local beauty artisans?",
+            " options": [
+                "Luxury beauty brands",
+                "Local beauty artisans"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Is it worth investing in the best quality beauty products, even if they come at a higher price?",
+            " options": [
+                "Yes, it's worth it",
+                "No, it's not worth it"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which is a better economic decision: buying beauty products from local businesses or online retailers?",
+            " options": [
+                "Local businesses",
+                "Online retailers"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much do you believe your personal beauty routine contributes to your overall confidence and success in the economy?",
+            " options": [
+                "Significantly",
+                "Moderately",
+                "Minimally",
+                "Not at all"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you consider owning a beauty blog or YouTube channel as a viable income source?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How do you prioritize spending on beauty products compared to other essential expenses like housing and food?",
+            " options": [
+                "High priority",
+                "Medium priority",
+                "Low priority"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you believe the beauty industry adequately represents all body types and ethnicities in its marketing and products?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which has a greater economic impact: luxury spa resorts or affordable wellness retreat centers?",
+            " options": [
+                "Luxury spa resorts",
+                "Affordable wellness retreat centers"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you invest in a beauty brand that champions eco-friendly and sustainable practices, even if it meant higher prices?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much do you believe the beauty industry contributes to job creation and economic growth?",
+            " options": [
+                "Significantly",
+                "Moderately",
+                "Minimally",
+                "Not at all"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How does your economic situation affect your willingness to spend on beauty products?",
+            " options": [
+                "I spend regardless of my economic situation",
+                "I spend based on my economic situation",
+                "I limit spending on beauty products due to my economic situation"
+            ]
+        },
+        {
+            "question": "Which do you believe has a greater economic impact: individual beauty purchases or beauty subscription services?",
+            " options": [
+                "Individual beauty purchases",
+                "Beauty subscription services"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you be willing to pay extra for beauty products made with locally sourced and produced ingredients?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much importance do you place on supporting local beauty businesses for the benefit of the local economy?",
+            " options": [
+                "Very important",
+                "Somewhat important",
+                "Not important"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which do you believe has a larger economic influence: spending on luxury fashion brands or spending on luxury beauty products?",
+            " options": [
+                "Luxury fashion brands",
+                "Luxury beauty products"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you consider investing in a beauty-related startup or a tech startup for potential financial gains?",
+            " options": [
+                "Beauty-related startup",
+                "Tech startup"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much do you believe the beauty industry contributes to consumer spending and economic stability?",
+            " options": [
+                "Significantly",
+                "Moderately",
+                "Minimally",
+                "Not at all"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Is it worth prioritizing spending on high-quality beauty products, even if it means cutting back on other non-essential expenses?",
+            " options": [
+                "Yes, it's worth it",
+                "No, it's not worth it"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which do you believe has a larger economic influence: celebrity beauty collaborations or celebrity fashion collaborations?",
+            " options": [
+                "Celebrity beauty collaborations",
+                "Celebrity fashion collaborations"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you pay extra for beauty products that are packaged using environmentally friendly materials, even if it means higher prices?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much do you typically spend on beauty treatments (e.g., facials, manicures) per month?",
+            " options": [
+                "Less than $50",
+                "$50 - $100",
+                "$100 - $200",
+                "More than $200"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you believe investing in personal grooming and beauty products can lead to better career opportunities and financial success?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which is a better economic investment: owning a beauty salon or owning a fitness center?",
+            " options": [
+                "Owning a beauty salon",
+                "Owning a fitness center"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you rather spend money on beauty products or invest in skills training for career advancement?",
+            " options": [
+                "Beauty products",
+                "Skills training for career advancement"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much would you be willing to pay for a beauty product endorsed by a celebrity you admire?",
+            " options": [
+                "Less than $50",
+                "$50 - $100",
+                "$100 - $200",
+                "More than $200"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which do you believe contributes more to the economy: spending on luxury beauty brands or supporting local beauty artisans?",
+            " options": [
+                "Luxury beauty brands",
+                "Local beauty artisans"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Is it worth investing in the best quality beauty products, even if they come at a higher price?",
+            " options": [
+                "Yes, it's worth it",
+                "No, it's not worth it"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which is a better economic decision: buying beauty products from local businesses or online retailers?",
+            " options": [
+                "Local businesses",
+                "Online retailers"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much do you believe your personal beauty routine contributes to your overall confidence and success in the economy?",
+            " options": [
+                "Significantly",
+                "Moderately",
+                "Minimally",
+                "Not at all"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you consider owning a beauty blog or YouTube channel as a viable income source?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How do you prioritize spending on beauty products compared to other essential expenses like housing and food?",
+            " options": [
+                "High priority",
+                "Medium priority",
+                "Low priority"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you believe the beauty industry adequately represents all body types and ethnicities in its marketing and products?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which has a greater economic impact: luxury spa resorts or affordable wellness retreat centers?",
+            " options": [
+                "Luxury spa resorts",
+                "Affordable wellness retreat centers"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you invest in a beauty brand that champions eco-friendly and sustainable practices, even if it meant higher prices?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much do you believe the beauty industry contributes to job creation and economic growth?",
+            " options": [
+                "Significantly",
+                "Moderately",
+                "Minimally",
+                "Not at all"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How does your economic situation affect your willingness to spend on beauty products?",
+            " options": [
+                "I spend regardless of my economic situation",
+                "I spend based on my economic situation",
+                "I limit spending on beauty products due to my economic situation"
+            ]
+        },
+        {
+            "question": "Which do you believe has a greater economic impact: individual beauty purchases or beauty subscription services?",
+            " options": [
+                "Individual beauty purchases",
+                "Beauty subscription services"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you be willing to pay extra for beauty products made with locally sourced and produced ingredients?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much importance do you place on supporting local beauty businesses for the benefit of the local economy?",
+            " options": [
+                "Very important",
+                "Somewhat important",
+                "Not important"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which do you believe has a larger economic influence: spending on luxury fashion brands or spending on luxury beauty products?",
+            " options": [
+                "Luxury fashion brands",
+                "Luxury beauty products"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you consider investing in a beauty-related startup or a tech startup for potential financial gains?",
+            " options": [
+                "Beauty-related startup",
+                "Tech startup"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much do you believe the beauty industry contributes to consumer spending and economic stability?",
+            " options": [
+                "Significantly",
+                "Moderately",
+                "Minimally",
+                "Not at all"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Is it worth prioritizing spending on high-quality beauty products, even if it means cutting back on other non-essential expenses?",
+            " options": [
+                "Yes, it's worth it",
+                "No, it's not worth it"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which do you believe has a larger economic influence: celebrity beauty collaborations or celebrity fashion collaborations?",
+            " options": [
+                "Celebrity beauty collaborations",
+                "Celebrity fashion collaborations"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you pay extra for beauty products that are packaged using environmentally friendly materials, even if it means higher prices?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much importance do you place on the economic impact of your beauty purchases?",
+            " options": [
+                "Very important",
+                "Somewhat important",
+                "Not important"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you pay a premium for a beauty product with sustainable and fair-trade ingredients?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much are you willing to spend on a single beauty product?",
+            " options": [
+                "Less than $10",
+                "$10 - $50",
+                "$50 - $100",
+                "More than $100"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which is a more efficient use of your time and money: investing in workout equipment or paying for gym memberships?",
+            " options": [
+                "Investing in workout equipment",
+                "Paying for gym memberships"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Would you rather save money by doing your own makeup or invest in professional makeup services?",
+            " options": [
+                "Do my own makeup",
+                "Professional makeup services"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you believe spending money on beauty treatments like facials and massages is a worthwhile expense?",
+            " options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which is a more sustainable beauty choice: buying eco-friendly cosmetics or making your own beauty products at home?",
+            " options": [
+                "Eco-friendly cosmetics",
+                "Making own beauty products at home"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "What is more important to you: investing in stocks or investing in self-care products?",
+            " options": [
+                "Stocks",
+                "Self-care products"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "How much do you typically spend on beauty and grooming products per month?",
+            " options": [
+                "Less than $50",
+                "$50 - $100",
+                "$100 - $200",
+                "More than $200"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which beauty industry segment do you believe contributes the most to the economy: skincare, makeup, or haircare?",
+            " options": [
+                "Skincare",
+                "Makeup",
+                "Haircare"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which has a bigger influence on the economy: the beauty industry or the technology industry?",
+            " options": [
+                "Beauty industry",
+                "Technology industry"
+            ],
+            "topics": [
+                "Beauty",
+                "Economy"
+            ]
+        },
+    ]
+}

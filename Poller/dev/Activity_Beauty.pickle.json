@@ -1,0 +1,284 @@
+{
+    "Activity_Beauty": [
+        {
+            "question": "What outdoor activity do you find most beautiful?",
+            "options": [
+                "Hiking",
+                "Swimming",
+                "Cycling",
+                "Kayaking",
+                "Gardening"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which type of workout makes you feel most beautiful?",
+            "options": [
+                "Yoga",
+                "Dance",
+                "Running",
+                "Weightlifting",
+                "Pilates"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which natural scenery do you find most breathtaking during physical activity?",
+            "options": [
+                "Mountains",
+                "Beach",
+                "Forest",
+                "Waterfall",
+                "Countryside"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which beauty product do you use the most during your daily exercise routine?",
+            "options": [
+                "Sunscreen",
+                "Makeup",
+                "Moisturizer",
+                "Lip balm",
+                "Deodorant"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which activity makes you feel most empowered and beautiful?",
+            "options": [
+                "Dancing",
+                "Martial arts",
+                "Rock climbing",
+                "Kickboxing",
+                "Zumba"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which beauty trend inspires you to incorporate it into your physical activities?",
+            "options": [
+                "Athleisure fashion",
+                "Natural makeup",
+                "Braided hairstyles",
+                "Glowing skin",
+                "Bold nails"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which physical activity helps you feel more connected to the beauty of nature?",
+            "options": [
+                "Swimming",
+                "Hiking",
+                "Surfing",
+                "Yoga",
+                "Paddleboarding"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which type of workout allows you to appreciate the beauty of your body's movements?",
+            "options": [
+                "Ballet",
+                "Pilates",
+                "Tai chi",
+                "Gymnastics",
+                "Barre"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which beauty enhancement do you prefer while engaging in outdoor activities?",
+            "options": [
+                "Sunglasses",
+                "Waterproof mascara",
+                "Tinted lip balm",
+                "Sweat-proof foundation",
+                "Hair tie"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which activity makes you realize the beauty of determination and perseverance?",
+            "options": [
+                "Long-distance running",
+                "Triathlon",
+                "Hiking a difficult trail",
+                "Crossfit",
+                "Ironman"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which physical activity makes you feel beautifully alive and in the present moment?",
+            "options": [
+                "Yoga",
+                "Meditation",
+                "Dancing",
+                "Tai chi",
+                "Pilates"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which beauty product do you rely on to stay refreshed during intense workouts?",
+            "options": [
+                "Facial mist",
+                "Dry shampoo",
+                "Makeup wipes",
+                "Body spray",
+                "Foot spray"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which activity allows you to witness the beauty of the sunrise or sunset?",
+            "options": [
+                "Running",
+                "Beach yoga",
+                "Cycling",
+                "Hiking",
+                "Surfing"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which physical activity do you find most awe-inspiring and visually captivating?",
+            "options": [
+                "Gymnastics",
+                "Aerial silks",
+                "Figure skating",
+                "Parkour",
+                "Cirque du Soleil"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which beauty ritual complements your post-workout routine?",
+            "options": [
+                "Face mask",
+                "Body oil",
+                "Hair mask",
+                "Exfoliating scrub",
+                "Hand cream"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which activity allows you to appreciate the beauty of teamwork and coordination?",
+            "options": [
+                "Synchronized swimming",
+                "Basketball",
+                "Volleyball",
+                "Rowing",
+                "Doubles tennis"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which beauty trend motivates you to feel more confident during physical activities?",
+            "options": [
+                "Bright workout clothes",
+                "Bold lipstick",
+                "Colored hair",
+                "Statement nails",
+                "Visible tattoos"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which physical activity helps you embrace the beauty of solitude and self-reflection?",
+            "options": [
+                "Running",
+                "Hiking",
+                "Stand-up paddleboarding",
+                "Cycling",
+                "Yoga"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which beauty product is essential for protecting your skin during outdoor activities?",
+            "options": [
+                "Sunscreen",
+                "Lip balm with SPF",
+                "BB cream",
+                "Water-resistant mascara",
+                "Hat"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        },
+        {
+            "question": "Which activity makes you feel most in awe of the beauty and power of your own body?",
+            "options": [
+                "Crossfit",
+                "Boxing",
+                "Powerlifting",
+                "Street workout",
+                "Obstacle course racing"
+            ],
+            "topics": [
+                "Activity",
+                "Beauty"
+            ]
+        }
+    ]
+}

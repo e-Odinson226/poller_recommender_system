@@ -1,0 +1,940 @@
+{
+    "Fashion_Fun": [
+        {
+            "question": "Which fashion accessory would you choose to jazz up your outfit?",
+            "options": [
+                "Statement necklace",
+                "Funky hat",
+                "Colorful scarf"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What is your go-to outfit for a fun night out?",
+            "options": [
+                "Little black dress",
+                "Sequin top and jeans",
+                "Floral jumpsuit"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion trend do you find most exciting?",
+            "options": [
+                "Animal print",
+                "Neon colors",
+                "Vintage-inspired"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which shoe style do you think is the most fashionable and comfortable?",
+            "options": [
+                "Sneakers",
+                "Ankle boots",
+                "Ballet flats"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite way to accessorize your hair?",
+            "options": [
+                "Headband",
+                "Hair clips",
+                "Turban"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion trend should make a comeback?",
+            "options": [
+                "Bell-bottom jeans",
+                "Chokers",
+                "Fanny packs"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which color scheme do you find more playful for fashion?",
+            "options": [
+                "Rainbow colors",
+                "Pastel shades",
+                "Bold primary colors"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion brand has the most unique and innovative designs?",
+            "options": [
+                "Gucci",
+                "Moschino",
+                "Balenciaga"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which clothing material do you prefer for a casual and comfortable look?",
+            "options": [
+                "Cotton",
+                "Denim",
+                "Linen"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite fashion-related leisure activity?",
+            "options": [
+                "Shopping spree",
+                "Trying on different outfits",
+                "Attending fashion shows"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion era do you find the most inspiring?",
+            "options": [
+                "Roaring 20s",
+                "Swinging 60s",
+                "Glamorous 80s"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion designer would you love to have a personal styling session with?",
+            "options": [
+                "Alexander McQueen",
+                "Coco Chanel",
+                "Yves Saint Laurent"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of party outfit?",
+            "options": [
+                "Sequined dress",
+                "Jumpsuit",
+                "Tuxedo suit"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion magazine do you enjoy reading for style inspiration?",
+            "options": [
+                "Vogue",
+                "Elle",
+                "Harper's Bazaar"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion accessory would you choose to express your personality?",
+            "options": [
+                "Colorful handbag",
+                "Unique sunglasses",
+                "Bold statement earrings"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite way to style a basic white t-shirt?",
+            "options": [
+                "Tucked into high-waisted jeans",
+                "Layered under a blazer",
+                "Knot at the front with a skirt"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which pattern do you find more playful for fashion?",
+            "options": [
+                "Polka dots",
+                "Stripes",
+                "Floral"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite fashion-related game or app?",
+            "options": [
+                "Fashion Designer",
+                "Virtual Closet Organizer",
+                "Runway Show Simulator"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion city would you love to visit for a shopping spree?",
+            "options": [
+                "Paris",
+                "Milan",
+                "Tokyo"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite way to accessorize with a scarf?",
+            "options": [
+                "Tie it around your neck",
+                "Wrap it as a headband",
+                "Drape it over your shoulders"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion runway theme would you like to see in a show?",
+            "options": [
+                "Futuristic space-inspired",
+                "Enchanted forest",
+                "Artistic graffiti"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred style of swimwear for a beach day?",
+            "options": [
+                "Bikini",
+                "One-piece",
+                "High-waisted retro"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of hat adds a touch of fun to an outfit?",
+            "options": [
+                "Wide-brimmed floppy hat",
+                "Baseball cap",
+                "Fedora"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Who is your favorite fashion icon known for their bold and playful style?",
+            "options": [
+                "Lady Gaga",
+                "Rihanna",
+                "Katy Perry"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion accessory would you choose to complete a festival-inspired look?",
+            "options": [
+                "Fringe bag",
+                "Flowy kimono",
+                "Feather headpiece"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred style of sunglasses for a trendy look?",
+            "options": [
+                "Cat-eye",
+                "Aviator",
+                "Round"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of shoe adds a playful touch to an outfit?",
+            "options": [
+                "Colorful sneakers",
+                "Platform heels",
+                "Embellished flats"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion trend would you confidently rock on the streets?",
+            "options": [
+                "Leather jacket",
+                "Statement bomber jacket",
+                "Animal-print coat"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite way to style a denim jacket?",
+            "options": [
+                "Layered over a dress",
+                "Paired with jeans",
+                "Wrapped around the waist"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion-inspired TV show do you enjoy watching for style inspiration?",
+            "options": [
+                "Gossip Girl",
+                "Sex and the City",
+                "Project Runway"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your go-to fashion hack for creating a fun outfit?",
+            "options": [
+                "Mixing prints and patterns",
+                "Adding a pop of color",
+                "Accessorizing with statement jewelry"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion item is a must-have for a music festival?",
+            "options": [
+                "Crochet top",
+                "Distressed denim shorts",
+                "Tie-dye t-shirt"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite fashion-related DIY project?",
+            "options": [
+                "Customizing a denim jacket",
+                "Making your own jewelry",
+                "Upcycling old clothes"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which celebrity has the most unique and fun fashion style?",
+            "options": [
+                "Billie Eilish",
+                "Zendaya",
+                "Harry Styles"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of handbag for a playful and trendy look?",
+            "options": [
+                "Crossbody bag",
+                "Bucket bag",
+                "Quirky-shaped clutch"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion trend do you think will dominate the next season?",
+            "options": [
+                "Tie-dye",
+                "Puff sleeves",
+                "Chunky sneakers"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred style of dress for a romantic date night?",
+            "options": [
+                "Wrap dress",
+                "Lace dress",
+                "Off-the-shoulder maxi dress"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion influencer do you follow for inspiration?",
+            "options": [
+                "Chiara Ferragni",
+                "Camila Coelho",
+                "Aimee Song"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite way to style a statement piece of jewelry?",
+            "options": [
+                "Wear it alone as a focal point",
+                "Layer it with other delicate pieces",
+                "Pair with a monochrome outfit"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion trend do you find most daring and adventurous?",
+            "options": [
+                "Sheer clothing",
+                "Biker shorts",
+                "Mismatched prints"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your go-to fashion rule when it comes to choosing an outfit?",
+            "options": [
+                "Comfort first, style second",
+                "Mix casual and formal pieces",
+                "Experiment with different silhouettes"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion accessory instantly adds a fun element to any outfit?",
+            "options": [
+                "Statement belt",
+                "Colorful socks",
+                "Funky sunglasses"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of fashion event to attend?",
+            "options": [
+                "Red carpet premiere",
+                "Fashion week runway show",
+                "Clothing swap party"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion brand represents your fun and playful fashion style?",
+            "options": [
+                "Kate Spade",
+                "Marc Jacobs",
+                "Miu Miu"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred style of outerwear for a cozy yet stylish look?",
+            "options": [
+                "Oversized teddy coat",
+                "Faux fur jacket",
+                "Puffer jacket"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion trend do you wish would disappear forever?",
+            "options": [
+                "Cargo pants",
+                "Ugg boots",
+                "Low-rise jeans"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite way to accessorize a basic black outfit?",
+            "options": [
+                "Statement belt",
+                "Colorful handbag",
+                "Chunky necklace"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion designer is known for their fun and eccentric creations?",
+            "options": [
+                "Jeremy Scott",
+                "Betsey Johnson",
+                "Thom Browne"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your go-to footwear choice for a day of running errands?",
+            "options": [
+                "White sneakers",
+                "Slip-on loafers",
+                "Espadrilles"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion trend do you find the most timeless and versatile?",
+            "options": [
+                "Leather jacket",
+                "LBD (Little Black Dress)",
+                "White button-down shirt"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite way to style a graphic t-shirt?",
+            "options": [
+                "Tucked into a skirt with a belt",
+                "Paired with distressed jeans",
+                "Layered under a blazer"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion magazine cover would you love to grace?",
+            "options": [
+                "Vogue",
+                "Elle",
+                "Cosmopolitan"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion accessory would you choose to make a bold statement?",
+            "options": [
+                "Statement earrings",
+                "Oversized sunglasses",
+                "Chunky bangle bracelets"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite way to style a summer dress for a casual day out?",
+            "options": [
+                "Pair it with sneakers",
+                "Add a denim jacket",
+                "Wear with flat sandals"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion trend from the past would you bring back for a retro vibe?",
+            "options": [
+                "Bell-bottom pants",
+                "Wide-legged jumpsuits",
+                "Mini skirts"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred style of swimwear for a pool party?",
+            "options": [
+                "High-cut one-piece",
+                "Bandeau bikini",
+                "Ruffled bikini"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion accessory can instantly elevate a casual outfit?",
+            "options": [
+                "Scarves",
+                "Statement belts",
+                "Stacked rings"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite way to incorporate color into your fashion choices?",
+            "options": [
+                "Colorful shoes",
+                "Bright handbags",
+                "Vibrant printed dresses"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion trend do you find most daring and unexpected?",
+            "options": [
+                "Exaggerated shoulders",
+                "Feather embellishments",
+                "Transparent fabrics"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your go-to fashion piece for a comfortable yet stylish travel outfit?",
+            "options": [
+                "Jumpsuit",
+                "Leggings and oversized sweater",
+                "Flowy maxi dress"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion designer is known for their playful and whimsical designs?",
+            "options": [
+                "Moschino",
+                "Alice + Olivia",
+                "Stella McCartney"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred style of hat for a day at the beach?",
+            "options": [
+                "Straw floppy hat",
+                "Bucket hat",
+                "Wide-brimmed sun hat"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion trend is a must-try for a bold and confident look?",
+            "options": [
+                "Animal print",
+                "Metallics",
+                "Plaid"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite way to style a classic white button-down shirt?",
+            "options": [
+                "Tie it in a knot with high-waisted shorts",
+                "Layer it under a slip dress",
+                "Wear it tucked into jeans"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of shoe is a staple in your fashionable yet comfortable wardrobe?",
+            "options": [
+                "Loafers",
+                "Sneaker wedges",
+                "Mules"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion era do you find the most whimsical and charming?",
+            "options": [
+                "Victorian era",
+                "Roaring 20s",
+                "Swinging 60s"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your on-the-go essential for a busy day without compromising style?",
+            "options": [
+                "Crossbody bag",
+                "Athleisure wear",
+                "Convertible backpack purse"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion brand is known for their playful and colorful prints?",
+            "options": [
+                "Dolce & Gabbana",
+                "Versace",
+                "Missoni"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite way to style a basic black blazer for a trendy look?",
+            "options": [
+                "Layered over a graphic tee and jeans",
+                "Paired with a midi skirt and blouse",
+                "Worn as a dress"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion trend do you think represents your fun and adventurous personality?",
+            "options": [
+                "Athleisure",
+                "Boho-chic",
+                "Glam rocker"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your go-to fashion trick for elongating your legs?",
+            "options": [
+                "Wear nude heels",
+                "Opt for high-waisted bottoms",
+                "Choose vertical stripes"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion accessory do you think adds a touch of elegance to any outfit?",
+            "options": [
+                "Pearl necklace",
+                "Diamond stud earrings",
+                "Silk scarf"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite way to style a statement bag for a playful look?",
+            "options": [
+                "Pair it with a monochrome outfit",
+                "Let it be the center of attention",
+                "Mix patterns and colors"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion trend from the past would you bring back for a vintage touch?",
+            "options": [
+                "Puff sleeves",
+                "Pleated midi skirts",
+                "Wide-brimmed hats"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred style of swimwear for a tropical vacation?",
+            "options": [
+                "High-waisted bikini",
+                "Cut-out one-piece",
+                "Crochet cover-up"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion accessory do you think adds an element of surprise to an outfit?",
+            "options": [
+                "Mismatched socks",
+                "Dramatic statement necklace",
+                "Stacked colorful bracelets"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite way to style a leather jacket for a cool and edgy look?",
+            "options": [
+                "Layered over a band t-shirt with ripped jeans",
+                "Paired with a flowy dress and ankle boots",
+                "Worn with joggers and a graphic hoodie"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which fashion trend do you find most unique and attention-grabbing?",
+            "options": [
+                "Cut-out clothing",
+                "Giant bows",
+                "Asymmetrical designs"
+            ],
+            "topics": [
+                "Fashion",
+                "Fun"
+            ]
+        }
+    ]
+}

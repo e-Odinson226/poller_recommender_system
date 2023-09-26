@@ -1,0 +1,871 @@
+{
+    "Food&Drinks_Fun": [
+        {
+            "question": "Which cuisine do you prefer for a fun night out?",
+            "options": [
+                "Italian",
+                "Mexican",
+                "Chinese",
+                "Indian",
+                "Thai"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite drink to enjoy on a night out?",
+            "options": [
+                "Margarita",
+                "Mojito",
+                "Cosmopolitan",
+                "Martini",
+                "Old Fashioned"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your go-to comfort food after a fun night out?",
+            "options": [
+                "Pizza",
+                "Burger",
+                "French fries",
+                "Ice cream",
+                "Tacos"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which dessert do you find most enjoyable?",
+            "options": [
+                "Chocolate cake",
+                "Cheesecake",
+                "Ice cream",
+                "Apple pie",
+                "Creme brulee"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of cocktail to enjoy at a party?",
+            "options": [
+                "Mojito",
+                "Cosmopolitan",
+                "Margarita",
+                "Mai Tai",
+                "Martini"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of cuisine do you find most adventurous?",
+            "options": [
+                "Japanese",
+                "Thai",
+                "Korean",
+                "Moroccan",
+                "Greek"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred drink to accompany a fun board game night?",
+            "options": [
+                "Craft beer",
+                "Wine",
+                "Cocktails",
+                "Soft drinks",
+                "Mocktails"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which snack do you prefer while watching a fun movie?",
+            "options": [
+                "Popcorn",
+                "Nachos",
+                "Pretzels",
+                "Chips",
+                "Cheese sticks"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of tea to enjoy while reading a fun book?",
+            "options": [
+                "Green tea",
+                "Chamomile tea",
+                "Earl Grey tea",
+                "Peppermint tea",
+                "Oolong tea"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of pizza topping combination is the most fun?",
+            "options": [
+                "Pepperoni and mushroom",
+                "Pineapple and ham",
+                "BBQ chicken and red onion",
+                "Margherita",
+                "Veggie lovers"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite flavor of ice cream to enjoy on a hot summer day?",
+            "options": [
+                "Vanilla",
+                "Chocolate",
+                "Strawberry",
+                "Mint chocolate chip",
+                "Cookies and cream"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of chocolate is the most fun to indulge in?",
+            "options": [
+                "Milk chocolate",
+                "Dark chocolate",
+                "White chocolate",
+                "Caramel-filled chocolate",
+                "Hazelnut chocolate"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred beverage to stay hydrated during a fun hiking trip?",
+            "options": [
+                "Water",
+                "Sports drinks",
+                "Flavored water",
+                "Coconut water",
+                "Iced tea"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of burger to enjoy at a fun barbecue?",
+            "options": [
+                "Classic beef burger",
+                "Chicken burger",
+                "Veggie burger",
+                "BBQ bacon burger",
+                "Mushroom Swiss burger"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of pasta dish is the most fun to devour?",
+            "options": [
+                "Spaghetti carbonara",
+                "Fettuccine Alfredo",
+                "Penne arrabiata",
+                "Lasagna",
+                "Macaroni and cheese"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred hot beverage for a cozy and fun evening?",
+            "options": [
+                "Hot chocolate",
+                "Coffee",
+                "Tea",
+                "Chai Latte",
+                "Cappuccino"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of sandwich is the most fun to have for a picnic?",
+            "options": [
+                "BLT sandwich",
+                "Club sandwich",
+                "Grilled cheese sandwich",
+                "Ham and cheese sandwich",
+                "Peanut butter and jelly sandwich"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of candy is the most fun to indulge in?",
+            "options": [
+                "Gummy bears",
+                "Sour patch kids",
+                "Chocolate bars",
+                "Cotton candy",
+                "Skittles"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of breakfast food for a fun weekend morning?",
+            "options": [
+                "Pancakes",
+                "Eggs Benedict",
+                "French toast",
+                "Avocado toast",
+                "Cereal"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of soup is the most comforting on a fun rainy day?",
+            "options": [
+                "Chicken noodle soup",
+                "Tomato soup",
+                "Miso soup",
+                "Clam chowder",
+                "Vegetable soup"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred drink to enjoy at a fun beach party?",
+            "options": [
+                "Piu00f1a colada",
+                "Margarita",
+                "Rum punch",
+                "Gin and tonic",
+                "Frozen daiquiri"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of sushi roll is the most fun to eat?",
+            "options": [
+                "California roll",
+                "Spicy tuna roll",
+                "Rainbow roll",
+                "Dragon roll",
+                "Salmon avocado roll"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of vegetable for a fun and healthy dish?",
+            "options": [
+                "Broccoli",
+                "Spinach",
+                "Bell peppers",
+                "Zucchini",
+                "Carrots"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of fruit do you find most refreshing on a hot summer day?",
+            "options": [
+                "Watermelon",
+                "Strawberries",
+                "Pineapple",
+                "Grapes",
+                "Mango"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred drink to enjoy while playing a fun video game?",
+            "options": [
+                "Energy drink",
+                "Soda",
+                "Juice",
+                "Water",
+                "Milkshake"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of beer do you find most enjoyable at a fun beer festival?",
+            "options": [
+                "IPA",
+                "Stout",
+                "Pilsner",
+                "Wheat beer",
+                "Sour beer"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of potato dish for a fun barbecue?",
+            "options": [
+                "French fries",
+                "Loaded baked potato",
+                "Mashed potatoes",
+                "Potato salad",
+                "Potato wedges"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of cheese is the most fun to pair with crackers?",
+            "options": [
+                "Cheddar",
+                "Brie",
+                "Gouda",
+                "Blue cheese",
+                "Feta"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of muffin for a fun brunch?",
+            "options": [
+                "Blueberry muffin",
+                "Chocolate chip muffin",
+                "Banana nut muffin",
+                "Double chocolate muffin",
+                "Lemon poppy seed muffin"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of fresh juice is the most invigorating during a fun outdoors activity?",
+            "options": [
+                "Orange juice",
+                "Grapefruit juice",
+                "Pineapple juice",
+                "Apple juice",
+                "Watermelon juice"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred snack to bring for a fun road trip?",
+            "options": [
+                "Trail mix",
+                "Granola bars",
+                "Chips",
+                "Beef jerky",
+                "Fruit"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of bread is the most fun to have with soup?",
+            "options": [
+                "Garlic bread",
+                "Baguette",
+                "Sourdough bread",
+                "Ciabatta",
+                "Multigrain bread"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of donut for a fun morning treat?",
+            "options": [
+                "Glazed donut",
+                "Chocolate sprinkle donut",
+                "Maple bacon donut",
+                "Jelly-filled donut",
+                "Cinnamon sugar donut"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of sandwich is the most fun to pack for a picnic?",
+            "options": [
+                "Turkey and cheese sandwich",
+                "Ham and mustard sandwich",
+                "Veggie wrap",
+                "Chicken Caesar sandwich",
+                "Tuna salad sandwich"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred drink to enjoy at a fun live concert?",
+            "options": [
+                "Beer",
+                "Cocktails",
+                "Soda",
+                "Water",
+                "Lemonade"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of nuts is the most fun to snack on?",
+            "options": [
+                "Peanuts",
+                "Almonds",
+                "Cashews",
+                "Pistachios",
+                "Walnuts"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite flavor of potato chips for a fun movie night?",
+            "options": [
+                "Barbecue",
+                "Sour cream and onion",
+                "Salt and vinegar",
+                "Cheese",
+                "Spicy jalapeno"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of sushi is the most fun to try for the first time?",
+            "options": [
+                "Sashimi",
+                "Nigiri",
+                "Temaki",
+                "Uramaki",
+                "Futomaki"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred drink to enjoy at a fun rooftop bar?",
+            "options": [
+                "Gin and tonic",
+                "Frozen margarita",
+                "Craft beer",
+                "Wine",
+                "Mojito"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of bread is the most fun to use for sandwiches?",
+            "options": [
+                "Ciabatta",
+                "Baguette",
+                "Pita bread",
+                "Whole wheat bread",
+                "Rye bread"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of cheese for a fun cheese platter?",
+            "options": [
+                "Brie",
+                "Gouda",
+                "Camembert",
+                "Cheddar",
+                "Blue cheese"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of salad dressing is the most fun to use for a salad?",
+            "options": [
+                "Ranch",
+                "Caesar",
+                "Balsamic vinaigrette",
+                "Thousand Island",
+                "Honey mustard"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred hot beverage for a fun winter evening?",
+            "options": [
+                "Hot chocolate with marshmallows",
+                "Peppermint mocha",
+                "Gingerbread latte",
+                "Caramel macchiato",
+                "Vanilla chai latte"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of steak is the most enjoyable for a fun grill party?",
+            "options": [
+                "Ribeye steak",
+                "Filet mignon",
+                "T-bone steak",
+                "New York strip steak",
+                "Porterhouse steak"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of pasta sauce for a fun Italian dinner?",
+            "options": [
+                "Marinara sauce",
+                "Alfredo sauce",
+                "Pesto sauce",
+                "Carbonara sauce",
+                "Arrabbiata sauce"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of bread is the most fun to have with soup?",
+            "options": [
+                "Sourdough bread",
+                "Garlic bread",
+                "Focaccia",
+                "Baguette",
+                "Whole wheat bread"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred juice flavor for a fun breakfast?",
+            "options": [
+                "Orange juice",
+                "Apple juice",
+                "Grapefruit juice",
+                "Cranberry juice",
+                "Pineapple juice"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of chocolate is the most enjoyable during a fun movie night?",
+            "options": [
+                "Milk chocolate",
+                "Dark chocolate",
+                "White chocolate",
+                "Caramel-filled chocolate",
+                "Mint chocolate"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite flavor of fun-sized candy bars?",
+            "options": [
+                "Snickers",
+                "Kit Kat",
+                "Twix",
+                "Reese's",
+                "Mars"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of soup is the most comforting during a fun snow day?",
+            "options": [
+                "Chicken noodle soup",
+                "Tomato soup",
+                "Butternut squash soup",
+                "Minestrone soup",
+                "Clam chowder"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred drink to enjoy at a fun picnic?",
+            "options": [
+                "Iced tea",
+                "Lemonade",
+                "Soda",
+                "Sparkling water",
+                "Fruit punch"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of breakfast cereal is the most fun to have with milk?",
+            "options": [
+                "Fruit loops",
+                "Cocoa puffs",
+                "Lucky Charms",
+                "Corn flakes",
+                "Cheerios"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of soup to have for a fun lunch?",
+            "options": [
+                "Tomato soup",
+                "Chicken noodle soup",
+                "Broccoli cheddar soup",
+                "Vegetable soup",
+                "French onion soup"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of cheese is the most delicious on a fun cheeseboard?",
+            "options": [
+                "Camembert",
+                "Goat cheese",
+                "Blue cheese",
+                "Gruyere",
+                "Havarti"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred drink to enjoy at a fun house party?",
+            "options": [
+                "Cocktails",
+                "Beer",
+                "Wine",
+                "Whiskey",
+                "Vodka"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of curry is the most enjoyable for a fun Indian dinner?",
+            "options": [
+                "Chicken tikka masala",
+                "Lamb curry",
+                "Paneer tikka masala",
+                "Vegetable korma",
+                "Butter chicken"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of dim sum for a fun brunch?",
+            "options": [
+                "Shumai",
+                "Pork buns",
+                "Spring rolls",
+                "Siomay",
+                "Dumplings"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of bread is the most delicious with soup?",
+            "options": [
+                "Garlic bread",
+                "Biscuits",
+                "Flatbread",
+                "Naan",
+                "Sourdough bread"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your preferred drink to enjoy at a fun barbecue?",
+            "options": [
+                "Ice-cold beer",
+                "Lemonade",
+                "Iced tea",
+                "Fruit punch",
+                "Sangria"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of fruit is the most enjoyable in a fun fruit salad?",
+            "options": [
+                "Watermelon",
+                "Pineapple",
+                "Strawberries",
+                "Kiwi",
+                "Blueberries"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "What's your favorite type of sandwich for a fun picnic?",
+            "options": [
+                "Club sandwich",
+                "Turkey and cheese sandwich",
+                "Grilled chicken sandwich",
+                "BLT sandwich",
+                "Veggie wrap"
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        },
+        {
+            "question": "Which type of pasta is the most fun to eat?",
+            "options": [
+                "Spaghetti",
+                "Penne",
+                "Fettuccine",
+                "Ravioli",
+            ],
+            "topics": [
+                "Food&Drinks",
+                "Fun"
+            ]
+        }
+    ]
+}

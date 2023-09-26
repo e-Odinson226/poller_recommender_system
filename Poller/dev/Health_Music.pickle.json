@@ -1,0 +1,975 @@
+{
+    "Health_Music": [
+        {
+            "question": "What type of music helps you relax and de-stress?",
+            "options": [
+                "Classical",
+                "Nature sounds",
+                "Ambient",
+                "Instrumental"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How often do you listen to music to improve your mood?",
+            "options": [
+                "Daily",
+                "A few times a week",
+                "Occasionally",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Which genre of music do you find most uplifting and motivational?",
+            "options": [
+                "Pop",
+                "Rock",
+                "Hip-hop",
+                "Electronic"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What's your preferred music tempo for workouts?",
+            "options": [
+                "High BPM (beats per minute)",
+                "Moderate BPM",
+                "Low BPM"
+            ],
+            "topics": [
+                "Health",
+                "Music",
+                "Activity"
+            ]
+        },
+        {
+            "question": "How often do you listen to music while exercising or doing physical activities?",
+            "options": [
+                "Always",
+                "Frequently",
+                "Sometimes",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music",
+                "Activity"
+            ]
+        },
+        {
+            "question": "What type of music do you listen to improve your focus and concentration?",
+            "options": [
+                "Classical",
+                "Instrumental",
+                "Ambient",
+                "Electronic"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Do you believe that music has a positive impact on mental health?",
+            "options": [
+                "Strongly Agree",
+                "Agree",
+                "Neutral",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Which musical instrument do you believe has the most healing properties?",
+            "options": [
+                "Piano",
+                "Guitar",
+                "Flute",
+                "Violin"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What's your favorite music genre for relieving anxiety and stress?",
+            "options": [
+                "Classical",
+                "Jazz",
+                "Chillout",
+                "New Age"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How does music influence your overall mood and emotional well-being?",
+            "options": [
+                "Greatly",
+                "Moderately",
+                "Slightly",
+                "Not at all"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Which music genre do you find most helpful for improving sleep quality?",
+            "options": [
+                "Ambient",
+                "Nature sounds",
+                "Meditative",
+                "Classical"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How often do you use music as a form of stress management?",
+            "options": [
+                "Daily",
+                "A few times a week",
+                "Occasionally",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Do you believe that certain types of music have healing effects on physical ailments?",
+            "options": [
+                "Strongly Agree",
+                "Agree",
+                "Neutral",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What type of music do you prefer for practicing mindfulness and meditation?",
+            "options": [
+                "Ambient",
+                "Nature sounds",
+                "Instrumental",
+                "Chants"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How does music impact your motivation during workouts or physical activities?",
+            "options": [
+                "Greatly",
+                "Moderately",
+                "Slightly",
+                "Not at all"
+            ],
+            "topics": [
+                "Health",
+                "Music",
+                "Activity"
+            ]
+        },
+        {
+            "question": "Which musical genre do you believe has the most positive impact on overall well-being?",
+            "options": [
+                "Pop",
+                "Classical",
+                "Folk",
+                "World music"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How often do you listen to music as a form of pain management?",
+            "options": [
+                "Daily",
+                "A few times a week",
+                "Occasionally",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What type of music motivates you to engage in physical activities?",
+            "options": [
+                "Upbeat Pop",
+                "Energetic Rock",
+                "Uplifting EDM",
+                "Pumping Hip-hop"
+            ],
+            "topics": [
+                "Health",
+                "Music",
+                "Activity"
+            ]
+        },
+        {
+            "question": "Does playing a musical instrument have a positive impact on your mental health?",
+            "options": [
+                "Strongly Agree",
+                "Agree",
+                "Neutral",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Which musical genre do you find most helpful for stress relief?",
+            "options": [
+                "Classical",
+                "Instrumental",
+                "Ambient",
+                "World music"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How important is music for your overall emotional well-being?",
+            "options": [
+                "Extremely Important",
+                "Very Important",
+                "Important",
+                "Somewhat Important",
+                "Not Important"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What type of music do you find most energizing during physical activity?",
+            "options": [
+                "Rock",
+                "EDM",
+                "Hip-hop",
+                "Pop"
+            ],
+            "topics": [
+                "Health",
+                "Music",
+                "Activity"
+            ]
+        },
+        {
+            "question": "How often do you listen to music to improve your cognitive abilities?",
+            "options": [
+                "Daily",
+                "A few times a week",
+                "Occasionally",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Do you believe that music can enhance the healing process for physical injuries?",
+            "options": [
+                "Strongly Agree",
+                "Agree",
+                "Neutral",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Which genre of music do you prefer for promoting relaxation and sleep?",
+            "options": [
+                "Chillout",
+                "Meditative",
+                "Ambient",
+                "Nature sounds"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How does music influence your overall productivity and focus?",
+            "options": [
+                "Greatly",
+                "Moderately",
+                "Slightly",
+                "Not at all"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What's your preferred music genre for improving creativity and inspiration?",
+            "options": [
+                "Classical",
+                "Jazz",
+                "Experimental",
+                "World music"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How often do you use music as a coping mechanism during stressful situations?",
+            "options": [
+                "Daily",
+                "A few times a week",
+                "Occasionally",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Do you believe that listening to your favorite music can positively impact your physical health?",
+            "options": [
+                "Strongly Agree",
+                "Agree",
+                "Neutral",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Which music genre enhances your concentration and focus the most?",
+            "options": [
+                "Classical",
+                "Instrumental",
+                "Ambient",
+                "Electronic"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How often does music help in managing your stress levels?",
+            "options": [
+                "Always",
+                "Frequently",
+                "Sometimes",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What's your preferred music genre for improving cognitive function and memory?",
+            "options": [
+                "Classical",
+                "Jazz",
+                "Ambient",
+                "Instrumental"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Does listening to music improve your overall sense of well-being?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Which musical genre do you find most effective for reducing symptoms of depression?",
+            "options": [
+                "Folk",
+                "Blues",
+                "Indie",
+                "Country"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How often do you use music as a form of relaxation and self-care?",
+            "options": [
+                "Daily",
+                "A few times a week",
+                "Occasionally",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What type of music do you prefer for promoting a positive mindset and self-confidence?",
+            "options": [
+                "Pop",
+                "Hip-hop",
+                "Positive affirmations",
+                "Upbeat motivational"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How does music impact your motivation during physical exercises or workouts?",
+            "options": [
+                "Greatly",
+                "Moderately",
+                "Slightly",
+                "Not at all"
+            ],
+            "topics": [
+                "Health",
+                "Music",
+                "Activity"
+            ]
+        },
+        {
+            "question": "Do you believe that playing musical instruments can improve physical coordination and dexterity?",
+            "options": [
+                "Strongly Agree",
+                "Agree",
+                "Neutral",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Which music genre do you find most calming and soothing?",
+            "options": [
+                "Classical",
+                "Nature sounds",
+                "Ambient",
+                "Meditative"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How often do you listen to music to enhance your creativity and imagination?",
+            "options": [
+                "Daily",
+                "A few times a week",
+                "Occasionally",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Do you believe that music can help in pain management for chronic conditions?",
+            "options": [
+                "Strongly Agree",
+                "Agree",
+                "Neutral",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What's your preferred music genre for improving focus and concentration while studying or working?",
+            "options": [
+                "Instrumental",
+                "Classical",
+                "Ambient",
+                "Electronic"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How important is music in your daily self-care routine?",
+            "options": [
+                "Extremely Important",
+                "Very Important",
+                "Important",
+                "Somewhat Important",
+                "Not Important"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What type of music do you find most motivating and uplifting during physical activities?",
+            "options": [
+                "Energetic Pop",
+                "Powerful Rock",
+                "Uplifting EDM",
+                "Motivational Hip-hop"
+            ],
+            "topics": [
+                "Health",
+                "Music",
+                "Activity"
+            ]
+        },
+        {
+            "question": "How often do you listen to music to boost your mood and emotional well-being?",
+            "options": [
+                "Always",
+                "Frequently",
+                "Sometimes",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Which musical genre do you believe has the most positive impact on mental health?",
+            "options": [
+                "Pop",
+                "Classical",
+                "Folk",
+                "World music"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What type of music do you listen to in order to manage chronic pain?",
+            "options": [
+                "Classical",
+                "Jazz",
+                "Nature sounds",
+                "Meditative"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How does music influence your motivation and focus while engaging in physical activities?",
+            "options": [
+                "Greatly",
+                "Moderately",
+                "Slightly",
+                "Not at all"
+            ],
+            "topics": [
+                "Health",
+                "Music",
+                "Activity"
+            ]
+        },
+        {
+            "question": "Does playing a musical instrument have a positive impact on your mental well-being?",
+            "options": [
+                "Strongly Agree",
+                "Agree",
+                "Neutral",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Which music genre do you find most helpful for reducing anxiety and stress?",
+            "options": [
+                "Classical",
+                "Jazz",
+                "Chillout",
+                "New Age"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How does music affect your overall mood and emotional well-being?",
+            "options": [
+                "Greatly",
+                "Moderately",
+                "Slightly",
+                "Not at all"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What type of music do you prefer for promoting relaxation and better sleep quality?",
+            "options": [
+                "Ambient",
+                "Nature sounds",
+                "Meditative",
+                "Classical"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How often do you use music as a means of stress management?",
+            "options": [
+                "Daily",
+                "A few times a week",
+                "Occasionally",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Do you believe that certain types of music have healing effects on physical ailments?",
+            "options": [
+                "Strongly Agree",
+                "Agree",
+                "Neutral",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What's your favorite music genre for practicing mindfulness and meditation?",
+            "options": [
+                "Ambient",
+                "Nature sounds",
+                "Instrumental",
+                "Chants"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How does music impact your motivation and enjoyment during workouts or physical activities?",
+            "options": [
+                "Greatly",
+                "Moderately",
+                "Slightly",
+                "Not at all"
+            ],
+            "topics": [
+                "Health",
+                "Music",
+                "Activity"
+            ]
+        },
+        {
+            "question": "Which musical genre do you believe has the most positive impact on overall well-being?",
+            "options": [
+                "Pop",
+                "Classical",
+                "Folk",
+                "World music"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How often do you listen to music as a method of pain management?",
+            "options": [
+                "Daily",
+                "A few times a week",
+                "Occasionally",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What type of music motivates you to engage in physical activities?",
+            "options": [
+                "Upbeat Pop",
+                "Energetic Rock",
+                "Uplifting EDM",
+                "Pumping Hip-hop"
+            ],
+            "topics": [
+                "Health",
+                "Music",
+                "Activity"
+            ]
+        },
+        {
+            "question": "Does playing a musical instrument have a positive impact on your physical health?",
+            "options": [
+                "Strongly Agree",
+                "Agree",
+                "Neutral",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Which music genre do you find most effective for promoting relaxation and stress relief?",
+            "options": [
+                "Classical",
+                "Instrumental",
+                "Ambient",
+                "World music"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How often do you rely on music to improve your emotional well-being?",
+            "options": [
+                "Always",
+                "Frequently",
+                "Sometimes",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What type of music do you find most energizing and motivating during physical activities?",
+            "options": [
+                "Rock",
+                "EDM",
+                "Hip-hop",
+                "Pop"
+            ],
+            "topics": [
+                "Health",
+                "Music",
+                "Activity"
+            ]
+        },
+        {
+            "question": "How often do you listen to music to enhance your cognitive abilities?",
+            "options": [
+                "Daily",
+                "A few times a week",
+                "Occasionally",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Do you believe that music can enhance the healing process for physical injuries?",
+            "options": [
+                "Strongly Agree",
+                "Agree",
+                "Neutral",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Which genre of music do you prefer to promote relaxation and better sleep quality?",
+            "options": [
+                "Chillout",
+                "Meditative",
+                "Ambient",
+                "Nature sounds"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How does music influence your overall productivity and focus?",
+            "options": [
+                "Greatly",
+                "Moderately",
+                "Slightly",
+                "Not at all"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What's your preferred music genre for improving creativity and inspiration?",
+            "options": [
+                "Classical",
+                "Jazz",
+                "Experimental",
+                "World music"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How often do you use music as a coping mechanism during stressful situations?",
+            "options": [
+                "Daily",
+                "A few times a week",
+                "Occasionally",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Do you believe that listening to your favorite music can positively impact your physical health?",
+            "options": [
+                "Strongly Agree",
+                "Agree",
+                "Neutral",
+                "Disagree",
+                "Strongly Disagree"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "Which music genre enhances your concentration and focus the most?",
+            "options": [
+                "Classical",
+                "Instrumental",
+                "Ambient",
+                "Electronic"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "How often does music help you manage your stress levels?",
+            "options": [
+                "Always",
+                "Frequently",
+                "Sometimes",
+                "Rarely"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        },
+        {
+            "question": "What's your preferred music genre for improving cognitive function and memory?",
+            "options": [
+                "Classical",
+                "Jazz",
+                "Ambient",
+                "Instrumental"
+            ],
+            "topics": [
+                "Health",
+                "Music"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1012 @@
+{
+    "Fun_Health": [
+        {
+            "question": "What is your favorite exercise equipment?",
+            "options": [
+                "Treadmill",
+                "Dumbbells",
+                "Resistance bands"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you enjoy playing sports or watching them?",
+            "options": [
+                "Playing sports",
+                "Watching sports",
+                "Neither"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What outdoor activity do you find most enjoyable and refreshing?",
+            "options": [
+                "Hiking",
+                "Cycling",
+                "Swimming"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of workout motivates you the most?",
+            "options": [
+                "Yoga",
+                "High-intensity interval training",
+                "Pilates"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your go-to healthy snack?",
+            "options": [
+                "Fruit",
+                "Nuts",
+                "Vegetables and dip"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which relaxation technique do you find most effective?",
+            "options": [
+                "Meditation",
+                "Deep breathing",
+                "Listening to music"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to stay active during rainy days?",
+            "options": [
+                "Indoor cycling",
+                "Dancing",
+                "Jumping rope"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun outdoor game do you enjoy playing with friends?",
+            "options": [
+                "Tag",
+                "Hide and seek",
+                "Capture the flag"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of dance do you find most enjoyable?",
+            "options": [
+                "Hip-hop",
+                "Ballet",
+                "Salsa"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which form of exercise brings you the most joy?",
+            "options": [
+                "Zumba",
+                "Kickboxing",
+                "Pilates"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite adventurous outdoor activity?",
+            "options": [
+                "Rock climbing",
+                "Kayaking",
+                "Paragliding"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer working out alone or with a partner?",
+            "options": [
+                "Alone",
+                "With a partner",
+                "Depends on the activity"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of music do you prefer listening to during workouts?",
+            "options": [
+                "Pop",
+                "Rock",
+                "EDM"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which activity do you find most fun and relaxing at the same time?",
+            "options": [
+                "Yoga",
+                "Pilates",
+                "Tai chi"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to de-stress after a long day?",
+            "options": [
+                "Reading a book",
+                "Taking a bath",
+                "Watching a movie"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity do you enjoy doing with your friends on weekends?",
+            "options": [
+                "Playing board games",
+                "Going for a hike",
+                "Trying new recipes"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What outdoor sport do you find most exhilarating?",
+            "options": [
+                "Skiing/snowboarding",
+                "Surfing",
+                "Mountain biking"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which workout class do you enjoy attending the most?",
+            "options": [
+                "Zumba",
+                "Spin cycling",
+                "Boxing"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to cool down after a workout?",
+            "options": [
+                "Swimming",
+                "Drinking a smoothie",
+                "Stretching"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun outdoor activity have you always wanted to try?",
+            "options": [
+                "Paddleboarding",
+                "Rock climbing",
+                "Bungee jumping"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred method of staying hydrated during workouts?",
+            "options": [
+                "Water",
+                "Sports drinks",
+                "Coconut water"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity helps you clear your mind and improve focus?",
+            "options": [
+                "Yoga",
+                "Meditation",
+                "Painting"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you enjoy participating in organized sports leagues?",
+            "options": [
+                "Yes",
+                "No",
+                "Sometimes"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to challenge yourself physically?",
+            "options": [
+                "Obstacle course races",
+                "Crossfit",
+                "Long-distance running"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of workout clothing do you find most comfortable?",
+            "options": [
+                "Leggings",
+                "Shorts",
+                "Athletic pants"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to spend a lazy day while still being active?",
+            "options": [
+                "Yoga in bed",
+                "Going for a leisurely walk",
+                "Having a dance party"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which adventurous activity do you find most thrilling?",
+            "options": [
+                "Zip-lining",
+                "Skydiving",
+                "White-water rafting"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What helps you stay motivated during your fitness journey?",
+            "options": [
+                "Setting goals",
+                "Tracking progress",
+                "Getting support from friends"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity do you enjoy doing with your family?",
+            "options": [
+                "Biking",
+                "Having a picnic",
+                "Playing frisbee"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to wind down before bed?",
+            "options": [
+                "Reading a book",
+                "Yoga/stretching",
+                "Listening to calming music"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun exercise do you find most effective for toning your body?",
+            "options": [
+                "Pilates",
+                "Barre workouts",
+                "Aerial yoga"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of workout do you find most enjoyable when traveling?",
+            "options": [
+                "Outdoor running",
+                "Bodyweight exercises",
+                "Yoga"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you enjoy trying new fitness trends and classes?",
+            "options": [
+                "Yes, always up for something new",
+                "No, I prefer sticking to my routine",
+                "Sometimes, if it looks interesting"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to reward yourself after achieving a fitness goal?",
+            "options": [
+                "Indulging in a small treat",
+                "Going on a vacation",
+                "Buying new workout clothes"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which activity do you find most fun and challenging at the same time?",
+            "options": [
+                "Rock climbing",
+                "Kickboxing",
+                "Paddleboarding"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred method of staying active during the winter months?",
+            "options": [
+                "Indoor yoga or workout videos",
+                "Skiing or snowboarding",
+                "Ice skating"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity do you enjoy doing to relieve stress?",
+            "options": [
+                "Dancing",
+                "Painting",
+                "Playing a musical instrument"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you enjoy participating in group fitness classes?",
+            "options": [
+                "Yes, love the energy",
+                "No, prefer exercising alone",
+                "Sometimes, for variety"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to incorporate exercise into your daily routine?",
+            "options": [
+                "Walking or biking to work",
+                "Taking the stairs instead of the elevator",
+                "Doing quick workout routines at home"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity do you enjoy doing to boost your mood?",
+            "options": [
+                "Dancing",
+                "Singing",
+                "Practicing gratitude"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred way to stay active while on vacation?",
+            "options": [
+                "Exploring the city on foot",
+                "Trying local adventure sports",
+                "Swimming in the hotel pool"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity do you find most energizing?",
+            "options": [
+                "Cardio kickboxing",
+                "Zumba",
+                "Circuit training"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite post-workout snack?",
+            "options": [
+                "Protein shake",
+                "Greek yogurt with fruits",
+                "Trail mix"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun outdoor activity do you enjoy doing with your pets?",
+            "options": [
+                "Playing fetch",
+                "Going for a hike",
+                "Teaching new tricks"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you enjoy practicing mindfulness and meditation?",
+            "options": [
+                "Yes, it helps me relax",
+                "No, I find it difficult",
+                "Sometimes, when I need it"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred way to stay active during the summer?",
+            "options": [
+                "Swimming",
+                "Hiking",
+                "Joining water sports"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity helps you stay mentally and emotionally balanced?",
+            "options": [
+                "Yoga",
+                "Journaling",
+                "Practicing mindfulness"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your go-to healthy recipe for a delicious meal?",
+            "options": [
+                "Grilled chicken with roasted veggies",
+                "Quinoa salad",
+                "Stir-fried tofu with vegetables"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity do you enjoy doing to improve your flexibility?",
+            "options": [
+                "Yoga",
+                "Pilates",
+                "Dance classes"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you enjoy outdoor adventure trips?",
+            "options": [
+                "Yes, love the thrill",
+                "No, prefer relaxation vacations",
+                "Sometimes, for a change"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to incorporate exercise into your daily commute?",
+            "options": [
+                "Cycling to work",
+                "Running or jogging",
+                "Using public transport and walking"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity helps you improve your balance and core strength?",
+            "options": [
+                "Pilates",
+                "Yoga",
+                "Stand-up paddleboarding"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred way to stay active during the holiday season?",
+            "options": [
+                "Going for festive walks",
+                "Joining holiday-themed workouts",
+                "Participating in charity runs"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity do you enjoy doing on a day off from work?",
+            "options": [
+                "Going for a bike ride",
+                "Taking a dance class",
+                "Having a picnic in the park"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to stay active and bond with your partner?",
+            "options": [
+                "Couples yoga",
+                "Outdoor sports",
+                "Taking dance lessons"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity helps you improve your coordination and agility?",
+            "options": [
+                "Jump rope",
+                "Dance classes",
+                "Boxing"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you enjoy participating in charity runs or walks?",
+            "options": [
+                "Yes, it feels rewarding",
+                "No, not my cup of tea",
+                "Sometimes, for a good cause"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred way to stay active during the colder months?",
+            "options": [
+                "Indoor workouts or classes",
+                "Ice skating or skiing",
+                "Winter hiking"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity do you enjoy doing to improve your cardiovascular health?",
+            "options": [
+                "Running",
+                "Cycling classes",
+                "Aerobic dance"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to destress and relax after a busy day?",
+            "options": [
+                "Taking a hot bath",
+                "Listening to calming music",
+                "Doing a yoga flow"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun outdoor activity do you find most calming and peaceful?",
+            "options": [
+                "Hiking in nature",
+                "Yoga in the park",
+                "Meditating by the beach"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you enjoy participating in team sports?",
+            "options": [
+                "Yes, love being a part of a team",
+                "No, I prefer individual activities",
+                "Sometimes, for social interaction"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred way to stay active during the spring season?",
+            "options": [
+                "Going for runs or walks",
+                "Joining outdoor fitness classes",
+                "Gardening or yard work"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity do you enjoy doing with your children or younger siblings?",
+            "options": [
+                "Playing tag or hide-and-seek",
+                "Cycling in the park",
+                "Dancing or having dance parties"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to stay active and socialize with friends?",
+            "options": [
+                "Joining a sports team or league",
+                "Attending group exercise classes together",
+                "Going for active outings or adventures"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity do you enjoy doing to improve your strength and muscle tone?",
+            "options": [
+                "Weightlifting",
+                "Bodyweight exercises",
+                "TRX training"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you enjoy challenging yourself with new physical activities?",
+            "options": [
+                "Yes, it keeps me motivated",
+                "No, I prefer sticking to what I know",
+                "Sometimes, depending on my mood"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred way to stay active during the autumn season?",
+            "options": [
+                "Going for hikes in colorful foliage",
+                "Joining indoor fitness classes",
+                "Practicing outdoor yoga"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity do you find most stimulating for your mind and body?",
+            "options": [
+                "Dance classes",
+                "Yoga, pilates, or barre",
+                "Martial arts"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to stay active and connect with nature?",
+            "options": [
+                "Trail running or hiking",
+                "Kayaking or paddleboarding",
+                "Outdoor yoga or meditation"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity do you enjoy doing to improve your overall well-being?",
+            "options": [
+                "Meditation",
+                "Taking nature walks",
+                "Creating art or crafts"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you prefer exploring new hiking trails or sticking to familiar ones?",
+            "options": [
+                "Love exploring new trails",
+                "Prefer familiar ones",
+                "Both, depending on the mood"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to stay active and bond with your friends?",
+            "options": [
+                "Team sports",
+                "Fitness challenges",
+                "Group hikes or outdoor workouts"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity helps you improve your endurance and stamina?",
+            "options": [
+                "Running",
+                "Cycling",
+                "Swimming"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred way to stay active and give back to the community?",
+            "options": [
+                "Participating in charity walks or runs",
+                "Volunteering for outdoor cleanup projects",
+                "Teaching fitness classes for free"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity do you enjoy doing to boost your energy levels?",
+            "options": [
+                "Dancing",
+                "Cardio kickboxing",
+                "Yoga flows"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you enjoy exploring new recipes and cooking healthy meals?",
+            "options": [
+                "Yes, I love trying new recipes",
+                "No, I prefer convenient options",
+                "Sometimes, when I'm in the mood"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to stay active and enjoy the outdoors during the weekend?",
+            "options": [
+                "Cycling or bike riding",
+                "Going on nature hikes",
+                "Having outdoor picnics"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity do you enjoy doing to improve your mental clarity and focus?",
+            "options": [
+                "Mindfulness meditation",
+                "Yoga",
+                "Brain-training puzzles"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your preferred way to stay active during your lunch break?",
+            "options": [
+                "Taking a walk outside",
+                "Attending quick workout classes",
+                "Stretching at your desk"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity helps you relieve tension and stress from your body?",
+            "options": [
+                "Tai chi",
+                "Massage therapy",
+                "Water aerobics"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Do you enjoy participating in virtual fitness challenges or competitions?",
+            "options": [
+                "Yes, I love the motivation",
+                "No, I prefer individual goals",
+                "Sometimes, for extra fun"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "What is your favorite way to stay active and enjoy nature at the same time?",
+            "options": [
+                "Nature walks or hikes",
+                "Outdoor yoga or pilates",
+                "Camping or backpacking trips"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which fun activity do you enjoy doing to improve your overall flexibility and mobility?",
+            "options": [
+                "Stretching routines",
+                "Yoga or Pilates",
+                "Gymnastics or acro-yoga"
+            ],
+            "topics": [
+                "Fun",
+                "Health"
+            ]
+        }
+    ]
+}

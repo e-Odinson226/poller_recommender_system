@@ -1,0 +1,832 @@
+{
+    "Home Decor_Science": [
+        {
+            "question": "Which type of lighting is most energy-efficient for home decor?",
+            "options": [
+                "LED bulbs",
+                "CFL bulbs",
+                "Halogen bulbs"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What color scheme promotes productivity in a home office according to color psychology?",
+            "options": [
+                "Blue and green",
+                "Yellow and orange",
+                "Red and black"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which material provides the best insulation for maintaining energy efficiency in homes?",
+            "options": [
+                "Fiberglass",
+                "Spray foam",
+                "Cellulose"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of flooring is most durable and resistant to wear and tear?",
+            "options": [
+                "Hardwood",
+                "Laminate",
+                "Vinyl"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the optimal temperature for indoor plants to thrive?",
+            "options": [
+                "65-75u00b0F",
+                "50-60u00b0F",
+                "80-90u00b0F"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which paint finish provides the best resistance to moisture and humidity?",
+            "options": [
+                "Semi-gloss",
+                "Matte",
+                "Eggshell"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of rug material is most resistant to stains and spills?",
+            "options": [
+                "Polypropylene",
+                "Wool",
+                "Cotton"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the ideal humidity level for preventing mold growth in homes?",
+            "options": [
+                "40-60%",
+                "20-30%",
+                "70-80%"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of window treatment provides the best insulation for energy efficiency?",
+            "options": [
+                "Curtains",
+                "Blinds",
+                "Shutters"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What type of mattress is scientifically proven to provide the best spinal support?",
+            "options": [
+                "Memory foam",
+                "Innerspring",
+                "Latex"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which indoor air purifying plant is most effective at removing toxins and improving air quality?",
+            "options": [
+                "Snake Plant",
+                "Peace Lily",
+                "English Ivy"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the ideal angle for solar panels to maximize energy production?",
+            "options": [
+                "30-40 degrees",
+                "10-20 degrees",
+                "50-60 degrees"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which kitchen countertop material is least prone to bacterial growth?",
+            "options": [
+                "Quartz",
+                "Granite",
+                "Laminate"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the best color palette to create a calming and relaxing bedroom environment?",
+            "options": [
+                "Soft blues and greens",
+                "Warm neutrals",
+                "Bold and contrasting colors"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of insulation material is most environmentally friendly and sustainable?",
+            "options": [
+                "Recycled denim",
+                "Sheep's wool",
+                "Hemp"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the optimal pH level for a healthy and nutrient-rich soil in a home garden?",
+            "options": [
+                "6-7",
+                "4-5",
+                "8-9"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of wallpaper is most resistant to moisture and mold growth?",
+            "options": [
+                "Vinyl wallpaper",
+                "Textured wallpaper",
+                "Foil wallpaper"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the ideal placement of mirrors to enhance natural light in a room?",
+            "options": [
+                "Across from windows",
+                "Adjacent to windows",
+                "Above windows"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of insulation material is most effective at soundproofing a room?",
+            "options": [
+                "Mineral wool",
+                "Polyurethane foam",
+                "Fiberglass"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the optimal temperature for wine storage to preserve its taste and aroma?",
+            "options": [
+                "55-60u00b0F",
+                "40-45u00b0F",
+                "70-75u00b0F"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of showerhead provides the best water conservation without compromising water pressure?",
+            "options": [
+                "Low-flow showerhead",
+                "Rain showerhead",
+                "Handheld showerhead"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the optimal direction for a ceiling fan to cool a room efficiently?",
+            "options": [
+                "Counterclockwise in summer",
+                "Clockwise in summer",
+                "No direction impact"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of paint is most resistant to fading from direct sunlight exposure?",
+            "options": [
+                "UV-resistant paint",
+                "Acrylic paint",
+                "Oil-based paint"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the ideal humidity level for storing books to prevent damage or deterioration?",
+            "options": [
+                "40-50%",
+                "60-70%",
+                "30-40%"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of bedsheet material offers the best moisture-wicking properties for a comfortable sleep?",
+            "options": [
+                "Bamboo",
+                "Cotton",
+                "Microfiber"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the optimal angle for blinds to control natural light while minimizing heat gain or loss?",
+            "options": [
+                "45 degrees",
+                "90 degrees",
+                "0 degrees"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of wood is known for its natural resistance to termite infestation in furniture?",
+            "options": [
+                "Cedar",
+                "Oak",
+                "Mahogany"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the most energy-efficient HVAC system for heating and cooling homes?",
+            "options": [
+                "Geothermal heat pump",
+                "Air-source heat pump",
+                "Gas furnace"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of curtain fabric provides the best noise reduction for a peaceful environment?",
+            "options": [
+                "Velvet",
+                "Thick cotton",
+                "Silk"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the ideal humidity level for preserving artwork and preventing deterioration?",
+            "options": [
+                "50-55%",
+                "60-65%",
+                "40-45%"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of kitchen sink material is most resistant to scratches and stains?",
+            "options": [
+                "Stainless steel",
+                "Granite composite",
+                "Fireclay"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the optimal placement of speakers in a home theater for balanced sound distribution?",
+            "options": [
+                "Equidistant from the listener",
+                "Close to the walls",
+                "Near the television"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of curtain tracks or rods is most suitable for heavy curtains without sagging?",
+            "options": [
+                "Metal tracks",
+                "Wooden rods",
+                "Plastic tracks"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the ideal room temperature for promoting a good night's sleep?",
+            "options": [
+                "65-68u00b0F",
+                "75-78u00b0F",
+                "55-58u00b0F"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of light bulb produces the least amount of heat while providing sufficient illumination?",
+            "options": [
+                "LED bulbs",
+                "Incandescent bulbs",
+                "Compact fluorescent bulbs"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the optimal humidity level for preventing damage to musical instruments?",
+            "options": [
+                "40-50%",
+                "30-40%",
+                "50-60%"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of wallpaper adhesive is the most environmentally friendly and non-toxic?",
+            "options": [
+                "Starch-based adhesive",
+                "Vinyl-based adhesive",
+                "Acrylic-based adhesive"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the best placement of artwork on walls to create an aesthetically pleasing gallery?",
+            "options": [
+                "Eye level",
+                "Above eye level",
+                "Below eye level"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of shower enclosure material offers the best durability and resistance to water damage?",
+            "options": [
+                "Glass",
+                "Acrylic",
+                "Tile"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the optimal size and placement of a wall-mounted television for comfortable viewing?",
+            "options": [
+                "At least 40-50 inches and at eye level",
+                "Less than 30 inches and above eye level",
+                "Over 60 inches and below eye level"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of paint is most effective at reducing the release of harmful volatile organic compounds (VOCs)?",
+            "options": [
+                "Low VOC paint",
+                "Oil-based paint",
+                "Chalk-based paint"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the optimal size and placement for a decorative mirror to enhance the natural light in a room?",
+            "options": [
+                "Large mirror placed opposite a window",
+                "Small mirror placed above a fireplace",
+                "Medium-sized mirror placed on a sidewall"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of window glass provides the best insulation against heat transfer?",
+            "options": [
+                "Double glazed",
+                "Single glazed",
+                "Triple glazed"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the ideal temperature for brewing coffee to achieve the best flavor extraction?",
+            "options": [
+                "195-205u00b0F",
+                "180-190u00b0F",
+                "210-220u00b0F"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of curtain lining offers the best thermal insulation properties to conserve energy?",
+            "options": [
+                "Thermal blackout lining",
+                "Thermal flannel lining",
+                "Standard cotton lining"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the most effective color temperature for task lighting in a home office?",
+            "options": [
+                "Cool white (5000-6000K)",
+                "Warm white (2700-3000K)",
+                "Natural white (4000-4500K)"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of wall construction provides the best soundproofing between rooms?",
+            "options": [
+                "Double stud walls",
+                "Staggered stud walls",
+                "Single stud walls"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the optimal placement of houseplants in relation to windows for proper sunlight exposure?",
+            "options": [
+                "Within 3-5 feet of a sunlit window",
+                "Directly next to a window",
+                "Away from windows"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of faucet material is most resistant to corrosion and tarnishing?",
+            "options": [
+                "Stainless steel",
+                "Brass",
+                "Nickel"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the ideal size and placement for a chandelier to create a visually balanced dining room?",
+            "options": [
+                "1/2 to 2/3 the width of the dining table and centered above it",
+                "Smaller than the dining table and offset to one side",
+                "Larger thathe dining table and placed off-center"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of wallpaper pattern is most effective at visually enlarging a small room?",
+            "options": [
+                "Vertical stripes",
+                "Large-scale patterns",
+                "Solid colors"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the optimal height for a bathroom vanity mirror to accommodate users of different heights?",
+            "options": [
+                "At eye level for the average user",
+                "Above eye level for taller individuals",
+                "Below eye level for shorter individuals"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of flooring material has the lowest carbon footprint and environmental impact?",
+            "options": [
+                "Bamboo",
+                "Cork",
+                "Linoleum"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the ideal ratio of plants to room size for maximizing air purification benefits in a living space?",
+            "options": [
+                "1 medium-sized plant per 100 square feet",
+                "2 small plants per 50 square feet",
+                "3 large plants per 200 square feet"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of bathroom tile material offers the best resistance to moisture and mold growth?",
+            "options": [
+                "Porcelain",
+                "Ceramic",
+                "Stone"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the optimal size and placement of an area rug in a living room for a visually cohesive space?",
+            "options": [
+                "Large enough to accommodate all furniture legs and centered under the coffee table",
+                "Small enough to cover the seating area only",
+                "Oversized to extend beyond the furniture"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of insulation material provides the best resistance to fire and heat transfer?",
+            "options": [
+                "Mineral wool",
+                "Spray foam",
+                "Cellulose"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the optimal distance between pendant lights placed above a kitchen island or dining table?",
+            "options": [
+                "24-30 inches apart",
+                "12-18 inches apart",
+                "36-42 inches apart"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of shower faucet valve is most efficient at controlling water flow and temperature?",
+            "options": [
+                "Thermostatic valve",
+                "Pressure-balanced valve",
+                "Manual mixing valve"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the ideal humidity level for preserving wooden furniture and preventing warping or cracking?",
+            "options": [
+                "35-45%",
+                "55-65%",
+                "25-35%"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of kitchen cabinet material offers the best durability and resistance to moisture?",
+            "options": [
+                "Marine-grade plywood",
+                "Solid hardwood",
+                "Medium-density fiberboard (MDF)"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the optimal placement of recessed lights in a room for balanced illumination?",
+            "options": [
+                "Equally spaced and 2-3 feet away from walls",
+                "Clustered in one central area",
+                "Close to corners and edges"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of curtain fabric offers the best insulation during winter months?",
+            "options": [
+                "Thermal insulated fabric",
+                "Sheer fabric",
+                "Linen fabric"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the ideal size and placement of a bathtub for a comfortable and relaxing bathing experience?",
+            "options": [
+                "At least 60 inches long with sufficient surround space",
+                "Smaller than 50 inches for compact bathrooms",
+                "Circular or freestandintubs in the center of the room"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of faucet aerator provides the best water conservation without compromising water pressure?",
+            "options": [
+                "Low-flow aerator",
+                "High-flow aerator",
+                "Dual-flow aerator"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the optimal height for artwork placement in a gallery wall for visual balance?",
+            "options": [
+                "Mid-height between the ceiling and the furniture",
+                "Close to the ceiling for a dramatic effect",
+                "At eye level for the averagviewer"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of kitchen backsplash material is most resistant to stains and splatters?",
+            "options": [
+                "Glass",
+                "Stainless steel",
+                "Ceramic"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is the ideal ratio of natural to artificial lighting in an office to promote productivity?",
+            "options": [
+                "70% natural and 30% artificial",
+                "50% natural and 50% artificial",
+                "80% natural and 20% artificial"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which type of fabric is most effective at blocking UV rays for window treatments?",
+            "options": [
+                "Blackout fabric",
+                "Sheer fabric",
+                "Cotton fabric"
+            ],
+            "topics": [
+                "Home Decor",
+                "Science"
+            ]
+        }
+    ]
+}

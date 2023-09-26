@@ -1,0 +1,825 @@
+{
+    "Fashion_Food&Drinks": [
+        {
+            "question": "Which fashion trend do you prefer: oversized jackets or skinny jeans?",
+            "options": [
+                "Oversized jackets",
+                "Skinny jeans"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What type of cuisine do you associate with a little black dress?",
+            "options": [
+                "Italian",
+                "French",
+                "Japanese",
+                "Mediterranean"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Which accessory is a must-have for a beach vacation: sunglasses or a wide-brimmed hat?",
+            "options": [
+                "Sunglasses",
+                "Wide-brimmed hat"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "What is your go-to comfort food: pizza or macaroni and cheese?",
+            "options": [
+                "Pizza",
+                "Macaroni and cheese"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Which cocktail best compliments a little black dress: Martini or Mojito?",
+            "options": [
+                "Martini",
+                "Mojito"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Are you more likely to follow a food recipe or a fashion trend?",
+            "options": [
+                "Food recipe",
+                "Fashion trend"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Which fashion item best represents your personality: bold patterned dress or tailored suit?",
+            "options": [
+                "Bold patterned dress",
+                "Tailored suit"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which dessert would you pair with a little black dress: chocolate cake or cru00e8me bru00fblu00e9e?",
+            "options": [
+                "Chocolate cake",
+                "Cru00e8me bru00fblu00e9e"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "What is your go-to drink: coffee or green tea?",
+            "options": [
+                "Coffee",
+                "Green tea"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "In terms of fashion, do you prefer classic elegance or trendy streetwear?",
+            "options": [
+                "Classic elegance",
+                "Trendy streetwear"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which type of cuisine do you associate with high fashion: sushi or fine dining?",
+            "options": [
+                "Sushi",
+                "Fine dining"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "What is your go-to footwear: sneakers or heels?",
+            "options": [
+                "Sneakers",
+                "Heels"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which food would you pair with a little black dress: lobster or filet mignon?",
+            "options": [
+                "Lobster",
+                "Filet mignon"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "What is your favorite type of chocolate: dark chocolate or milk chocolate?",
+            "options": [
+                "Dark chocolate",
+                "Milk chocolate"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Is your fashion style more influenced by French chic or bohemian vibes?",
+            "options": [
+                "French chic",
+                "Bohemian vibes"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which drink would you order at a fashion event: champagne or a signature cocktail?",
+            "options": [
+                "Champagne",
+                "Signature cocktail"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Do you prefer wearing casual sneakers or fashionable boots?",
+            "options": [
+                "Casual sneakers",
+                "Fashionable boots"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which food represents comfort to you: a warm bowl of soup or a delicious slice of pizza?",
+            "options": [
+                "Warm bowl of soup",
+                "Delicious slice of pizza"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "What is your go-to summer fashion item: flowy maxi dress or denim shorts?",
+            "options": [
+                "Flowy maxi dress",
+                "Denim shorts"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which cuisine best represents your personal style: Mexican or Asian fusion?",
+            "options": [
+                "Mexican",
+                "Asian fusion"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Do you prefer wearing elegant dresses or trendy jumpsuits?",
+            "options": [
+                "Elegant dresses",
+                "Trendy jumpsuits"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What is your favorite comfort food: warm chocolate chip cookies or creamy mac and cheese?",
+            "options": [
+                "Warm chocolate chip cookies",
+                "Creamy mac and cheese"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Which type of drink completes your evening: a classic cocktail or a glass of red wine?",
+            "options": [
+                "Classic cocktail",
+                "Glass of red wine"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Are you more likely to follow food influencers or fashion influencers on social media?",
+            "options": [
+                "Food influencers",
+                "Fashion influencers"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Which fashion item makes you feel more confident: a great pair of jeans or a little black dress?",
+            "options": [
+                "Great pair of jeans",
+                "Little black dress"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which cuisine would you choose for a romantic dinner: Italian or French?",
+            "options": [
+                "Italian",
+                "French"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Do you prefer wearing sneakers with dresses or high heels with jeans?",
+            "options": [
+                "Sneakers with dresses",
+                "High heels with jeans"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What is your favorite guilty pleasure: indulging in dessert or splurging on fashion?",
+            "options": [
+                "Indulging in dessert",
+                "Splurging on fashion"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Which type of drink do you prefer: iced coffee or a refreshing berry smoothie?",
+            "options": [
+                "Iced coffee",
+                "Refreshing berry smoothie"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "In terms of fashion, do you prefer minimalism or vibrant colors?",
+            "options": [
+                "Minimalism",
+                "Vibrant colors"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which type of cuisine best represents your fashion taste: Middle Eastern or fusion cuisine?",
+            "options": [
+                "Middle Eastern",
+                "Fusion cuisine"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Are you more likely to wear flats or heels at a formal event?",
+            "options": [
+                "Flats",
+                "Heels"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which food would you choose for a relaxing evening: a charcuterie board or a bowl of pasta?",
+            "options": [
+                "Charcuterie board",
+                "Bowl of pasta"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "What is your preferred type of chocolate: milk chocolate with nuts or dark chocolate with sea salt?",
+            "options": [
+                "Milk chocolate with nuts",
+                "Dark chocolate with sea salt"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Do you prefer wearing dresses or jumpsuits for a night out?",
+            "options": [
+                "Dresses",
+                "Jumpsuits"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which dessert would you indulge in: a creamy tiramisu or a decadent chocolate lava cake?",
+            "options": [
+                "Creamy tiramisu",
+                "Decadent chocolate lava cake"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "What is your go-to refreshing drink: iced tea or sparkling water?",
+            "options": [
+                "Iced tea",
+                "Sparkling water"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "When it comes to fashion, would you choose a monochromatic look or a mix of vibrant patterns?",
+            "options": [
+                "Monochromatic look",
+                "Mix of vibrant patterns"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which cuisine would you prefer to explore on a culinary journey: Indian or South American?",
+            "options": [
+                "Indian",
+                "South American"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Do you prefer wearing boots or sandals during the summer?",
+            "options": [
+                "Boots",
+                "Sandals"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which comfort food would you choose: a warm bowl of ramen or a cheesy pizza?",
+            "options": [
+                "Warm bowl of ramen",
+                "Cheesy pizza"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "What is your go-to cocktail: a refreshing Mojito or a classic Margarita?",
+            "options": [
+                "Mojito",
+                "Margarita"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Do you find fashion inspiration from cooking shows or culinary documentaries?",
+            "options": [
+                "Cooking shows",
+                "Culinary documentaries"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Which fashion item makes you feel most empowered: a statement blazer or high-waisted pants?",
+            "options": [
+                "Statement blazer",
+                "High-waisted pants"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which cuisine would you choose for a celebratory dinner: Japanese sushi or French cuisine?",
+            "options": [
+                "Japanese sushi",
+                "French cuisine"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Do you prefer wearing sneakers or flats for a casual day out?",
+            "options": [
+                "Sneakers",
+                "Flats"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What is your go-to dessert for a cozy night in: a warm apple pie or a rich chocolate brownie?",
+            "options": [
+                "Warm apple pie",
+                "Rich chocolate brownie"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Which drink would you indulge in: a creamy latte or a refreshing fruit smoothie?",
+            "options": [
+                "Creamy latte",
+                "Refreshing fruit smoothie"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "In terms of fashion, do you prefer edgy leather jackets or flowy bohemian dresses?",
+            "options": [
+                "Edgy leather jackets",
+                "Flowy bohemian dresses"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which type of cuisine best represents your fashion sense: Greek or modern fusion?",
+            "options": [
+                "Greek",
+                "Modern fusion"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Are you more likely to wear sneakers or pumps for an important business meeting?",
+            "options": [
+                "Sneakers",
+                "Pumps"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which food would you choose for a cozy night in: a warm bowl of soup or a cheesy lasagna?",
+            "options": [
+                "Warm bowl of soup",
+                "Cheesy lasagna"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "What is your preferred type of chocolate: milk chocolate with caramel or dark chocolate with almonds?",
+            "options": [
+                "Milk chocolate with caramel",
+                "Dark chocolate with almonds"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Do you prefer wearing skirts or pants for a formal occasion?",
+            "options": [
+                "Skirts",
+                "Pants"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which dessert would you choose to satisfy your sweet tooth: a creamy cheesecake or a decadent chocolate mousse?",
+            "options": [
+                "Creamy cheesecake",
+                "Decadent chocolate mousse"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "What is your go-to beverage: a refreshing iced coffee or a soothing herbal tea?",
+            "options": [
+                "Iced coffee",
+                "Herbal tea"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "When it comes to fashion, do you prefer monochrome or color-blocking?",
+            "options": [
+                "Monochrome",
+                "Color-blocking"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which cuisine would you choose for a culinary adventure: Thai or Middle Eastern?",
+            "options": [
+                "Thai",
+                "Middle Eastern"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Do you prefer wearing sneakers or flip-flops during the summer?",
+            "options": [
+                "Sneakers",
+                "Flip-flops"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which comfort food would you choose: a warm bowl of chicken noodle soup or a gooey grilled cheese sandwich?",
+            "options": [
+                "Chicken noodle soup",
+                "Grilled cheese sandwich"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "What is your go-to cocktail for a night out: a classic Old Fashioned or a trendy Aperol Spritz?",
+            "options": [
+                "Old Fashioned",
+                "Aperol Spritz"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Do you find fashion inspiration from cooking blogs or runway shows?",
+            "options": [
+                "Cooking blogs",
+                "Runway shows"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Which fashion item makes you feel more stylish: a statement handbag or a pair of designer sunglasses?",
+            "options": [
+                "Statement handbag",
+                "Designer sunglasses"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which cuisine would you choose for a date night: Spanish tapas or Italian pasta?",
+            "options": [
+                "Spanish tapas",
+                "Italian pasta"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Do you prefer wearing sneakers or loafers for a relaxed day at home?",
+            "options": [
+                "Sneakers",
+                "Loafers"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "What is your go-to dessert for a celebration: a rich chocolate cake or a fruity tart?",
+            "options": [
+                "Rich chocolate cake",
+                "Fruity tart"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Which drink would you choose to quench your thirst: an iced matcha latte or a tropical fruit smoothie?",
+            "options": [
+                "Iced matcha latte",
+                "Tropical fruit smoothie"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "In terms of fashion, do you prefer a monochromatic outfit or a bold print?",
+            "options": [
+                "Monochromatic outfit",
+                "Bold print"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which type of cuisine best represents your fashion taste: Thai or fusion cuisine?",
+            "options": [
+                "Thai",
+                "Fusion cuisine"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Are you more likely to wear flats or heels for a day of running errands?",
+            "options": [
+                "Flats",
+                "Heels"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which food would you choose for a cozy night in: a warm bowl of chili or a cheesy quesadilla?",
+            "options": [
+                "Warm bowl of chili",
+                "Cheesy quesadilla"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "What is your preferred type of chocolate: milk chocolate with toffee or dark chocolate with raspberries?",
+            "options": [
+                "Milk chocolate with toffee",
+                "Dark chocolate with raspberries"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "Do you prefer wearing dresses or jumpsuits for a casual day out?",
+            "options": [
+                "Dresses",
+                "Jumpsuits"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which dessert would you choose to satisfy your sweet tooth: a creamy panna cotta or a decadent chocolate truffle?",
+            "options": [
+                "Creamy panna cotta",
+                "Decadent chocolate truffle"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "What is your go-to beverage: a refreshing iced tea or a comforting hot cocoa?",
+            "options": [
+                "Iced tea",
+                "Hot cocoa"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        },
+        {
+            "question": "When it comes to fashion, do you prefer timeless classics or trendy pieces?",
+            "options": [
+                "Timeless classics",
+                "Trendy pieces"
+            ],
+            "topics": [
+                "Fashion"
+            ]
+        },
+        {
+            "question": "Which cuisine would you choose for a culinary exploration: Vietnamese or fusion cuisine?",
+            "options": [
+                "Vietnamese",
+                "Fusion cuisine"
+            ],
+            "topics": [
+                "Fashion",
+                "Food&Drinks"
+            ]
+        }
+    ]
+}

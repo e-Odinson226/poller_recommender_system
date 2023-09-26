@@ -1,0 +1,889 @@
+{
+    "Art_Economy": [
+        {
+            "question": "Which type of artwork do you believe has the highest economic value?",
+            "options": [
+                "Paintings",
+                "Sculptures",
+                "Photographs"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does a thriving art market contribute positively to the economy?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art medium do you think has the greatest potential for economic growth?",
+            "options": [
+                "Digital art",
+                "Mixed media",
+                "Traditional painting"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you think investing in fine art is a viable economic opportunity?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art movement do you think has had the most significant impact on the economy?",
+            "options": [
+                "Renaissance",
+                "Impressionism",
+                "Pop Art"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you believe art should be primarily driven by economic considerations?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art form do you believe has the highest potential for economic sustainability?",
+            "options": [
+                "Street art",
+                "Graffiti",
+                "Public installations"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "What role do you think art plays in economic development?",
+            "options": [
+                "Driving tourism",
+                "Enhancing cultural identity",
+                "Increasing property values"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you think government funding for the arts positively impacts the economy?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art collector do you believe has had the most significant influence on the economy?",
+            "options": [
+                "Peggy Guggenheim",
+                "Charles Saatchi",
+                "Franu00e7ois Pinault"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does digital art have the potential to revolutionize the economic landscape of the art world?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art market do you think has the strongest connection to the global economy?",
+            "options": [
+                "Contemporary art",
+                "Antiques",
+                "Asian art"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you believe the value of art is subjective or objective in an economic context?",
+            "options": [
+                "Subjective",
+                "Objective"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which artist do you think has had the most significant impact on the economy?",
+            "options": [
+                "Andy Warhol",
+                "Jeff Koons",
+                "Damien Hirst"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Should art education be viewed as an investment in the economy?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which country do you believe has the strongest art economy?",
+            "options": [
+                "United States",
+                "China",
+                "United Kingdom"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, how does the art market interact with the wider economy?",
+            "options": [
+                "It reflects economic trends",
+                "It influences consumer spending",
+                "It creates employment opportunities"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you think the economic value of an artwork is intrinsically tied to its artistic merit?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art auction house do you believe has the greatest impact on the global art market?",
+            "options": [
+                "Sotheby's",
+                "Christie's",
+                "Phillips"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does public art contribute to local economic growth?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which artist do you think has the greatest potential for future economic success?",
+            "options": [
+                "Yayoi Kusama",
+                "Banksy",
+                "Ai Weiwei"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you believe the art market is influenced by economic cycles?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which type of art investment do you think has the greatest potential for financial returns?",
+            "options": [
+                "Startup art galleries",
+                "Art funds",
+                "Artist commissions"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does public funding for the arts stimulate economic growth?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art museum do you believe has the most significant economic impact on its local community?",
+            "options": [
+                "The Louvre",
+                "The Museum of Modern Art (MoMA)",
+                "The British Museum"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you think the art market is driven more by cultural value or economic value?",
+            "options": [
+                "Cultural value",
+                "Economic value"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which artist do you believe has had the most profound impact on the global economy?",
+            "options": [
+                "Pablo Picasso",
+                "Vincent van Gogh",
+                "Leonardo da Vinci"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does the economic value of an artwork depend on its historical significance?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art fair do you believe has the greatest impact on the local economy where it is hosted?",
+            "options": [
+                "Art Basel",
+                "Frieze Art Fair",
+                "The Armory Show"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you think the globalization of the art market has positive or negative implications for the economy?",
+            "options": [
+                "Positive",
+                "Negative"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which type of investment has a stronger connection to the art market: real estate or stock market?",
+            "options": [
+                "Real estate",
+                "Stock market"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does the commercialization of art negatively impact its artistic integrity?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Should government policies prioritize developing the art sector as a strategic economic industry?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art gallery do you believe has the greatest influence on the global art market?",
+            "options": [
+                "Gagosian Gallery",
+                "White Cube",
+                "Hauser & Wirth"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does the economic value of an artwork increase over time?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "What impact do you think the digital age has had on the economic value of art?",
+            "options": [
+                "Increased accessibility",
+                "Threatened traditional art market",
+                "Expanded global reach"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you believe art should cater more to aesthetic pleasure or economic gain?",
+            "options": [
+                "Aesthetic pleasure",
+                "Economic gain"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art movement do you think has the strongest influence on contemporary economic systems?",
+            "options": [
+                "Conceptual art",
+                "Performance art",
+                "Installation art"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, how does the art market influence wealth distribution within society?",
+            "options": [
+                "Concentrates wealth",
+                "Provides economic opportunities",
+                "Creates inequality"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art collector do you believe has the most significant impact on the art economy in your country?",
+            "options": [
+                "Alice Walton",
+                "Francois-Henri Pinault",
+                "Eli Broad"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you think art plays a role in attracting foreign investment and boosting the local economy?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which country's art market do you believe has the greatest potential for growth in the next decade?",
+            "options": [
+                "Brazil",
+                "India",
+                "South Africa"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does the economic value of an artwork depend on the artist's reputation?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art biennial or triennial do you believe has the greatest economic impact on the host city?",
+            "options": [
+                "Venice Biennale",
+                "Documenta",
+                "Su00e3o Paulo Biennial"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you think art can be used as a tool for economic development in underprivileged communities?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which artist do you think has the strongest connection to economic activism?",
+            "options": [
+                "Ai Weiwei",
+                "Barbara Kruger",
+                "Hans Haacke"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does the economic value of an artwork depend on its uniqueness?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art market do you believe is most affected by economic recessions?",
+            "options": [
+                "Contemporary art",
+                "Modern art",
+                "Impressionist art"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you think artists should receive fair compensation for their economic contribution?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art event or festival do you believe has the greatest impact on the local economy?",
+            "options": [
+                "Burning Man",
+                "Art Basel Miami Beach",
+                "SXSW"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does the art market perpetuate inequality in wealth distribution?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which artist do you believe has had the most transformative impact on the economic value of art?",
+            "options": [
+                "Marcel Duchamp",
+                "Andy Warhol",
+                "Damien Hirst"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you think art investment should be included as part of a diversified economic portfolio?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which city do you believe has the strongest art economy globally?",
+            "options": [
+                "New York City",
+                "London",
+                "Hong Kong"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does the art market provide equal economic opportunities for artists from diverse backgrounds?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Should governments provide tax breaks and incentives to support the art market and stimulate economic growth?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art market trend do you believe has the most potential for economic disruption?",
+            "options": [
+                "Blockchain-based art",
+                "Artificial intelligence in art creation",
+                "Virtual reality art experiences"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does the economic value of an artwork depend on the artist's social media presence?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art institution do you believe has had the greatest positive impact on the local economy?",
+            "options": [
+                "Guggenheim Museum Bilbao",
+                "Tate Modern",
+                "Museum of Contemporary Art, Los Angeles (MOCA)"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you think the economic value of art is influenced by art market speculators?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which type of art funding do you believe has the greatest potential for positive economic impact?",
+            "options": [
+                "Private sponsorships",
+                "Crowdfunding",
+                "Government grants"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does art contribute to a country's soft power and economic influence?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Should the economic value of an artwork be determined by supply and demand in the art market?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art movement do you think has the greatest potential for economic sustainability?",
+            "options": [
+                "Street art",
+                "Minimalism",
+                "Abstract expressionism"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you think art market trends are influenced by economic power shifts between countries?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art collector do you believe has had the largest impact on the global art market for emerging artists?",
+            "options": [
+                "Dakis Joannou",
+                "Patrizia Sandretto Re Rebaudengo",
+                "Charles Saatchi"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does the economic value of an artwork depend on the artist's gender?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art fair or exhibition do you believe has the greatest economic impact on the region it takes place?",
+            "options": [
+                "Art Dubai",
+                "Art Berlin",
+                "Art Rio"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you think public art installations have a positive impact on local economy and property values?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which artist do you think has the greatest potential to cross over from the art world to the mainstream economy?",
+            "options": [
+                "Jeff Koons",
+                "Takashi Murakami",
+                "Yayoi Kusama"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does the economic value of an artwork depend on the artist's educational background?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art market do you believe is most influenced by economic globalization?",
+            "options": [
+                "Contemporary African art",
+                "Asian contemporary art",
+                "Latin American art"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you think artists should receive a share of the economic value generated by their artworks in the secondary market?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which city do you believe has the most inclusive and economically thriving art scene?",
+            "options": [
+                "Berlin",
+                "Su00e3o Paulo",
+                "Cape Town"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "In your opinion, does the economic value of an artwork depend on its size?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Which art fair or exhibition do you believe has the most significant impact on the global art market?",
+            "options": [
+                "Art Basel",
+                "Frieze London",
+                "The Armory Show"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        },
+        {
+            "question": "Do you think art should be more accessible to individuals from lower socioeconomic backgrounds to promote economic inclusivity?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Art",
+                "Economy"
+            ]
+        }
+    ]
+}

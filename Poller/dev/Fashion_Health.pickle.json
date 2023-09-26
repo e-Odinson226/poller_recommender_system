@@ -1,0 +1,1113 @@
+{
+    "Fashion_Health": [
+        {
+            "question": "What type of fitness wearables do you prefer?",
+            "options": [
+                "Smartwatch",
+                "Fitness tracker",
+                "Sports watch"
+            ],
+            "topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of shoes do you find most comfortable for running?",
+            "options": [
+                "Running shoes",
+                "Trail shoes",
+                "Barefoot shoes"
+            ],
+            "topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What kind of clothing material do you prefer for workout clothes?",
+            "options": [
+                "Cotton",
+                "Polyester",
+                "Nylon",
+                "Spandex"
+            ],
+            "topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of sunglasses do you find most stylish for outdoor activities?",
+            "options": [
+                "Aviator sunglasses",
+                "Wayfarer sunglasses",
+                "Sport sunglasses"
+            ],
+            "topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness activity do you enjoy the most?",
+            "options": [
+                "Yoga",
+                "Running",
+                "Cycling",
+                "Dance"
+            ],
+            "topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness watch do you find most attractive?",
+            "options": [
+                "Smartwatch",
+                "Fitness tracker",
+                "Sports watch"
+            ],
+            "topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of clothing do you prefer for a workout in hot weather?",
+            "options": [
+                "Tank top",
+                "Shorts",
+                "Sports bra",
+                "Leggings"
+            ],
+            "topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of exercise equipment do you find most fashionable?",
+            "options": [
+                "Treadmill",
+                "Exercise bike",
+                "Elliptical machine"
+            ],
+            "topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What kind of fabric do you prefer for activewear that promotes breathability?",
+            "options": [
+                "Mesh",
+                "Bamboo",
+                "Lycra",
+                "Polyester"
+            ],
+            "topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness shoes do you find most trendy for casual wear?",
+            "options": [
+                "Sneakers",
+                "Athletic shoes",
+                "Slip-on shoes"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness accessory do you find most beneficial for your health goals?",
+            "options": [
+                "Resistance bands",
+                "Yoga mat",
+                "Foam roller"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of sportswear do you find most fashionable for outdoor activities?",
+            "options": [
+                "Hiking boots",
+                "Rain jacket",
+                "Windbreaker"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness training do you prefer for overall well-being?",
+            "options": [
+                "Pilates",
+                "Weightlifting",
+                "HIIT workouts"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness attire do you find most versatile for various workout activities?",
+            "options": [
+                "Athleisure wear",
+                "Compression clothing",
+                "Sports dress"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness tracker do you prefer for monitoring your health?",
+            "options": [
+                "Heart rate monitor",
+                "Sleep tracker",
+                "Step counter"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of sunscreen do you find most effective for protecting your skin during outdoor activities?",
+            "options": [
+                "Physical sunscreen",
+                "Chemical sunscreen",
+                "Mineral sunscreen"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fabric do you prefer for swimwear that provides both comfort and style?",
+            "options": [
+                "Nylon",
+                "Spandex",
+                "Polyester",
+                "Lycra"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness apparel do you find most fashionable for gym workouts?",
+            "options": [
+                "Leggings",
+                "Sports bra",
+                "Tank top",
+                "Training shorts"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness footwear do you find most supportive for high-impact workouts?",
+            "options": [
+                "Cross-training shoes",
+                "Running shoes",
+                "Aerobic shoes"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness routine do you find most effective for weight loss?",
+            "options": [
+                "Cardio workouts",
+                "Strength training",
+                "Interval training"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of activewear do you prefer for yoga sessions?",
+            "options": [
+                "Yoga pants",
+                "Yoga shorts",
+                "Yoga tank tops"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness gear do you find most stylish for outdoor running?",
+            "options": [
+                "Running jacket",
+                "Running gloves",
+                "Reflective gear"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness technology do you find most useful for monitoring your progress?",
+            "options": [
+                "Fitness app",
+                "Activity tracker",
+                "Heart rate monitor"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fabric do you prefer for activewear that wicks away moisture?",
+            "options": [
+                "Polyester",
+                "Nylon",
+                "Spandex",
+                "Bamboo"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness shoes do you find most fashionable for street style?",
+            "options": [
+                "Sneakers",
+                "Athletic shoes",
+                "Slip-on shoes"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness accessory do you find most beneficial for injury prevention?",
+            "options": [
+                "Knee brace",
+                "Compression socks",
+                "Weightlifting belt"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of sportswear do you find most fashionable for hiking activities?",
+            "options": [
+                "Hiking boots",
+                "Cargo pants",
+                "Technical jacket"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness training do you prefer for building muscle strength?",
+            "options": [
+                "Weightlifting",
+                "Resistance training",
+                "Bodyweight exercises"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness attire do you find most comfortable for all-day wear?",
+            "options": [
+                "Athleisure wear",
+                "Track pants",
+                "Hoodies"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness tracker do you prefer for tracking your sleep patterns?",
+            "options": [
+                "Sleep monitor",
+                "Smartwatch",
+                "Fitness band"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of sunscreen do you find most suitable for sensitive skin during outdoor activities?",
+            "options": [
+                "Mineral sunscreen",
+                "Hypoallergenic sunscreen",
+                "Physical sunscreen"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fabric do you prefer for activewear that offers UV protection?",
+            "options": [
+                "UPF fabric",
+                "Bamboo",
+                "Polyester",
+                "Nylon"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness apparel do you find most stylish for dance workouts?",
+            "options": [
+                "Leggings",
+                "Sports bra",
+                "Crop top",
+                "Dance shorts"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness footwear do you find most comfortable for long walks?",
+            "options": [
+                "Walking shoes",
+                "Sneakers",
+                "Sandals"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness routine do you find most effective for stress relief?",
+            "options": [
+                "Yoga",
+                "Meditation",
+                "Tai Chi"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of activewear do you prefer for low-intensity workouts like stretching or Pilates?",
+            "options": [
+                "Yoga pants",
+                "Loose-fitting tops",
+                "Sweatpants"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness gear do you find most fashionable for cycling?",
+            "options": [
+                "Cycling jersey",
+                "Cycling shorts",
+                "Helmet"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness technology do you find most useful for tracking your heart rate?",
+            "options": [
+                "Heart rate monitor",
+                "Fitness tracker",
+                "Smartwatch"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fabric do you prefer for activewear that offers odor control?",
+            "options": [
+                "Anti-bacterial fabric",
+                "Bamboo",
+                "Polyester",
+                "Nylon"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness shoes do you find most fashionable for athleisure looks?",
+            "options": [
+                "Sneakers",
+                "Athletic shoes",
+                "Slip-on shoes"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness accessory do you find most beneficial for improving flexibility?",
+            "options": [
+                "Yoga strap",
+                "Stretching band",
+                "Foam roller"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of sportswear do you find most fashionable for tennis activities?",
+            "options": [
+                "Tennis skirt",
+                "Tennis shoes",
+                "Sweatbands"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness training do you prefer for improving cardiovascular endurance?",
+            "options": [
+                "Running",
+                "Cycling",
+                "Jump rope"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness attire do you find most versatile for casual outings?",
+            "options": [
+                "Athleisure wear",
+                "Joggers",
+                "Hoodies"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness tracker do you prefer for monitoring your calorie burn?",
+            "options": [
+                "Calorie tracker",
+                "Fitness band",
+                "Smartwatch"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of sunscreen do you find most suitable for water sports activities?",
+            "options": [
+                "Water-resistant sunscreen",
+                "Sport sunscreen",
+                "Physical sunscreen"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fabric do you prefer for swimwear that offers optimal flexibility?",
+            "options": [
+                "Spandex",
+                "Polyester",
+                "Nylon",
+                "Lycra"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness apparel do you find most comfortable for home workouts?",
+            "options": [
+                "Athleisure wear",
+                "Leggings",
+                "T-shirts"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness footwear do you find most supportive for high-intensity interval training (HIIT)?",
+            "options": [
+                "Cross-training shoes",
+                "Running shoes",
+                "Training shoes"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness routine do you find most effective for improving flexibility?",
+            "options": [
+                "Yoga",
+                "Pilates",
+                "Stretching"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of activewear do you prefer for indoor workouts like weightlifting or strength training?",
+            "options": [
+                "Compression leggings",
+                "Sleeveless shirts",
+                "Crossfit shorts"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness gear do you find most fashionable for hiking or camping activities?",
+            "options": [
+                "Hiking boots",
+                "Performance jacket",
+                "Convertible pants"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness technology do you find most useful for tracking your sleep quality?",
+            "options": [
+                "Sleep tracker",
+                "Smartwatch",
+                "Fitness band"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fabric do you prefer for activewear that dries quickly?",
+            "options": [
+                "Quick-drying fabric",
+                "Polyester",
+                "Nylon",
+                "Microfiber"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness shoes do you find most fashionable for athleisure looks?",
+            "options": [
+                "Sneakers",
+                "Athletic shoes",
+                "Slip-on shoes"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness accessory do you find most beneficial for improving balance?",
+            "options": [
+                "Balance board",
+                "Yoga block",
+                "Fitness ball"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of sportswear do you find most fashionable for golfing activities?",
+            "options": [
+                "Golf skirt",
+                "Golf shoes",
+                "Visors"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness training do you prefer for improving agility and coordination?",
+            "options": [
+                "Agility ladder drills",
+                "Boxing",
+                "Circuit training"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness attire do you find most stylish for outdoor street workouts?",
+            "options": [
+                "Athleisure wear",
+                "Tank tops",
+                "Sweatpants"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness tracker do you prefer for monitoring your sleep duration?",
+            "options": [
+                "Sleep monitor",
+                "Smartwatch",
+                "Fitness band"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of sunscreen do you find most suitable for outdoor sports activities?",
+            "options": [
+                "Sport sunscreen",
+                "Sweat-resistant sunscreen",
+                "Physical sunscreen"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fabric do you prefer for swimwear that offers a slimming effect?",
+            "options": [
+                "Tummy control fabric",
+                "Spandex",
+                "Polyester",
+                "Lycra"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness apparel do you find most comfortable for yoga sessions?",
+            "options": [
+                "Yoga pants",
+                "Sports bra",
+                "Flowy tops",
+                "Yoga shorts"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness footwear do you find most supportive for long-distance walking?",
+            "options": [
+                "Walking shoes",
+                "Sneakers",
+                "Lightweight trainers"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness routine do you find most effective for improving posture?",
+            "options": [
+                "Pilates",
+                "Yoga",
+                "Postural exercises"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of activewear do you prefer for high-intensity workouts like CrossFit?",
+            "options": [
+                "Compression leggings",
+                "Crossfit shorts",
+                "Breathable tops"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness gear do you find most fashionable for swimming?",
+            "options": [
+                "Swimsuit",
+                "Goggles",
+                "Swim cap"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness technology do you find most useful for tracking your calorie intake?",
+            "options": [
+                "Fitness app",
+                "Food diary app",
+                "Smart scale"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fabric do you prefer for activewear that offers compression support?",
+            "options": [
+                "Compression fabric",
+                "Spandex",
+                "Polyester",
+                "Nylon"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness shoes do you find most fashionable for street-style looks?",
+            "options": [
+                "Sneakers",
+                "Athletic shoes",
+                "Slip-on shoes"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness accessory do you find most beneficial for improving grip strength?",
+            "options": [
+                "Grip strengthener",
+                "Weightlifting gloves",
+                "Hand grip exerciser"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of sportswear do you find most fashionable for soccer activities?",
+            "options": [
+                "Soccer cleats",
+                "Soccer jersey",
+                "Soccer shin guards"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness training do you prefer for improving endurance?",
+            "options": [
+                "Cycling",
+                "Running",
+                "High-intensity interval training"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness attire do you find most versatile for athleisure looks?",
+            "options": [
+                "Athleisure wear",
+                "Yoga pants",
+                "Sweatshirts"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness tracker do you prefer for monitoring your heart rate during workouts?",
+            "options": [
+                "Heart rate monitor",
+                "Fitness band",
+                "Smartwatch"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of sunscreen do you find most suitable for outdoor hiking activities?",
+            "options": [
+                "Water-resistant sunscreen",
+                "Sweat-proof sunscreen",
+                "Physical sunscreen"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fabric do you prefer for swimwear that provides extra coverage?",
+            "options": [
+                "Modest swimsuit",
+                "Polyester",
+                "Nylon",
+                "Spandex"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness apparel do you find most comfortable for home workouts?",
+            "options": [
+                "Athleisure wear",
+                "Leggings",
+                "T-shirts"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness footwear do you find most supportive for hiking trails?",
+            "options": [
+                "Hiking boots",
+                "Trail running shoes",
+                "Hiking sandals"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness routine do you find most effective for improving balance?",
+            "options": [
+                "Yoga",
+                "Pilates",
+                "Tai Chi"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of activewear do you prefer for dance workouts like Zumba or hip hop?",
+            "options": [
+                "Dance leggings",
+                "Crop tops",
+                "Dance sneakers"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness gear do you find most fashionable for outdoor cycling?",
+            "options": [
+                "Cycling jersey",
+                "Cycling shorts",
+                "Cycling gloves"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness technology do you find most useful for tracking your workout intensity?",
+            "options": [
+                "Heart rate monitor",
+                "Fitness tracker",
+                "Smartwatch"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fabric do you prefer for activewear that provides maximum stretchability?",
+            "options": [
+                "Stretch fabric",
+                "Spandex",
+                "Polyester",
+                "Nylon"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness shoes do you find most fashionable for athleisure looks?",
+            "options": [
+                "Sneakers",
+                "Athletic shoes",
+                "Slip-on shoes"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness accessory do you find most beneficial for improving core strength?",
+            "options": [
+                "Exercise ball",
+                "Ab roller",
+                "Bosu ball"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of sportswear do you find most fashionable for basketball activities?",
+            "options": [
+                "Basketball shoes",
+                "Basketball jersey",
+                "Basketball shorts"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness training do you prefer for improving speed and agility?",
+            "options": [
+                "Sprint intervals",
+                "Circuit training",
+                "Agility ladder drills"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of fitness attire do you find most stylish for outdoor running?",
+            "options": [
+                "Athleisure wear",
+                "Shorts",
+                "Sweat-wicking tops"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "What type of fitness tracker do you prefer for tracking your daily activity levels?",
+            "options": [
+                "Fitness band",
+                "Smartwatch",
+                "Activity tracker"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        },
+        {
+            "question": "Which type of sunscreen do you find most suitable for outdoor tennis activities?",
+            "options": [
+                "Sport sunscreen",
+                "Sweat-proof sunscreen",
+                "Physical sunscreen"
+            ],
+            " topics": [
+                "Fashion",
+                "Health"
+            ]
+        }
+    ]
+}
