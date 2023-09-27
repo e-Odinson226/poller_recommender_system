@@ -1,0 +1,982 @@
+{
+    "Home Decor_Tech": [
+        {
+            "question": "What color scheme do you prefer for your living room?",
+            "options": [
+                "Neutral tones",
+                "Bright and bold colors",
+                "Subtle pastel shades"
+            ],
+            "topics": [
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "Do you prefer a minimalist or a maximalist approach when it comes to home du00e9cor?",
+            "options": [
+                "Minimalist",
+                "Maximalist",
+                "Somewhere in between"
+            ],
+            "topics": [
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "Which smart home device do you find most useful for enhancing your living space?",
+            "options": [
+                "Smart lighting",
+                "Smart thermostat",
+                "Smart speaker"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What is your preferred style for curtains or window treatments?",
+            "options": [
+                "Roman shades",
+                "Sheer curtains",
+                "Blackout curtains"
+            ],
+            "topics": [
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of TV stand do you prefer for your entertainment system?",
+            "options": [
+                "Floating wall mount",
+                "TV console",
+                "Media cabinet"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your kitchen design?",
+            "options": [
+                "Smart appliances",
+                "Built-in speakers",
+                "USB charging outlets"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of artwork do you prefer for your bedroom walls?",
+            "options": [
+                "Abstract paintings",
+                "Photography prints",
+                "Botanical illustrations"
+            ],
+            "topics": [
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a smart doorbell?",
+            "options": [
+                "Video camera",
+                "Motion detection",
+                "Two-way audio"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What material do you prefer for your kitchen countertops?",
+            "options": [
+                "Granite",
+                "Quartz",
+                "Marble"
+            ],
+            "topics": [
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "How important is eco-friendliness in your choice of home electronics?",
+            "options": [
+                "Very important",
+                "Somewhat important",
+                "Not important"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of pillow is essential for a comfortable home office setup?",
+            "options": [
+                "Ergonomic memory foam",
+                "Lumbar support pillow",
+                "Adjustable height pillow"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which digital assistant do you prefer for controlling your smart home devices?",
+            "options": [
+                "Amazon Alexa",
+                "Google Assistant",
+                "Apple Siri"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your bathroom design?",
+            "options": [
+                "Smart mirror",
+                "Water-saving showerhead",
+                "Heated towel rack"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of flooring do you prefer for a high-tech, modern look?",
+            "options": [
+                "Hardwood",
+                "Tile",
+                "Polished concrete"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a robotic vacuum cleaner?",
+            "options": [
+                "Mapping and navigation",
+                "Multi-surface cleaning",
+                "App control"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of bed frame do you prefer for a tech-enabled bedroom?",
+            "options": [
+                "Adjustable base",
+                "Platform bed",
+                "Storage bed"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your dining room design?",
+            "options": [
+                "Smart lighting",
+                "Wireless charging pads",
+                "Voice-controlled assistant"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What color scheme do you prefer for your home office?",
+            "options": [
+                "Cool blues and grays",
+                "Warm earth tones",
+                "Vibrant pops of color"
+            ],
+            "topics": [
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a smart thermostat?",
+            "options": [
+                "Energy-saving algorithms",
+                "Remote temperature control",
+                "Integration with other devices"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of seating do you prefer for your tech-friendly living room?",
+            "options": [
+                "Reclining sofa",
+                "Gaming chair",
+                "Modular sectional"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your bedroom design?",
+            "options": [
+                "Smart lighting",
+                "Wireless charging nightstand",
+                "Smart blinds"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of computer desk do you prefer for your home office setup?",
+            "options": [
+                "Standing desk",
+                "Corner desk",
+                "Floating wall desk"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a home security camera system?",
+            "options": [
+                "High-definition video resolution",
+                "Motion alerts",
+                "Cloud storage"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of lighting do you prefer for your tech-enabled kitchen?",
+            "options": [
+                "Under cabinet lighting",
+                "Pendant lights",
+                "Track lighting"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your living room design?",
+            "options": [
+                "Smart TV",
+                "Wireless surround sound system",
+                "Motorized window shades"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of gaming setup do you prefer for your tech-inspired entertainment room?",
+            "options": [
+                "Gaming PC with RGB lighting",
+                "Console gaming setup",
+                "Virtual reality gaming setup"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "What material do you prefer for your tech-friendly office chair?",
+            "options": [
+                "Mesh",
+                "Leather",
+                "Fabric"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a smart refrigerator?",
+            "options": [
+                "Touchscreen display",
+                "App-controlled temperature settings",
+                "Door-in-door feature"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of window blinds do you prefer for your high-tech home?",
+            "options": [
+                "Motorized blinds",
+                "Smart blinds with light sensors",
+                "Blackout blinds"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your outdoor living space design?",
+            "options": [
+                "Outdoor speakers",
+                "Smart irrigation system",
+                "Outdoor lighting with smartphone control"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of planters do you prefer for your tech-inspired garden?",
+            "options": [
+                "Self-watering planters",
+                "Vertical garden wall",
+                "Glow-in-the-dark planters"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a smart washing machine?",
+            "options": [
+                "Wi-Fi connectivity",
+                "Energy efficiency",
+                "Steam cleaning function"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of wallpaper design do you prefer for your high-tech home?",
+            "options": [
+                "Geometric patterns",
+                "Botanical prints",
+                "Textured wallpaper"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your home gym design?",
+            "options": [
+                "Smart workout equipment",
+                "Fitness tracker integration",
+                "Wall-mounted tablet for workout programs"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of desk lamp do you prefer for your tech-friendly workspace?",
+            "options": [
+                "Adjustable LED desk lamp",
+                "Wireless charging lamp",
+                "Smart desk lamp with voice control"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a video doorbell?",
+            "options": [
+                "Two-way audio",
+                "Pre-recorded messages",
+                "Integration with smart locks"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of bathroom faucet design do you prefer for your high-tech bathroom?",
+            "options": [
+                "Touchless sensor faucets",
+                "LED light waterfall faucets",
+                "Modern matte black faucets"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your nursery design?",
+            "options": [
+                "Smart baby monitor",
+                "Voice-activated nightlight",
+                "Automatic rocking chair"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of bookshelf design do you prefer for your tech-inspired library?",
+            "options": [
+                "Floating shelves",
+                "Built-in bookcases",
+                "Modular shelving units"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a smart home security system?",
+            "options": [
+                "24/7 monitoring",
+                "Mobile app control",
+                "Integration with other smart devices"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of kitchen backsplash do you prefer for your high-tech kitchen?",
+            "options": [
+                "Glass subway tiles",
+                "Stainless steel backsplash",
+                "Patterned ceramic tiles"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your home theater design?",
+            "options": [
+                "Immersive surround sound system",
+                "Motorized projector screen",
+                "Smart remote control system"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of office storage do you prefer for your tech-friendly workspace?",
+            "options": [
+                "Floating shelves",
+                "Cabinet with built-in charging station",
+                "Wall-mounted organizer"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a smart robot lawn mower?",
+            "options": [
+                "GPS navigation",
+                "Rain sensor",
+                "Automatic scheduling"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of fireplace design do you prefer for your tech-inspired living room?",
+            "options": [
+                "Electric fireplace with adjustable flame effects",
+                "Wall-mounted linear fireplace",
+                "Modern gas fireplace"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your home bar design?",
+            "options": [
+                "Smart wine cooler",
+                "Built-in cocktail dispenser",
+                "Wireless speaker system"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of ceiling fan design do you prefer for your high-tech home?",
+            "options": [
+                "Ceiling fan with built-in LED light",
+                "Smart ceiling fan with voice control",
+                "Modern design with sleek blades"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a smart home security camera?",
+            "options": [
+                "Facial recognition",
+                "Night vision",
+                "Cloud storage"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of entranceway bench do you prefer for your tech-inspired foyer?",
+            "options": [
+                "Storage bench with USB charging ports",
+                "Bench with built-in shoe storage",
+                "Floating bench with hidden storage"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your laundry room design?",
+            "options": [
+                "Smart washer and dryer",
+                "Built-in folding station",
+                "Voice-controlled laundry assistant"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of garden furniture do you prefer for your tech-enabled outdoor space?",
+            "options": [
+                "Outdoor lounge set with built-in USB ports",
+                "Hanging swing chair",
+                "Robotic lawn chair with massage function"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a smart home lighting system?",
+            "options": [
+                "Color-changing capabilities",
+                "Voice-activated control",
+                "Scheduling and automation"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of wall art display do you prefer for your tech-inspired gallery?",
+            "options": [
+                "Digital photo frame",
+                "LED backlit canvas prints",
+                "Interactive touchscreen display"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your study nook design?",
+            "options": [
+                "Wireless charging desk lamp",
+                "Smart notebook and pen",
+                "Desk chair with built-in massager"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of bathroom vanity design do you prefer for your high-tech bathroom?",
+            "options": [
+                "Floating vanity with integrated LED lighting",
+                "Double sink vanity with smart faucets",
+                "Wall-mounted vanity with mirror defogger"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a smart home entertainment system?",
+            "options": [
+                "Voice control",
+                "Integration with streaming services",
+                "Multi-room audio setup"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of pet-friendly furniture do you prefer for your high-tech home?",
+            "options": [
+                "Automatic pet feeding station",
+                "Smart pet bed with climate control",
+                "Robotic pet toy"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your hallway design?",
+            "options": [
+                "Motion-activated lighting",
+                "Smart keyless entry system",
+                "Wall-mounted touchscreen for notes and reminders"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of lighting do you prefer for your tech-enabled bedroom?",
+            "options": [
+                "Smart bedside lamps",
+                "LED strip lights",
+                "Color-changing ceiling light"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a smart home audio system?",
+            "options": [
+                "Multi-room synchronization",
+                "Voice-controlled streaming",
+                "High-fidelity sound quality"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of balcony furniture do you prefer for your tech-inspired outdoor space?",
+            "options": [
+                "Outdoor rocking chair with built-in speakers",
+                "Foldable table with charging ports",
+                "Smart umbrella with LED lights"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your craft room design?",
+            "options": [
+                "Smart cutting machine",
+                "Wireless fabric printer",
+                "LED magnifying lamp"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of showerhead design do you prefer for your high-tech bathroom?",
+            "options": [
+                "Rainfall showerhead with LED lights",
+                "Handheld massaging showerhead",
+                "Smart showerhead with temperature control"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a smart home voice assistant?",
+            "options": [
+                "Compatibility with smart home devices",
+                "Voice recognition accuracy",
+                "Music streaming capabilities"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of outdoor lighting do you prefer for your tech-enabled garden?",
+            "options": [
+                "Solar-powered path lights",
+                "Wireless spotlight with motion sensor",
+                "Color-changing LED garden lights"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your dining room design?",
+            "options": [
+                "Smart dining table with built-in touchscreen",
+                "Wi-Fi enabled wine cellar",
+                "Automated curtain control"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of bedroom storage do you prefer for your high-tech bedroom?",
+            "options": [
+                "Under-bed storage with USB ports",
+                "Smart wardrobe with automated lighting",
+                "Wall-mounted shelves with hidden compartments"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a smart home surveillance system?",
+            "options": [
+                "24/7 video recording",
+                "Facial recognition",
+                "Multiple camera views"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of outdoor cooking equipment do you prefer for your tech-inspired outdoor kitchen?",
+            "options": [
+                "Smart grill with built-in temperature sensors",
+                "Outdoor pizza oven",
+                "Automated rotisserie"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your reading nook design?",
+            "options": [
+                "E-reader with adjustable lighting",
+                "Smart bookshelf with mood lighting",
+                "Reading chair with built-in speakers"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of bathroom mirror design do you prefer for your high-tech bathroom?",
+            "options": [
+                "Smart mirror with built-in touchscreen",
+                "Fogless mirror with LED lights",
+                "Bluetooth-enabled mirror with speakers"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a smart home climate control system?",
+            "options": [
+                "Energy-saving algorithms",
+                "Smart thermostat integration",
+                "Room-by-room temperature control"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of outdoor fire pit design do you prefer for your tech-inspired outdoor space?",
+            "options": [
+                "Gas fire pit with adjustable flames",
+                "Smokeless fire pit with Bluetooth speakers",
+                "Fire pit table with built-in drink cooler"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your meditation space design?",
+            "options": [
+                "Smart meditation cushion with guided meditation app",
+                "Salt lamp with built-in Bluetooth speaker",
+                "Adjustable aromatherapy diffuser"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of garage organization system do you prefer for your high-tech garage?",
+            "options": [
+                "Smart tool storage rack",
+                "Motorized overhead storage system",
+                "Wireless garage door opener"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a smart home energy management system?",
+            "options": [
+                "Real-time energy monitoring",
+                "Automated energy usage optimization",
+                "Integration with renewable energy systems"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of staircase design do you prefer for your tech-inspired home?",
+            "options": [
+                "Floating staircase with LED step lighting",
+                "Spiral staircase with built-in storage",
+                "Glass railing staircase with automated lighting"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your outdoor dining area design?",
+            "options": [
+                "Outdoor speaker system",
+                "Smart barbecue grill",
+                "Weatherproof TV"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of task lighting do you prefer for your tech-friendly workspace?",
+            "options": [
+                "LED desk lamp with adjustable color temperature",
+                "Wireless charging desk lamp",
+                "Desk lamp with voice activation"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "Which feature is most important to you in a smart home irrigation system?",
+            "options": [
+                "Weather-based automatic scheduling",
+                "Moisture sensors for precise watering",
+                "Remote control via smartphone"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+        {
+            "question": "What type of window film design do you prefer for your high-tech home?",
+            "options": [
+                "Privacy window film with smart tint control",
+                "Solar control window film",
+                "Decorative patterned window film"
+            ],
+            "topics": [
+                "Home Du00e9cor",
+                "Tech"
+            ]
+        },
+        {
+            "question": "How do you incorporate technology into your playroom design?",
+            "options": [
+                "Interactive gaming floor projector",
+                "Smart toy storage with app-controlled organization",
+                "Voice-activated playroom lighting"
+            ],
+            "topics": [
+                "Tech",
+                "Home Du00e9cor"
+            ]
+        },
+    ]
+}

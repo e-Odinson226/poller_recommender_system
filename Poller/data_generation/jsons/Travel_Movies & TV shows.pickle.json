@@ -1,0 +1,662 @@
+{
+    "Travel_Movies & TV shows": [
+        {
+            "question": "Which movie or TV show would you recommend for a long flight?",
+            "options": [
+                "Inception",
+                "The Grand Budapest Hotel",
+                "Game of Thrones",
+                "Friends",
+                "The Lord of the Rings"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which is your favorite travel-themed movie or TV show?",
+            "options": [
+                "Eat Pray Love",
+                "Lost",
+                "The Beach",
+                "Into the Wild",
+                "The Motorcycle Diaries"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "What is the best destination shown in a movie or TV show?",
+            "options": [
+                "New Zealand in The Lord of the Rings",
+                "Italy in The Talented Mr. Ripley",
+                "Paris in Midnight in Paris",
+                "India in The Darjeeling Limited",
+                "Japan in Lost in Translation"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show made you want to travel to a specific location?",
+            "options": [
+                "The Secret Life of Walter Mitty (Iceland)",
+                "Under the Tuscan Sun (Italy)",
+                "Outlander (Scotland)",
+                "Hawaii Five-0 (Hawaii)",
+                "Chef's Table (Various culinary destinations)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show accurately portrays the travel experience?",
+            "options": [
+                "The Way (pilgrimage on the Camino de Santiago)",
+                "Tracks (crossing the Australian desert)",
+                "Lost in Translation (experiencing a different culture)",
+                "The Beach (search for a hidden paradise)",
+                "An Idiot Abroad (unconventional travel experiences)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which fictional travel-related technology would you like to see become a reality?",
+            "options": [
+                "Time-traveling DeLorean (Back to the Future)",
+                "Teleportation (Star Trek)",
+                "Holodeck (Star Trek)",
+                "TARDIS (Doctor Who)",
+                "Hoverboard (Back to the Future Part II)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "If you could live in a movie or TV show location, which one would you choose?",
+            "options": [
+                "Hogwarts (Harry Potter series)",
+                "Westeros (Game of Thrones)",
+                "Jurassic Park (Jurassic Park series)",
+                "Starship Enterprise (Star Trek)",
+                "The Shire (The Lord of the Rings)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show inspires you to explore the world more?",
+            "options": [
+                "The Secret Life of Walter Mitty",
+                "Into the Wild",
+                "The Bucket List",
+                "Up in the Air",
+                "Wild"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show accurately captures the essence of a specific country or culture?",
+            "options": [
+                "Amu00e9lie (France)",
+                "Crouching Tiger Hidden Dragon (China)",
+                "Slumdog Millionaire (India)",
+                "The Motorcycle Diaries (Latin America)",
+                "Spirited Away (Japan)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "If you could be a character from a movie or TV show who travels, which one would you choose?",
+            "options": [
+                "Indiana Jones (Indiana Jones series)",
+                "Lara Croft (Tomb Raider series)",
+                "Jason Bourne (Bourne series)",
+                "John Wick (John Wick series)",
+                "Katniss Everdeen (The Hunger Games series)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show perfectly captures the spirit of adventure while traveling?",
+            "options": [
+                "Indiana Jones series",
+                "The Beach",
+                "The Secret Life of Walter Mitty",
+                "Into the Wild",
+                "The Motorcycle Diaries"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "What is your favorite travel-themed episode of a TV show?",
+            "options": [
+                "Friends - The One with the Holiday Armadillo",
+                "The Simpsons - Bart Gets Famous",
+                "How I Met Your Mother - Arrivederci, Fiero",
+                "Breaking Bad - ABQ",
+                "Black Mirror - San Junipero"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show portrays the best road trip experience?",
+            "options": [
+                "Little Miss Sunshine",
+                "Thelma & Louise",
+                "Dumb and Dumber",
+                "Road Trip",
+                "Zombieland"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show accurately depicts the challenges faced by travelers?",
+            "options": [
+                "127 Hours",
+                "Taken",
+                "Touching the Void",
+                "Backpackers",
+                "Hostel"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "If you could experience a travel-related event from a movie or TV show, which one would it be?",
+            "options": [
+                "The Running of the Bulls (Spain) from The Sun Also Rises",
+                "La Tomatina (Spain) from Zindagi Na Milegi Dobara",
+                "The Great Gatsby's parties (New York) from The Great Gatsby",
+                "The Holi festival (India) from Yeh Jawaani Hai Deewani",
+                "The Carnival of Venice (Italy) from Summertime"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show made you appreciate the beauty of nature during travel?",
+            "options": [
+                "Planet Earth (documentary)",
+                "The Revenant",
+                "Life of Pi",
+                "Brother Bear",
+                "The Sound of Music"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which fictional movie or TV show hotel or accommodation would you like to stay at?",
+            "options": [
+                "The Grand Budapest Hotel (The Grand Budapest Hotel)",
+                "The Overlook Hotel (The Shining)",
+                "Bates Motel (Psycho)",
+                "The Fawlty Towers Hotel (Fawlty Towers)",
+                "The Best Exotic Marigold Hotel (The Best Exotic Marigold Hotel)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Who is your favorite adventurous character in a travel-themed movie or TV show?",
+            "options": [
+                "Indiana Jones (Indiana Jones series)",
+                "Katniss Everdeen (The Hunger Games series)",
+                "Frodo Baggins (The Lord of the Rings series)",
+                "Lara Croft (Tomb Raider series)",
+                "Jason Bourne (Bourne series)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "If you could be part of a movie or TV show travel group, which one would you join?",
+            "options": [
+                "The Fellowship of the Ring (The Lord of the Rings)",
+                "Ocean's Eleven (Ocean's Eleven)",
+                "The Avengers (Marvel Cinematic Universe)",
+                "The Ghostbusters (Ghostbusters)",
+                "The Fast and the Furious crew (The Fast and the Furious series)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show accurately represents the challenges of traveling through time?",
+            "options": [
+                "Back to the Future trilogy",
+                "Doctor Who",
+                "Interstellar",
+                "Edge of Tomorrow",
+                "Primer"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "If you could learn a travel-related skill from a movie or TV show, which one would you choose?",
+            "options": [
+                "Piloting a spaceship (Star Wars)",
+                "Driving a race car (Days of Thunder)",
+                "Horseback riding (Game of Thrones)",
+                "Parkour (District 13)",
+                "Survival skills (Cast Away)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show inspired you to take up a new hobby or activity while traveling?",
+            "options": [
+                "Eat Pray Love (meditation)",
+                "The Darjeeling Limited (train travel)",
+                "Kiki's Delivery Service (bicycling)",
+                "Point Break (surfing)",
+                "Black Mirror: Bandersnatch (interactive storytelling)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "If you could be a companion to a time-traveling character from a movie or TV show, who would it be?",
+            "options": [
+                "The Doctor (Doctor Who)",
+                "Marty McFly (Back to the Future series)",
+                "Bill & Ted (Bill & Ted series)",
+                "Donnie Darko (Donnie Darko)",
+                "Hermione Granger (Harry Potter series)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show showcases the most breathtaking travel cinematography?",
+            "options": [
+                "Into the Wild",
+                "The Lord of the Rings trilogy",
+                "The Secret Life of Walter Mitty",
+                "Lawrence of Arabia",
+                "The Fall"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "If you could have a travel-related superpower from a movie or TV show, which one would you choose?",
+            "options": [
+                "Flight (Superman)",
+                "Invisibility (Hollow Man)",
+                "Time manipulation (Doctor Strange)",
+                "Teleportation (Jumper)",
+                "Immortality (Highlander)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show has the most memorable travel-themed soundtrack?",
+            "options": [
+                "The Sound of Music",
+                "Into the Wild",
+                "Lost in Translation",
+                "Local Hero",
+                "Paris, Texas"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "What is your favorite travel-themed quote from a movie or TV show?",
+            "options": [
+                "'To infinity and beyond!' - Buzz Lightyear (Toy Story)",
+                "'Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.' - Ferris Bueller (Ferris Bueller's Day Off)",
+                "'Not all those who wander are lost.' - Gandalf (The Lord of the Rings)",
+                "'Just keep swimming.' - Dory (Finding Nemo)",
+                "'I'll be back.' - Terminator (Terminator series)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show accurately portrays the challenges faced by solo travelers?",
+            "options": [
+                "127 Hours",
+                "Lost in Translation",
+                "Wild",
+                "Tracks",
+                "Cast Away"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "If you could live in a movie or TV show world while traveling, which one would you choose?",
+            "options": [
+                "Star Wars universe",
+                "Harry Potter universe",
+                "Game of Thrones universe",
+                "Marvel Cinematic Universe",
+                "The Lord of the Rings universe"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show character inspired you to have a more adventurous approach to travel?",
+            "options": [
+                "Indiana Jones (Indiana Jones series)",
+                "Aragorn (The Lord of the Rings series)",
+                "Evelyn Salt (Salt)",
+                "Tony Stark (Iron Man series)",
+                "Hermione Granger (Harry Potter series)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "What is your favorite movie or TV show scene involving travel?",
+            "options": [
+                "The opening scene of Up",
+                "The train fight scene in Skyfall",
+                "The motorcycle chase scene in The Bourne Identity",
+                "The bar scene in Inglourious Basterds",
+                "The hiking scene in Wild"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show perfectly captures the spirit of exploration while traveling?",
+            "options": [
+                "The Lord of the Rings trilogy",
+                "The Secret Life of Walter Mitty",
+                "Indiana Jones series",
+                "National Treasure series",
+                "The Grand Budapest Hotel"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "If you could have a movie or TV show character as your travel companion, who would it be?",
+            "options": [
+                "Dora the Explorer (Dora the Explorer)",
+                "Jack Sparrow (Pirates of the Caribbean series)",
+                "Mary Poppins (Mary Poppins)",
+                "Hermione Granger (Harry Potter series)",
+                "Sherlock Holmes (Sherlock)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show made you appreciate the value of local cultures and customs while traveling?",
+            "options": [
+                "The Motorcycle Diaries",
+                "Eat Pray Love",
+                "Lost",
+                "The Darjeeling Limited",
+                "Under the Tuscan Sun"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "If you could witness a historical event from a movie or TV show, which one would you choose?",
+            "options": [
+                "Signing of the Declaration of Independence (National Treasure)",
+                "Moon landing (First Man)",
+                "Battle of Helm's Deep (The Lord of the Rings: The Two Towers)",
+                "Invention of the time machine (Back to the Future)",
+                "Woodstock Music Festival (Taking Woodstock)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show motivates you to seek adventure while traveling?",
+            "options": [
+                "The Secret Life of Walter Mitty",
+                "Into the Wild",
+                "Around the World in 80 Days",
+                "The Bucket List",
+                "Wild"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "If you could visit a fictional travel-related event from a movie or TV show, which one would you choose?",
+            "options": [
+                "The Quidditch World Cup (Harry Potter series)",
+                "The Running of the Bulls (Spain) from The Sun Also Rises",
+                "The Battle of Winterfell (Game of Thrones)",
+                "The Feast of San Gennaro (Italy) from The Sopranos",
+                "The Oscars (Los Angeles)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show character would make the best travel guide?",
+            "options": [
+                "Crocodile Dundee (Crocodile Dundee series)",
+                "Gandalf (The Lord of the Rings trilogy)",
+                "Chris McCandless (Into the Wild)",
+                "Liz Lemon (30 Rock)",
+                "Tony Stark (Iron Man series)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "What is your favorite travel-themed movie or TV show quote?",
+            "options": [
+                "'Here's looking at you, kid.' - Casablanca (Casablanca)",
+                "'The only way to get what you want in this world is through hard work.' - The Adjustment Bureau (The Adjustment Bureau)",
+                "'Life is either a daring adventure or nothing at all.' - Helen Keller - The Secret Life of Walter Mitty",
+                "'Adventure is out there!' - Up (Up)",
+                "'It's not about the destination, it's about the journey.' - Ralph Waldo Emerson"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show made you dream of exploring a specific historical period?",
+            "options": [
+                "Pride and Prejudice (Regency era)",
+                "Downton Abbey (Edwardian era)",
+                "The Great Gatsby (Roaring Twenties)",
+                "Midnight in Paris (1920s Paris)",
+                "Outlander (18th-century Scotland)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "If you could travel to a fictional world from a movie or TV show, which one would you choose?",
+            "options": [
+                "Pandora (Avatar)",
+                "Westeros (Game of Thrones)",
+                "Narnia (The Chronicles of Narnia)",
+                "Hogwarts (Harry Potter series)",
+                "Middle-earth (The Lord of the Rings series)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show accurately portrays the exploration of outer space?",
+            "options": [
+                "Interstellar",
+                "2001: A Space Odyssey",
+                "Gravity",
+                "Apollo 13",
+                "The Martian"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "What is your favorite travel-themed episode from a TV show?",
+            "options": [
+                "Friends - The One with the Embryos",
+                "How I Met Your Mother - Arrivederci, Fiero",
+                "The Office - Niagara",
+                "Breaking Bad - ABQ",
+                "Lost - The Constant"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show captures the most realistic portrayal of traveling on a budget?",
+            "options": [
+                "EuroTrip",
+                "Before Sunrise",
+                "The Darjeeling Limited",
+                "Into the Wild",
+                "Wild"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "If you could learn a foreign language from a movie or TV show, which one would you choose?",
+            "options": [
+                "Lost in Translation (Japanese)",
+                "Inglourious Basterds (German and French)",
+                "Amu00e9lie (French)",
+                "The Motorcycle Diaries (Spanish)",
+                "The Hunt for Red October (Russian)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show character would you trust to lead you on a challenging expedition?",
+            "options": [
+                "Bear Grylls (Man vs. Wild)",
+                "Indiana Jones (Indiana Jones series)",
+                "Ellen Ripley (Alien series)",
+                "James Bond (James Bond series)",
+                "Rick O'Connell (The Mummy series)"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        },
+        {
+            "question": "Which movie or TV show inspires you to embark on a journey of self-discovery while traveling?",
+            "options": [
+                "Eat Pray Love",
+                "The Secret Life of Walter Mitty",
+                "Wild",
+                "The Motorcycle Diaries",
+                "Under the Tuscan Sun"
+            ],
+            "topics": [
+                "Travel",
+                "Movies & TV shows"
+            ]
+        }
+    ]
+}

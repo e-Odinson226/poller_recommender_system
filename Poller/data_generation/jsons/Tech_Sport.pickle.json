@@ -1,0 +1,1027 @@
+{
+    "Tech_Sport": [
+        {
+            "question": "Which smartwatch do you think is best for tracking fitness activities?",
+            "options": [
+                "Apple Watch",
+                "Fitbit",
+                "Garmin",
+                "Samsung Galaxy Watch"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports app do you use the most for tracking your workouts?",
+            "options": [
+                "Nike Run Club",
+                "Strava",
+                "MapMyRun",
+                "Runtastic"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you prefer using a fitness tracker or a smartphone app for monitoring your daily activity?",
+            "options": [
+                "Fitness tracker",
+                "Smartphone app",
+                "Both",
+                "None"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which video game console do you think offers the best sports gaming experience?",
+            "options": [
+                "PlayStation",
+                "Xbox",
+                "Nintendo Switch",
+                "PC"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your favorite sports streaming service?",
+            "options": [
+                "ESPN+",
+                "DAZN",
+                "FuboTV",
+                "Hulu Live"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports-related gadget do you find most useful during your workouts?",
+            "options": [
+                "Fitness watch",
+                "Wireless headphones",
+                "Activity tracker",
+                "Smartphone armband"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you believe technology has positively impacted the world of professional sports?",
+            "options": [
+                "Yes",
+                "No",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports website or app do you use for staying updated with the latest news and scores?",
+            "options": [
+                "ESPN",
+                "Bleacher Report",
+                "Sports Illustrated",
+                "theScore"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your preferred method of monitoring your heart rate during exercise?",
+            "options": [
+                "Fitness tracker",
+                "Smartwatch",
+                "Chest strap monitor",
+                "Smartphone app"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports video game franchise do you think has the best graphics?",
+            "options": [
+                "FIFA",
+                "NBA 2K",
+                "Madden NFL",
+                "MLB The Show"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your favorite sports-related mobile app for following live scores and updates?",
+            "options": [
+                "ESPN App",
+                "theScore",
+                "Yahoo Sports",
+                "CBS Sports"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which technological innovation in sports has had the most impact on enhancing player performance?",
+            "options": [
+                "Hawkeye system in tennis",
+                "VAR in soccer",
+                "Hawk-Eye in cricket",
+                "Goal-line technology in football"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you believe wearable technology has improved your sports performance?",
+            "options": [
+                "Yes",
+                "No",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your preferred sports streaming platform for watching live matches or events?",
+            "options": [
+                "YouTube TV",
+                "Sling TV",
+                "Hulu Live",
+                "AT&T TV"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports-related podcast do you enjoy listening to the most?",
+            "options": [
+                "The Bill Simmons Podcast",
+                "The Rich Eisen Show",
+                "PTI",
+                "The Lowe Post"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Would you prefer using virtual reality technology to experience live sporting events from home?",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which is your preferred sports app for tracking your running distance and pace?",
+            "options": [
+                "Strava",
+                "Nike Run Club",
+                "RunKeeper",
+                "MapMyRun"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Have you ever used a sports-related mobile app for analyzing your golf swing?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports tech gadget do you think has had the biggest impact on training and performance analysis?",
+            "options": [
+                "Sports wearable sensors",
+                "Smart footballs and basketballs",
+                "Smart tennis racquets",
+                "Golf swing analyzers"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you use any fitness or sports-related mobile app for goal setting and tracking?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports video game do you enjoy playing the most with friends?",
+            "options": [
+                "FIFA",
+                "Madden NFL",
+                "NBA 2K",
+                "Rocket League"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your preferred way of streaming live sports events on your smartphone?",
+            "options": [
+                "Through a dedicated sports app",
+                "Using a live TV streaming app",
+                "Through social media platforms",
+                "Other"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you find virtual reality technology helpful for improving your sports skills or performance?",
+            "options": [
+                "Yes",
+                "No",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports-related mobile app do you consider as the most user-friendly and intuitive?",
+            "options": [
+                "ESPN App",
+                "Bleacher Report",
+                "theScore",
+                "Yahoo Sports"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Have you ever used a fitness tracker or smartwatch during your gym workouts?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports video game franchise offers the most realistic gameplay experience?",
+            "options": [
+                "FIFA",
+                "NBA 2K",
+                "Madden NFL",
+                "MLB The Show"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you believe technology has made watching sports events more enjoyable and immersive?",
+            "options": [
+                "Yes",
+                "No",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your preferred way of consuming sports news online?",
+            "options": [
+                "News websites",
+                "Social media platforms",
+                "Sports apps",
+                "Combination of all"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports tracker device do you find most accurate for measuring distance during running?",
+            "options": [
+                "GPS watch",
+                "Smartphone app",
+                "Fitness band",
+                "Chest strap monitor"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you use any sports-related mobile app for analyzing your swimming performance?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports video game genre do you enjoy the most - Football (Soccer), Basketball, American Football, or Baseball?",
+            "options": [
+                "Football (Soccer)",
+                "Basketball",
+                "American Football",
+                "Baseball"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your preferred method of streaming live sports events on your TV?",
+            "options": [
+                "Cable/satellite TV",
+                "Streaming device (e.g., Roku, Fire TV Stick)",
+                "Smart TV apps",
+                "Others"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you believe wearable technology has made a significant impact on injury prevention in sports?",
+            "options": [
+                "Yes",
+                "No",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports news website or app do you consider as the most reliable source for accurate information?",
+            "options": [
+                "ESPN",
+                "Bleacher Report",
+                "Sports Illustrated",
+                "theScore"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your preferred wearable tech device for monitoring your sleep patterns?",
+            "options": [
+                "Fitness tracker",
+                "Smartwatch",
+                "Smart ring",
+                "Sleep monitor"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you use any sports-related mobile app for analyzing your cycling performance?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports video game franchise do you think has the best in-game commentary?",
+            "options": [
+                "FIFA",
+                "NBA 2K",
+                "Madden NFL",
+                "MLB The Show"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you think technology has improved the fairness and accuracy of refereeing decisions in sports?",
+            "options": [
+                "Yes",
+                "No",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your preferred method of viewing live sports events on your computer/laptop?",
+            "options": [
+                "Official sports websites",
+                "Streaming platforms",
+                "TV network websites",
+                "Other"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports-related mobile app do you consider as the most visually appealing and well-designed?",
+            "options": [
+                "ESPN App",
+                "Bleacher Report",
+                "theScore",
+                "Yahoo Sports"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Have you ever used a fitness tracker or smartwatch for monitoring your heart rate during a sports activity?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports video game franchise offers the most realistic player animations?",
+            "options": [
+                "FIFA",
+                "NBA 2K",
+                "Madden NFL",
+                "MLB The Show"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you think technology has improved the overall fan experience during live sports events?",
+            "options": [
+                "Yes",
+                "No",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your preferred platform for discussing sports with fellow fans online?",
+            "options": [
+                "Sports forums",
+                "Social media groups/pages",
+                "Sports apps with chat features",
+                "Other"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports wearable device do you find most effective for tracking calories burned during exercise?",
+            "options": [
+                "Fitness tracker",
+                "Smartwatch",
+                "Heart rate monitor",
+                "Activity band"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you use any sports-related mobile app for analyzing your tennis performance?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports video game franchise offers the most realistic physics and ball movement?",
+            "options": [
+                "FIFA",
+                "NBA 2K",
+                "Madden NFL",
+                "MLB The Show"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you think technology has influenced the game strategies and tactics in professional sports?",
+            "options": [
+                "Yes",
+                "No",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your preferred way of consuming sports news on radio?",
+            "options": [
+                "Traditional FM/AM radio",
+                "Online sports radio apps",
+                "Podcasts"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports-related mobile app do you consider as the most informative and comprehensive?",
+            "options": [
+                "ESPN App",
+                "Bleacher Report",
+                "theScore",
+                "Yahoo Sports"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Would you prefer using augmented reality technology to enhance your sports viewing experience?",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you use any sports-related mobile app for analyzing your basketball performance?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports video game franchise offers the most immersive career mode?",
+            "options": [
+                "FIFA",
+                "NBA 2K",
+                "Madden NFL",
+                "MLB The Show"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you think technology has significantly improved training methods in professional sports?",
+            "options": [
+                "Yes",
+                "No",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your preferred platform for sports-related live streaming?",
+            "options": [
+                "YouTube",
+                "Twitch",
+                "Facebook Live",
+                "Other"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports wearable device do you find most accurate for tracking steps and daily activity?",
+            "options": [
+                "Fitness tracker",
+                "Smartwatch",
+                "Activity band",
+                "Smart clothing"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you use any sports-related mobile app for analyzing your soccer performance?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports video game franchise offers the most realistic crowd atmosphere?",
+            "options": [
+                "FIFA",
+                "NBA 2K",
+                "Madden NFL",
+                "MLB The Show"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you think technology has made sports events more accessible to people with disabilities?",
+            "options": [
+                "Yes",
+                "No",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your preferred platform for sports-related discussions and analysis?",
+            "options": [
+                "Television shows",
+                "Sports websites",
+                "Podcasts",
+                "Social media groups"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Would you prefer using artificial intelligence technology for analyzing your fitness and sports performance?",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you use any sports-related mobile app for analyzing your golf performance?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports video game franchise offers the most realistic crowd chants and reactions?",
+            "options": [
+                "FIFA",
+                "NBA 2K",
+                "Madden NFL",
+                "MLB The Show"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you think technology has improved the accuracy of scoring and timing in professional sports?",
+            "options": [
+                "Yes",
+                "No",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your preferred platform for watching sports highlight videos online?",
+            "options": [
+                "YouTube",
+                "Social media platforms",
+                "Official sports websites",
+                "Other"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports wearable device do you find most useful for monitoring your running cadence?",
+            "options": [
+                "GPS watch",
+                "Foot pod",
+                "Smart shoe",
+                "Smartphone app"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you use any sports-related mobile app for analyzing your baseball performance?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports video game franchise offers the most realistic weather effects?",
+            "options": [
+                "FIFA",
+                "NBA 2K",
+                "Madden NFL",
+                "MLB The Show"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you think technology has made sports events more engaging for spectators at stadiums?",
+            "options": [
+                "Yes",
+                "No",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your preferred platform for following live sports updates and scores on your mobile device?",
+            "options": [
+                "Sports apps",
+                "Social media platforms",
+                "News websites",
+                "Others"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Would you prefer using biometric technology for analyzing your sports performance?",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you use any sports-related mobile app for analyzing your swimming stroke technique?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports video game franchise offers the most realistic stadium/arena atmosphere?",
+            "options": [
+                "FIFA",
+                "NBA 2K",
+                "Madden NFL",
+                "MLB The Show"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you think technology has improved the accuracy and fairness of anti-doping measures in sports?",
+            "options": [
+                "Yes",
+                "No",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your preferred platform for watching sports documentaries and analysis?",
+            "options": [
+                "Television",
+                "Streaming platforms",
+                "Sports websites",
+                "Other"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports wearable device do you find most effective for monitoring your cycling power output?",
+            "options": [
+                "Power meter",
+                "Fitness tracker",
+                "Smartwatch",
+                "Cycling computer"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you use any sports-related mobile app for analyzing your hockey performance?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Which sports video game franchise offers the most realistic player celebrations and emotions?",
+            "options": [
+                "FIFA",
+                "NBA 2K",
+                "Madden NFL",
+                "MLB The Show"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you think technology has contributed to reducing the risk of head injuries in contact sports?",
+            "options": [
+                "Yes",
+                "No",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "What is your preferred platform for participating in online sports trivia or fantasy games?",
+            "options": [
+                "Dedicated sports trivia apps",
+                "Fantasy sports platforms",
+                "Social media groups",
+                "Other"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Would you prefer using motion-capture technology for analyzing and improving your sports technique?",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Not sure"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        },
+        {
+            "question": "Do you use any sports-related mobile app for analyzing your cricket performance?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "topics": [
+                "Tech",
+                "Sport"
+            ]
+        }
+    ]
+}

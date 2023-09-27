@@ -1,0 +1,843 @@
+{
+    "Tech_Science": [
+        {
+            "question": "Which operating system do you think will dominate in the future?",
+            "options": [
+                "Windows",
+                "MacOS",
+                "Linux",
+                "iOS",
+                "Android"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is your opinion on the use of AI in autonomous vehicles?",
+            "options": [
+                "I support it and believe it will improve road safety",
+                "I am concerned about potential ethical issues",
+                "I am unsure about its effectiveness"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which field of science do you think has the greatest potential for technological advancements?",
+            "options": [
+                "Biotechnology",
+                "Artificial Intelligence",
+                "Nanotechnology",
+                "Quantum Mechanics",
+                "Robotics"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is your perspective on the integration of technology in healthcare?",
+            "options": [
+                "It has the potential to revolutionize patient care",
+                "It raises privacy and security concerns",
+                "It may lead to overreliance on machines"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which emerging technology excites you the most?",
+            "options": [
+                "Virtual Reality",
+                "Blockchain",
+                "Internet of Things",
+                "Augmented Reality",
+                "Machine Learning"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Do you think space exploration is a worthwhile pursuit for scientific and technological advancement?",
+            "options": [
+                "Absolutely, it expands our understanding of the universe",
+                "No, we should focus on solving problems on Earth first"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What are your thoughts on genetically modified organisms (GMOs)?",
+            "options": [
+                "They hold great potential for improving crop yield and nutrition",
+                "There are concerns about long-term effects and ethical implications"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which field of tech-science fusion do you find most fascinating?",
+            "options": [
+                "Bioinformatics",
+                "Neuroengineering",
+                "Astrobiology",
+                "Quantum Computing",
+                "Cybernetics"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "How do you think advancements in technology will impact the job market in the next decade?",
+            "options": [
+                "It will create new job opportunities",
+                "It will lead to widespread unemployment",
+                "It will transform existing jobs"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is your opinion on the ethical implications of gene editing using CRISPR technology?",
+            "options": [
+                "It opens up possibilities for curing genetic diseases",
+                "It raises concerns about eugenics and designer babies"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which scientific discovery or technological innovation fascinates you the most?",
+            "options": [
+                "Quantum teleportation",
+                "Artificial neural networks",
+                "Gene editing",
+                "Space telescopes",
+                "3D printing"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "How do you think advancements in AI will impact society as a whole?",
+            "options": [
+                "It will lead to increased efficiency and automation",
+                "It may eliminate certain job sectors",
+                "It raises concerns about privacy and surveillance"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Do you believe robots will become an integral part of our everyday lives in the near future?",
+            "options": [
+                "Yes, they will be prevalent in homes and workplaces",
+                "No, their development will be hindered by technological limitations"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What are your thoughts on renewable energy technologies such as solar and wind power?",
+            "options": [
+                "They are essential for combating climate change",
+                "They are inefficient and unreliable"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which area of science and technology do you think needs more funding for research?",
+            "options": [
+                "Space exploration",
+                "Clean energy solutions",
+                "Medical advancements",
+                "Artificial intelligence",
+                "Genetics"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Are you excited about the prospect of self-driving cars?",
+            "options": [
+                "Yes, they have the potential to improve road safety",
+                "No, I have concerns about their reliability and ethical considerations"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What role do you think technology will play in addressing climate change?",
+            "options": [
+                "It can help develop sustainable solutions",
+                "It may exacerbate the environmental issues"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Do you believe in the possibility of human colonization of other planets in the future?",
+            "options": [
+                "Yes, it is a logical step for long-term survival of our species",
+                "No, it is unrealistic and a waste of resources"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which aspect of artificial intelligence do you find most intriguing?",
+            "options": [
+                "Machine learning",
+                "Natural language processing",
+                "Computer vision",
+                "Expert systems",
+                "Robotics"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is your opinion on the use of drones for various purposes?",
+            "options": [
+                "They have practical applications in fields like delivery and surveillance",
+                "They raise concerns about privacy and safety"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "How do you think technology can contribute to improving education?",
+            "options": [
+                "It can provide access to quality education for all",
+                "It may lead to decreased human interaction and creativity"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What advancements in renewable energy do you believe will have the most significant impact?",
+            "options": [
+                "Solar panels",
+                "Wind turbines",
+                "Hydroelectric power",
+                "Geothermal energy",
+                "Biofuels"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Do you think the use of AI in medical diagnosis and treatment is reliable?",
+            "options": [
+                "Yes, it can enhance accuracy and efficiency",
+                "No, it cannot replace human expertise"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What are your thoughts on the potential benefits and risks of quantum computing?",
+            "options": [
+                "It can revolutionize cryptography and solve complex problems",
+                "It poses a threat to encryption and data security"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which technological development do you think will have the biggest impact on transportation?",
+            "options": [
+                "Electric vehicles",
+                "Hyperloop",
+                "Autonomous vehicles",
+                "Maglev trains",
+                "Supersonic travel"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "How do you think advancements in robotics will affect manufacturing industries?",
+            "options": [
+                "It will lead to increased automation and efficiency",
+                "It may result in job cuts and unemployment"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is your perspective on the potential benefits of gene editing in agriculture?",
+            "options": [
+                "It can enhance crop resilience and nutritional content",
+                "It raises concerns about environmental impact and biodiversity"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Do you believe virtual reality will become a mainstream form of entertainment?",
+            "options": [
+                "Yes, it offers immersive experiences and limitless possibilities",
+                "No, it will remain niche due to cost and accessibility"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is your opinion on the use of drones for scientific research and exploration?",
+            "options": [
+                "They provide valuable data and access to remote areas",
+                "They can disturb ecosystems and wildlife"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "How do you think advancements in nanotechnology will revolutionize various industries?",
+            "options": [
+                "It can lead to breakthroughs in medicine, electronics, and materials",
+                "It raises concerns about potential risks and ethical implications"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What are your thoughts on the integration of AI assistants in our daily lives?",
+            "options": [
+                "They can simplify tasks and enhance productivity",
+                "They raise concerns about privacy and reliance on technology"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which emerging technology do you believe will have the most profound impact on society?",
+            "options": [
+                "Internet of Things",
+                "Artificial intelligence",
+                "Blockchain",
+                "Biotechnology",
+                "Quantum Computing"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Do you think technology is creating more problems than it is solving?",
+            "options": [
+                "Yes, it has led to various societal challenges",
+                "No, it has improved our lives in numerous ways"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is your perspective on the potential risks of 5G technology?",
+            "options": [
+                "They are exaggerated, and 5G will revolutionize communication",
+                "They are valid, and more research is needed for safety assurances"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "How do you think advancements in genetic engineering will impact medicine?",
+            "options": [
+                "It can lead to personalized treatments and disease prevention",
+                "It raises concerns about ethical boundaries and inequality"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What aspect of space exploration do you find most fascinating?",
+            "options": [
+                "Search for extraterrestrial life",
+                "Discovering new planets and celestial bodies",
+                "Understanding the origins of the universe"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Do you believe technology can play a significant role in addressing environmental sustainability?",
+            "options": [
+                "Yes, it offers solutions for renewable energy and conservation",
+                "No, it cannot compensate for human consumption and behavior"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What are your thoughts on the potential risks of artificial general intelligence (AGI)?",
+            "options": [
+                "It could lead to human-level intelligence and immense progress",
+                "It poses existential threats and loss of control"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "How do you think advancements in robotics will impact healthcare?",
+            "options": [
+                "It can enhance surgical precision and patient care",
+                "It raises concerns about job displacement and loss of human touch"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is your opinion on the use of drones for humanitarian purposes?",
+            "options": [
+                "They can aid in disaster response and delivering essential supplies",
+                "They raise concerns about privacy and misuse"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which field of scientific research do you believe holds the most promise for future breakthroughs?",
+            "options": [
+                "Astrophysics",
+                "Biomedicine",
+                "Environmental science",
+                "Materials science",
+                "Quantum physics"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Do you think artificial intelligence will surpass human intelligence in the future?",
+            "options": [
+                "Yes, it is a possibility with exponential advancements",
+                "No, it is unlikely due to inherent limitations"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What are your thoughts on the potential benefits and risks of gene editing in humans?",
+            "options": [
+                "It can cure genetic diseases and enhance human capabilities",
+                "It raises ethical concerns and potential misuse"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "How do you think advancements in biotechnology will impact agriculture?",
+            "options": [
+                "It can lead to higher crop yields and disease-resistant plants",
+                "It raises concerns about genetic diversity and long-term impacts"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is your perspective on the future of renewable energy?",
+            "options": [
+                "It will replace fossil fuels as the primary source of energy",
+                "It will remain a supplementary option due to limitations"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Do you believe AI-powered chatbots can improve customer service experiences?",
+            "options": [
+                "Yes, they can provide quick and efficient assistance",
+                "No, they lack empathy and personalized understanding"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What advancements in biotechnology do you find most exciting?",
+            "options": [
+                "Gene therapy",
+                "Stem cell research",
+                "Synthetic biology",
+                "Cloning",
+                "Bioinformatics"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "How do you think technology can enhance scientific research?",
+            "options": [
+                "It can facilitate data analysis and simulations",
+                "It may lead to reliance on automation rather than human intuition"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is your opinion on the potential risks of autonomous weapons powered by AI?",
+            "options": [
+                "They can improve defense systems and reduce human casualties",
+                "They pose ethical concerns and the risk of unleashing destructive force"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Which area of technology and science integration do you believe will have the greatest societal impact?",
+            "options": [
+                "Precision medicine",
+                "Smart cities",
+                "Space exploration",
+                "Artificial intelligence in education",
+                "Clean energy solutions"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Do you think advancements in quantum computing will revolutionize cybersecurity?",
+            "options": [
+                "Yes, it can break encryption and improve defensive strategies",
+                "No, encryption techniques will advance to counter the threats"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What are your thoughts on the potential benefits and risks of human gene editing?",
+            "options": [
+                "It can eradicate inherited diseases and improve quality of life",
+                "It raises concerns about ethical boundaries and unintended consequences"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "How do you think technology can contribute to addressing global food security?",
+            "options": [
+                "Through precision agriculture and alternative protein sources",
+                "By developing genetically modified crops with higher yield"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is your perspective on the future of artificial intelligence in creative fields?",
+            "options": [
+                "It will enhance artistic expression and innovation",
+                "It may devalue human creativity and originality"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Do you believe advancements in brain-computer interfaces will revolutionize healthcare?",
+            "options": [
+                "Yes, they can restore mobility and treat neurological disorders",
+                "No, they raise concerns about privacy and potential misuse"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What technological breakthrough do you think will have the biggest impact on space exploration?",
+            "options": [
+                "Reusable rockets",
+                "Advanced propulsion systems",
+                "Space tourism",
+                "Interplanetary communication",
+                "Resource utilization"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "How do you think technology can assist in disaster preparedness and response?",
+            "options": [
+                "Through early warning systems and communication tools",
+                "It may not be enough to mitigate the destructive forces"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What are your thoughts on the potential benefits and risks of 3D printing technology?",
+            "options": [
+                "It can revolutionize manufacturing and customization",
+                "It raises concerns about copyright infringement and material waste"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Do you believe virtual reality can be an effective tool for therapy and mental health treatment?",
+            "options": [
+                "Yes, it allows immersive experiences for exposure therapy",
+                "No, it lacks the human element and real-world context"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is your opinion on the integration of AI in agriculture for precision farming?",
+            "options": [
+                "It can optimize resource usage and increase yields",
+                "It raises concerns about small-scale farmers and ecosystem impacts"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "How do you think advancements in artificial intelligence will shape the future of work?",
+            "options": [
+                "It will automate repetitive tasks and create new job roles",
+                "It may result in significant job displacement and inequality"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is your perspective on the future of space travel and colonization?",
+            "options": [
+                "Interplanetary travel and colonization will become a reality",
+                "Human presence will be limited to Earth due to technological and environmental challenges"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Do you think technology has the potential to solve climate change?",
+            "options": [
+                "Yes, through sustainable innovations and renewable energy",
+                "No, it requires systemic changes and global cooperation"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What are your thoughts on the potential benefits and risks of DNA sequencing and personal genomics?",
+            "options": [
+                "It can provide valuable health insights and personalized medicine",
+                "It raises concerns about genetic discrimination and privacy"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "How do you think advancements in quantum physics will impact communication?",
+            "options": [
+                "Quantum encryption will provide secure and unbreakable communication",
+                "Quantum communication will remain a theoretical concept without practical applications"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is your opinion on the use of AI for enhancing weather forecasting and disaster prediction?",
+            "options": [
+                "It can improve accuracy and provide early warnings",
+                "It may not be able to account for all variables and uncertainties"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Do you believe technology can contribute to addressing income inequality?",
+            "options": [
+                "Yes, through increased access to education and opportunities",
+                "No, it may exacerbate the wealth gap and digital divide"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What are your thoughts on the potential benefits and risks of robotics in elderly care?",
+            "options": [
+                "They can assist in caregiving tasks and improve quality of life",
+                "They raise concerns about the loss of human connection and ethical implications"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "How do you think advancements in materials science will impact various industries?",
+            "options": [
+                "They can lead to stronger, lighter, and more sustainable materials",
+                "They may raise concerns about environmental impact and resource extraction"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What is your perspective on the use of AI algorithms for decision-making in legal systems?",
+            "options": [
+                "They can improve efficiency and objectivity in the justice system",
+                "They pose concerns about bias, transparency, and the role of human judgment"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "Do you think technology can contribute to achieving sustainable development goals?",
+            "options": [
+                "Yes, through innovations in areas like energy, water, and healthcare",
+                "No, it requires broader systemic changes and social reforms"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        },
+        {
+            "question": "What are your thoughts on the potential benefits and risks of autonomous drones for delivery services?",
+            "options": [
+                "They can enhance efficiency and reduce traffic congestion",
+                "They raise concerns about job losses and airspace safety"
+            ],
+            "topics": [
+                "Tech",
+                "Science"
+            ]
+        }
+    ]
+}
