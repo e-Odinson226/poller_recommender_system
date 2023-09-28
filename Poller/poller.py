@@ -29,9 +29,13 @@ def inject_dependencies(func):
                 print(
                     f"--------------------\n2. Environment variables were read correctly."
                 )
+                print(f"\tELASTIC_USERNAME: {elasticsearch_url} ")
                 print(f"\tELASTIC_USERNAME: {username} ")
+                print(f"\tELASTIC_USERNAME: {password} ")
+                print(f"\tELASTIC_USERNAME: {fingerprint} ")
 
             polls = elastic_handle.get_index("polls")
+            # print(polls)
             trend_polls = elastic_handle.get_trend_polls(polls)
 
             polls_df = pd.DataFrame.from_records(polls)
@@ -49,7 +53,9 @@ def inject_dependencies(func):
 
             return func(*args, **kwargs)
 
-        except Exception as e:
+        except ConnectionTimeout as e:
+            print(type(e))
+
             load_dotenv()
             elasticsearch_url = os.getenv("POLLER_ELASTICSEARCH_URL")
             username = os.getenv("POLLER_USERNAME")
@@ -60,13 +66,18 @@ def inject_dependencies(func):
                     elasticsearch_url, username, password, fingerprint
                 )
                 if elasticsearch_url and username and password and fingerprint:
-                    print(
-                        f"--------------------\n2. Elastic variables were read from [.env] file."
-                    )
+                    print(f"---\n2. Elastic variables were read from [.env] file.")
+                    print(f"---\n{elasticsearch_url}")
+                    print(f"---\n{username}")
+                    print(f"---\n{password}")
+                    print(f"---\n{fingerprint}")
             except TypeError:
                 print("--------------------\n2. Failed to read environment variables.")
                 print(e)
                 exit()
+        except IndexError as e:
+            raise e
+            exit()
 
     return decorated_function
 
@@ -76,12 +87,15 @@ class Rec(Resource):
     def get(self, elastic_handle, r, polls, trend_polls, polls_df):
         try:
             user_id = request.args.get("userId")
-            print(f"FLAG ------------------------------ inside elas indexing try ")
-            retrieved_data = r.get(str(user_id))
+
+            retrieved_data = r.get(user_id)
             if retrieved_data:
                 deserialized_dict = pickle.loads(retrieved_data)
-                print(deserialized_dict.get("user_matrix"))
-            print(f"FLAG ------------------------------ after index")
+                # print(deserialized_dict.get("user_matrix"))
+            else:
+                return jsonify({"Error": "User matrix not found"})
+
+        # TODO: redis error
         except ConnectionTimeout as e:
             exception = {
                 "Message": e.args,
@@ -89,6 +103,7 @@ class Rec(Resource):
                 "Code": 130,
             }
             return jsonify(exception)
+
         try:
             # Get the page number from the query parameters, default to page 1 if not provided
             page = int(request.args.get("page", 1))
@@ -99,10 +114,8 @@ class Rec(Resource):
             start_idx = (page - 1) * items_per_page
             end_idx = start_idx + items_per_page
 
-            # self.polls_tf_idf_matrix = create_tf_idf_matrix(self.polls_df, "topics")
-            # polls_tf_idf_matrix = create_souped_tf_idf_matrix(polls_df)
-            serialized_polls_tf_idf_matrix = deserialized_dict.get("user_matrix")
-            polls_tf_idf_matrix = pickle.loads(serialized_polls_tf_idf_matrix)
+            polls_tf_idf_matrix = deserialized_dict.get("user_matrix")
+            # polls_tf_idf_matrix = pickle.loads(serialized_polls_tf_idf_matrix)
 
             self.cosine_similarity_matrix = calc_cosine_similarity_matrix(
                 polls_tf_idf_matrix, polls_tf_idf_matrix
@@ -180,7 +193,7 @@ class Rec(Resource):
             end_idx = start_idx + items_per_page
 
             # Slice the data to get the items for the current page
-            trend_polls = [poll["id"] for poll in self.trend_polls]
+            trend_polls = [poll["id"] for poll in trend_polls]
             paginated_data = trend_polls[start_idx:end_idx]
 
             # Calculate the total number of pages
@@ -222,25 +235,14 @@ class Gen(Resource):
     def get(self, elastic_handle, r, polls, trend_polls, polls_df):
         try:
             print(f"FLAG ------------------------------ Generating user's matrix ")
-            print(f"FLAG ------------------------------ suitable polls retrieved    ")
-
-        except ConnectionTimeout as e:
-            exception = {
-                "Message": e.args,
-                "Error": "Elastic connection timed out",
-                "Code": 130,
-            }
-            return jsonify(exception)
-
-        try:
             user_id = request.args.get("userId")
 
             polls_tf_idf_matrix = create_souped_tf_idf_matrix(polls_df)
-            serialized_polls_tf_idf_matrix = pickle.dumps(polls_tf_idf_matrix)
+            # serialized_polls_tf_idf_matrix = pickle.dumps(polls_tf_idf_matrix)
 
             user_matrix = {
                 "user_id": user_id,
-                "user_matrix": serialized_polls_tf_idf_matrix,
+                "user_matrix": polls_tf_idf_matrix,
             }
             serialized_data = pickle.dumps(user_matrix)
             r.set(user_id, serialized_data)
@@ -265,7 +267,10 @@ class Gen(Resource):
             end_idx = start_idx + items_per_page
 
             # Slice the data to get the items for the current page
+            # print(len(trend_polls[0]))
+
             trend_polls = [poll["id"] for poll in trend_polls]
+
             paginated_data = trend_polls[start_idx:end_idx]
 
             # Calculate the total number of pages
