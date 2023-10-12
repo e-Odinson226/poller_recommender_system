@@ -29,27 +29,24 @@ def inject_dependencies(func):
                 print(
                     f"--------------------\n2. Environment variables were read correctly."
                 )
-                print(f"\tELASTIC_USERNAME: {elasticsearch_url} ")
-                print(f"\tELASTIC_USERNAME: {username} ")
-                print(f"\tELASTIC_USERNAME: {password} ")
-                print(f"\tELASTIC_USERNAME: {fingerprint} ")
+                # print(f"\tELASTIC_USERNAME: {elasticsearch_url} ")
+                # print(f"\tELASTIC_USERNAME: {username} ")
+                # print(f"\tELASTIC_USERNAME: {password} ")
+                # print(f"\tELASTIC_USERNAME: {fingerprint} ")
+            kwargs["elastic_handle"] = elastic_handle
 
-            polls = elastic_handle.get_index("polls")
-            # print(polls)
+            # polls = elastic_handle.get_index("polls")
+            # polls_df = pd.DataFrame.from_records(polls)
+            # kwargs["polls_df"] = polls_df
+            # kwargs["polls"] = polls
+
             trend_polls = elastic_handle.get_trend_polls(polls)
-
-            polls_df = pd.DataFrame.from_records(polls)
+            kwargs["trend_polls"] = trend_polls
 
             r = redis.Redis(host="localhost", port=6379, db=0)
-
-            pd.set_option("display.max_columns", None)
-
-            # Pass the dependencies to the view function
-            kwargs["elastic_handle"] = elastic_handle
             kwargs["r"] = r
-            kwargs["polls"] = polls
-            kwargs["trend_polls"] = trend_polls
-            kwargs["polls_df"] = polls_df
+
+            # pd.set_option("display.max_columns", None)
 
             return func(*args, **kwargs)
 
@@ -93,6 +90,7 @@ class Rec(Resource):
                 deserialized_dict = pickle.loads(retrieved_data)
                 # print(deserialized_dict.get("user_matrix"))
             else:
+                # TODO: generate matrix
                 return jsonify({"Error": "User matrix not found"})
 
         # TODO: redis error
@@ -232,11 +230,19 @@ api.add_resource(Rec, "/get_rec/")
 
 class Gen(Resource):
     @inject_dependencies
-    def get(self, elastic_handle, r, polls, trend_polls, polls_df):
+    def get(self, elastic_handle, r, trend_polls):
         try:
             print(f"FLAG ------------------------------ Generating user's matrix ")
             user_id = request.args.get("userId")
 
+            polls = elastic_handle.get_index("polls")
+
+            # TODO: apply user's specific restrictions and filters
+            # filters: dict
+            # filters = elastic.get_filters(user_id)
+            # polls = elastic.apply_filters(polls, filters)
+
+            polls_df = pd.DataFrame.from_records(polls)
             polls_tf_idf_matrix = create_souped_tf_idf_matrix(polls_df)
             # serialized_polls_tf_idf_matrix = pickle.dumps(polls_tf_idf_matrix)
 

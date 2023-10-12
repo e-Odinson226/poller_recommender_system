@@ -94,6 +94,31 @@ class ElasticsearchHandel:
             print("Export Error", exp)
 
 
+def get_index(self, index_name, batch_size=100):
+    setattr(self, index_name, [])
+    index_list = getattr(self, index_name)
+    from_index = 0
+    all_instances = []
+
+    while True:
+        # query = {"query": {"match_all": {}}, "size": batch_size, "from": from_index}
+        results = self.client.search(
+            index=index_name,
+            query={"match_all": {}},
+            size=batch_size,
+            from_=from_index,
+        )
+        instances = results["hits"]["hits"]
+
+        all_instances.extend(instances)
+        from_index += batch_size
+        if len(instances) < 100:
+            break
+
+    setattr(self, index_name, [instance["_source"] for instance in all_instances])
+    return getattr(self, index_name)
+
+
 """ if __name__ == "__main__":
     elasticsearch_url = "https://159.203.183.251:9200"
     username = "pollett"
