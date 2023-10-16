@@ -175,6 +175,31 @@ def gen_rec_from_list_of_polls(
     return n_most_recommended
 
 
+    
+def is_valid_limitations(limitations):
+    if isinstance(limitations, dict):
+        return (
+            'allowedLocations' in limitations and
+            'allowedGender' in limitations and
+            'allowedAgeRange' in limitations
+        )
+    return False
+# Function to filter polls with user-defined limitations
+def filter_polls(row, user_limitations):
+    if is_valid_limitations(row.get('pollLimitations')) and all(k in user_limitations for k in ['Location', 'Gender', 'Age']):
+        allowed_locations = row.get('pollLimitations').get('allowedLocations')
+        user_location = user_limitations.get('Location')
+        if any(user_location == loc for loc in allowed_locations):
+            allowed_gender = row['pollLimitations']['allowedGender']
+            user_gender = user_limitations['Gender']
+            if allowed_gender == 'All' or allowed_gender == user_gender:
+                allowed_age_range = row['pollLimitations']['allowedAgeRange']
+                user_age = user_limitations['Age']
+                if allowed_age_range['minimumAge'] <= user_age <= allowed_age_range['maximumAge']:
+                    return True
+    return False
+
+
 if __name__ == "__main__":
     pd.set_option("display.max_colwidth", None)
     pd.set_option("display.max_columns", None)

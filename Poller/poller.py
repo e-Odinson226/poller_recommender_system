@@ -236,14 +236,14 @@ class Gen(Resource):
             user_id = request.args.get("userId")
 
             polls = elastic_handle.get_index("polls")
+            polls_df = pd.DataFrame.from_records(polls)
 
             # TODO: apply user's specific restrictions and filters
-            # filters: dict
-            # filters = elastic.get_filters(user_id)
-            # polls = elastic.apply_filters(polls, filters)
+            
+            user_limitations = request.args.get("constraint_parameters")
+            filtered__polls_df = polls_df[polls_df.apply(filter_polls, args=(user_limitations,), axis=1)]
 
-            polls_df = pd.DataFrame.from_records(polls)
-            polls_tf_idf_matrix = create_souped_tf_idf_matrix(polls_df)
+            polls_tf_idf_matrix = create_souped_tf_idf_matrix(filtered__polls_df)
             # serialized_polls_tf_idf_matrix = pickle.dumps(polls_tf_idf_matrix)
 
             user_matrix = {
