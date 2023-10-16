@@ -104,8 +104,29 @@ def calc_cosine_similarity_matrix(tf_idf_matrix_1, tf_idf_matrix_2):
     return cosine_similarity(tf_idf_matrix_1, tf_idf_matrix_2)
 
 
-def id_to_index(df, id):
-    return df[df["id"] == str(id)].index.values[0]
+def id_to_index(df, search_id):
+    result = df[df["id"] == str(search_id)].index.values[0]
+    print(result)
+
+    if len(result) > 0:
+
+        return result
+    else:
+        return None
+
+    
+    
+def id_to_index2(df, id):
+    try:
+        if any(df['id']==str(id)):
+            print(f"---------------{df[df['id'] == str(id)].index.values[0]}")
+            return df[df["id"] == str(id)].index.values[0]
+        
+    except IndexError as e:
+        print(f"erorrrrrrrrrrrrr:")
+        print(f"{str(id)}")
+        print(f"{df['id']==str(id)}")
+    
 
 
 def title_from_idx(df, idx):
@@ -146,21 +167,33 @@ def gen_rec_from_list_of_polls(
 ):
     recommendations = []
     for poll_id in interacted_polls:
-        index = id_to_index(polls, poll_id)
-        similarity_scores = list(enumerate(cosine_similarity_matrix[index]))
-        similarity_scores_sorted = sorted(
-            similarity_scores, key=lambda x: x[1], reverse=True
-        )
+        #print(f"polls:{len(polls)}")
+        #print(f"poll_id:{poll_id}")
+        index = id_to_index2(polls, poll_id)
+        if index is not None:
+            print(f"Found ID {poll_id} in {index}:")
+            similarity_scores = list(enumerate(cosine_similarity_matrix[index]))
+            similarity_scores_sorted = sorted(
+                similarity_scores, key=lambda x: x[1], reverse=True
+            )
 
-        recommendations_indices = [
-            t[0] for t in similarity_scores_sorted[1 : (number_of_recommendations + 1)]
-        ]
-        recs = list(polls["id"].iloc[recommendations_indices])
+            recommendations_indices = [
+                t[0] for t in similarity_scores_sorted[1 : (number_of_recommendations + 1)]
+            ]
+            recs = list(polls["id"].iloc[recommendations_indices])
 
-        # Filter out polls that have already been interacted with
-        filtered_recs = [poll for poll in recs if poll not in interacted_polls]
+            # Filter out polls that have already been interacted with
+            filtered_recs = [poll for poll in recs if poll not in interacted_polls]
 
-        recommendations.append(filtered_recs)
+            recommendations.append(filtered_recs)
+            
+        else:
+            pass
+
+        #index = id_to_index(polls, poll_id)
+        #print(f"cosine_similarity_matrix:{len(cosine_similarity_matrix)}")
+        #print(f"index:{index} | id:{poll_id}")
+
 
     flattened_recommendations = [
         item for sublist in recommendations for item in sublist
@@ -184,21 +217,33 @@ def is_valid_limitations(limitations):
             'allowedAgeRange' in limitations
         )
     return False
+
 # Function to filter polls with user-defined limitations
 def filter_polls(row, user_limitations):
-    if is_valid_limitations(row.get('pollLimitations')) and all(k in user_limitations for k in ['Location', 'Gender', 'Age']):
-        allowed_locations = row.get('pollLimitations').get('allowedLocations')
+    print(isinstance(row.get('pollLimitations'), dict))
+    if isinstance(row.get('pollLimitations'), dict) and all(k in user_limitations for k in ['Location', 'Gender', 'Age']):
         user_location = user_limitations.get('Location')
-        if any(user_location == loc for loc in allowed_locations):
+        
+        allowed_locations = row.get('pollLimitations').get('allowedLocations')
+        if len(allowed_locations) == 0 or any(user_location == loc for loc in allowed_locations):
             allowed_gender = row['pollLimitations']['allowedGender']
             user_gender = user_limitations['Gender']
             if allowed_gender == 'All' or allowed_gender == user_gender:
                 allowed_age_range = row['pollLimitations']['allowedAgeRange']
                 user_age = user_limitations['Age']
                 if allowed_age_range['minimumAge'] <= user_age <= allowed_age_range['maximumAge']:
+                    print("All conditions met. Returning True")
                     return True
+                else:
+                    print("Age condition not met.")
+            else:
+                print("Gender condition not met.")
+            
+        else:
+            print("No allowedLocations found.")
+    else:
+        print("Invalid limitations or missing keys in user_limitations.")
     return False
-
 
 if __name__ == "__main__":
     pd.set_option("display.max_colwidth", None)
