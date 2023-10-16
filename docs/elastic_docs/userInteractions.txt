@@ -1,0 +1,75 @@
+ {
+        "_index": "userpollinteractions",
+        "_id": "DcCc24oBiSein2LNjF4i",
+        "_score": 1,
+        "_source": {
+          "userId": "67eb27ca-ba0b-4d29-8627-9ec78327b512",
+          "userPollActions": [
+            {
+              "createdAt": "2023-09-28T11:46:24.4138749Z",
+              "actionType": "Like",
+              "pollId": "b61f97c5-9d06-4e8d-a8f9-321f1fb0443d"
+            },
+            {
+              "createdAt": "2023-09-28T11:46:39.3766706Z",
+              "actionType": "Like",
+              "pollId": "c22c5989-2a32-4715-9c33-6ef39caf4f70"
+            },
+            {
+              "createdAt": "2023-09-28T11:47:09.3309395Z",
+              "actionType": "Vote",
+              "pollId": "00763b59-dbdf-47fa-80a5-ec844bf28279"
+            },
+            {
+              "createdAt": "2023-09-28T11:47:24.3556975Z",
+              "actionType": "Vote",
+              "pollId": "18d58c47-e3a2-408b-ad27-d612116459aa"
+            },
+            {
+              "createdAt": "2023-09-28T11:49:09.4662834Z",
+              "actionType": "Vote",
+              "pollId": "df5673cb-3e4e-454c-a82d-40813250f7c2"
+            },
+            {
+              "createdAt": "2023-09-28T11:49:24.5378566Z",
+              "actionType": "Vote",
+              "pollId": "5e69ce0c-4309-4633-ba10-a78486d36b0b"
+            },
+            {
+              "createdAt": "2023-09-28T11:50:24.6840941Z",
+              "actionType": "Vote",
+              "pollId": "3dc9cff3-184e-4764-860d-8c0a5dff5658"
+            },
+            {
+              "createdAt": "2023-09-28T11:50:39.7264643Z",
+              "actionType": "Vote",
+              "pollId": "067545f9-d115-4384-8266-ff518b8ad1fa"
+            },
+            {
+              "createdAt": "2023-09-28T11:50:40.7021464Z",
+              "actionType": "Like",
+              "pollId": "3dc9cff3-184e-4764-860d-8c0a5dff5658"
+            },
+            {
+              "createdAt": "2023-09-28T11:50:54.7635425Z",
+              "actionType": "Vote",
+              "pollId": "0b18a0cd-177f-4327-846c-2ff00c1adc59"
+            },
+            {
+              "createdAt": "2023-09-28T13:36:42.4712046Z",
+              "actionType": "Vote",
+              "pollId": "0e2deb5a-3f24-4a04-aee0-87fc73a06ec4"
+            },
+            {
+              "createdAt": "2023-10-01T23:27:17.8193027Z",
+              "actionType": "Vote",
+              "pollId": "7c80085f-99a0-4281-b559-3803f2a8587f"
+            },
+            {
+              "createdAt": "2023-10-08T09:28:08.6333411Z",
+              "actionType": "Vote",
+              "pollId": "1aae2bcb-3739-4748-b3fc-8ca1245bfddb"
+            }
+          ]
+        }
+      }

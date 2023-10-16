@@ -1,0 +1,28 @@
+
+//Documnet That Store User Following Ids
+{
+  "userId": "af7dd89d-c127-42c5-abc0-b01e950a46dc",
+  "userFollowingIds": [
+    "267c189d-c127-42c5-abc0-b01e950a46dc"
+  ]
+}
+
+
+//Documnet That Store User's Private Poll Ids
+{
+  "userId":"267c189d-c127-42c5-abc0-b01e950a46dc",
+  "userPrivatePolls":[
+    "8edfd378-5d84-4bf8-bcb6-7a90d83dddf2",
+    "5bb1d722-9f8b-4c32-87b2-328d79afb58d",
+    "ee0bff4a-1b14-4a7c-a5a9-f817f868c9ac"]
+}
+
+//Documnet That Generate With Elastic After Aggregation
+{
+  "userId": "af7dd89d-c127-42c5-abc0-b01e950a46dc",
+  "privatePollThatCanSee": [
+    "267c189d-c127-42c5-abc0-b01e950a46dc",
+    "082af91d-b2df-4b5a-a5f4-620548d89b86",
+    "d1017521-6c27-43a8-a307-d3321422fea8"
+  ]
+}

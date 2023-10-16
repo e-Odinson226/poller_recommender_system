@@ -1,0 +1,42 @@
+{
+        "_index": "polls",
+        "_id": "bfc5711f-c983-4188-8166-f681bcfea1da",
+        "_score": 1,
+        "_source": {
+          "id": "bfc5711f-c983-4188-8166-f681bcfea1da",
+          "question": "What's your pet's favorite spot to relax and listen to music?",
+          "options": [
+            "Under a table or desk",
+            "Sofa or couch",
+            "Near a window"
+          ],
+          "topics": [
+            "Music",
+            "Pets"
+          ],
+          "pollLimitations":{
+            "allowedLocations":[{
+              "country":"Iran",
+              "state":null,
+              "city":null
+            },
+            {
+              "country":"Germany",
+              "state":null,
+              "city":null
+            }
+            ],
+            "allowedGender":"Men",
+            "allowedAgeRange" : {"min":20,"max":60}
+          },
+          "pollType": "Public",
+          "ownerId": "e62e8d4d-f880-46c8-9516-9797d6b5b6ff",
+          "createdAt": "2023-09-28T09:52:15.047758Z",
+          "numberOfLike": 0,
+          "numberOfViews": 0,
+          "numberOfVotes": 0,
+          "numberOfComments": 0,
+          "numberOfPollUp": 0,
+          "isDeleted":false
+        }
+      },
