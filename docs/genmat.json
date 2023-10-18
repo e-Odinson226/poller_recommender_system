@@ -1,0 +1,12 @@
+{
+    "constraint_parameters": {
+        "Location": {
+            "country": "United States",
+            "city": "United States",
+            "state": "NJ"
+        },
+        "Gender": "Men",
+        "Age": 30
+    },
+    "userId": "67eb27ca-ba0b-4d29-8627-9ec78327b512"
+}

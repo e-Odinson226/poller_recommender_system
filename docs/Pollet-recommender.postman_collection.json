@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "1167303d-a3c2-4902-b1e4-be841985f3d7",
+		"name": "Pollet-recommender",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29252780"
+	},
+	"item": [
+		{
+			"name": "Recpoll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://159.203.183.251:8000/get_rec/?userId=67eb27ca-ba0b-4d29-8627-9ec78327b512&page_size=12&page=2",
+					"protocol": "http",
+					"host": [
+						"159",
+						"203",
+						"183",
+						"251"
+					],
+					"port": "8000",
+					"path": [
+						"get_rec",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "67eb27ca-ba0b-4d29-8627-9ec78327b512"
+						},
+						{
+							"key": "page_size",
+							"value": "12"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Genmat POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"constraint_parameters\" :{\n        \"Location\":{\"country\": \"United States\", \"city\": \"United States\", \"state\": \"NJ\"},\n        \"Gender\": \"Men\",\n        \"Age\": 30\n        },\n    \"userId\":\"67eb27ca-ba0b-4d29-8627-9ec78327b512\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://159.203.183.251:8000/gen_mat",
+					"protocol": "http",
+					"host": [
+						"159",
+						"203",
+						"183",
+						"251"
+					],
+					"port": "8000",
+					"path": [
+						"gen_mat"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "67eb27ca-ba0b-4d29-8627-9ec78327b512",
+							"disabled": true
+						},
+						{
+							"key": "constraint_parameters",
+							"value": "%7B'Location'%3A%7B'country'%3A%20'United%20States'%2C%20'city'%3A%20'United%20States'%2C%20'state'%3A%20'NJ'%7D%2CGender'%3A%20'Men'%2CAge'%3A%2030%7D",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
