@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 import os
 import redis
 import pickle
+import csv
 
 from .RecommenderSystem.recommender_system import *
 from .ElasticSeachHandle.elasticsearch_handle import *
@@ -12,6 +13,8 @@ from .ElasticSeachHandle.elasticsearch_handle import *
 app = Flask(__name__)
 api = Api(app)
 print(f"--------------------\n1. [{app}] Started")
+pd.set_option("display.max_colwidth", None)
+pd.set_option("display.max_columns", None)
 
 
 def inject_dependencies(func):
@@ -37,11 +40,11 @@ def inject_dependencies(func):
 
             polls = elastic_handle.get_index("polls")
             polls_df = pd.DataFrame.from_records(polls)
-            #kwargs["polls_df"] = polls_df
+            # kwargs["polls_df"] = polls_df
             # kwargs["polls"] = polls
 
-            #trend_polls = elastic_handle.get_trend_polls(polls)
-            #kwargs["trend_polls"] = trend_polls
+            # trend_polls = elastic_handle.get_trend_polls(polls)
+            # kwargs["trend_polls"] = trend_polls
 
             r = redis.Redis(host="localhost", port=6379, db=0)
             kwargs["r"] = r
@@ -112,32 +115,34 @@ class Rec(Resource):
             start_idx = (page - 1) * items_per_page
             end_idx = start_idx + items_per_page
 
-            polls_tf_idf_matrix = deserialized_dict.get("user_matrix")
-            
+            polls_tf_idf_matrix = deserialized_dict.get("polls_tf_idf_matrix")
+            filtered_polls_df = deserialized_dict.get("filtered_polls_df")
+
             # polls_tf_idf_matrix = pickle.loads(serialized_polls_tf_idf_matrix)
 
-            self.cosine_similarity_matrix = calc_cosine_similarity_matrix(
+            cosine_similarity_matrix = calc_cosine_similarity_matrix(
                 polls_tf_idf_matrix, polls_tf_idf_matrix
             )
 
-            self.userInteractions = elastic_handle.get_interactions(
+            userInteractions = elastic_handle.get_interactions(
                 "userpollinteractions", user_id
             )
 
-            self.userInteractions = [
+            userInteractions = [
                 interaction["pollId"]
-                for interaction in self.userInteractions["userPollActions"][:20]
+                for interaction in userInteractions["userPollActions"][:20]
             ]
-            
-            filtered_polls_df = deserialized_dict.get("filtered_polls_df")
-            self.recommended_list = gen_rec_from_list_of_polls(
-                self.userInteractions,
-                filtered_polls_df,
-                self.cosine_similarity_matrix,
-                100,
+
+            recommended_list = gen_rec_from_list_of_polls(
+                interacted_polls=userInteractions,
+                filtered_polls_df=filtered_polls_df,
+                cosine_similarity_matrix=cosine_similarity_matrix,
+                number_of_recommendations=100,
             )
 
-            recommended_polls = filtered_polls_df[filtered_polls_df["id"].isin(self.recommended_list)]
+            recommended_polls = filtered_polls_df[
+                filtered_polls_df["id"].isin(recommended_list)
+            ]
 
             # recommended_polls = recommended_polls[
             #    ["id", "ownerId", "question", "options", "topics"]
@@ -238,19 +243,25 @@ class Gen(Resource):
             print(f"FLAG ------------------------------ Generating user's matrix ")
             user_id = request.args.get("userId")
             constraint_parameters = request.args.get("constraint_parameters")
-            print(f"FLAG ------------------------------ constraint_parameters:{constraint_parameters}")
+            print(
+                f"FLAG ------------------------------ constraint_parameters:{constraint_parameters}"
+            )
 
-            
             polls = elastic_handle.get_index("polls")
             polls_df = pd.DataFrame.from_records(polls)
-            filtered_polls_df = polls_df[polls_df.apply(filter_polls, args=(constraint_parameters,), axis=1)]
+            filtered_polls_df = polls_df[
+                polls_df.apply(filter_polls, args=(constraint_parameters,), axis=1)
+            ]
             polls_tf_idf_matrix = create_souped_tf_idf_matrix(filtered_polls_df)
 
             trend_polls = elastic_handle.get_trend_polls(polls)
             trend_polls_df = pd.DataFrame.from_records(trend_polls)
-            filtered_trend_polls_df = trend_polls_df[trend_polls_df.apply(filter_polls, args=(constraint_parameters,), axis=1)]
+            filtered_trend_polls_df = trend_polls_df[
+                trend_polls_df.apply(
+                    filter_polls, args=(constraint_parameters,), axis=1
+                )
+            ]
 
-            
             # serialized_polls_tf_idf_matrix = pickle.dumps(polls_tf_idf_matrix)
 
             user_matrix = {
@@ -315,39 +326,55 @@ class Gen(Resource):
                 "Code": 130,
             }
             return jsonify(exception)
-    
+
     @inject_dependencies
     def post(self, elastic_handle, r):
         try:
-            print(f"FLAG ------------------------------ Generating user's matrix ")
+            print(f"FLAG ------------------------------\nGenerating user's matrix ")
             args = request.get_json(force=True)
-            
-            #user_id  = request.args.get("userId")
-            user_id = args.get("userId")
-            
-            #constraint_parameters = request.args.get("constraint_parameters")
-            constraint_parameters = args.get("constraint_parameters")
-            
-            print(f"FLAG ------------------------------ constraint_parameters:{constraint_parameters}")
-            print(f"FLAG ------------------------------ user_id:{user_id}")
 
-            
-            
+            # user_id  = request.args.get("userId")
+            user_id = args.get("userId")
+
+            # constraint_parameters = request.args.get("constraint_parameters")
+            constraint_parameters = args.get("constraint_parameters")
+
+            print(
+                f"FLAG ------------------------------\nconstraint_parameters:{constraint_parameters}\
+                    \nuser_id:{user_id}"
+            )
+
             polls = elastic_handle.get_index("polls")
             polls_df = pd.DataFrame.from_records(polls)
-            filtered_polls_df = polls_df[polls_df.apply(filter_polls, args=(constraint_parameters,), axis=1)]
+            filtered_polls_df = polls_df[
+                polls_df.apply(filter_polls, args=(constraint_parameters,), axis=1)
+            ]
+            # TODO reset filtered_polls_df
+            filtered_polls_df = filtered_polls_df.reset_index(drop=True)
+
+            # filtered_polls_csv = filtered_polls_df.to_csv("data.csv", index=False)
+            # with open(
+            #    "filtered_polls_csv.csv", "w", encoding="UTF8", newline=""
+            # ) as file:
+            #    writer = csv.writer(file)
+            # filtered_polls_df.to_csv("filtered_polls_csv.csv")
+            # filtered_polls_df.to_pickle("filtered_polls_pkl.pickle")
+
             polls_tf_idf_matrix = create_souped_tf_idf_matrix(filtered_polls_df)
 
             trend_polls = elastic_handle.get_trend_polls(polls)
             trend_polls_df = pd.DataFrame.from_records(trend_polls)
-            filtered_trend_polls_df = trend_polls_df[trend_polls_df.apply(filter_polls, args=(constraint_parameters,), axis=1)]
+            filtered_trend_polls_df = trend_polls_df[
+                trend_polls_df.apply(
+                    filter_polls, args=(constraint_parameters,), axis=1
+                )
+            ]
 
-            
             # serialized_polls_tf_idf_matrix = pickle.dumps(polls_tf_idf_matrix)
 
             user_matrix = {
                 "user_id": user_id,
-                "user_matrix": polls_tf_idf_matrix,
+                "polls_tf_idf_matrix": polls_tf_idf_matrix,
                 "filtered_polls_df": filtered_polls_df,
             }
             serialized_data = pickle.dumps(user_matrix)
