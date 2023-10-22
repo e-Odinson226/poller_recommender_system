@@ -330,7 +330,7 @@ class Gen(Resource):
     @inject_dependencies
     def post(self, elastic_handle, r):
         try:
-            print(f"FLAG ------------------------------\nGenerating user's matrix ")
+            print(f"------------------------------\nGenerating user's matrix ")
             args = request.get_json(force=True)
 
             # user_id  = request.args.get("userId")
@@ -339,17 +339,17 @@ class Gen(Resource):
             # constraint_parameters = request.args.get("constraint_parameters")
             constraint_parameters = args.get("constraint_parameters")
 
-            print(
-                f"FLAG ------------------------------\nconstraint_parameters:{constraint_parameters}\
-                    \nuser_id:{user_id}"
-            )
+            # print(
+            #    f"------------------------------\nconstraint_parameters:\n{constraint_parameters}\
+            #        \nuser_id:{user_id}"
+            # )
 
             polls = elastic_handle.get_index("polls")
             polls_df = pd.DataFrame.from_records(polls)
             filtered_polls_df = polls_df[
                 polls_df.apply(filter_polls, args=(constraint_parameters,), axis=1)
             ]
-            # TODO reset filtered_polls_df
+
             filtered_polls_df = filtered_polls_df.reset_index(drop=True)
 
             # filtered_polls_csv = filtered_polls_df.to_csv("data.csv", index=False)

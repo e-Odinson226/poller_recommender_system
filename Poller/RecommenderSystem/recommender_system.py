@@ -119,11 +119,11 @@ def id_to_index(df, search_id):
 def id_to_index2(df, id):
     try:
         if any(df["id"] == str(id)):
-            df.to_csv("df.csv", index=False)
-            print(
-                f"---------------\nFound {id} at {df[df['id'] == str(id)].index.values[0]}"
-            )
-            print(f"\nWhich is equal to:\n{df[df['id'] == str(id)]}")
+            # df.to_csv("df.csv", index=False)
+            # print(
+            #    f"---------------\nFound {id} at {df[df['id'] == str(id)].index.values[0]}"
+            # )
+            # print(f"\nWhich is equal to:\n{df[df['id'] == str(id)]}")
             return df[df["id"] == str(id)].index.values[0]
 
     except IndexError as e:
@@ -249,20 +249,20 @@ def filter_polls(row, user_limitations):
                 ):
                     # print("All conditions met. Returning True")
                     return True
-                else:
-                    print("Age condition not met.")
-                    return False
-            else:
-                print("Gender condition not met.")
-                return False
-
-        else:
-            print("No allowedLocations found.")
-            return False
-    else:
-        print("Invalid limitations or missing keys in user_limitations.")
-        print(f"row:{row['id']}")
-        return False
+    #            else:
+    #                print("Age condition not met.")
+    #                return False
+    #        else:
+    #            print("Gender condition not met.")
+    #            return False
+    #
+    #    else:
+    #        print("No allowedLocations found.")
+    #        return False
+    # else:
+    #    print("Invalid limitations or missing keys in user_limitations.")
+    #    print(f"row:{row['id']}")
+    #    return False
     return False
 
 
