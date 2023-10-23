@@ -97,8 +97,6 @@ MarkupSafe==2.1.3
 matplotlib-inline==0.1.6
 merlin-core==23.8.0
 merlin-dataloader==23.8.0
-# Editable install with no version control (merlin-models==23.8.0+1.g96fcccedd)
--e /home/erfan/Downloads/merlin-models/models
 mmh3==4.0.1
 moreorless==0.4.0
 msgpack==1.0.7
