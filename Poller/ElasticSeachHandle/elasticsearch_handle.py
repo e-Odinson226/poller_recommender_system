@@ -66,7 +66,7 @@ class ElasticsearchHandel:
 
         return hits[0].get("_source")
 
-    def get_trend_polls(self, polls):
+    def get_trend_polls(self, polls, ret_list=True):
         # polls = getattr(self, "polls")
         # trend_polls = sorted(polls, key=lambda x: (-x["numberOfPollups"], -x["numberOfVotes"], -x["numberOfLike"]))
         trend_polls = sorted(
@@ -77,12 +77,12 @@ class ElasticsearchHandel:
                 # -x["numberOfPollUp"],
             ),
         )
+        return trend_polls
 
         # recs = trend_polls["id"]
 
         # print("\n", filtered_trend_polls, "\n")
         # setattr(self, "trend_polls", trend_polls)
-        return trend_polls
 
     def export_index_to_file(self, index, index_file_path):
         try:

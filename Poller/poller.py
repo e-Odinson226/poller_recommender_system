@@ -198,9 +198,12 @@ class Rec(Resource):
             start_idx = (page - 1) * items_per_page
             end_idx = start_idx + items_per_page
 
-            filtered_trend_polls_df = deserialized_dict.get("filtered_trend_polls_df")
+            trend_polls = deserialized_dict.get("filtered_trend_polls_list")
+            for poll in trend_polls:
+                print(poll)
             # Slice the data to get the items for the current page
-            trend_polls = [poll["id"] for poll in filtered_trend_polls_df]
+            # trend_polls = [poll["id"] for poll in trend_polls]
+
             paginated_data = trend_polls[start_idx:end_idx]
 
             # Calculate the total number of pages
@@ -370,14 +373,18 @@ class Gen(Resource):
                     filter_polls, args=(constraint_parameters,), axis=1
                 )
             ]
+            filtered_trend_polls_df = filtered_trend_polls_df.reset_index(drop=True)
+            filtered_trend_polls_list = filtered_trend_polls_df["id"].tolist()
+
+            print(f"filtered_trend_polls_list: {type(filtered_trend_polls_list)}")
+            print(f"filtered_trend_polls_list: {len(filtered_trend_polls_list)}")
 
             # serialized_polls_tf_idf_matrix = pickle.dumps(polls_tf_idf_matrix)
-
             user_matrix = {
                 "user_id": user_id,
                 "polls_tf_idf_matrix": polls_tf_idf_matrix,
                 "filtered_polls_df": filtered_polls_df,
-                "filtered_trend_polls_df": filtered_trend_polls_df,
+                "filtered_trend_polls_list": filtered_trend_polls_list,
             }
             serialized_data = pickle.dumps(user_matrix)
             r.set(user_id, serialized_data)
