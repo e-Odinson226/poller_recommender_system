@@ -49,8 +49,6 @@ def inject_dependencies(func):
             r = redis.Redis(host="localhost", port=6379, db=0)
             kwargs["r"] = r
 
-            # pd.set_option("display.max_columns", None)
-
             return func(*args, **kwargs)
 
         except ConnectionTimeout as e:
@@ -85,6 +83,7 @@ def inject_dependencies(func):
 class Rec(Resource):
     @inject_dependencies
     def get(self, elastic_handle, r):
+        # get user data from Redis
         try:
             user_id = request.args.get("userId")
 
@@ -102,6 +101,161 @@ class Rec(Resource):
                 "Message": e.args,
                 "Error": "Elastic connection timed out",
                 "Code": 130,
+            }
+            return jsonify(exception)
+
+        try:
+            # Get the page number from the query parameters, default to page 1 if not provided
+            page = int(request.args.get("page", 1))
+            all = int(request.args.get("all", 0))
+            items_per_page = int(request.args.get("page_size", 10))
+
+            # Calculate the starting and ending indices for the current page
+            start_idx = (page - 1) * items_per_page
+            end_idx = start_idx + items_per_page
+
+            polls_tf_idf_matrix = deserialized_dict.get("polls_tf_idf_matrix")
+            filtered_polls_df = deserialized_dict.get("filtered_polls_df")
+
+            # polls_tf_idf_matrix = pickle.loads(serialized_polls_tf_idf_matrix)
+
+            cosine_similarity_matrix = calc_cosine_similarity_matrix(
+                polls_tf_idf_matrix, polls_tf_idf_matrix
+            )
+
+            userInteractions = elastic_handle.get_interactions(
+                "userpollinteractions", user_id
+            )
+
+            userInteractions = [
+                interaction["pollId"]
+                for interaction in userInteractions["userPollActions"][:20]
+            ]
+
+            recommended_list = gen_rec_from_list_of_polls(
+                interacted_polls=userInteractions,
+                filtered_polls_df=filtered_polls_df,
+                cosine_similarity_matrix=cosine_similarity_matrix,
+                number_of_recommendations=100,
+            )
+
+            recommended_polls = filtered_polls_df[
+                filtered_polls_df["id"].isin(recommended_list)
+            ]
+
+            # recommended_polls = recommended_polls[
+            #    ["id", "ownerId", "question", "options", "topics"]
+            # ].to_dict(orient="records")
+            recommended_polls = recommended_polls["id"].tolist()
+            total_recommended_polls_count = len(recommended_polls)
+            if all == 1:
+                try:
+                    response = {
+                        "list": "all",
+                        "user_ID": user_id,
+                        "total_count": total_recommended_polls_count,
+                        "recommended_polls": recommended_polls,
+                    }
+
+                    return jsonify(response)
+                except elastic_transport.ConnectionTimeout as e:
+                    exception = {
+                        "Message": e.args,
+                        "Error": "Elastic connection timed out",
+                        "Code": 130,
+                    }
+                    return jsonify(exception)
+
+            # Slice the data to get the items for the current page
+            paginated_data = recommended_polls[start_idx:end_idx]
+
+            # Calculate the total number of pages
+            total_pages = len(recommended_polls) // items_per_page + (
+                len(recommended_polls) % items_per_page > 0
+            )
+
+            # Create a response dictionary with the paginated data and pagination information
+            response = {
+                "list": "recom",
+                "user_ID": user_id,
+                "page": page,
+                "total_count": total_recommended_polls_count,
+                "recommended_polls": paginated_data,
+            }
+
+            return jsonify(response)
+
+        except InteractionNotFound as e:
+            user_id = request.args.get("userId")
+
+            # Get the page number from the query parameters, default to page 1 if not provided
+            page = int(request.args.get("page", 1))
+
+            items_per_page = int(request.args.get("page_size", 10))
+
+            # Calculate the starting and ending indices for the current page
+            start_idx = (page - 1) * items_per_page
+            end_idx = start_idx + items_per_page
+
+            trend_polls = deserialized_dict.get("filtered_trend_polls_list")
+            for poll in trend_polls:
+                print(poll)
+            # Slice the data to get the items for the current page
+            # trend_polls = [poll["id"] for poll in trend_polls]
+
+            paginated_data = trend_polls[start_idx:end_idx]
+
+            # Calculate the total number of pages
+            total_pages = len(trend_polls) // items_per_page + (
+                len(trend_polls) % items_per_page > 0
+            )
+
+            # Create a response dictionary with the paginated data and pagination information
+            response = {
+                "list": "trend",
+                "user_ID": user_id,
+                "page": page,
+                "total_count": len(trend_polls),
+                "recommended_polls": paginated_data,
+            }
+
+            return jsonify(response)
+        except TlsError as e:
+            exception = {
+                "Message": e.args,
+                "Error": "TLS Error",
+                "Code": 120,
+            }
+            return jsonify(exception)
+        except ConnectionTimeout as e:
+            exception = {
+                "Message": e.args,
+                "Error": "Elastic connection timed out",
+                "Code": 130,
+            }
+            return jsonify(exception)
+
+    @inject_dependencies
+    def post(self, elastic_handle, r):
+        # get user data from Redis
+        try:
+            user_id = request.args.get("userId")
+
+            if r.exists(user_id):
+                retrieved_data = r.get(user_id)
+                deserialized_dict = pickle.loads(retrieved_data)
+                print(f"The data for {user_id} exists in Redis.")
+            else:
+                # TODO query to database
+                print(f"The was no entry for {user_id} in Redis.")
+
+                # TODO: generate matrix
+                return jsonify({"Error": "User matrix not found"})
+
+        # TODO: redis error
+        except redis.exceptions.ConnectionError as e:
+            exception = {
+                "Error": "Reids connection timed out",
             }
             return jsonify(exception)
 
