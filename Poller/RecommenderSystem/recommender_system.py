@@ -6,6 +6,8 @@ from pathlib import Path
 from collections import Counter
 import json
 import nltk
+import requests
+
 
 nltk.download("punkt")
 nltk.download("stopwords")
@@ -223,13 +225,10 @@ def is_valid_limitations(limitations):
 
 # Function to filter polls with user-defined limitations
 def filter_polls(row, user_limitations):
-    # print(isinstance(row.get("pollLimitations"), dict))
-
-    # if isinstance(row.get("pollLimitations"), dict) and all(
-    #    k in user_limitations for k in ["Location", "Gender", "Age"]
-    # ):
-    if pd.notna(row.get("pollLimitations")) and all(
-        k in user_limitations for k in ["Location", "Gender", "Age"]
+    if (
+        row["pollType"] == "Public"
+        and isinstance(row.get("pollLimitations"), dict)
+        and all(k in user_limitations for k in ["Location", "Gender", "Age"])
     ):
         user_location = user_limitations.get("Location")
 
@@ -247,23 +246,35 @@ def filter_polls(row, user_limitations):
                     <= user_age
                     <= allowed_age_range["maximumAge"]
                 ):
-                    # print("All conditions met. Returning True")
                     return True
-    #            else:
-    #                print("Age condition not met.")
-    #                return False
-    #        else:
-    #            print("Gender condition not met.")
-    #            return False
-    #
-    #    else:
-    #        print("No allowedLocations found.")
-    #        return False
-    # else:
-    #    print("Invalid limitations or missing keys in user_limitations.")
-    #    print(f"row:{row['id']}")
-    #    return False
+
     return False
+
+
+def get_allowed_private_polls(
+    params,
+    url="https://dev.pollett.io/api/Recommend/Polls/GetPrivatePollThatUserCanSee",
+):
+    # API URL
+    # url = "https://dev.pollett.io/api/Recommend/Polls/GetPrivatePollThatUserCanSee"
+
+    # Parameters
+    # params = {"userId": "bbe64b34-ba34-4fbd-a62f-e6c84c0423b4"}
+
+    # Send a GET request to the API
+    response = requests.get(url, params=params)
+
+    # Check if the request was successful (status code 200)
+    if response.status_code == 200:
+        # Parse the JSON response
+        # allowed_polls_list = response.json().get("data")
+        return response.json().get("data")
+        # Process the data as needed
+
+    else:
+        # Handle the error
+        print(f"Request failed with status code {response.status_code}")
+        print(response.text)
 
 
 if __name__ == "__main__":

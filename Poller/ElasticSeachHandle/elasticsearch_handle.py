@@ -66,6 +66,52 @@ class ElasticsearchHandel:
 
         return hits[0].get("_source")
 
+    def get_user_network_polls(self, user_id, batch_size=100):
+        # setattr(self, index_name, [])
+        # index_list = getattr(self, index_name)
+        from_index = 0
+        all_instances = []
+
+        query = {
+            "query": {
+                "bool": {
+                    "filter": {"term": {"userPrivatePolls.keyword": user_id}},
+                    "must": {
+                        "nested": {
+                            "path": "userFolllowingIds",
+                            "query": {
+                                "terms": {
+                                    "userFolllowingIds.keyword": [
+                                        "list",
+                                        "of",
+                                        "following",
+                                        "user",
+                                        "ids",
+                                    ]
+                                }
+                            },
+                        }
+                    },
+                }
+            }
+        }
+
+        results = self.client.search(
+            index="users",
+            query=query,
+            size=batch_size,
+            from_=from_index,
+            timeout="1s",
+        )
+        # instances = results["hits"]["hits"][0]
+        hits = results["hits"].get("hits")
+
+        if not hits:
+            # raise ValueError("User doesn't have any interactions.")
+            raise InteractionNotFound()
+
+        return hits[0].get("_source")
+
     def get_trend_polls(self, polls, ret_list=True):
         # polls = getattr(self, "polls")
         # trend_polls = sorted(polls, key=lambda x: (-x["numberOfPollups"], -x["numberOfVotes"], -x["numberOfLike"]))
