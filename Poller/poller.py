@@ -255,7 +255,7 @@ class Gen(Resource):
                 "user_id": user_id,
                 "polls_tf_idf_matrix": polls_tf_idf_matrix,
                 # "filtered_polls_df": filtered_polls_df,
-                "concatenated_df": concatenated_df,
+                "concatenated_df": concatenated_df[["id"]],
                 "filtered_trend_polls_list": filtered_trend_polls_list,
             }
             serialized_data = pickle.dumps(user_matrix)
