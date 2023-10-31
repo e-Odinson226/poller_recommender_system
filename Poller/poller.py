@@ -135,6 +135,41 @@ class Rec(Resource):
             }
 
             return jsonify(response)
+        except InvalidParameterError as a:
+            # user_id = request.args.get("userId")
+
+            # Get the page number from the query parameters, default to page 1 if not provided
+            page = int(request.args.get("page", 1))
+
+            items_per_page = int(request.args.get("page_size", 10))
+
+            # Calculate the starting and ending indices for the current page
+            start_idx = (page - 1) * items_per_page
+            end_idx = start_idx + items_per_page
+
+            trend_polls = deserialized_dict.get("filtered_trend_polls_list")
+
+            # Slice the data to get the items for the current page
+            # trend_polls = [poll["id"] for poll in trend_polls]
+
+            paginated_data = trend_polls[start_idx:end_idx]
+
+            # Calculate the total number of pages
+            total_pages = len(trend_polls) // items_per_page + (
+                len(trend_polls) % items_per_page > 0
+            )
+
+            # Create a response dictionary with the paginated data and pagination information
+            response = {
+                "list": "trend",
+                "user_ID": user_id,
+                "page": page,
+                "total_count": len(trend_polls),
+                "recommended_polls": paginated_data,
+                "warning": "User matrix is None",
+            }
+
+            return jsonify(response)
 
         except InteractionNotFound as e:
             # user_id = request.args.get("userId")
@@ -167,6 +202,7 @@ class Rec(Resource):
                 "page": page,
                 "total_count": len(trend_polls),
                 "recommended_polls": paginated_data,
+                "warning": "User has NO INTERACTION",
             }
 
             return jsonify(response)

@@ -7,6 +7,7 @@ from collections import Counter
 import json
 import nltk
 import requests
+from datetime import datetime, timedelta
 
 
 nltk.download("punkt")
@@ -83,13 +84,18 @@ def create_tf_idf_matrix(df, column):
 
 
 def create_souped_tf_idf_matrix(df):
-    df["topics"] = df["topics"].apply(preprocess_list)
-    df["question"] = df["question"].apply(preprocess_text)
+    try:
+        if not df.empty:
+            df["topics"] = df["topics"].apply(preprocess_list)
+            df["question"] = df["question"].apply(preprocess_text)
 
-    # Create a new soup feature
-    df["soup"] = df.apply(create_soup, axis=1)
+            # Create a new soup feature
+            df["soup"] = df.apply(create_soup, axis=1)
 
-    return tf_idf.fit_transform(df["soup"])
+            return tf_idf.fit_transform(df["soup"])
+
+    except ValueError as e:
+        raise e
 
 
 def create_soup(df):
@@ -105,6 +111,7 @@ def create_soup(df):
 
 
 def calc_cosine_similarity_matrix(tf_idf_matrix_1, tf_idf_matrix_2):
+    # if tf_idf_matrix_1 is not None and tf_idf_matrix_2 is not None:
     return cosine_similarity(tf_idf_matrix_1, tf_idf_matrix_2)
 
 
@@ -223,12 +230,26 @@ def is_valid_limitations(limitations):
     return False
 
 
-# Function to filter polls with user-defined limitations
+def is_within_10_days_liifetime(timestamp):
+    try:
+        # Convert the timestamp to a datetime object
+        time = datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S.%fZ")
+
+        # Calculate the time difference
+        time_difference = datetime.now() - time
+
+        return True if time_difference <= timedelta(days=10) else False
+    except ValueError:
+        # If the timestamp doesn't match the expected format, return False
+        return False
+
+
 def filter_polls(row, user_limitations):
     if (
         row["pollType"] == "Public"
         and isinstance(row.get("pollLimitations"), dict)
         and all(k in user_limitations for k in ["Location", "Gender", "Age"])
+        and is_within_10_days_liifetime(row["createdAt"])
     ):
         user_location = user_limitations.get("Location")
 

@@ -1,6 +1,8 @@
 import redis
 import os
 from dotenv import load_dotenv
+from sklearn.utils._param_validation import InvalidParameterError
+
 
 from .ElasticSeachHandle.elasticsearch_handle import *
 
