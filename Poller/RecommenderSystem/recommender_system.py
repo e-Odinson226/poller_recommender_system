@@ -84,18 +84,13 @@ def create_tf_idf_matrix(df, column):
 
 
 def create_souped_tf_idf_matrix(df):
-    try:
-        if not df.empty:
-            df["topics"] = df["topics"].apply(preprocess_list)
-            df["question"] = df["question"].apply(preprocess_text)
+    df["topics"] = df["topics"].apply(preprocess_list)
+    df["question"] = df["question"].apply(preprocess_text)
 
-            # Create a new soup feature
-            df["soup"] = df.apply(create_soup, axis=1)
+    # Create a new soup feature
+    df["soup"] = df.apply(create_soup, axis=1)
 
-            return tf_idf.fit_transform(df["soup"])
-
-    except ValueError as e:
-        raise e
+    return tf_idf.fit_transform(df["soup"])
 
 
 def create_soup(df):
