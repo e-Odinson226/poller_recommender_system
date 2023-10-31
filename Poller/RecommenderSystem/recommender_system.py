@@ -215,6 +215,65 @@ def gen_rec_from_list_of_polls(
     return n_most_recommended
 
 
+def gen_rec_from_list_of_polls_df(
+    interacted_polls,
+    filtered_polls_df,
+    cosine_similarity_matrix,
+    number_of_recommendations,
+):
+    recommendations = []
+    for poll_id in interacted_polls:
+        index = id_to_index2(filtered_polls_df, poll_id)
+        if index is not None:
+            similarity_scores = list(enumerate(cosine_similarity_matrix[index]))
+            similarity_scores_sorted = sorted(
+                similarity_scores, key=lambda x: x[1], reverse=True
+            )
+
+            recommendations_indices = [
+                t[0]
+                for t in similarity_scores_sorted[1 : (number_of_recommendations + 1)]
+            ]
+            recs = list(filtered_polls_df["id"].iloc[recommendations_indices])
+
+            # Filter out polls that have already been interacted with
+            filtered_recs = [poll for poll in recs if poll not in interacted_polls]
+
+            recommendations.append(filtered_recs)
+
+        else:
+            pass
+
+        # index = id_to_index(polls, poll_id)
+        # print(f"cosine_similarity_matrix:{len(cosine_similarity_matrix)}")
+        # print(f"index:{index} | id:{poll_id}")
+
+    flattened_recommendations = [
+        item for sublist in recommendations for item in sublist
+    ]
+    flattened_recommendations = Counter(flattened_recommendations)
+    n_most_recommended = flattened_recommendations.most_common(
+        number_of_recommendations
+    )
+    n_most_recommended = [t[0] for t in n_most_recommended]
+
+    filtered_df = filtered_polls_df[filtered_polls_df["id"].isin(n_most_recommended)]
+
+    order_dict = {id: idx for idx, id in enumerate(n_most_recommended)}
+
+    # Sort the filtered DataFrame based on the order
+    filtered_df["order"] = filtered_df["id"].map(order_dict)
+    filtered_df = filtered_df.sort_values("order")
+
+    # Drop the 'order' column if not needed
+    filtered_df = filtered_df.drop(columns=["order"])
+
+    # Reset the index if needed
+    filtered_df = filtered_df.reset_index(drop=True)
+
+    return filtered_df
+
+
 def is_valid_limitations(limitations):
     if isinstance(limitations, dict):
         return (
@@ -239,12 +298,76 @@ def is_within_10_days_liifetime(timestamp):
         return False
 
 
+def order(polls_df):
+    polls_df["createdAt"] = pd.to_datetime(polls_df["createdAt"])
+
+    # Sort the DataFrame based on the 'createdAt' column in ascending order
+    polls_df = polls_df.sort_values(by="createdAt", ascending=True)
+
+    # If you want to sort in descending order, use the following line instead
+    # df = df.sort_values(by='createdAt', ascending=False)
+
+    # Reset the index to maintain the order of the sorted rows
+    polls_df = polls_df.reset_index(drop=True)
+    return polls_df
+
+
+def filter_timestamp(timestamp):
+    try:
+        # Convert the timestamp to a datetime object
+        time = datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S.%fZ")
+
+        # Calculate the time difference
+        time_difference = datetime.now() - time
+
+        return time_difference
+    except ValueError:
+        # If the timestamp doesn't match the expected format, return None
+        return None
+
+
+def split_df_by_lifetime(polls_df):
+    filtered_df = polls_df[polls_df["createdAt"].apply(filter_timestamp).notna()]
+
+    older_than_10_days = filtered_df[
+        filtered_df["createdAt"].apply(filter_timestamp) >= timedelta(days=10)
+    ]
+    newer_than_10_days = filtered_df[
+        filtered_df["createdAt"].apply(filter_timestamp) < timedelta(days=10)
+    ]
+
+    # Reset the index if needed
+    older_than_10_days = older_than_10_days.reset_index(drop=True)
+    newer_than_10_days = newer_than_10_days.reset_index(drop=True)
+
+    return older_than_10_days, newer_than_10_days
+
+
+def list_to_df(polls_list, polls_df):
+    # Filter the DataFrame based on the id_list
+    filtered_df = polls_df[polls_df["id"].isin(polls_list)]
+
+    # Create a dictionary to preserve the order
+    order_dict = {id: idx for idx, id in enumerate(polls_list)}
+
+    # Sort the filtered DataFrame based on the order
+    filtered_df["order"] = filtered_df["id"].map(order_dict)
+    filtered_df = filtered_df.sort_values("order")
+
+    # Drop the 'order' column if not needed
+    filtered_df = filtered_df.drop(columns=["order"])
+
+    # Reset the index if needed
+    filtered_df = filtered_df.reset_index(drop=True)
+    return filtered_df
+
+
 def filter_polls(row, user_limitations):
     if (
         row["pollType"] == "Public"
         and isinstance(row.get("pollLimitations"), dict)
         and all(k in user_limitations for k in ["Location", "Gender", "Age"])
-        and is_within_10_days_liifetime(row["createdAt"])
+        # and is_within_10_days_liifetime(row["createdAt"])
     ):
         user_location = user_limitations.get("Location")
 

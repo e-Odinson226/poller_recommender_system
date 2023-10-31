@@ -83,29 +83,57 @@ class Rec(Resource):
                 for interaction in userInteractions["userPollActions"][:20]
             ]
 
-            recommended_list = gen_rec_from_list_of_polls(
+            recommended_polls_df = gen_rec_from_list_of_polls_df(
                 interacted_polls=userInteractions,
                 filtered_polls_df=filtered_polls_df,
                 cosine_similarity_matrix=cosine_similarity_matrix,
                 number_of_recommendations=100,
             )
-            print(f"-----------------------{type(filtered_polls_df)}")
-            recommended_polls = filtered_polls_df[
-                filtered_polls_df["id"].isin(recommended_list)
-            ]
+            print(f"type: {type(recommended_polls_df)} len:{len(recommended_polls_df)}")
+            print("recommended_polls_df")
+            print(recommended_polls_df)
+            print("---------------------")
+            # ordered_recommendations = order(recommended_polls_df)
+            older_recommended_polls, newer_recommended_polls = split_df_by_lifetime(
+                recommended_polls_df
+            )
 
-            # recommended_polls = recommended_polls[
-            #    ["id", "ownerId", "question", "options", "topics"]
-            # ].to_dict(orient="records")
-            recommended_polls = recommended_polls["id"].tolist()
-            total_recommended_polls_count = len(recommended_polls)
+            trend_polls = deserialized_dict.get("filtered_trend_polls_list")
+            trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
+            print(f"type: {type(trend_polls_df)} len:{len(trend_polls_df)}")
+            print("trend_polls_df")
+            print(trend_polls_df)
+            print("---------------------")
+            # ordered_trend_polls_df = order(trend_polls_df)
+            older_trend_polls, newer_trend_polls = split_df_by_lifetime(trend_polls_df)
+
+            recommended_polls_list = pd.concat(
+                [
+                    newer_recommended_polls,
+                    newer_trend_polls,
+                    older_recommended_polls,
+                    older_trend_polls,
+                ],
+                ignore_index=False,
+            )
+
+            # If you want to reset the index
+            recommended_polls_list = recommended_polls_list.reset_index(drop=True)
+
+            print(f"-----------------------{type(filtered_polls_df)}")
+            # recommended_polls = filtered_polls_df[
+            #    filtered_polls_df["id"].isin(recommended_list)
+            # ]
+            # recommended_polls = recommended_polls["id"].tolist()
+
+            total_recommended_polls_count = len(recommended_polls_list)
             if all == 1:
                 try:
                     response = {
                         "list": "all",
                         "user_ID": user_id,
                         "total_count": total_recommended_polls_count,
-                        "recommended_polls": recommended_polls,
+                        "recommended_polls": recommended_polls_list,
                     }
 
                     return jsonify(response)
@@ -118,23 +146,26 @@ class Rec(Resource):
                     return jsonify(exception)
 
             # Slice the data to get the items for the current page
-            paginated_data = recommended_polls[start_idx:end_idx]
+            paginated_data = recommended_polls_list[start_idx:end_idx]
 
             # Calculate the total number of pages
-            total_pages = len(recommended_polls) // items_per_page + (
-                len(recommended_polls) % items_per_page > 0
+            total_pages = len(recommended_polls_list) // items_per_page + (
+                len(recommended_polls_list) % items_per_page > 0
             )
 
             # Create a response dictionary with the paginated data and pagination information
             response = {
-                "list": "recom",
+                "list": "ordered_recom",
                 "user_ID": user_id,
+                "total_count": len(recommended_polls_list),
+                "total_pages": total_pages,
                 "page": page,
                 "total_count": total_recommended_polls_count,
                 "recommended_polls": paginated_data,
             }
 
             return jsonify(response)
+
         except InvalidParameterError as a:
             response = {
                 "user_ID": user_id,
@@ -145,21 +176,15 @@ class Rec(Resource):
             return jsonify(response)
 
         except InteractionNotFound as e:
-            # user_id = request.args.get("userId")
-
-            # Get the page number from the query parameters, default to page 1 if not provided
-            page = int(request.args.get("page", 1))
-
-            items_per_page = int(request.args.get("page_size", 10))
-
-            # Calculate the starting and ending indices for the current page
-            start_idx = (page - 1) * items_per_page
-            end_idx = start_idx + items_per_page
-
-            trend_polls = deserialized_dict.get("filtered_trend_polls_list")
-
             # Slice the data to get the items for the current page
             # trend_polls = [poll["id"] for poll in trend_polls]
+            trend_polls = deserialized_dict.get("filtered_trend_polls_list")
+
+            page = int(request.args.get("page", 1))
+            items_per_page = int(request.args.get("page_size", 10))
+
+            start_idx = (page - 1) * items_per_page
+            end_idx = start_idx + items_per_page
 
             paginated_data = trend_polls[start_idx:end_idx]
 
@@ -264,7 +289,7 @@ class Gen(Resource):
                 "user_id": user_id,
                 "polls_tf_idf_matrix": polls_tf_idf_matrix,
                 # "filtered_polls_df": filtered_polls_df,
-                "concatenated_df": concatenated_df[["id"]],
+                "concatenated_df": concatenated_df[["id", "createdAt"]],
                 "filtered_trend_polls_list": filtered_trend_polls_list,
             }
             serialized_data = pickle.dumps(user_matrix)
