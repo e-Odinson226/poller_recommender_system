@@ -90,9 +90,6 @@ class Rec(Resource):
                 number_of_recommendations=100,
             )
             print(f"type: {type(recommended_polls_df)} len:{len(recommended_polls_df)}")
-            print("recommended_polls_df")
-            print(recommended_polls_df)
-            print("---------------------")
             # ordered_recommendations = order(recommended_polls_df)
             older_recommended_polls, newer_recommended_polls = split_df_by_lifetime(
                 recommended_polls_df
@@ -101,9 +98,7 @@ class Rec(Resource):
             trend_polls = deserialized_dict.get("filtered_trend_polls_list")
             trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
             print(f"type: {type(trend_polls_df)} len:{len(trend_polls_df)}")
-            print("trend_polls_df")
-            print(trend_polls_df)
-            print("---------------------")
+
             # ordered_trend_polls_df = order(trend_polls_df)
             older_trend_polls, newer_trend_polls = split_df_by_lifetime(trend_polls_df)
 
@@ -119,6 +114,8 @@ class Rec(Resource):
 
             # If you want to reset the index
             recommended_polls_list = recommended_polls_list.reset_index(drop=True)
+            recommended_polls_list = recommended_polls_list["id"].tolist()
+            recommended_polls_list = remove_duplicates(recommended_polls_list)
 
             print(f"-----------------------{type(filtered_polls_df)}")
             # recommended_polls = filtered_polls_df[
@@ -127,6 +124,7 @@ class Rec(Resource):
             # recommended_polls = recommended_polls["id"].tolist()
 
             total_recommended_polls_count = len(recommended_polls_list)
+
             if all == 1:
                 try:
                     response = {

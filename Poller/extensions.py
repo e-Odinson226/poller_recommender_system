@@ -46,3 +46,34 @@ def create_elastic_connection(
         except TypeError:
             print("[2. Failed to read environment variables.]")
             print(e)
+
+
+def remove_duplicates(input_list):
+    seen = set()
+    result = []
+
+    for item in input_list:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
+
+    return result
+
+
+def find_duplicates(lst):
+    seen = set()
+    duplicates = set()
+    for item in lst:
+        if item in seen:
+            duplicates.add(item)
+        else:
+            seen.add(item)
+    return duplicates
+
+
+# duplicates = find_duplicates(recommended_polls_list)
+
+# for item in duplicates:
+#    print(f"{item} is a duplicate.")
+#
+# print(len(list(duplicates)))
