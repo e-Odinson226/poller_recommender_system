@@ -89,7 +89,7 @@ class Rec(Resource):
                 cosine_similarity_matrix=cosine_similarity_matrix,
                 number_of_recommendations=100,
             )
-            print(f"type: {type(recommended_polls_df)} len:{len(recommended_polls_df)}")
+            # print(f"type: {type(recommended_polls_df)} len:{len(recommended_polls_df)}")
             # ordered_recommendations = order(recommended_polls_df)
             older_recommended_polls, newer_recommended_polls = split_df_by_lifetime(
                 recommended_polls_df
@@ -97,7 +97,7 @@ class Rec(Resource):
 
             trend_polls = deserialized_dict.get("filtered_trend_polls_list")
             trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
-            print(f"type: {type(trend_polls_df)} len:{len(trend_polls_df)}")
+            # print(f"type: {type(trend_polls_df)} len:{len(trend_polls_df)}")
 
             # ordered_trend_polls_df = order(trend_polls_df)
             older_trend_polls, newer_trend_polls = split_df_by_lifetime(trend_polls_df)
@@ -111,6 +111,16 @@ class Rec(Resource):
                 ],
                 ignore_index=False,
             )
+            print(f"Length newer_recommended_polls:{len(newer_recommended_polls)}")
+            print(f"Length newer_trend_polls:{len(newer_trend_polls)}")
+            print(f"Length older_recommended_polls:{len(older_recommended_polls)}")
+            print(f"Length older_trend_polls:{len(older_trend_polls)}")
+            # print(
+            #    recommended_polls_list[
+            #        recommended_polls_list["id"]
+            #        == newer_recommended_polls.index.get_loc(0)[0]
+            #    ].index[0]
+            # )
 
             # If you want to reset the index
             recommended_polls_list = recommended_polls_list.reset_index(drop=True)
@@ -287,7 +297,7 @@ class Gen(Resource):
                 "user_id": user_id,
                 "polls_tf_idf_matrix": polls_tf_idf_matrix,
                 # "filtered_polls_df": filtered_polls_df,
-                "concatenated_df": concatenated_df[["id", "createdAt"]],
+                "concatenated_df": concatenated_df[["id", "createdAt", "enedAt"]],
                 "filtered_trend_polls_list": filtered_trend_polls_list,
             }
             serialized_data = pickle.dumps(user_matrix)
