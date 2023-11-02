@@ -91,7 +91,7 @@ class Rec(Resource):
             )
             # print(f"type: {type(recommended_polls_df)} len:{len(recommended_polls_df)}")
             # ordered_recommendations = order(recommended_polls_df)
-            older_recommended_polls, newer_recommended_polls = split_df_by_lifetime(
+            expired_recommended_polls, valid_recommended_polls = split_df_by_lifetime(
                 recommended_polls_df
             )
 
@@ -100,25 +100,27 @@ class Rec(Resource):
             # print(f"type: {type(trend_polls_df)} len:{len(trend_polls_df)}")
 
             # ordered_trend_polls_df = order(trend_polls_df)
-            older_trend_polls, newer_trend_polls = split_df_by_lifetime(trend_polls_df)
+            expired_trend_polls, valid_trend_polls = split_df_by_lifetime(
+                trend_polls_df
+            )
 
             recommended_polls_list = pd.concat(
                 [
-                    newer_recommended_polls,
-                    newer_trend_polls,
-                    older_recommended_polls,
-                    older_trend_polls,
+                    valid_recommended_polls,
+                    valid_trend_polls,
+                    expired_recommended_polls,
+                    expired_trend_polls,
                 ],
                 ignore_index=False,
             )
-            print(f"Length newer_recommended_polls:{len(newer_recommended_polls)}")
-            print(f"Length newer_trend_polls:{len(newer_trend_polls)}")
-            print(f"Length older_recommended_polls:{len(older_recommended_polls)}")
-            print(f"Length older_trend_polls:{len(older_trend_polls)}")
+            print(f"valid_recommended_polls length:{len(valid_recommended_polls)}")
+            print(f"valid_trend_polls length:{len(valid_trend_polls)}")
+            print(f"expired_recommended_polls length:{len(expired_recommended_polls)}")
+            print(f"expired_trend_polls length:{len(expired_trend_polls)}")
             # print(
             #    recommended_polls_list[
             #        recommended_polls_list["id"]
-            #        == newer_recommended_polls.index.get_loc(0)[0]
+            #        == valid_recommended_polls.index.get_loc(0)[0]
             #    ].index[0]
             # )
 
