@@ -18,6 +18,16 @@ pd.set_option("display.max_columns", None)
 
 
 try:
+    private_polls_API = (
+        "https://"
+        + str(os.environ.get("private_polls_API"))
+        + "/api/Recommend/Polls/GetPrivatePollThatUserCanSee"
+    )
+    print(private_polls_API)
+
+    if private_polls_API is None:
+        raise ValueError("private_polls_API is None")
+
     redis_pool = create_redis_pool(host="localhost", port=6379, db=0)
     elastic_handle = create_elastic_connection(
         poller_elasticsearch_url="POLLER_ELASTICSEARCH_URL",
@@ -275,9 +285,9 @@ class Gen(Resource):
 
             # filtered_polls_df = filtered_polls_df.reset_index(drop=True)
             allowed_polls_list = get_allowed_private_polls(
-                # params={"userId": "bbe64b34-ba34-4fbd-a62f-e6c84c0423b4"}
-                params={"userId": user_id}
+                {"userId": user_id}, private_polls_API
             )
+
             allowed_private_polls = polls_df[polls_df["id"].isin(allowed_polls_list)]
             allowed_private_polls = allowed_private_polls[
                 allowed_private_polls.apply(
@@ -319,7 +329,7 @@ class Gen(Resource):
                 "user_id": user_id,
                 "polls_tf_idf_matrix": polls_tf_idf_matrix,
                 # "filtered_polls_df": filtered_polls_df,
-                "concatenated_df": concatenated_df[["id", "createdAt", "enedAt"]],
+                "concatenated_df": concatenated_df[["id", "createdAt", "endedAt"]],
                 "filtered_trend_polls_list": filtered_trend_polls_list,
             }
             serialized_data = pickle.dumps(user_matrix)

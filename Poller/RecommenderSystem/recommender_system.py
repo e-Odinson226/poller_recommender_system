@@ -284,7 +284,7 @@ def is_valid_limitations(limitations):
     return False
 
 
-def is_within_10_days_liifetime(timestamp):
+def is_within_x_days_liifetime(timestamp):
     try:
         # Convert the timestamp to a datetime object
         time = datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S.%fZ")
@@ -326,21 +326,40 @@ def filter_timestamp(timestamp):
         return None
 
 
-def split_df_by_lifetime(polls_df):
+def split_by_days(polls_df, days=10):
     filtered_df = polls_df[polls_df["createdAt"].apply(filter_timestamp).notna()]
 
-    older_than_10_days = filtered_df[
-        filtered_df["createdAt"].apply(filter_timestamp) >= timedelta(days=10)
+    older_than_x_days = filtered_df[
+        filtered_df["createdAt"].apply(filter_timestamp) >= timedelta(days=days)
     ]
-    newer_than_10_days = filtered_df[
-        filtered_df["createdAt"].apply(filter_timestamp) < timedelta(days=10)
+    newer_than_x_days = filtered_df[
+        filtered_df["createdAt"].apply(filter_timestamp) < timedelta(days=days)
     ]
 
     # Reset the index if needed
-    older_than_10_days = older_than_10_days.reset_index(drop=True)
-    newer_than_10_days = newer_than_10_days.reset_index(drop=True)
+    older_than_x_days = older_than_x_days.reset_index(drop=True)
+    newer_than_x_days = newer_than_x_days.reset_index(drop=True)
 
-    return older_than_10_days, newer_than_10_days
+    return older_than_x_days, newer_than_x_days
+
+
+def has_valid_date(date_str):
+    # Convert the date string to a datetime object
+    # date = pd.to_datetime(date_str)
+    date = pd.to_datetime(date_str, utc=True).replace(tzinfo=None)
+
+    # Get the current timestamp as a datetime object
+    current_time = datetime.now()
+
+    # Compare the date with the current timestamp
+    return date > current_time
+
+
+def split_df_by_lifetime(polls_df):
+    valid_items = polls_df[polls_df["endedAt"].apply(has_valid_date)]
+    expired_items = polls_df[~polls_df["endedAt"].apply(has_valid_date)]
+
+    return expired_items, valid_items
 
 
 def list_to_df(polls_list, polls_df):
@@ -367,7 +386,7 @@ def filter_polls(row, user_limitations):
         row["pollType"] == "Public"
         and isinstance(row.get("pollLimitations"), dict)
         and all(k in user_limitations for k in ["Location", "Gender", "Age"])
-        # and is_within_10_days_liifetime(row["createdAt"])
+        # and is_within_x_days_liifetime(row["createdAt"])
     ):
         user_location = user_limitations.get("Location")
 
@@ -392,7 +411,8 @@ def filter_polls(row, user_limitations):
 
 def get_allowed_private_polls(
     params,
-    url="https://dev.pollett.io/api/Recommend/Polls/GetPrivatePollThatUserCanSee",
+    # url="https://dev.pollett.io/api/Recommend/Polls/GetPrivatePollThatUserCanSee",
+    url,
 ):
     # API URL
     # url = "https://dev.pollett.io/api/Recommend/Polls/GetPrivatePollThatUserCanSee"
