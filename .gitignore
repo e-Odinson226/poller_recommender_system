@@ -5,3 +5,4 @@ tmp/
 __pycache__/
 data/
 /dev/
+Poller/NoteBooks/test_recom_polls.csv

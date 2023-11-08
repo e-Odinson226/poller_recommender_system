@@ -188,7 +188,7 @@ class Rec(Resource):
         except InteractionNotFound as e:
             # Slice the data to get the items for the current page
             # trend_polls = [poll["id"] for poll in trend_polls]
-            trend_polls = deserialized_dict.get("filtered_trend_polls_list")
+            # trend_polls = deserialized_dict.get("filtered_trend_polls_list")
 
             page = int(request.args.get("page", 1))
             items_per_page = int(request.args.get("page_size", 10))
@@ -196,7 +196,27 @@ class Rec(Resource):
             start_idx = (page - 1) * items_per_page
             end_idx = start_idx + items_per_page
 
-            paginated_data = trend_polls[start_idx:end_idx]
+            trend_polls = deserialized_dict.get("filtered_trend_polls_list")
+            filtered_polls_df = deserialized_dict.get("concatenated_df")
+            trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
+            # ordered_trend_polls_df = order(trend_polls_df)
+            expired_trend_polls, valid_trend_polls = split_df_by_lifetime(
+                trend_polls_df
+            )
+
+            recommended_polls_list = pd.concat(
+                [
+                    valid_trend_polls,
+                    expired_trend_polls,
+                ],
+                ignore_index=False,
+            )
+
+            recommended_polls_list = recommended_polls_list.reset_index(drop=True)
+            recommended_polls_list = recommended_polls_list["id"].tolist()
+            recommended_polls_list = remove_duplicates(recommended_polls_list)
+
+            paginated_data = recommended_polls_list[start_idx:end_idx]
 
             # Calculate the total number of pages
             total_pages = len(trend_polls) // items_per_page + (
