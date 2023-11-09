@@ -111,6 +111,7 @@ class Rec(Resource):
                         "user_ID": user_id,
                         "total_count": total_recommended_polls_count,
                         "recommended_polls": recommended_polls_list,
+                        "Code": 200,
                     }
 
                     return jsonify(response)
@@ -139,6 +140,7 @@ class Rec(Resource):
                 "page": page,
                 "total_count": total_recommended_polls_count,
                 "recommended_polls": paginated_data,
+                "Code": 200,
             }
 
             return jsonify(response)
@@ -198,6 +200,7 @@ class Rec(Resource):
                 "total_count": len(trend_polls),
                 "recommended_polls": paginated_data,
                 "warning": "User has NO INTERACTION",
+                "Code": 200,
             }
 
             return jsonify(response)
