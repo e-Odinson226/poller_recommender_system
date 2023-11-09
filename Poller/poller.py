@@ -50,21 +50,18 @@ class Rec(Resource):
 
         redis_connection = redis.Redis(connection_pool=redis_pool)
 
-        if user_id is not None and redis_connection.exists(user_id):
-            print(f"The data for {user_id} exists in Redis.")
-            retrieved_data = redis_connection.get(user_id)
-            deserialized_dict = pickle.loads(retrieved_data)
-
-        else:
-            # TODO query to database
-            print(f"The was no entry for {user_id} in Redis.")
-
-            # TODO: generate matrix
-            return jsonify({"Error": "User matrix not found"})
-
-        # TODO: redis error
-
         try:
+            check_key_exists(redis_connection, user_id)
+
+            # Get the entity from Redis
+            serialized_user_entity = redis_connection.get(user_id)
+
+            # If the entity exists, reset the expiration time (e.g., to 60 seconds)
+            redis_connection.expire(user_id, 600)
+            print(f"The data for {user_id} exists in Redis.")
+
+            user_entity = pickle.loads(serialized_user_entity)
+
             # Get the page number from the query parameters, default to page 1 if not provided
             page = int(request.args.get("page", 1))
             all = int(request.args.get("all", 0))
@@ -74,8 +71,8 @@ class Rec(Resource):
             start_idx = (page - 1) * items_per_page
             end_idx = start_idx + items_per_page
 
-            polls_tf_idf_matrix = deserialized_dict.get("polls_tf_idf_matrix")
-            filtered_polls_df = deserialized_dict.get("concatenated_df")
+            polls_tf_idf_matrix = user_entity.get("polls_tf_idf_matrix")
+            filtered_polls_df = user_entity.get("concatenated_df")
 
             cosine_similarity_matrix = calc_cosine_similarity_matrix(
                 polls_tf_idf_matrix, polls_tf_idf_matrix
@@ -97,7 +94,7 @@ class Rec(Resource):
                 number_of_recommendations=100,
             )
 
-            trend_polls = deserialized_dict.get("filtered_trend_polls_list")
+            trend_polls = user_entity.get("filtered_trend_polls_list")
             trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
 
             recommended_polls_list = order(
@@ -145,7 +142,14 @@ class Rec(Resource):
             }
 
             return jsonify(response)
-
+        except KeyError as key_error:
+            # print(f"The was no entry for {user_id} in Redis.")
+            exception = {
+                "Message": key_error.args,
+                "Error": "No entry in redis",
+                "Code": 111,
+            }
+            return jsonify(exception)
         except InvalidParameterError as a:
             response = {
                 "user_ID": user_id,
@@ -158,7 +162,7 @@ class Rec(Resource):
         except InteractionNotFound as e:
             # Slice the data to get the items for the current page
             # trend_polls = [poll["id"] for poll in trend_polls]
-            # trend_polls = deserialized_dict.get("filtered_trend_polls_list")
+            # trend_polls = user_entity.get("filtered_trend_polls_list")
 
             page = int(request.args.get("page", 1))
             items_per_page = int(request.args.get("page_size", 10))
@@ -166,8 +170,8 @@ class Rec(Resource):
             start_idx = (page - 1) * items_per_page
             end_idx = start_idx + items_per_page
 
-            trend_polls = deserialized_dict.get("filtered_trend_polls_list")
-            filtered_polls_df = deserialized_dict.get("concatenated_df")
+            trend_polls = user_entity.get("filtered_trend_polls_list")
+            filtered_polls_df = user_entity.get("concatenated_df")
             trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
 
             recommended_polls_list = order(
@@ -274,6 +278,7 @@ class Gen(Resource):
             }
             serialized_data = pickle.dumps(user_matrix)
             redis_connection = redis.Redis(connection_pool=redis_pool)
+            # redis_connection.set(user_id, serialized_data)
             redis_connection.set(user_id, serialized_data)
 
             response = {

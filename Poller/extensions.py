@@ -60,6 +60,23 @@ def remove_duplicates(input_list):
     return result
 
 
+def get_entity(redis_client, entity_key, extend_expiration=600):
+    # Get the entity from Redis
+    entity = redis_client.get(entity_key)
+
+    # If the entity exists, reset the expiration time (e.g., to 60 seconds)
+
+    if entity:
+        redis_client.expire(entity_key, extend_expiration)
+        print(f"The data for {entity_key} exists in Redis.")
+        return entity
+
+
+def check_key_exists(redis_client, key):
+    if not redis_client.exists(key):
+        raise KeyError(f"The key '{key}' does not exist in Redis.")
+
+
 def find_duplicates(lst):
     seen = set()
     duplicates = set()
