@@ -145,10 +145,15 @@ class Rec(Resource):
         except KeyError as key_error:
             # print(f"The was no entry for {user_id} in Redis.")
             exception = {
-                "Message": key_error.args,
-                "Error": "No entry in redis",
+                "list": "error",
+                "user_ID": user_id,
+                "page": 0,
+                "total_count": 0,
+                "recommended_polls": [],
+                "warning": "No entry in redis",
                 "Code": 111,
             }
+
             return jsonify(exception)
         except InvalidParameterError as a:
             response = {
