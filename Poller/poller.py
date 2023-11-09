@@ -75,10 +75,7 @@ class Rec(Resource):
             end_idx = start_idx + items_per_page
 
             polls_tf_idf_matrix = deserialized_dict.get("polls_tf_idf_matrix")
-            # filtered_polls_df = deserialized_dict.get("filtered_polls_df")
             filtered_polls_df = deserialized_dict.get("concatenated_df")
-
-            # polls_tf_idf_matrix = pickle.loads(serialized_polls_tf_idf_matrix)
 
             cosine_similarity_matrix = calc_cosine_similarity_matrix(
                 polls_tf_idf_matrix, polls_tf_idf_matrix
@@ -99,34 +96,14 @@ class Rec(Resource):
                 cosine_similarity_matrix=cosine_similarity_matrix,
                 number_of_recommendations=100,
             )
-            # print(f"type: {type(recommended_polls_df)} len:{len(recommended_polls_df)}")
 
             trend_polls = deserialized_dict.get("filtered_trend_polls_list")
             trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
-            # print(f"type: {type(trend_polls_df)} len:{len(trend_polls_df)}")
 
             recommended_polls_list = order(
                 recommended_polls_df,
                 trend_polls_df,
             )
-
-            # print(
-            #    recommended_polls_list[
-            #        recommended_polls_list["id"]
-            #        == valid_recommended_polls.index.get_loc(0)[0]
-            #    ].index[0]
-            # )
-
-            # If you want to reset the index
-            recommended_polls_list = recommended_polls_list.reset_index(drop=True)
-            recommended_polls_list = recommended_polls_list["id"].tolist()
-            recommended_polls_list = remove_duplicates(recommended_polls_list)
-
-            print(f"-----------------------{type(filtered_polls_df)}")
-            # recommended_polls = filtered_polls_df[
-            #    filtered_polls_df["id"].isin(recommended_list)
-            # ]
-            # recommended_polls = recommended_polls["id"].tolist()
 
             total_recommended_polls_count = len(recommended_polls_list)
 
@@ -192,25 +169,10 @@ class Rec(Resource):
             trend_polls = deserialized_dict.get("filtered_trend_polls_list")
             filtered_polls_df = deserialized_dict.get("concatenated_df")
             trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
-            # ordered_trend_polls_df = order(trend_polls_df)
-            # expired_trend_polls, valid_trend_polls = split_df_by_lifetime(
-            #    trend_polls_df
-            # )
-            #
-            # recommended_polls_list = pd.concat(
-            #    [
-            #        valid_trend_polls,
-            #        expired_trend_polls,
-            #    ],
-            #    ignore_index=False,
-            # )
+
             recommended_polls_list = order(
                 trend_polls_df,
             )
-
-            recommended_polls_list = recommended_polls_list.reset_index(drop=True)
-            recommended_polls_list = recommended_polls_list["id"].tolist()
-            recommended_polls_list = remove_duplicates(recommended_polls_list)
 
             paginated_data = recommended_polls_list[start_idx:end_idx]
 
@@ -252,9 +214,6 @@ api.add_resource(Rec, "/get_rec/")
 class Gen(Resource):
     def post(self):
         try:
-            print(
-                f"------------------------------\nGenerating user's matrix...\n------------------------------"
-            )
             args = request.get_json(force=True)
 
             # user_id  = request.args.get("userId")
@@ -287,14 +246,7 @@ class Gen(Resource):
             # Reset the index if needed
             concatenated_df.reset_index(drop=True, inplace=True)
 
-            # filtered_polls_csv = filtered_polls_df.to_csv("data.csv", index=False)
-            # with open(
-            #    "filtered_polls_csv.csv", "w", encoding="UTF8", newline=""
-            # ) as file:
-            #    writer = csv.writer(file)
-            # filtered_polls_df.to_csv("filtered_polls_csv.csv")
-            # filtered_polls_df.to_pickle("filtered_polls_pkl.pickle")
-
+            print(f"------------------------------\nGenerating user's matrix...")
             polls_tf_idf_matrix = create_souped_tf_idf_matrix(concatenated_df)
 
             trend_polls = elastic_handle.get_trend_polls(polls)

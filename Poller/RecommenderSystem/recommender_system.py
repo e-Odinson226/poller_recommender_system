@@ -298,20 +298,6 @@ def is_within_x_days_liifetime(timestamp):
         return False
 
 
-# def order(polls_df):
-#    polls_df["createdAt"] = pd.to_datetime(polls_df["createdAt"])
-#
-#    # Sort the DataFrame based on the 'createdAt' column in ascending order
-#    polls_df = polls_df.sort_values(by="createdAt", ascending=True)
-#
-#    # If you want to sort in descending order, use the following line instead
-#    # df = df.sort_values(by='createdAt', ascending=False)
-#
-#    # Reset the index to maintain the order of the sorted rows
-#    polls_df = polls_df.reset_index(drop=True)
-#    return polls_df
-
-
 def filter_timestamp(timestamp):
     try:
         # Convert the timestamp to a datetime object
@@ -355,86 +341,83 @@ def has_valid_date(date_str):
     return date > current_time
 
 
+def remove_duplicates(input_list):
+    seen = set()
+    result = []
+
+    for item in input_list:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
+
+    return result
+
+
+def validate_polls(polls_df, df_name, verbose=True):
+    valid_polls = polls_df.loc[
+        polls_df["valid"] & polls_df["endedAt"].apply(has_valid_date)
+    ]
+
+    invalid_polls = polls_df[
+        ~polls_df["valid"] | ~polls_df["endedAt"].apply(has_valid_date)
+    ]
+
+    if verbose:
+        print(f"valid_{df_name}_polls: {len(valid_polls)}")
+        print(f"expired_{df_name}_polls: {len(invalid_polls)}")
+
+    return valid_polls, invalid_polls
+    return pd.concat([valid_polls, invalid_polls], ignore_index=False)
+
+
 def order(recommended_polls_df=None, trend_polls_df=None, verbose=True):
     if recommended_polls_df is None:
-        valid_trend = trend_polls_df.loc[
-            trend_polls_df["valid"] & trend_polls_df["endedAt"].apply(has_valid_date)
-        ]
-
-        invalid_trend = trend_polls_df[
-            ~trend_polls_df["valid"] | ~trend_polls_df["endedAt"].apply(has_valid_date)
-        ]
-
-        if verbose:
-            print(f"valid_trend_polls length:{len(valid_trend)}")
-            print(f"expired_trend_polls length:{len(invalid_trend)}")
-
-        recommended_polls_list = pd.concat(
+        valid_trend_polls, invalid_trend_polls = validate_polls(
+            trend_polls_df, "trend", verbose
+        )
+        recommended_polls_df = pd.concat(
             [
-                valid_trend,
-                invalid_trend,
+                valid_trend_polls,
+                invalid_trend_polls,
             ],
             ignore_index=False,
         )
-        return recommended_polls_list
 
-    if trend_polls_df is None:
-        valid_recommended = recommended_polls_df.loc[
-            recommended_polls_df["valid"]
-            & recommended_polls_df["endedAt"].apply(has_valid_date)
-        ]
-
-        invalid_recommended = recommended_polls_df[
-            ~recommended_polls_df["valid"]
-            | ~recommended_polls_df["endedAt"].apply(has_valid_date)
-        ]
-        if verbose:
-            print(f"valid_recommended_polls length:{len(valid_recommended)}")
-            print(f"expired_recommended_polls length:{len(invalid_recommended)}")
-
-        recommended_polls_list = pd.concat(
+    elif trend_polls_df is None:
+        valid_recommended_polls, invalid_recommended_polls = validate_polls(
+            recommended_polls_df, "recommended", verbose
+        )
+        recommended_polls_df = pd.concat(
             [
-                valid_recommended,
-                invalid_recommended,
+                valid_recommended_polls,
+                invalid_recommended_polls,
             ],
             ignore_index=False,
         )
-        return recommended_polls_list
 
     elif trend_polls_df is not None and recommended_polls_df is not None:
-        valid_trend = trend_polls_df.loc[
-            trend_polls_df["valid"] & trend_polls_df["endedAt"].apply(has_valid_date)
-        ]
+        valid_recommended_polls, invalid_recommended_polls = validate_polls(
+            recommended_polls_df, "recommended", verbose
+        )
+        valid_trend_polls, invalid_trend_polls = validate_polls(
+            trend_polls_df, "trend", verbose
+        )
 
-        invalid_trend = trend_polls_df[
-            ~trend_polls_df["valid"] | ~trend_polls_df["endedAt"].apply(has_valid_date)
-        ]
-
-        valid_recommended = recommended_polls_df.loc[
-            recommended_polls_df["valid"]
-            & recommended_polls_df["endedAt"].apply(has_valid_date)
-        ]
-
-        invalid_recommended = recommended_polls_df[
-            ~recommended_polls_df["valid"]
-            | ~recommended_polls_df["endedAt"].apply(has_valid_date)
-        ]
-        if verbose:
-            print(f"valid_recommended_polls length:{len(valid_recommended)}")
-            print(f"valid_trend_polls length:{len(valid_trend)}")
-            print(f"expired_recommended_polls length:{len(invalid_recommended)}")
-            print(f"expired_trend_polls length:{len(invalid_trend)}")
-
-        recommended_polls_list = pd.concat(
+        recommended_polls_df = pd.concat(
             [
-                valid_recommended,
-                valid_trend,
-                invalid_recommended,
-                invalid_trend,
+                valid_recommended_polls,
+                valid_trend_polls,
+                invalid_recommended_polls,
+                invalid_trend_polls,
             ],
             ignore_index=False,
         )
-        return recommended_polls_list
+
+    recommended_polls_df = recommended_polls_df.reset_index(drop=True)
+    recommended_polls_df = recommended_polls_df["id"].tolist()
+    recommended_polls_df = remove_duplicates(recommended_polls_df)
+
+    return recommended_polls_df
 
 
 def list_to_df(polls_list, polls_df):
