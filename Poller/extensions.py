@@ -2,6 +2,12 @@ import redis
 import os
 from dotenv import load_dotenv
 from sklearn.utils._param_validation import InvalidParameterError
+import zlib
+import base64
+from pymongo import MongoClient
+from io import BytesIO
+from scipy.sparse import save_npz, load_npz
+import pandas as pd
 
 
 from .ElasticSeachHandle.elasticsearch_handle import *
@@ -94,3 +100,92 @@ def find_duplicates(lst):
 #    print(f"{item} is a duplicate.")
 #
 # print(len(list(duplicates)))
+
+
+def save_matrix_to_mongodb(
+    polls_tf_idf_matrix,
+    collection,
+    user_id,
+    polls_df,
+    filtered_trend_polls_list,
+):
+    # Save the sparse matrix to a BytesIO buffer
+    buffer = BytesIO()
+    save_npz(buffer, polls_tf_idf_matrix)
+
+    # Reset the buffer position to the beginning
+    buffer.seek(0)
+
+    # Read the buffer content into binary data
+    binary_data = buffer.read()
+
+    # Compress the binary data
+    compressed_data = zlib.compress(binary_data)
+
+    # Encode the compressed data as base64 for BSON storage
+    encoded_data = base64.b64encode(compressed_data).decode("utf-8")
+
+    polls_dict = polls_df.to_dict(orient="records")
+
+    # Insert the encoded data into MongoDB
+    collection.insert_one(
+        {
+            "user_id": user_id,
+            "polls_tf_idf_matrix": encoded_data,
+            "concatenated_df": polls_dict,
+            "filtered_trend_polls_list": filtered_trend_polls_list,
+        }
+    )
+
+
+def read_matrix_from_mongodb(collection, user_id):
+    # Retrieve the document from MongoDB
+    result = collection.find_one({"user_id": user_id})
+
+    if result:
+        # Decode the base64 data
+        encoded_data = result.get("polls_tf_idf_matrix", "")
+        compressed_data = base64.b64decode(encoded_data)
+
+        # Decompress the data
+        binary_data = zlib.decompress(compressed_data)
+
+        # Create a BytesIO object from the binary data
+        buffer = BytesIO(binary_data)
+
+        # Load the sparse matrix from the BytesIO buffer
+        polls_tf_idf_matrix = load_npz(buffer)
+
+        # Create a DataFrame from the concatenated_df
+        concatenated_df = pd.DataFrame(result.get("concatenated_df", []))
+
+        # Get other values
+        user_id = result.get("user_id", "")
+        filtered_trend_polls_list = result.get("filtered_trend_polls_list", [])
+
+        return {
+            "user_id": user_id,
+            "polls_tf_idf_matrix": polls_tf_idf_matrix,
+            "concatenated_df": concatenated_df,
+            "filtered_trend_polls_list": filtered_trend_polls_list,
+        }
+    else:
+        return None
+
+
+def save_matrix_to_mongodb_file(matrix, collection, user_id):
+    # Save the sparse matrix to a compressed file
+    save_npz("matrix.npz", matrix)
+
+    # Read the compressed file into a binary stream
+    with open("matrix.npz", "rb") as file:
+        binary_data = file.read()
+
+    # Compress the binary data
+    compressed_data = zlib.compress(binary_data)
+
+    # Encode the compressed data as base64 for BSON storage
+    encoded_data = base64.b64encode(compressed_data).decode("utf-8")
+
+    # Insert the encoded data into MongoDB
+    collection.insert_one({"user_id": user_id, "sparse_matrix": encoded_data})

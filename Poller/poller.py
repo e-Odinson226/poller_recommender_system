@@ -23,7 +23,7 @@ try:
         + str(os.environ.get("private_polls_API"))
         + "/api/Recommend/Polls/GetPrivatePollThatUserCanSee"
     )
-    print(private_polls_API)
+    # print(private_polls_API)
 
     if private_polls_API is None:
         raise ValueError("private_polls_API is None")
@@ -36,8 +36,11 @@ try:
         poller_fingerprint="POLLER_FINGERPRINT",
     )
 
-    polls = elastic_handle.get_index("polls")
-    polls_df = pd.DataFrame.from_records(polls)
+    # polls = elastic_handle.get_index("polls")
+    # polls_df = pd.DataFrame.from_records(polls)
+    client = MongoClient("mongodb://localhost:27017")
+    db = client["pollet"]
+    collection = db["tfidf_matrix"]
 
 except IndexError as e:
     raise e
@@ -58,7 +61,7 @@ class Rec(Resource):
 
             # If the entity exists, reset the expiration time (e.g., to 60 seconds)
             redis_connection.expire(user_id, 600)
-            print(f"The data for {user_id} exists in Redis.")
+            # print(f"The data for {user_id} exists in Redis.")
 
             user_entity = pickle.loads(serialized_user_entity)
 
@@ -73,6 +76,7 @@ class Rec(Resource):
 
             polls_tf_idf_matrix = user_entity.get("polls_tf_idf_matrix")
             filtered_polls_df = user_entity.get("concatenated_df")
+            print(f"type[polls_tf_idf_matrix]:{type(polls_tf_idf_matrix)}")
 
             cosine_similarity_matrix = calc_cosine_similarity_matrix(
                 polls_tf_idf_matrix, polls_tf_idf_matrix
@@ -101,7 +105,9 @@ class Rec(Resource):
                 recommended_polls_df,
                 trend_polls_df,
             )
-
+            print(
+                f"-------------- is distinct = {len(recommended_polls_list) == len(set(recommended_polls_list))}"
+            )
             total_recommended_polls_count = len(recommended_polls_list)
 
             if all == 1:
@@ -146,17 +152,33 @@ class Rec(Resource):
             return jsonify(response)
         except KeyError as key_error:
             # print(f"The was no entry for {user_id} in Redis.")
-            exception = {
-                "list": "error",
-                "user_ID": user_id,
-                "page": 0,
-                "total_count": 0,
-                "recommended_polls": [],
-                "warning": "No entry in redis",
-                "Code": 111,
-            }
+            try:
+                print("** No entry in redis. reading from database...")
+                user_data = read_matrix_from_mongodb(collection, user_id)
+                if user_data:
+                    # Serialize the data using pickle
+                    serialized_data = pickle.dumps(user_data)
 
-            return jsonify(exception)
+                    # Cache the data in Redis
+                    redis_connection = redis.Redis(connection_pool=redis_pool)
+                    redis_connection.set(user_id, serialized_data)
+
+                # No data found for this user
+                else:
+                    exception = {
+                        "list": "error",
+                        "user_ID": user_id,
+                        "page": 0,
+                        "total_count": 0,
+                        "recommended_polls": [],
+                        "warning": "No entry in database",
+                        "Code": 110,
+                    }
+                    return jsonify(exception)
+
+            except Exception as e:
+                print(e)
+
         except InvalidParameterError as a:
             response = {
                 "user_ID": user_id,
@@ -183,6 +205,9 @@ class Rec(Resource):
 
             recommended_polls_list = order(
                 trend_polls_df,
+            )
+            print(
+                f"-------------- is distinct = {len(recommended_polls_list) == len(set(recommended_polls_list))}"
             )
 
             paginated_data = recommended_polls_list[start_idx:end_idx]
@@ -287,7 +312,16 @@ class Gen(Resource):
             serialized_data = pickle.dumps(user_matrix)
             redis_connection = redis.Redis(connection_pool=redis_pool)
             # redis_connection.set(user_id, serialized_data)
-            redis_connection.set(user_id, serialized_data)
+            # redis_connection.set(user_id, serialized_data)
+
+            # Save each matrix to MongoDB
+            save_matrix_to_mongodb(
+                polls_tf_idf_matrix=polls_tf_idf_matrix,
+                collection=collection,
+                user_id=user_id,
+                polls_df=concatenated_df[["id", "createdAt", "endedAt", "valid"]],
+                filtered_trend_polls_list=filtered_trend_polls_list,
+            )
 
             response = {
                 "message": "record submited",
