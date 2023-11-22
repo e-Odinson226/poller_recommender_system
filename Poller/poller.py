@@ -57,7 +57,7 @@ class Rec(Resource):
             check_key_exists(redis_connection, user_id)
 
             # Get the entity from Redis
-            serialized_user_entity = redis_connecxtion.get(user_id)
+            serialized_user_entity = redis_connection.get(user_id)
 
             # If the entity exists, reset the expiration time (e.g., to 60 seconds)
             redis_connection.expire(user_id, 600)
