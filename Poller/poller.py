@@ -57,7 +57,7 @@ class Rec(Resource):
             check_key_exists(redis_connection, user_id)
 
             # Get the entity from Redis
-            serialized_user_entity = redis_connection.get(user_id)
+            serialized_user_entity = redis_connecxtion.get(user_id)
 
             # If the entity exists, reset the expiration time (e.g., to 60 seconds)
             redis_connection.expire(user_id, 600)
@@ -101,10 +101,13 @@ class Rec(Resource):
             trend_polls = user_entity.get("filtered_trend_polls_list")
             trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
 
+            live_polls_flag = int(request.args.get("live_polls", 1))
             recommended_polls_list = order(
-                recommended_polls_df,
-                trend_polls_df,
+                recommended_polls_df=recommended_polls_df,
+                trend_polls_df=trend_polls_df,
+                live_polls_flag=live_polls_flag,
             )
+
             print(
                 f"-------------- is distinct = {len(recommended_polls_list) == len(set(recommended_polls_list))}"
             )

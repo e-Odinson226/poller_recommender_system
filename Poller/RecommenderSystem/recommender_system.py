@@ -370,54 +370,91 @@ def validate_polls(polls_df, df_name, verbose=True):
     return pd.concat([valid_polls, invalid_polls], ignore_index=False)
 
 
-def order(recommended_polls_df=None, trend_polls_df=None, verbose=True):
-    if recommended_polls_df is None:
-        valid_trend_polls, invalid_trend_polls = validate_polls(
-            trend_polls_df, "trend", verbose
-        )
-        recommended_polls_df = pd.concat(
-            [
-                valid_trend_polls,
-                invalid_trend_polls,
-            ],
-            ignore_index=False,
-        )
+def order(
+    recommended_polls_df=None,
+    trend_polls_df=None,
+    verbose=True,
+    live_polls_flag=0,
+):
+    if not live_polls_flag:
+        if recommended_polls_df is None:
+            valid_trend_polls, invalid_trend_polls = validate_polls(
+                trend_polls_df, "trend", verbose
+            )
+            recommended_polls_df = pd.concat(
+                [
+                    valid_trend_polls,
+                    invalid_trend_polls,
+                ],
+                ignore_index=False,
+            )
 
-    elif trend_polls_df is None:
-        valid_recommended_polls, invalid_recommended_polls = validate_polls(
-            recommended_polls_df, "recommended", verbose
-        )
-        recommended_polls_df = pd.concat(
-            [
-                valid_recommended_polls,
-                invalid_recommended_polls,
-            ],
-            ignore_index=False,
-        )
+        elif trend_polls_df is None:
+            valid_recommended_polls, invalid_recommended_polls = validate_polls(
+                recommended_polls_df, "recommended", verbose
+            )
+            recommended_polls_df = pd.concat(
+                [
+                    valid_recommended_polls,
+                    invalid_recommended_polls,
+                ],
+                ignore_index=False,
+            )
 
-    elif trend_polls_df is not None and recommended_polls_df is not None:
-        valid_recommended_polls, invalid_recommended_polls = validate_polls(
-            recommended_polls_df, "recommended", verbose
-        )
-        valid_trend_polls, invalid_trend_polls = validate_polls(
-            trend_polls_df, "trend", verbose
-        )
+        elif trend_polls_df is not None and recommended_polls_df is not None:
+            valid_recommended_polls, invalid_recommended_polls = validate_polls(
+                recommended_polls_df, "recommended", verbose
+            )
+            valid_trend_polls, invalid_trend_polls = validate_polls(
+                trend_polls_df, "trend", verbose
+            )
 
-        recommended_polls_df = pd.concat(
-            [
-                valid_recommended_polls,
-                valid_trend_polls,
-                invalid_recommended_polls,
-                invalid_trend_polls,
-            ],
-            ignore_index=False,
-        )
+            recommended_polls_df = pd.concat(
+                [
+                    valid_recommended_polls,
+                    valid_trend_polls,
+                    invalid_recommended_polls,
+                    invalid_trend_polls,
+                ],
+                ignore_index=False,
+            )
 
-    recommended_polls_df = recommended_polls_df.reset_index(drop=True)
-    recommended_polls_df = recommended_polls_df["id"].tolist()
-    recommended_polls_df = remove_duplicates(recommended_polls_df)
+        recommended_polls_df = recommended_polls_df.reset_index(drop=True)
+        recommended_polls_df = recommended_polls_df["id"].tolist()
+        recommended_polls_df = remove_duplicates(recommended_polls_df)
 
-    return recommended_polls_df
+        return recommended_polls_df
+
+    else:
+        if recommended_polls_df is None:
+            recommended_polls_df, _ = validate_polls(trend_polls_df, "trend", verbose)
+
+        elif trend_polls_df is None:
+            recommended_polls_df, _ = validate_polls(
+                recommended_polls_df, "recommended", verbose
+            )
+
+        elif trend_polls_df is not None and recommended_polls_df is not None:
+            valid_recommended_polls, invalid_recommended_polls = validate_polls(
+                recommended_polls_df, "recommended", verbose
+            )
+            valid_trend_polls, invalid_trend_polls = validate_polls(
+                trend_polls_df, "trend", verbose
+            )
+
+            recommended_polls_df = pd.concat(
+                [
+                    valid_recommended_polls,
+                    valid_trend_polls,
+                ],
+                ignore_index=False,
+            )
+
+        recommended_polls_df = recommended_polls_df.reset_index(drop=True)
+        recommended_polls_df = recommended_polls_df["id"].tolist()
+        recommended_polls_df = remove_duplicates(recommended_polls_df)
+
+        return recommended_polls_df
 
 
 def list_to_df(polls_list, polls_df):
