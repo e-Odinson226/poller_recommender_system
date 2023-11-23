@@ -8,6 +8,7 @@ from pymongo import MongoClient
 from io import BytesIO
 from scipy.sparse import save_npz, load_npz
 import pandas as pd
+import time
 
 
 from .ElasticSeachHandle.elasticsearch_handle import *
@@ -108,34 +109,52 @@ def save_matrix_to_mongodb(
     user_id,
     polls_df,
     filtered_trend_polls_list,
+    timer=False,
 ):
     # Save the sparse matrix to a BytesIO buffer
     buffer = BytesIO()
+
+    start_time = time.time()
     save_npz(buffer, polls_tf_idf_matrix)
+    elapse_npz_time = time.time() - start_time
 
     # Reset the buffer position to the beginning
     buffer.seek(0)
 
     # Read the buffer content into binary data
+    start_time = time.time()
     binary_data = buffer.read()
+    binary_data_time = time.time() - start_time
 
     # Compress the binary data
+    start_time = time.time()
     compressed_data = zlib.compress(binary_data)
+    compressed_data_time = time.time() - start_time
 
     # Encode the compressed data as base64 for BSON storage
+    start_time = time.time()
     encoded_data = base64.b64encode(compressed_data).decode("utf-8")
+    encoded_data_time = time.time() - start_time
 
     polls_dict = polls_df.to_dict(orient="records")
 
     # Insert the encoded data into MongoDB
+    start_time = time.time()
     collection.insert_one(
         {
             "user_id": user_id,
             "polls_tf_idf_matrix": encoded_data,
-            "concatenated_df": polls_dict,
+            # "concatenated_df": polls_dict,
             "filtered_trend_polls_list": filtered_trend_polls_list,
         }
     )
+    insert_one_time = time.time() - start_time
+    if timer:
+        print(f"Function 'save_npz' took {elapse_npz_time:.4f} seconds.")
+        print(f"Function 'buffer.read' took {binary_data_time:.4f} seconds.")
+        print(f"Function 'zlib.compress' took {compressed_data_time:.4f} seconds.")
+        print(f"Function 'base64.b64encode' took {encoded_data_time:.4f} seconds.")
+        print(f"Function 'insert_one_time' took {insert_one_time:.4f} seconds.")
 
 
 def read_matrix_from_mongodb(collection, user_id):
