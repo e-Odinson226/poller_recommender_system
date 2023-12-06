@@ -157,14 +157,108 @@ class Rec(Resource):
             # print(f"The was no entry for {user_id} in Redis.")
             try:
                 print("** No entry in redis. reading from database...")
-                user_data = read_matrix_from_mongodb(collection, user_id)
-                if user_data:
+                user_entity = read_matrix_from_mongodb(collection, user_id)
+                # user_entity_attrs:
+                #   "user_id": user_id,
+                #   "polls_tf_idf_matrix": polls_tf_idf_matrix,
+                #   "concatenated_df": concatenated_df,
+                #   "filtered_trend_polls_list": filtered_trend_polls_list,
+
+                if user_entity:
                     # Serialize the data using pickle
-                    serialized_data = pickle.dumps(user_data)
+                    serialized_data = pickle.dumps(user_entity)
 
                     # Cache the data in Redis
                     redis_connection = redis.Redis(connection_pool=redis_pool)
                     redis_connection.set(user_id, serialized_data)
+
+                    # user_entity = pickle.loads(serialized_user_entity)
+
+                    # Get the page number from the query parameters, default to page 1 if not provided
+                    page = int(request.args.get("page", 1))
+                    all = int(request.args.get("all", 0))
+                    items_per_page = int(request.args.get("page_size", 10))
+
+                    # Calculate the starting and ending indices for the current page
+                    start_idx = (page - 1) * items_per_page
+                    end_idx = start_idx + items_per_page
+
+                    polls_tf_idf_matrix = user_entity.get("polls_tf_idf_matrix")
+                    filtered_polls_df = user_entity.get("concatenated_df")
+                    print(f"type[polls_tf_idf_matrix]:{type(polls_tf_idf_matrix)}")
+
+                    cosine_similarity_matrix = calc_cosine_similarity_matrix(
+                        polls_tf_idf_matrix, polls_tf_idf_matrix
+                    )
+
+                    userInteractions = elastic_handle.get_interactions(
+                        "userpollinteractions", user_id
+                    )
+
+                    userInteractions = [
+                        interaction["pollId"]
+                        for interaction in userInteractions["userPollActions"][:20]
+                    ]
+
+                    recommended_polls_df = gen_rec_from_list_of_polls_df(
+                        interacted_polls=userInteractions,
+                        filtered_polls_df=filtered_polls_df,
+                        cosine_similarity_matrix=cosine_similarity_matrix,
+                        number_of_recommendations=100,
+                    )
+
+                    trend_polls = user_entity.get("filtered_trend_polls_list")
+                    trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
+
+                    live_polls_flag = int(request.args.get("live_polls", 1))
+                    recommended_polls_list = order(
+                        recommended_polls_df=recommended_polls_df,
+                        trend_polls_df=trend_polls_df,
+                        live_polls_flag=live_polls_flag,
+                    )
+
+                    total_recommended_polls_count = len(recommended_polls_list)
+
+                    if all == 1:
+                        try:
+                            response = {
+                                "list": "all",
+                                "user_ID": user_id,
+                                "total_count": total_recommended_polls_count,
+                                "recommended_polls": recommended_polls_list,
+                                "Code": 200,
+                            }
+
+                            return jsonify(response)
+                        except elastic_transport.ConnectionTimeout as e:
+                            exception = {
+                                "Message": e.args,
+                                "Error": "Elastic connection timed out",
+                                "Code": 130,
+                            }
+                            return jsonify(exception)
+
+                    # Slice the data to get the items for the current page
+                    paginated_data = recommended_polls_list[start_idx:end_idx]
+
+                    # Calculate the total number of pages
+                    total_pages = len(recommended_polls_list) // items_per_page + (
+                        len(recommended_polls_list) % items_per_page > 0
+                    )
+
+                    # Create a response dictionary with the paginated data and pagination information
+                    response = {
+                        "list": "ordered_recom",
+                        "user_ID": user_id,
+                        "total_count": len(recommended_polls_list),
+                        "total_pages": total_pages,
+                        "page": page,
+                        "total_count": total_recommended_polls_count,
+                        "recommended_polls": paginated_data,
+                        "Code": 200,
+                    }
+
+                    return jsonify(response)
 
                 # No data found for this user
                 else:
@@ -181,7 +275,6 @@ class Rec(Resource):
 
             except Exception as e:
                 print(e)
-
         except InvalidParameterError as a:
             response = {
                 "user_ID": user_id,
@@ -190,7 +283,6 @@ class Rec(Resource):
             }
 
             return jsonify(response)
-
         except InteractionNotFound as e:
             # Slice the data to get the items for the current page
             # trend_polls = [poll["id"] for poll in trend_polls]
@@ -254,21 +346,23 @@ api.add_resource(Rec, "/get_rec/")
 class Gen(Resource):
     def post(self):
         try:
+            print(f"------------------------------  Processing the post request...")
+            start_post = time.time()
             args = request.get_json(force=True)
-
-            # user_id  = request.args.get("userId")
             user_id = args.get("userId")
-
-            # constraint_parameters = request.args.get("constraint_parameters")
             constraint_parameters = args.get("constraint_parameters")
 
+            start = time.time()
             polls = elastic_handle.get_index("polls")
             polls_df = pd.DataFrame.from_records(polls)
+
+            filtering_time = time.time() - start
+            print(f"elastic_handle.get_index('polls') duration:{filtering_time:.4f}")
+
             filtered_polls_df = polls_df[
                 polls_df.apply(filter_polls, args=(constraint_parameters,), axis=1)
             ]
 
-            # filtered_polls_df = filtered_polls_df.reset_index(drop=True)
             allowed_polls_list = get_allowed_private_polls(
                 {"userId": user_id}, private_polls_API
             )
@@ -286,7 +380,7 @@ class Gen(Resource):
             # Reset the index if needed
             concatenated_df.reset_index(drop=True, inplace=True)
 
-            print(f"------------------------------\nGenerating user's matrix...")
+            # print(f"------------------------------\nGenerating user's matrix...")
             polls_tf_idf_matrix = create_souped_tf_idf_matrix(concatenated_df)
 
             trend_polls = elastic_handle.get_trend_polls(polls)
@@ -298,11 +392,8 @@ class Gen(Resource):
             ]
             filtered_trend_polls_df = filtered_trend_polls_df.reset_index(drop=True)
             filtered_trend_polls_list = filtered_trend_polls_df["id"].tolist()
-
-            print(f"filtered_trend_polls_list: {type(filtered_trend_polls_list)}")
-            print(f"filtered_trend_polls_list: {len(filtered_trend_polls_list)}")
-
             # serialized_polls_tf_idf_matrix = pickle.dumps(polls_tf_idf_matrix)
+            start = time.time()
             user_matrix = {
                 "user_id": user_id,
                 "polls_tf_idf_matrix": polls_tf_idf_matrix,
@@ -312,31 +403,41 @@ class Gen(Resource):
                 ],
                 "filtered_trend_polls_list": filtered_trend_polls_list,
             }
+
             serialized_data = pickle.dumps(user_matrix)
             redis_connection = redis.Redis(connection_pool=redis_pool)
-            # redis_connection.set(user_id, serialized_data)
+            dump_time = time.time() - start
+            print(f"Dumping duration:{dump_time:.4f}")
+
             # redis_connection.set(user_id, serialized_data)
 
             # Save each matrix to MongoDB
+            start = time.time()
             save_matrix_to_mongodb(
                 polls_tf_idf_matrix=polls_tf_idf_matrix,
                 collection=collection,
                 user_id=user_id,
                 polls_df=concatenated_df[["id", "createdAt", "endedAt", "valid"]],
                 filtered_trend_polls_list=filtered_trend_polls_list,
+                timer=False,
             )
+            save_to_mongo = time.time() - start
+            print(f"Save to DB duration:{save_to_mongo:.4f}")
 
             response = {
                 "message": "record submited",
                 "record id": user_id,
             }
-
+            end_post = time.time() - start_post
+            print(f"Post process duration:{end_post:.4f}")
+            print(
+                f"------------------------------  The post request processing has been completed.\n"
+            )
             return jsonify(response)
 
         except ValueError as e:
             if concatenated_df.empty:
                 raise ValueError("no valid poll for this user") from e
-
         except TlsError as e:
             exception = {
                 "Message": e.args,

@@ -262,7 +262,9 @@ def gen_rec_from_list_of_polls_df(
     order_dict = {id: idx for idx, id in enumerate(n_most_recommended)}
 
     # Sort the filtered DataFrame based on the order
-    filtered_df["order"] = filtered_df["id"].map(order_dict)
+    # filtered_df["order"] = filtered_df["id"].map(order_dict)
+    filtered_df.loc[:, "order"] = filtered_df.loc[:, "id"].map(order_dict)
+
     filtered_df = filtered_df.sort_values("order")
 
     # Drop the 'order' column if not needed
