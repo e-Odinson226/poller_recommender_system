@@ -373,9 +373,14 @@ def validate_polls_v1(polls_df, df_name, verbose=True):
 
 
 def validate_polls(polls_df, df_name, verbose=True):
-    valid_polls = polls_df.loc[polls_df["valid"]]
+    valid_polls = polls_df.loc[
+        polls_df["valid"] & polls_df["endedAt"].apply(has_valid_date)
+    ]
 
-    invalid_polls = polls_df.loc[~polls_df["valid"]]
+    invalid_polls = polls_df[~polls_df["id"].isin(valid_polls["id"].tolist())]
+    # invalid_polls = polls_df.loc[
+    #    ~polls_df["valid"] | ~polls_df["endedAt"].apply(has_valid_date)
+    # ]
 
     if verbose:
         print(f"valid_{df_name}_polls: {len(valid_polls)}")
@@ -543,9 +548,7 @@ def order_v3(
         recommended_polls_df = pd.concat(
             [
                 val_recommended_polls_df,
-                inval_recommended_polls_df,
                 val_trend_polls_df,
-                inval_trend_polls_df,
             ],
             ignore_index=False,
         )
@@ -553,8 +556,8 @@ def order_v3(
         recommended_polls_df = pd.concat(
             [
                 val_recommended_polls_df,
-                inval_recommended_polls_df,
                 val_trend_polls_df,
+                inval_recommended_polls_df,
                 inval_trend_polls_df,
             ],
             ignore_index=False,
