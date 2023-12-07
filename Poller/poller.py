@@ -101,7 +101,7 @@ class Rec(Resource):
             trend_polls = user_entity.get("filtered_trend_polls_list")
             trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
 
-            live_polls_flag = int(request.args.get("live_polls", 1))
+            live_polls_flag = int(request.args.get("live_polls", 0))
             recommended_polls_list = order(
                 recommended_polls_df=recommended_polls_df,
                 trend_polls_df=trend_polls_df,
