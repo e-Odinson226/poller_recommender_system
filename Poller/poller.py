@@ -48,16 +48,22 @@ except IndexError as e:
 
 class Rec(Resource):
     def get(self):
+        print(f"------------------------------  Processing the 'Rec' GET request...")
+        start_post = time.time()
+
         # get user data from Redis
         user_id = request.args.get("userId")
 
         redis_connection = redis.Redis(connection_pool=redis_pool)
 
         try:
+            start = time.time()
             check_key_exists(redis_connection, user_id)
 
             # Get the entity from Redis
             serialized_user_entity = redis_connection.get(user_id)
+            stablish_connection_time = time.time() - start
+            print(f"[redis_connection.get(user_id)]:{stablish_connection_time:.4f}")
 
             # If the entity exists, reset the expiration time (e.g., to 60 seconds)
             redis_connection.expire(user_id, 600)
@@ -78,12 +84,22 @@ class Rec(Resource):
             filtered_polls_df = user_entity.get("concatenated_df")
             print(f"type[polls_tf_idf_matrix]:{type(polls_tf_idf_matrix)}")
 
+            start = time.time()
             cosine_similarity_matrix = calc_cosine_similarity_matrix(
                 polls_tf_idf_matrix, polls_tf_idf_matrix
             )
+            calc_cosine_similarity_matrix_time = time.time() - start
+            print(
+                f"[calc_cosine_similarity_matrix]:{calc_cosine_similarity_matrix_time:.4f}"
+            )
 
+            start = time.time()
             userInteractions = elastic_handle.get_interactions(
                 "userpollinteractions", user_id
+            )
+            elastic_handle_get_interactions_time = time.time() - start
+            print(
+                f"[elastic_handle_get_interactions_time]:{elastic_handle_get_interactions_time:.4f}"
             )
 
             userInteractions = [
@@ -91,22 +107,31 @@ class Rec(Resource):
                 for interaction in userInteractions["userPollActions"][:20]
             ]
 
+            start = time.time()
             recommended_polls_df = gen_rec_from_list_of_polls_df(
                 interacted_polls=userInteractions,
                 filtered_polls_df=filtered_polls_df,
                 cosine_similarity_matrix=cosine_similarity_matrix,
                 number_of_recommendations=100,
             )
+            gen_rec_from_list_of_polls_df_time = time.time() - start
+            print(
+                f"[gen_rec_from_list_of_polls_df_time]:{gen_rec_from_list_of_polls_df_time:.4f}"
+            )
 
             trend_polls = user_entity.get("filtered_trend_polls_list")
             trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
 
             live_polls_flag = int(request.args.get("live_polls", 0))
-            recommended_polls_list = order(
+
+            start = time.time()
+            recommended_polls_list = order_v3(
                 recommended_polls_df=recommended_polls_df,
                 trend_polls_df=trend_polls_df,
                 live_polls_flag=live_polls_flag,
             )
+            order_time = time.time() - start
+            print(f"[order_time]:{order_time:.4f}")
 
             print(
                 f"-------------- is distinct = {len(recommended_polls_list) == len(set(recommended_polls_list))}"
@@ -142,6 +167,7 @@ class Rec(Resource):
 
             # Create a response dictionary with the paginated data and pagination information
             response = {
+                "source": "redis",
                 "list": "ordered_recom",
                 "user_ID": user_id,
                 "total_count": len(recommended_polls_list),
@@ -210,7 +236,7 @@ class Rec(Resource):
                     trend_polls = user_entity.get("filtered_trend_polls_list")
                     trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
 
-                    live_polls_flag = int(request.args.get("live_polls", 1))
+                    live_polls_flag = int(request.args.get("live_polls", 0))
                     recommended_polls_list = order(
                         recommended_polls_df=recommended_polls_df,
                         trend_polls_df=trend_polls_df,
@@ -248,6 +274,7 @@ class Rec(Resource):
 
                     # Create a response dictionary with the paginated data and pagination information
                     response = {
+                        "source": "mongo",
                         "list": "ordered_recom",
                         "user_ID": user_id,
                         "total_count": len(recommended_polls_list),
@@ -259,7 +286,6 @@ class Rec(Resource):
                     }
 
                     return jsonify(response)
-
                 # No data found for this user
                 else:
                     exception = {
@@ -409,7 +435,7 @@ class Gen(Resource):
             dump_time = time.time() - start
             print(f"Dumping duration:{dump_time:.4f}")
 
-            # redis_connection.set(user_id, serialized_data)
+            redis_connection.set(user_id, serialized_data)
 
             # Save each matrix to MongoDB
             start = time.time()
