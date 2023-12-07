@@ -7,7 +7,7 @@ from collections import Counter
 import json
 import nltk
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, tzinfo
 
 
 nltk.download("punkt")
@@ -561,6 +561,82 @@ def order_v3(
                 inval_trend_polls_df,
             ],
             ignore_index=False,
+        )
+
+    recommended_polls_df = recommended_polls_df.reset_index(drop=True)
+    recommended_polls_df = recommended_polls_df["id"].tolist()
+    recommended_polls_df = remove_duplicates(recommended_polls_df)
+
+    return recommended_polls_df
+
+
+def validate_polls_v3(polls_df, df_name, verbose=True):
+    # Convert the 'timestamp_column' to a pandas datetime object
+    # polls_df["liive"] = pd.to_datetime(
+    #    polls_df["endedAt"], format="%Y-%m-%dT%H:%M:%S.%fZ", utc=True
+    # )
+
+    # polls_df["endedAt"] = pd.to_datetime(polls_df["endedAt"], utc=True)
+
+    # Get the current timestamp
+    # current_timestamp = datetime.utcnow()
+    current_timestamp = pd.Timestamp.utcnow()
+
+    # Create a boolean mask based on whether the timestamp has passed
+    # mask = (polls_df["endedAt"] < current_timestamp) & polls_df["valid"]
+
+    # Condition 2: Check if the time in "endedAt" column has not passed
+    current_timestamp = pd.Timestamp.utcnow()
+
+    mask = (
+        # (polls_df["endedAt"].notna())
+        # (polls_df["liive"] < current_timestamp)
+        (pd.to_datetime(polls_df["endedAt"]) >= current_timestamp)
+        & polls_df["valid"]
+    )
+
+    # Apply the mask to the DataFrame
+    valid_polls = polls_df[mask]
+    invalid_polls = polls_df[~mask]
+
+    if verbose:
+        print(f"valid_{df_name}_polls: {len(valid_polls)}")
+        print(f"expired_{df_name}_polls: {len(invalid_polls)}")
+
+    return valid_polls, invalid_polls
+
+
+def order_v4(
+    recommended_polls_df=None,
+    trend_polls_df=None,
+    live_polls_flag=0,
+    verbose=True,
+):
+    val_recommended_polls_df, inval_recommended_polls_df = validate_polls_v3(
+        recommended_polls_df, "recommended", verbose
+    )
+
+    val_trend_polls_df, inval_trend_polls_df = validate_polls_v3(
+        trend_polls_df, "trend", verbose
+    )
+
+    if live_polls_flag:
+        recommended_polls_df = pd.concat(
+            [
+                val_recommended_polls_df,
+                val_trend_polls_df,
+            ],
+            ignore_index=True,
+        )
+    else:
+        recommended_polls_df = pd.concat(
+            [
+                val_recommended_polls_df,
+                val_trend_polls_df,
+                inval_recommended_polls_df,
+                inval_trend_polls_df,
+            ],
+            ignore_index=True,
         )
 
     recommended_polls_df = recommended_polls_df.reset_index(drop=True)

@@ -66,7 +66,7 @@ class Rec(Resource):
             print(f"[redis_connection.get(user_id)]:{stablish_connection_time:.4f}")
 
             # If the entity exists, reset the expiration time (e.g., to 60 seconds)
-            redis_connection.expire(user_id, 600)
+            redis_connection.expire(user_id, 10)
             # print(f"The data for {user_id} exists in Redis.")
 
             user_entity = pickle.loads(serialized_user_entity)
@@ -125,7 +125,7 @@ class Rec(Resource):
             live_polls_flag = int(request.args.get("live_polls", 0))
 
             start = time.time()
-            recommended_polls_list = order_v3(
+            recommended_polls_list = order_v4(
                 recommended_polls_df=recommended_polls_df,
                 trend_polls_df=trend_polls_df,
                 live_polls_flag=live_polls_flag,
@@ -237,7 +237,7 @@ class Rec(Resource):
                     trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
 
                     live_polls_flag = int(request.args.get("live_polls", 0))
-                    recommended_polls_list = order(
+                    recommended_polls_list = order_v4(
                         recommended_polls_df=recommended_polls_df,
                         trend_polls_df=trend_polls_df,
                         live_polls_flag=live_polls_flag,
