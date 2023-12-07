@@ -16,14 +16,18 @@ class ElasticsearchHandel:
             ssl_assert_fingerprint=self.fingerprint,
         )
 
-    def get_index(self, index_name, batch_size=100):
+    def get_index_v1(self, index_name, batch_size=100):
         setattr(self, index_name, [])
         index_list = getattr(self, index_name)
         from_index = 0
         all_instances = []
 
         while True:
-            # query = {"query": {"match_all": {}}, "size": batch_size, "from": from_index}
+            query = {
+                "query": {"match_all": {}},
+                "size": batch_size,
+                "from": from_index,
+            }
             results = self.client.search(
                 index=index_name,
                 query={"match_all": {}},
@@ -36,6 +40,44 @@ class ElasticsearchHandel:
             from_index += batch_size
             if len(instances) < 100:
                 break
+
+        setattr(self, index_name, [instance["_source"] for instance in all_instances])
+        return getattr(self, index_name)
+
+    def get_index(self, index_name, batch_size=100):
+        setattr(self, index_name, [])
+
+        # Create an Elasticsearch client
+        # es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
+
+        # Define a query that matches all documents
+        query = {"query": {"match_all": {}}}
+
+        # Use the count API to get the total count of documents
+        result = self.client.count(index=index_name, body=query)
+
+        # Access the total count
+        total_count = result["count"]
+        print(f"Total count of documents in index {index_name}: {total_count}")
+
+        from_index = 0
+        all_instances = []
+
+        query = {
+            "query": {"match_all": {}},
+            "size": batch_size,
+            "from": from_index,
+        }
+        results = self.client.search(
+            index=index_name,
+            query={"match_all": {}},
+            size=total_count,
+            from_=from_index,
+        )
+        instances = results["hits"]["hits"]
+
+        all_instances.extend(instances)
+        from_index += batch_size
 
         setattr(self, index_name, [instance["_source"] for instance in all_instances])
         return getattr(self, index_name)

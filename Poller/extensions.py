@@ -95,14 +95,6 @@ def find_duplicates(lst):
     return duplicates
 
 
-# duplicates = find_duplicates(recommended_polls_list)
-
-# for item in duplicates:
-#    print(f"{item} is a duplicate.")
-#
-# print(len(list(duplicates)))
-
-
 def save_matrix_to_mongodb(
     polls_tf_idf_matrix,
     collection,
