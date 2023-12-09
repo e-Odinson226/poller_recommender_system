@@ -578,10 +578,6 @@ def validate_polls_v3(polls_df, df_name, verbose=True):
 
     # polls_df["endedAt"] = pd.to_datetime(polls_df["endedAt"], utc=True)
 
-    # Get the current timestamp
-    # current_timestamp = datetime.utcnow()
-    current_timestamp = pd.Timestamp.utcnow()
-
     # Create a boolean mask based on whether the timestamp has passed
     # mask = (polls_df["endedAt"] < current_timestamp) & polls_df["valid"]
 
@@ -591,7 +587,14 @@ def validate_polls_v3(polls_df, df_name, verbose=True):
     mask = (
         # (polls_df["endedAt"].notna())
         # (polls_df["liive"] < current_timestamp)
-        (pd.to_datetime(polls_df["endedAt"]) >= current_timestamp)
+        (
+            pd.to_datetime(
+                polls_df["endedAt"],
+                format="ISO8601",
+                utc=True,
+            )
+            >= current_timestamp
+        )
         & polls_df["valid"]
     )
 
