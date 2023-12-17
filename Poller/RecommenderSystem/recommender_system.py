@@ -723,27 +723,27 @@ def get_allowed_private_polls(
         print(response.text)
 
 
-if __name__ == "__main__":
-    pd.set_option("display.max_colwidth", None)
-    pd.set_option("display.max_columns", None)
-
-    path = Path(__file__).parent.parent.parent.resolve()
-    path = str(path) + "/data/elas_polls.json"
-    polls_list = []
-    # polls = pd.read_json(str(path) + "/data/elas_polls.json")
-    with open(path, "r") as infile:
-        polls = json.load(infile)
-        for poll in polls:
-            # poll = poll["_source"]
-            # print(f"poll:\n{poll}")
-            polls_list.append(poll)
-
-    polls = pd.DataFrame.from_records(polls_list)
-
-    polls = encode_topics(polls)
-    print(polls)
-    # check_column_type(polls, 4, str)
-    tf_idf_matrix = create_tf_idf_matrix(polls, "question")
-    cosine_similarity_matrix = calc_cosine_similarity_matrix(
-        tf_idf_matrix, tf_idf_matrix
-    )
+# if __name__ == "__main__":
+#    pd.set_option("display.max_colwidth", None)
+#    pd.set_option("display.max_columns", None)
+#
+#    path = Path(__file__).parent.parent.parent.resolve()
+#    path = str(path) + "/data/elas_polls.json"
+#    polls_list = []
+#    # polls = pd.read_json(str(path) + "/data/elas_polls.json")
+#    with open(path, "r") as infile:
+#        polls = json.load(infile)
+#        for poll in polls:
+#            # poll = poll["_source"]
+#            # print(f"poll:\n{poll}")
+#            polls_list.append(poll)
+#
+#    polls = pd.DataFrame.from_records(polls_list)
+#
+#    polls = encode_topics(polls)
+#    print(polls)
+#    # check_column_type(polls, 4, str)
+#    tf_idf_matrix = create_tf_idf_matrix(polls, "question")
+#    cosine_similarity_matrix = calc_cosine_similarity_matrix(
+#        tf_idf_matrix, tf_idf_matrix
+#    )

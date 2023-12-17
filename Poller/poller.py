@@ -1,10 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_restful import Api, Resource
-import pandas as pd
 
-
-import redis
-import pickle
 
 from .extensions import *
 from .RecommenderSystem.recommender_system import *
@@ -18,6 +14,7 @@ pd.set_option("display.max_columns", None)
 
 
 try:
+    # print(str(os.environ.get("private_polls_API")))
     private_polls_API = (
         "https://"
         + str(os.environ.get("private_polls_API"))
@@ -48,28 +45,21 @@ except IndexError as e:
 
 class Rec(Resource):
     def get(self):
-        print(f"------------------------------  Processing the 'Rec' GET request...")
-        start_post = time.time()
-
-        # get user data from Redis
-        user_id = request.args.get("userId")
-
-        redis_connection = redis.Redis(connection_pool=redis_pool)
-
         try:
-            start = time.time()
-            check_key_exists(redis_connection, user_id)
-
-            # Get the entity from Redis
-            serialized_user_entity = redis_connection.get(user_id)
-            stablish_connection_time = time.time() - start
-            print(f"[redis_connection.get(user_id)]:{stablish_connection_time:.4f}")
+            print(
+                f"------------------------------\nProcessing the 'Rec' GET request..."
+            )
+            # get user data from Redis
+            user_id = request.args.get("userId")
+            redis_connection = redis.Redis(connection_pool=redis_pool)
+            user_entity = get_user_entity(
+                user_id=user_id,
+                mongo_collection=collection,
+                redis_connection=redis_connection,
+            )
 
             # If the entity exists, reset the expiration time (e.g., to 60 seconds)
             redis_connection.expire(user_id, 10)
-            # print(f"The data for {user_id} exists in Redis.")
-
-            user_entity = pickle.loads(serialized_user_entity)
 
             # Get the page number from the query parameters, default to page 1 if not provided
             page = int(request.args.get("page", 1))
@@ -179,128 +169,6 @@ class Rec(Resource):
             }
 
             return jsonify(response)
-        except KeyError as key_error:
-            # print(f"The was no entry for {user_id} in Redis.")
-            try:
-                print("** No entry in redis. reading from database...")
-                user_entity = read_matrix_from_mongodb(collection, user_id)
-                # user_entity_attrs:
-                #   "user_id": user_id,
-                #   "polls_tf_idf_matrix": polls_tf_idf_matrix,
-                #   "concatenated_df": concatenated_df,
-                #   "filtered_trend_polls_list": filtered_trend_polls_list,
-
-                if user_entity:
-                    # Serialize the data using pickle
-                    serialized_data = pickle.dumps(user_entity)
-
-                    # Cache the data in Redis
-                    redis_connection = redis.Redis(connection_pool=redis_pool)
-                    redis_connection.set(user_id, serialized_data)
-
-                    # user_entity = pickle.loads(serialized_user_entity)
-
-                    # Get the page number from the query parameters, default to page 1 if not provided
-                    page = int(request.args.get("page", 1))
-                    all = int(request.args.get("all", 0))
-                    items_per_page = int(request.args.get("page_size", 10))
-
-                    # Calculate the starting and ending indices for the current page
-                    start_idx = (page - 1) * items_per_page
-                    end_idx = start_idx + items_per_page
-
-                    polls_tf_idf_matrix = user_entity.get("polls_tf_idf_matrix")
-                    filtered_polls_df = user_entity.get("concatenated_df")
-                    print(f"type[polls_tf_idf_matrix]:{type(polls_tf_idf_matrix)}")
-
-                    cosine_similarity_matrix = calc_cosine_similarity_matrix(
-                        polls_tf_idf_matrix, polls_tf_idf_matrix
-                    )
-
-                    userInteractions = elastic_handle.get_interactions(
-                        "userpollinteractions", user_id
-                    )
-
-                    userInteractions = [
-                        interaction["pollId"]
-                        for interaction in userInteractions["userPollActions"][:20]
-                    ]
-
-                    recommended_polls_df = gen_rec_from_list_of_polls_df(
-                        interacted_polls=userInteractions,
-                        filtered_polls_df=filtered_polls_df,
-                        cosine_similarity_matrix=cosine_similarity_matrix,
-                        number_of_recommendations=100,
-                    )
-
-                    trend_polls = user_entity.get("filtered_trend_polls_list")
-                    trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
-
-                    live_polls_flag = int(request.args.get("live_polls", 0))
-                    recommended_polls_list = order_v4(
-                        recommended_polls_df=recommended_polls_df,
-                        trend_polls_df=trend_polls_df,
-                        live_polls_flag=live_polls_flag,
-                    )
-
-                    total_recommended_polls_count = len(recommended_polls_list)
-
-                    if all == 1:
-                        try:
-                            response = {
-                                "list": "all",
-                                "user_ID": user_id,
-                                "total_count": total_recommended_polls_count,
-                                "recommended_polls": recommended_polls_list,
-                                "Code": 200,
-                            }
-
-                            return jsonify(response)
-                        except elastic_transport.ConnectionTimeout as e:
-                            exception = {
-                                "Message": e.args,
-                                "Error": "Elastic connection timed out",
-                                "Code": 130,
-                            }
-                            return jsonify(exception)
-
-                    # Slice the data to get the items for the current page
-                    paginated_data = recommended_polls_list[start_idx:end_idx]
-
-                    # Calculate the total number of pages
-                    total_pages = len(recommended_polls_list) // items_per_page + (
-                        len(recommended_polls_list) % items_per_page > 0
-                    )
-
-                    # Create a response dictionary with the paginated data and pagination information
-                    response = {
-                        "source": "mongo",
-                        "list": "ordered_recom",
-                        "user_ID": user_id,
-                        "total_count": len(recommended_polls_list),
-                        "total_pages": total_pages,
-                        "page": page,
-                        "total_count": total_recommended_polls_count,
-                        "recommended_polls": paginated_data,
-                        "Code": 200,
-                    }
-
-                    return jsonify(response)
-                # No data found for this user
-                else:
-                    exception = {
-                        "list": "error",
-                        "user_ID": user_id,
-                        "page": 0,
-                        "total_count": 0,
-                        "recommended_polls": [],
-                        "warning": "No entry in database",
-                        "Code": 110,
-                    }
-                    return jsonify(exception)
-
-            except Exception as e:
-                print(e)
         except InvalidParameterError as a:
             response = {
                 "user_ID": user_id,
@@ -310,21 +178,24 @@ class Rec(Resource):
 
             return jsonify(response)
         except InteractionNotFound as e:
-            # Slice the data to get the items for the current page
-            # trend_polls = [poll["id"] for poll in trend_polls]
-            # trend_polls = user_entity.get("filtered_trend_polls_list")
-
             page = int(request.args.get("page", 1))
             items_per_page = int(request.args.get("page_size", 10))
 
             start_idx = (page - 1) * items_per_page
             end_idx = start_idx + items_per_page
 
+            user_entity = get_user_entity(
+                user_id=user_id,
+                mongo_collection=collection,
+                redis_connection=redis_connection,
+            )
+            print("ssssssssssssssssssssssssssssss")
             trend_polls = user_entity.get("filtered_trend_polls_list")
             filtered_polls_df = user_entity.get("concatenated_df")
+            print(filtered_polls_df)
             trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
 
-            recommended_polls_list = order(
+            recommended_polls_list = order_v4(
                 trend_polls_df,
             )
             print(
@@ -439,7 +310,7 @@ class Gen(Resource):
 
             # Save each matrix to MongoDB
             start = time.time()
-            save_matrix_to_mongodb(
+            insert_item_to_mongodb(
                 polls_tf_idf_matrix=polls_tf_idf_matrix,
                 collection=collection,
                 user_id=user_id,
