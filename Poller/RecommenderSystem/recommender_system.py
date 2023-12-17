@@ -649,6 +649,65 @@ def order_v4(
     return recommended_polls_df
 
 
+def order_v5(
+    recommended_polls_df=None,
+    trend_polls_df=None,
+    live_polls_flag=0,
+    verbose=True,
+):
+    if trend_polls_df is None:
+        val_recommended_polls_df, inval_recommended_polls_df = validate_polls_v3(
+            recommended_polls_df, "recommended", verbose
+        )
+        if live_polls_flag:
+            recommended_polls_df = pd.concat(
+                [
+                    val_recommended_polls_df,
+                ],
+                ignore_index=True,
+            )
+        else:
+            recommended_polls_df = pd.concat(
+                [
+                    val_recommended_polls_df,
+                    inval_recommended_polls_df,
+                ],
+                ignore_index=True,
+            )
+
+        recommended_polls_df = recommended_polls_df.reset_index(drop=True)
+        recommended_polls_df = recommended_polls_df["id"].tolist()
+        recommended_polls_df = remove_duplicates(recommended_polls_df)
+
+        return recommended_polls_df
+
+    elif recommended_polls_df is None:
+        val_trend_polls_df, inval_trend_polls_df = validate_polls_v3(
+            trend_polls_df, "trend", verbose
+        )
+        if live_polls_flag:
+            recommended_polls_df = pd.concat(
+                [
+                    val_trend_polls_df,
+                ],
+                ignore_index=True,
+            )
+        else:
+            recommended_polls_df = pd.concat(
+                [
+                    val_trend_polls_df,
+                    inval_trend_polls_df,
+                ],
+                ignore_index=True,
+            )
+
+        recommended_polls_df = recommended_polls_df.reset_index(drop=True)
+        recommended_polls_df = recommended_polls_df["id"].tolist()
+        recommended_polls_df = remove_duplicates(recommended_polls_df)
+
+        return recommended_polls_df
+
+
 def list_to_df(polls_list, polls_df):
     # Filter the DataFrame based on the id_list
     filtered_df = polls_df[polls_df["id"].isin(polls_list)]

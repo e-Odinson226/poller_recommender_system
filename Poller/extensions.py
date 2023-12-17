@@ -170,7 +170,6 @@ def read_matrix_from_mongodb(collection, user_id) -> dict[str, Any]:
     # Retrieve the document from MongoDB
     result = collection.find_one({"user_id": user_id})
 
-    print(result)
     # Decode the base64 data
     encoded_data = result.get("polls_tf_idf_matrix", "")
     compressed_data = base64.b64decode(encoded_data)

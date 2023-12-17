@@ -115,7 +115,7 @@ class Rec(Resource):
             live_polls_flag = int(request.args.get("live_polls", 0))
 
             start = time.time()
-            recommended_polls_list = order_v4(
+            recommended_polls_list = order_v5(
                 recommended_polls_df=recommended_polls_df,
                 trend_polls_df=trend_polls_df,
                 live_polls_flag=live_polls_flag,
@@ -180,6 +180,7 @@ class Rec(Resource):
         except InteractionNotFound as e:
             page = int(request.args.get("page", 1))
             items_per_page = int(request.args.get("page_size", 10))
+            all = int(request.args.get("all", 0))
 
             start_idx = (page - 1) * items_per_page
             end_idx = start_idx + items_per_page
@@ -189,19 +190,37 @@ class Rec(Resource):
                 mongo_collection=collection,
                 redis_connection=redis_connection,
             )
-            print("ssssssssssssssssssssssssssssss")
+
             trend_polls = user_entity.get("filtered_trend_polls_list")
             filtered_polls_df = user_entity.get("concatenated_df")
-            print(filtered_polls_df)
+
             trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
 
-            recommended_polls_list = order_v4(
+            recommended_polls_list = order_v5(
                 trend_polls_df,
             )
             print(
                 f"-------------- is distinct = {len(recommended_polls_list) == len(set(recommended_polls_list))}"
             )
+            if all == 1:
+                try:
+                    response = {
+                        "list": "trend-all",
+                        "user_ID": user_id,
+                        "total_count": len(recommended_polls_list),
+                        "recommended_polls": recommended_polls_list,
+                        "warning": "User has NO INTERACTION",
+                        "Code": 200,
+                    }
 
+                    return jsonify(response)
+                except elastic_transport.ConnectionTimeout as e:
+                    exception = {
+                        "Message": e.args,
+                        "Error": "Elastic connection timed out",
+                        "Code": 130,
+                    }
+                    return jsonify(exception)
             paginated_data = recommended_polls_list[start_idx:end_idx]
 
             # Calculate the total number of pages
