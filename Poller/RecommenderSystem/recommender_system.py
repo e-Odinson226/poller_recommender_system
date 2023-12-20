@@ -655,11 +655,6 @@ def order_v5(
     live_polls_flag=0,
     verbose=True,
 ):
-    print(
-        f"{recommended_polls_df}\
-            {trend_polls_df}\
-            {live_polls_flag}"
-    )
     if trend_polls_df is None:
         val_recommended_polls_df, inval_recommended_polls_df = validate_polls_v3(
             recommended_polls_df, "recommended", verbose
@@ -701,6 +696,37 @@ def order_v5(
             recommended_polls_df = pd.concat(
                 [
                     val_trend_polls_df,
+                    inval_trend_polls_df,
+                ],
+                ignore_index=True,
+            )
+
+        recommended_polls_df = recommended_polls_df.reset_index(drop=True)
+        recommended_polls_df = recommended_polls_df["id"].tolist()
+        recommended_polls_df = remove_duplicates(recommended_polls_df)
+
+        return recommended_polls_df
+    else:
+        val_recommended_polls_df, inval_recommended_polls_df = validate_polls_v3(
+            recommended_polls_df, "recommended", verbose
+        )
+        val_trend_polls_df, inval_trend_polls_df = validate_polls_v3(
+            trend_polls_df, "trend", verbose
+        )
+        if live_polls_flag:
+            recommended_polls_df = pd.concat(
+                [
+                    val_recommended_polls_df,
+                    val_trend_polls_df,
+                ],
+                ignore_index=True,
+            )
+        else:
+            recommended_polls_df = pd.concat(
+                [
+                    val_recommended_polls_df,
+                    val_trend_polls_df,
+                    inval_recommended_polls_df,
                     inval_trend_polls_df,
                 ],
                 ignore_index=True,

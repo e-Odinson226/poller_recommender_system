@@ -87,6 +87,7 @@ class Rec(Resource):
             userInteractions = elastic_handle.get_interactions(
                 "userpollinteractions", user_id
             )
+            print(f"*****user interactions: {len(userInteractions)}")
             elastic_handle_get_interactions_time = time.time() - start
             print(
                 f"[elastic_handle_get_interactions_time]:{elastic_handle_get_interactions_time:.4f}"
@@ -125,17 +126,17 @@ class Rec(Resource):
             order_time = time.time() - start
             print(f"[order_time]:{order_time:.4f}")
 
-            # print(
-            #    f"-------------- is distinct = {len(recommended_polls_list) == len(set(recommended_polls_list))}"
-            # )
-            # total_recommended_polls_count = len(recommended_polls_list)
+            print(
+                f"-------------- is distinct = {len(recommended_polls_list) == len(set(recommended_polls_list))}"
+            )
+            total_recommended_polls_count = len(recommended_polls_list)
 
             if all == 1:
                 try:
                     response = {
                         "list": "all",
                         "user_ID": user_id,
-                        # "total_count": total_recommended_polls_count,
+                        "total_count": total_recommended_polls_count,
                         "recommended_polls": recommended_polls_list,
                         "Code": 200,
                     }
@@ -327,7 +328,7 @@ class Gen(Resource):
             dump_time = time.time() - start
             print(f"Dumping duration:{dump_time:.4f}")
 
-            redis_connection.set(user_id, serialized_data)
+            redis_connection.set(user_id, serialized_data, ex=10)
 
             # Save each matrix to MongoDB
             start = time.time()
