@@ -52,7 +52,7 @@ class Rec(Resource):
             # get user data from Redis
             user_id = request.args.get("userId")
             redis_connection = redis.Redis(connection_pool=redis_pool)
-            user_entity = get_user_entity(
+            user_entity, user_entity_source = get_user_entity(
                 user_id=user_id,
                 mongo_collection=collection,
                 redis_connection=redis_connection,
@@ -160,7 +160,7 @@ class Rec(Resource):
 
             # Create a response dictionary with the paginated data and pagination information
             response = {
-                "source": "redis",
+                "source": user_entity_source,
                 "list": "ordered_recom",
                 "user_ID": user_id,
                 "total_count": len(recommended_polls_list),
@@ -333,9 +333,9 @@ class Gen(Resource):
             # Save each matrix to MongoDB
             start = time.time()
             insert_item_to_mongodb(
+                user_id=user_id,
                 polls_tf_idf_matrix=polls_tf_idf_matrix,
                 collection=collection,
-                user_id=user_id,
                 polls_df=concatenated_df[["id", "createdAt", "endedAt", "valid"]],
                 filtered_trend_polls_list=filtered_trend_polls_list,
             )

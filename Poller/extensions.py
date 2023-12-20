@@ -178,25 +178,6 @@ def read_matrix_from_mongodb(collection, user_id) -> dict[str, Any]:
     }
 
 
-def save_matrix_to_mongodb_file(matrix, collection, user_id):
-    # Save the sparse matrix to a compressed file
-    save_npz("matrix.npz", matrix)
-
-    # Read the compressed file into a binary stream
-    with open("matrix.npz", "rb") as file:
-        binary_data = file.read()
-
-    # Compress the binary data
-    compressed_data = zlib.compress(binary_data)
-
-    # Encode the compressed data as base64 for BSON storage
-    encoded_data = base64.b64encode(compressed_data).decode("utf-8")
-
-    # Insert the encoded data into MongoDB
-
-    collection.insert_one({"user_id": user_id, "sparse_matrix": encoded_data})
-
-
 def get_user_entity(user_id, redis_connection, mongo_collection):
     # Get the entity from Redis
     # print(f"redis_connection.exists(user_id):{redis_connection.exists(user_id)}")
@@ -205,124 +186,11 @@ def get_user_entity(user_id, redis_connection, mongo_collection):
         serialized_user_entity = redis_connection.get(user_id)
         user_entity = pickle.loads(serialized_user_entity)
         redis_connection.expire(user_id, 5)
-        return user_entity
+        return user_entity, "redis"
 
     else:
         print(f"Getting user entity from mongo")
-        return read_matrix_from_mongodb(mongo_collection, user_id)
-
-
-#
-## user_entity = read_matrix_from_mongodb(collection, user_id)
-#
-# if user_entity:
-#    # Serialize the data using pickle
-#    serialized_data = pickle.dumps(user_entity)
-#
-#    # Cache the data in Redis
-#    redis_connection = redis.Redis(connection_pool=redis_pool)
-#    redis_connection.set(user_id, serialized_data)
-#
-#    # user_entity = pickle.loads(serialized_user_entity)
-#
-#    # Get the page number from the query parameters, default to page 1 if not provided
-#    page = int(request.args.get("page", 1))
-#    all = int(request.args.get("all", 0))
-#    items_per_page = int(request.args.get("page_size", 10))
-#
-#    # Calculate the starting and ending indices for the current page
-#    start_idx = (page - 1) * items_per_page
-#    end_idx = start_idx + items_per_page
-#
-#    polls_tf_idf_matrix = user_entity.get("polls_tf_idf_matrix")
-#    filtered_polls_df = user_entity.get("concatenated_df")
-#    print(f"type[polls_tf_idf_matrix]:{type(polls_tf_idf_matrix)}")
-#
-#    cosine_similarity_matrix = calc_cosine_similarity_matrix(
-#        polls_tf_idf_matrix, polls_tf_idf_matrix
-#    )
-#
-#    userInteractions = elastic_handle.get_interactions(
-#        "userpollinteractions", user_id
-#    )
-#
-#    userInteractions = [
-#        interaction["pollId"]
-#        for interaction in userInteractions["userPollActions"][:20]
-#    ]
-#
-#    recommended_polls_df = gen_rec_from_list_of_polls_df(
-#        interacted_polls=userInteractions,
-#        filtered_polls_df=filtered_polls_df,
-#        cosine_similarity_matrix=cosine_similarity_matrix,
-#        number_of_recommendations=100,
-#    )
-#
-#    trend_polls = user_entity.get("filtered_trend_polls_list")
-#    trend_polls_df = list_to_df(trend_polls, filtered_polls_df)
-#
-#    live_polls_flag = int(request.args.get("live_polls", 0))
-#    recommended_polls_list = order_v4(
-#        recommended_polls_df=recommended_polls_df,
-#        trend_polls_df=trend_polls_df,
-#        live_polls_flag=live_polls_flag,
-#    )
-#
-#    total_recommended_polls_count = len(recommended_polls_list)
-#
-#    if all == 1:
-#        try:
-#            response = {
-#                "list": "all",
-#                "user_ID": user_id,
-#                "total_count": total_recommended_polls_count,
-#                "recommended_polls": recommended_polls_list,
-#                "Code": 200,
-#            }
-#
-#            return jsonify(response)
-#        except elastic_transport.ConnectionTimeout as e:
-#            exception = {
-#                "Message": e.args,
-#                "Error": "Elastic connection timed out",
-#                "Code": 130,
-#            }
-#            return jsonify(exception)
-#
-#    # Slice the data to get the items for the current page
-#    paginated_data = recommended_polls_list[start_idx:end_idx]
-#
-#    # Calculate the total number of pages
-#    total_pages = len(recommended_polls_list) // items_per_page + (
-#        len(recommended_polls_list) % items_per_page > 0
-#    )
-#
-#    # Create a response dictionary with the paginated data and pagination information
-#    response = {
-#        "source": "mongo",
-#        "list": "ordered_recom",
-#        "user_ID": user_id,
-#        "total_count": len(recommended_polls_list),
-#        "total_pages": total_pages,
-#        "page": page,
-#        "total_count": total_recommended_polls_count,
-#        "recommended_polls": paginated_data,
-#        "Code": 200,
-#    }
-#
-#    return jsonify(response)
-## No data found for this user
-# else:
-#    exception = {
-#        "list": "error",
-#        "user_ID": user_id,
-#        "page": 0,
-#        "total_count": 0,
-#        "recommended_polls": [],
-#        "warning": "No entry in database",
-#        "Code": 110,
-#    }
-#    return jsonify(exception)
-#
-# return user_entity
-#
+        user_matrix = read_matrix_from_mongodb(mongo_collection, user_id)
+        serialized_data = pickle.dumps(user_matrix)
+        redis_connection.set(user_id, serialized_data, ex=10)
+        return user_matrix, "mongo"
