@@ -120,20 +120,22 @@ class Rec(Resource):
                 trend_polls_df=trend_polls_df,
                 live_polls_flag=live_polls_flag,
             )
+            print(f"recommended_polls_list: -------------{recommended_polls_list}")
+
             order_time = time.time() - start
             print(f"[order_time]:{order_time:.4f}")
 
-            print(
-                f"-------------- is distinct = {len(recommended_polls_list) == len(set(recommended_polls_list))}"
-            )
-            total_recommended_polls_count = len(recommended_polls_list)
+            # print(
+            #    f"-------------- is distinct = {len(recommended_polls_list) == len(set(recommended_polls_list))}"
+            # )
+            # total_recommended_polls_count = len(recommended_polls_list)
 
             if all == 1:
                 try:
                     response = {
                         "list": "all",
                         "user_ID": user_id,
-                        "total_count": total_recommended_polls_count,
+                        # "total_count": total_recommended_polls_count,
                         "recommended_polls": recommended_polls_list,
                         "Code": 200,
                     }
@@ -335,7 +337,6 @@ class Gen(Resource):
                 user_id=user_id,
                 polls_df=concatenated_df[["id", "createdAt", "endedAt", "valid"]],
                 filtered_trend_polls_list=filtered_trend_polls_list,
-                timer=False,
             )
             save_to_mongo = time.time() - start
             print(f"Save to DB duration:{save_to_mongo:.4f}")

@@ -655,6 +655,11 @@ def order_v5(
     live_polls_flag=0,
     verbose=True,
 ):
+    print(
+        f"{recommended_polls_df}\
+            {trend_polls_df}\
+            {live_polls_flag}"
+    )
     if trend_polls_df is None:
         val_recommended_polls_df, inval_recommended_polls_df = validate_polls_v3(
             recommended_polls_df, "recommended", verbose
