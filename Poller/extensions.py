@@ -80,7 +80,7 @@ def get_entity(redis_client, entity_key, extend_expiration=600):
 
     if entity:
         redis_client.expire(entity_key, extend_expiration)
-        print(f"The data for {entity_key} exists in Redis.")
+        # print(f"The data for {entity_key} exists in Redis.")
         return entity
 
 
@@ -182,14 +182,14 @@ def get_user_entity(user_id, redis_connection, mongo_collection):
     # Get the entity from Redis
     # print(f"redis_connection.exists(user_id):{redis_connection.exists(user_id)}")
     if redis_connection.exists(user_id):
-        print(f"Getting user entity from redis")
+        print(f"Getting user matrix from redis")
         serialized_user_entity = redis_connection.get(user_id)
         user_entity = pickle.loads(serialized_user_entity)
         redis_connection.expire(user_id, 5)
         return user_entity, "redis"
 
     else:
-        print(f"Getting user entity from mongo")
+        print(f"Getting user matrix from mongo")
         user_matrix = read_matrix_from_mongodb(mongo_collection, user_id)
         serialized_data = pickle.dumps(user_matrix)
         redis_connection.set(user_id, serialized_data, ex=10)

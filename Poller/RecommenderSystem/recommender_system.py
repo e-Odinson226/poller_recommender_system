@@ -112,7 +112,6 @@ def calc_cosine_similarity_matrix(tf_idf_matrix_1, tf_idf_matrix_2):
 
 def id_to_index(df, search_id):
     result = df[df["id"] == str(search_id)].index.values[0]
-    print(result)
 
     if len(result) > 0:
         return result

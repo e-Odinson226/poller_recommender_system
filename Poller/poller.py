@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_restful import Api, Resource
+from collections import Counter
 
 
 from .extensions import *
@@ -58,6 +59,16 @@ class Rec(Resource):
                 redis_connection=redis_connection,
             )
 
+            # ------------------------
+            userInteractions = elastic_handle.get_interactions(
+                "userpollinteractions", user_id
+            )
+            userInteractions = [
+                interaction["pollId"]
+                for interaction in userInteractions["userPollActions"][:20]
+            ]
+            # ------------------------
+
             # If the entity exists, reset the expiration time (e.g., to 60 seconds)
             redis_connection.expire(user_id, 10)
 
@@ -72,7 +83,6 @@ class Rec(Resource):
 
             polls_tf_idf_matrix = user_entity.get("polls_tf_idf_matrix")
             filtered_polls_df = user_entity.get("concatenated_df")
-            print(f"type[polls_tf_idf_matrix]:{type(polls_tf_idf_matrix)}")
 
             start = time.time()
             cosine_similarity_matrix = calc_cosine_similarity_matrix(
@@ -87,7 +97,7 @@ class Rec(Resource):
             userInteractions = elastic_handle.get_interactions(
                 "userpollinteractions", user_id
             )
-            print(f"*****user interactions: {len(userInteractions)}")
+
             elastic_handle_get_interactions_time = time.time() - start
             print(
                 f"[elastic_handle_get_interactions_time]:{elastic_handle_get_interactions_time:.4f}"
@@ -121,15 +131,16 @@ class Rec(Resource):
                 trend_polls_df=trend_polls_df,
                 live_polls_flag=live_polls_flag,
             )
-            print(f"recommended_polls_list: -------------{recommended_polls_list}")
 
             order_time = time.time() - start
             print(f"[order_time]:{order_time:.4f}")
 
-            print(
-                f"-------------- is distinct = {len(recommended_polls_list) == len(set(recommended_polls_list))}"
-            )
             total_recommended_polls_count = len(recommended_polls_list)
+
+            element_counts = Counter(recommended_polls_list)
+            total_duplicates = sum(
+                count for count in element_counts.values() if count > 1
+            )
 
             if all == 1:
                 try:
@@ -138,6 +149,7 @@ class Rec(Resource):
                         "user_ID": user_id,
                         "total_count": total_recommended_polls_count,
                         "recommended_polls": recommended_polls_list,
+                        "total_duplicates": total_duplicates,
                         "Code": 200,
                     }
 
@@ -158,6 +170,8 @@ class Rec(Resource):
                 len(recommended_polls_list) % items_per_page > 0
             )
 
+            shared_items = [item for item in paginated_data if item in userInteractions]
+
             # Create a response dictionary with the paginated data and pagination information
             response = {
                 "source": user_entity_source,
@@ -167,7 +181,9 @@ class Rec(Resource):
                 "total_pages": total_pages,
                 "page": page,
                 "total_count": total_recommended_polls_count,
+                "total_duplicates": total_duplicates,
                 "recommended_polls": paginated_data,
+                "shared_items": len(shared_items),
                 "Code": 200,
             }
 
@@ -202,17 +218,22 @@ class Rec(Resource):
             recommended_polls_list = order_v5(
                 trend_polls_df,
             )
-            print(
-                f"-------------- is distinct = {len(recommended_polls_list) == len(set(recommended_polls_list))}"
-            )
+            # print(
+            #    f"-------------- is distinct = {len(recommended_polls_list) == len(set(recommended_polls_list))}"
+            # )
             if all == 1:
                 try:
+                    element_counts = Counter(recommended_polls_list)
+                    total_duplicates = sum(
+                        count for count in element_counts.values() if count > 1
+                    )
                     response = {
                         "list": "trend-all",
                         "user_ID": user_id,
                         "total_count": len(recommended_polls_list),
                         "recommended_polls": recommended_polls_list,
                         "warning": "User has NO INTERACTION",
+                        "total_duplicates": total_duplicates,
                         "Code": 200,
                     }
 
