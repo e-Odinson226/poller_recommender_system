@@ -757,9 +757,10 @@ def list_to_df(polls_list, polls_df):
     return filtered_df
 
 
-def filter_polls(row, user_limitations):
+def filter_polls(row, user_limitations, user_id):
     if (
-        not row.get("isDeleted")  # Check if the poll is not deleted
+        user_id != row.get("ownerId")
+        and not row.get("isDeleted")  # Check if the poll is not deleted
         and (row["pollType"] == "Public" or row["pollType"] == "PublicAnonymous")
         and isinstance(row.get("pollLimitations"), dict)
         and all(k in user_limitations for k in ["Location", "Gender", "Age"])

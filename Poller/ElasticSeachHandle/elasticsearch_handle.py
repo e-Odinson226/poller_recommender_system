@@ -205,21 +205,3 @@ def get_index(self, index_name, batch_size=100):
 
     setattr(self, index_name, [instance["_source"] for instance in all_instances])
     return getattr(self, index_name)
-
-
-""" if __name__ == "__main__":
-    elasticsearch_url = "https://159.203.183.251:9200"
-    username = "pollett"
-    password = "9r0&rJP@19GY"
-    fingerprint = "CE:AA:F7:FF:04:C7:31:14:78:9C:62:D4:CE:98:F9:EF:56:DA:70:45:37:14:E3:F8:66:0A:25:ED:05:04:83:EC"
-
-    elastic_handle = ElasticsearchHandel(
-        elasticsearch_url, username, password, fingerprint
-    )
-
-    polls = elastic_handle.get_index("polls")
-    elastic_handle.export_index_to_file(polls, "./data/elas_polls.json")
-
-    interactions = elastic_handle.get_index("userpollinteractions")
-    elastic_handle.export_index_to_file(interactions, "./data/elas_interactions.json")
-    # print(polls) """

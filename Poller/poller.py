@@ -300,7 +300,14 @@ class Gen(Resource):
             print(f"elastic_handle.get_index('polls') duration:{filtering_time:.4f}")
 
             filtered_polls_df = polls_df[
-                polls_df.apply(filter_polls, args=(constraint_parameters,), axis=1)
+                polls_df.apply(
+                    filter_polls,
+                    args=(
+                        constraint_parameters,
+                        user_id,
+                    ),
+                    axis=1,
+                )
             ]
 
             allowed_polls_list = get_allowed_private_polls(
@@ -310,7 +317,12 @@ class Gen(Resource):
             allowed_private_polls = polls_df[polls_df["id"].isin(allowed_polls_list)]
             allowed_private_polls = allowed_private_polls[
                 allowed_private_polls.apply(
-                    filter_polls, args=(constraint_parameters,), axis=1
+                    filter_polls,
+                    args=(
+                        constraint_parameters,
+                        user_id,
+                    ),
+                    axis=1,
                 )
             ]
 
@@ -327,7 +339,12 @@ class Gen(Resource):
             trend_polls_df = pd.DataFrame.from_records(trend_polls)
             filtered_trend_polls_df = trend_polls_df[
                 trend_polls_df.apply(
-                    filter_polls, args=(constraint_parameters,), axis=1
+                    filter_polls,
+                    args=(
+                        constraint_parameters,
+                        user_id,
+                    ),
+                    axis=1,
                 )
             ]
             filtered_trend_polls_df = filtered_trend_polls_df.reset_index(drop=True)
