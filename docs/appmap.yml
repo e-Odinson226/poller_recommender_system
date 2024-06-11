@@ -1,0 +1,5 @@
+appmap_dir: tmp/appmap
+language: python
+name: o3
+packages:
+- path: recom_system
